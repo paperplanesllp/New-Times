@@ -112,8 +112,7 @@ const liveBusinessContent = {
         title: 'Mutual Fund Investments Hit New High as Retail Participation in Markets Expands',
         description:
           "Growing investor confidence and SIP inflows continue to strengthen India's equity markets.",
-        image:
-          'https://images.unsplash.com/photo-1560472355-109703aa3edc?auto=format&fit=crop&w=700&q=85',
+        image:'/mutual.avif',
       },
       {
         id: 'finance-stream-4',
