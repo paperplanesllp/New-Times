@@ -40,24 +40,21 @@ const liveBusinessContent = {
         title: "India's Startup Ecosystem Sees Fresh Funding Momentum as Investors Return to Growth Bets",
         description:
           'Venture capital activity is picking up again as investors focus on AI, SaaS, and consumer tech startups.',
-        image:
-          'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=700&q=90',
+        image: '/stam.avif',
       },
       {
         id: 'business-stream-2',
         title: 'Global Tech Companies Expand AI Infrastructure Investments Amid Rising Compute Demand',
         description:
           'Big tech firms are scaling data centers and AI infrastructure to support next-generation applications.',
-        image:
-          'https://images.unsplash.com/photo-1562408590-e32931084e23?auto=format&fit=crop&w=700&q=85',
+        image: '/open.avif',
       },
       {
         id: 'business-stream-3',
         title: 'India Strengthens Position as Global Manufacturing Hub Amid Supply Chain Diversification',
         description:
           'Companies continue shifting production to India as global supply chains become more diversified.',
-        image:
-          'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=700&q=85',
+        image: '/PlayerGlobal.webp',
       },
       {
         id: 'business-stream-4',
@@ -91,8 +88,7 @@ const liveBusinessContent = {
         title: 'Banking Sector Strengthens as Credit Growth Accelerates Across Retail and SME Segments',
         description:
           'Rising loan demand signals improving consumption and business activity across India.',
-        image:
-          'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=900&q=90',
+        image: '/rupa.avif',
       },
     ],
     streamStories: [

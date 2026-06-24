@@ -126,12 +126,12 @@ export default function Navbar() {
         <nav className="flex min-h-[64px] w-full items-center justify-start gap-5 overflow-x-auto bg-black px-4 sm:justify-center sm:px-6 lg:gap-6 lg:overflow-visible">
           <Link to="/" className={navLink}>HOME</Link>
           <Link to="/magazine" className={navLink}>MAGAZINE</Link>
-          <Link to="/billionaires" className={navLink}>
-            <span className={navBadge}>NEW</span>
-            NT BILLIONAIRES
-          </Link>
+          <Link to="/billionaires" className={navLink}>NT BILLIONAIRES</Link>
           <Link to="/economy" className={navLink}>ECONOMY</Link>
-          <Link to="/spotlight" className={navLink}>NT SPOTLIGHT</Link>
+          <Link to="/spotlight" className={navLink}>
+            <span className={navBadge}>NEW</span>
+            NT SPOTLIGHT
+          </Link>
           <Link to="/tech" className={navLink}>TECH</Link>
           <Link to="/industry" className={navLink}>INDUSTRY</Link>
           <Link to="/money" className={navLink}>MONEY TODAY</Link>
