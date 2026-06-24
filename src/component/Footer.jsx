@@ -61,7 +61,7 @@ export default function Footer() {
             </div>
 
             <p className="mt-[50px] inline-block px-1 font-sans text-[13px] font-medium uppercase leading-[16px] tracking-[0.02em] text-white">
-              © Copyright 2026, NewTimes.com All Rights Reserved
+              © Copyright 2026, NewTimes.in All Rights Reserved
             </p>
 
             <div className="mt-[46px] flex flex-wrap gap-4">

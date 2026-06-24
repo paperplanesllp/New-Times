@@ -158,7 +158,7 @@ export default function More() {
         <section className="min-w-0">
           <div className="mx-auto max-w-[950px]">
             <span className="inline-flex rounded-full border border-amber-200 bg-amber-50 px-5 py-2 font-serif text-[18px] text-amber-500">
-              New-Times
+              NewTimes
             </span>
             <h1 className="mt-10 max-w-[850px] font-serif text-[50px] font-bold leading-[1.08] tracking-tight text-[#333] sm:text-[60px]">
               Curated perspectives,

@@ -41,7 +41,7 @@ function CoverArt({ theme = 'blue', large = false }) {
           Daily Cover
         </span>
         <p className={`absolute left-1/2 top-6 -translate-x-1/2 font-serif font-black leading-none text-white [text-shadow:0_2px_2px_rgba(0,0,0,.45)] ${large ? 'text-[58px]' : 'text-[34px]'}`}>
-          New-Times
+          NewTimes
         </p>
         <div
           className={`absolute left-1/2 overflow-hidden rounded-t-full bg-[#d7b08a] ${large ? 'bottom-[86px] h-[150px] w-[132px] -translate-x-1/2' : 'bottom-[48px] h-[88px] w-[78px] -translate-x-1/2'}`}
