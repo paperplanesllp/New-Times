@@ -94,10 +94,7 @@ export default function Footer() {
 
         <div className="pt-8 border-t mt-7 border-white/80">
           <div className="flex justify-center">
-            <div className="flex items-center gap-2 font-sans text-[23px] font-semibold leading-none text-white">
-              <span>Network</span>
-              <span className="bg-red-600 px-1.5 py-1 text-white">18</span>
-            </div>
+          
           </div>
         </div>
       </div>
