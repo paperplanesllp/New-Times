@@ -16,8 +16,7 @@ const liveBusinessContent = {
       title: "India's Digital Payments Ecosystem Hits New High as UPI Transactions Cross Record Volume",
       description:
         "UPI continues its rapid growth, driving India's digital payments ecosystem to a new peak with record-breaking transaction volumes across the country.",
-      image:
-        'https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=1200&q=90',
+      image: '/upi.webp',
     },
     sideStories: [
       {
@@ -25,16 +24,14 @@ const liveBusinessContent = {
         title: 'India Sees Hiring Surge as Global Tech Firms Scale AI and R&D Teams',
         description:
           'Strong demand for AI talent is driving global companies to accelerate hiring and research expansion in India.',
-        image:
-          'https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=900&q=90',
+        image: '/surge.webp',
       },
       {
         id: 'business-side-2',
         title: 'Private Equity Interest in Indian Consumer Brands Rises on Strong Demand',
         description:
           "Strong domestic demand is driving renewed private equity interest in India's fast-growing consumer brands.",
-        image:
-          'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=900&q=90',
+        image: '/equity.avif',
       },
     ],
     streamStories: [
@@ -79,8 +76,7 @@ const liveBusinessContent = {
       title: 'RBI Signals Stable Policy Outlook as Inflation Moderates and Growth Holds Firm',
       description:
         'Markets expect continued policy stability as India balances inflation control and economic expansion.',
-      image:
-        'https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=90',
+      image: '/RBI.avif',
     },
     sideStories: [
       {
@@ -88,8 +84,7 @@ const liveBusinessContent = {
         title: 'Global Investors Increase Exposure to Indian Equities Amid AI-Led Growth Narrative',
         description:
           'Foreign capital flows return as India strengthens its position in the global AI and tech economy.',
-        image:
-          'https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=900&q=90',
+        image: '/aiii.avif',
       },
       {
         id: 'finance-side-2',
@@ -106,8 +101,7 @@ const liveBusinessContent = {
         title: 'Indian Rupee Shows Stability Amid Strong Foreign Inflows and Controlled Inflation',
         description:
           'Currency remains steady as foreign investment inflows support overall macroeconomic stability.',
-        image:
-          'https://images.unsplash.com/photo-1580519542036-c47de6196ba5?auto=format&fit=crop&w=700&q=90',
+        image: '/rupee.avif',
       },
       {
         id: 'finance-stream-2',
