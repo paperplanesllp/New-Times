@@ -187,7 +187,7 @@ const liveBusinessContent = {
       title: 'AI Adoption Accelerates as Global Enterprises Integrate Automation Across Core Operations',
       description:
         'Businesses are embedding AI into workflows to improve efficiency, speed, and decision-making.',
-      image:'/t2.jpg',
+      image: '/t2.avif',
     },
     sideStories: [
       {
@@ -195,7 +195,7 @@ const liveBusinessContent = {
         title: 'Semiconductor Race Intensifies as Countries Compete for Chip Manufacturing Dominance',
         description:
           'Governments and firms ramp up investments in advanced chip production and supply chains.',
-        image:'/t1.jpg',
+        image: '/t1.webp',
           
       },
       {
@@ -203,31 +203,35 @@ const liveBusinessContent = {
         title: 'Cloud Computing Demand Surges as Companies Expand Digital Infrastructure Worldwide',
         description:
           'Enterprises continue shifting workloads to cloud platforms for scalability and cost efficiency.',
-        image:'/t3.jpg',
+        image: '/t3.webp',
       },
     ],
     streamStories: [
       {
         id: 'technology-stream-1',
         title: 'Big Tech Firms Increase Investment in AI Infrastructure and Data Center Expansion',
+        url: 'https://share.google/wqrmCoyhrCcyRNzPG',
         image:
           'https://images.unsplash.com/photo-1533750349088-cd871a92f312?auto=format&fit=crop&w=700&q=85',
       },
       {
         id: 'technology-stream-2',
         title: 'Cybersecurity Spending Rises as AI-Driven Threats Become More Sophisticated',
+        url: 'https://share.google/f01SMH6Ti50K6ZMGq',
         image:
           'https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=700&q=85',
       },
       {
         id: 'technology-stream-3',
         title: 'India Emerges as a Key Global Hub for AI Development and Engineering Talent',
+        url: 'https://share.google/8E0aBC0N4qKwWwuvZ',
         image:
           'https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=700&q=85',
       },
       {
         id: 'technology-stream-4',
         title: 'Startup Ecosystem Shifts Toward Deep-Tech Innovation in AI, Robotics, and Quantum Computing',
+        url: 'https://share.google/NwvEjNu4QSOO2Cfwu',
         image:
           'https://images.unsplash.com/photo-1526378722484-bd91ca387e72?auto=format&fit=crop&w=700&q=85',
       },
@@ -295,11 +299,19 @@ function BusinessStory({ story, compact = false }) {
     return null;
   }
 
+  const readStoryClass = compact
+    ? 'news-source-link mt-2 inline-flex text-[10px] font-semibold uppercase tracking-[0.18em] text-slate-950'
+    : 'news-source-link mt-3 inline-flex text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-950';
+
   return (
     <article className={compact ? 'grid grid-cols-[80px_minmax(0,1fr)] gap-4 border-b border-gray-100 pb-5' : 'border-b border-gray-100 pb-7'}>
       <img
         src={story.image}
         alt={story.title}
+        onError={(event) => {
+          event.currentTarget.alt = '';
+          event.currentTarget.style.opacity = '0';
+        }}
         className={compact ? 'object-cover w-20 h-20 rounded-2xl' : 'mb-4 h-[220px] w-full rounded-3xl object-cover'}
       />
       <div>
@@ -311,9 +323,13 @@ function BusinessStory({ story, compact = false }) {
             {story.description}
           </p>
         )}
-        <span className={compact ? 'news-source-link mt-2 inline-flex text-[10px] font-semibold uppercase tracking-[0.18em] text-slate-950' : 'news-source-link mt-3 inline-flex text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-950'}>
-          Read Story
-        </span>
+        {story.url ? (
+          <a className={readStoryClass} href={story.url} target="_blank" rel="noreferrer">
+            Read Story
+          </a>
+        ) : (
+          <span className={readStoryClass}>Read Story</span>
+        )}
       </div>
     </article>
   );
@@ -361,7 +377,15 @@ export default function LiveBusinessNewsSection() {
         </div>
 
         <article>
-          <img src={featured.image} alt={featured.title} className="mb-5 h-[360px] w-full rounded-3xl object-cover" />
+          <img
+            src={featured.image}
+            alt={featured.title}
+            onError={(event) => {
+              event.currentTarget.alt = '';
+              event.currentTarget.style.opacity = '0';
+            }}
+            className="mb-5 h-[360px] w-full rounded-3xl object-cover"
+          />
           <h2 className="m-0 font-serif text-3xl font-semibold leading-tight featured-headline text-slate-950 md:text-4xl">
             {featured.title}
           </h2>
