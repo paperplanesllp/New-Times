@@ -81,7 +81,7 @@ export default function Footer() {
           <FooterColumn title="Company" items={companyLinks} />
           <FooterColumn title="Categories" items={categoryLinks} />
           <FooterColumn items={specialLinks}>
-            New-Times
+            NewTimes
             <br />
             Specials
           </FooterColumn>
