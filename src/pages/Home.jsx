@@ -287,7 +287,7 @@ function FeaturedCarousel() {
         <button
           type="button"
           onClick={() => moveCarousel(-1)}
-          className="absolute left-4 top-[220px] z-30 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-lg bg-red-600 text-2xl font-normal leading-none text-white shadow-[0_10px_24px_rgba(220,38,38,0.28)] transition hover:bg-red-700 sm:h-12 sm:w-12 lg:left-[7%] lg:top-[300px]"
+          className="absolute left-4 top-[220px] z-30 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-lg bg-red-600 text-2xl font-normal leading-none text-white shadow-[0_10px_24px_rgba(220,38,38,0.28)] transition duration-300 hover:-translate-y-1/2 hover:scale-110 hover:bg-red-700 hover:shadow-[0_14px_30px_rgba(220,38,38,0.38)] focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 active:scale-95 sm:h-12 sm:w-12 lg:left-[7%] lg:top-[300px]"
           aria-label="Previous featured article"
         >
           &larr;
@@ -296,7 +296,7 @@ function FeaturedCarousel() {
         <button
           type="button"
           onClick={() => moveCarousel(1)}
-          className="absolute right-4 top-[220px] z-30 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-lg bg-red-600 text-2xl font-normal leading-none text-white shadow-[0_10px_24px_rgba(220,38,38,0.28)] transition hover:bg-red-700 sm:h-12 sm:w-12 lg:right-[7%] lg:top-[300px]"
+          className="absolute right-4 top-[220px] z-30 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-lg bg-red-600 text-2xl font-normal leading-none text-white shadow-[0_10px_24px_rgba(220,38,38,0.28)] transition duration-300 hover:-translate-y-1/2 hover:scale-110 hover:bg-red-700 hover:shadow-[0_14px_30px_rgba(220,38,38,0.38)] focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 active:scale-95 sm:h-12 sm:w-12 lg:right-[7%] lg:top-[300px]"
           aria-label="Next featured article"
         >
           &rarr;
@@ -315,16 +315,16 @@ function FeaturedCarousel() {
             return (
               <article
                 key={`${article.id}-${position}`}
-                className={`group absolute bg-white transition-all duration-500 ease-out ${placementClass} ${
+                className={`group absolute bg-white transition-all duration-700 ease-out hover:-translate-y-1 ${placementClass} ${
                   isActive ? 'z-20 pointer-events-auto' : 'z-0 pointer-events-none'
                 }`}
               >
                 <div className="block">
-                  <div className="relative overflow-hidden bg-neutral-100">
+                  <div className="featured-shine relative overflow-hidden bg-neutral-100">
                     <img
                       src={article.image}
                       alt={article.title}
-                      className={`w-full object-cover transition duration-500 group-hover:scale-[1.02] ${
+                      className={`featured-image-reveal w-full object-cover transition duration-700 ease-out group-hover:scale-[1.055] group-hover:brightness-105 group-hover:saturate-110 ${
                         isActive ? 'h-[330px] sm:h-[410px] lg:h-[470px]' : 'h-[250px] lg:h-[275px]'
                       }`}
                     />
@@ -351,8 +351,8 @@ function FeaturedCarousel() {
                               event.preventDefault();
                               setActiveIndex(index);
                             }}
-                            className={`h-2 rounded-full transition-all ${
-                              activeIndex === index ? 'w-9 bg-blue-700' : 'w-2 bg-black/20 hover:bg-black/50'
+                            className={`h-2 rounded-full transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 ${
+                              activeIndex === index ? 'w-9 bg-blue-700 shadow-[0_0_0_4px_rgba(29,78,216,0.12)]' : 'w-2 bg-black/20 hover:w-5 hover:bg-black/50'
                             }`}
                             aria-label={`Show featured article ${index + 1}`}
                           />
@@ -435,7 +435,7 @@ export default function Home() {
 
                 <div className="overflow-hidden bg-neutral-100 lg:mr-2">
                   <img
-                    src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1500&q=85"
+                    src="/NSE.avif"
                     alt="Business leadership editorial feature"
                     className="h-[240px] w-full object-cover transition duration-500 group-hover:scale-[1.03] sm:h-[330px] lg:h-[400px]"
                   />
