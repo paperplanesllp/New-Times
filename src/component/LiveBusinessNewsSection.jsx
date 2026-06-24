@@ -187,8 +187,7 @@ const liveBusinessContent = {
       title: 'AI Adoption Accelerates as Global Enterprises Integrate Automation Across Core Operations',
       description:
         'Businesses are embedding AI into workflows to improve efficiency, speed, and decision-making.',
-      image:
-        'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=90',
+      image:'/t2.jpg',
     },
     sideStories: [
       {
@@ -196,16 +195,15 @@ const liveBusinessContent = {
         title: 'Semiconductor Race Intensifies as Countries Compete for Chip Manufacturing Dominance',
         description:
           'Governments and firms ramp up investments in advanced chip production and supply chains.',
-        image:
-          'https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?auto=format&fit=crop&w=900&q=90',
+        image:'/t1.jpg',
+          
       },
       {
         id: 'technology-side-2',
         title: 'Cloud Computing Demand Surges as Companies Expand Digital Infrastructure Worldwide',
         description:
           'Enterprises continue shifting workloads to cloud platforms for scalability and cost efficiency.',
-        image:
-          'https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=900&q=90',
+        image:'/t3.jpg',
       },
     ],
     streamStories: [
