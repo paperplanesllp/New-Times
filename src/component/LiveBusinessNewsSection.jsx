@@ -132,8 +132,7 @@ const liveBusinessContent = {
       title: 'AI-Driven Marketing Tools Reshape How Brands Target and Convert Customers',
         description:
           'Companies are rapidly adopting AI to personalize ads, optimize campaigns, and improve ROI.',
-        image:
-        'https://images.unsplash.com/photo-1557838923-2985c318be48?auto=format&fit=crop&w=1200&q=90',
+        image: '/m2.jpg',
     },
     sideStories: [
       {
@@ -141,16 +140,14 @@ const liveBusinessContent = {
         title: 'Digital Ad Spending in India Surges as Brands Shift Focus to Performance Marketing',
         description:
           'Marketers are reallocating budgets from traditional media to data-driven online channels.',
-        image:
-          'https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?auto=format&fit=crop&w=900&q=90',
+        image: '/marketing.jpg',
       },
       {
         id: 'marketing-side-2',
         title: 'Social Media Platforms Evolve Into Full-Funnel Marketing Ecosystems for Brands',
         description:
           'Platforms like Instagram, YouTube, and short-video apps are becoming key sales drivers.',
-        image:
-          'https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?auto=format&fit=crop&w=900&q=85',
+        image: '/media.jpeg',
       },
     ],
     streamStories: [
@@ -159,32 +156,28 @@ const liveBusinessContent = {
         title: 'Influencer Marketing Gains Momentum as Brands Focus on Authentic Audience Engagement',
         description:
           'Companies are increasing partnerships with creators to drive trust and improve conversion rates.',
-        image:
-          'https://images.unsplash.com/photo-1517242027094-631f8c218a0f?auto=format&fit=crop&w=700&q=85',
+        image: '/influ.png',
       },
       {
         id: 'marketing-stream-2',
         title: 'SEO and Content Marketing See Revival as Brands Invest in Long-Term Organic Growth',
         description:
           'Businesses are prioritizing search visibility and high-quality content to reduce paid ad dependency.',
-        image:
-          'https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=700&q=90',
+        image: '/seo.jpg',
       },
       {
         id: 'marketing-stream-3',
         title: 'Personalization Becomes Core Strategy in Digital Marketing Campaigns Worldwide',
         description:
           'Brands are using customer data and AI to deliver highly targeted and relevant messaging.',
-        image:
-          'https://images.unsplash.com/photo-1556155092-490a1ba16284?auto=format&fit=crop&w=700&q=85',
+        image: '/per.webp',
       },
       {
         id: 'marketing-stream-4',
         title: 'Video-First Marketing Emerges as Dominant Strategy Across Social Media Platforms',
         description:
           'Short-form and interactive videos are driving higher engagement and brand recall across audiences.',
-        image:
-          'https://images.unsplash.com/photo-1492724441997-5dc865305da7?auto=format&fit=crop&w=700&q=85',
+        image: '/social.png',
       },
     ],
   },
