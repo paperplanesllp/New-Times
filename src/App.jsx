@@ -1,0 +1,63 @@
+import React from 'react';
+import { Routes, Route, useLocation } from 'react-router-dom';
+import Navbar from './component/Navbar';
+import BreakingTicker from './components/BreakingTicker';
+import Footer from './component/Footer';
+import DailyQuote from './component/DailyQuote';
+import ScrollToTop from './component/ScrollToTop';
+import Home from './pages/Home';
+
+import Magazines from './pages/Magazines'; 
+import Billionaires from './pages/Billionaires';
+import TopStories from './pages/TopStories';
+
+import Economy from './pages/Economy';
+import NTSpotlight from './pages/NTSpotlight';
+import More from './pages/More';
+import NewsMakers from './pages/NewsMakers';
+import CoverStories from './pages/CoverStories';
+import Life from './pages/Life';
+import Blogs from './pages/Blogs';
+
+import TechSpace from './pages/TechSpace';
+import IndustrySpace from './pages/IndustrySpace';
+import MoneyTodaySpace from './pages/MoneyTodaySpace';
+import Subscribe from './pages/Subscribe';
+
+export default function App() {
+  const { pathname } = useLocation();
+  const isHomePage = pathname === '/';
+
+  return (
+    <div className="min-h-screen font-sans bg-white text-gray-950">
+      <ScrollToTop />
+      <Navbar />
+      {isHomePage && <BreakingTicker />}
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+    
+        <Route path="/magazine" element={<Magazines />} />
+        <Route path="/billionaires" element={<Billionaires />} />
+        <Route path="/top-stories" element={<TopStories />} />
+       
+        <Route path="/economy" element={<Economy />} />
+        <Route path="/spotlight" element={<NTSpotlight />} />
+        <Route path="/more" element={<More />} />
+        <Route path="/newsmakers" element={<NewsMakers />} />
+        <Route path="/cover-stories" element={<CoverStories />} />
+        <Route path="/life" element={<Life />} />
+        <Route path="/blogs" element={<Blogs />} />
+        
+        <Route path="/tech" element={<TechSpace />} />
+        <Route path="/industry" element={<IndustrySpace />} />
+        <Route path="/money" element={<MoneyTodaySpace />} />
+        <Route path="/subscribe" element={<Subscribe />} /> 
+      </Routes>
+
+      {isHomePage && <DailyQuote />}
+      <Footer />
+    </div>
+  );
+}
+    
