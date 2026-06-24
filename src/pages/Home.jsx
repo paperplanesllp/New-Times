@@ -7,8 +7,6 @@ import MainDashboard from '../component/MainDashboard';
 import BusinessHubGrid from '../component/BusinessHubGrid';
 import FounderSandbox from '../component/FounderSandbox';
 import BillionairesHub from '../component/BillionairesHub';
-import billImage from '../assets/bill.jpg';
-import luxImage from '../assets/lux.jpg';
 
 const tickerItems = [
   { name: 'NIFTY 50', value: '23,269.40', change: '-0.15', percent: '0.23%' },
@@ -54,8 +52,7 @@ const articleCards = [
     title: ' Inside the World of Modern Entrepreneurs',
     description:
       'A new generation of founders is building and scaling with lean teams, smarter distribution, and relentless executions.',
-    image:
-      'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1100&q=85',
+    image: '/fe1.webp',
   },
   {
     id: 2,
@@ -63,7 +60,7 @@ const articleCards = [
     title: 'The Long Game of Billionaire Builders',
     description:
       'The most successful entrepreneurs compound their advantages through ownership, strategic networks, patient capital, and long-term vision.',
-    image: billImage,
+    image: '/billio.webp',
   },
   {
     id: 3,
@@ -71,8 +68,7 @@ const articleCards = [
     title: ' The Future of Startups: 2026 Edition',
     description:
       'Today’s founders are redefining growth through rapid product innovation, disciplined capital management, and deep customer trust.',
-    image:
-      'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1100&q=85',
+    image: '/start.avif',
   },
   {
     id: 4,
@@ -80,8 +76,7 @@ const articleCards = [
     title: 'Capital, Strategy and Leadership ',
     description:
       'The best executives balance capital discipline with bold investments in AI, infrastructure, and talent. ',
-    image:
-      'https://images.unsplash.com/photo-1642790551116-18e150f248e3?auto=format&fit=crop&w=1100&q=85',
+    image: '/leader.jpg',
   },
   {
     id: 5,
@@ -89,7 +84,7 @@ const articleCards = [
     title: 'Luxury Brands Are Redefining Modern Business ',
     description:
       'Premium companies maintain pricing power through scarcity, storytelling, and strong digital communities.',
-    image: luxImage,
+    image: '/luxur.jpg',
   },
   {
     id: 6,
