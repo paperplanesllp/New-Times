@@ -23,7 +23,7 @@ export default function BillionairesTable() {
       </div>
 
       <div className="flex flex-wrap gap-2 pb-3 font-sans border-b border-gray-100 mb-7">
-        {['2025 FORBES LIST', '205 BILLIONAIRES', '$941B TOTAL WEALTH', 'INDIA RANKS THIRD'].map((label, index) => (
+        {['2025 NT LIST', '205 BILLIONAIRES', '$941B TOTAL WEALTH', 'INDIA RANKS THIRD'].map((label, index) => (
           <span
             key={label}
             className={`border px-3 py-1 text-[11px] font-bold uppercase tracking-[0.04em] ${index === 0 ? 'border-black bg-black text-white' : 'border-gray-200 bg-white text-slate-600'}`}
@@ -34,7 +34,7 @@ export default function BillionairesTable() {
       </div>
 
       <p className="mb-7 max-w-5xl font-serif text-[15px] leading-7 text-slate-700">
-        India ranks third in the world by billionaire count, with 205 billionaires on the 2025 Forbes list, trailing only the United States (902) and China including Hong Kong (516). Collectively, Indian billionaires are worth $941 billion, a slight dip from $954 billion the previous year, largely due to stock declines at the conglomerates of the country's two richest individuals.
+        India ranks third in the world by billionaire count, with 205 billionaires on the 2025 NT List, trailing only the United States (902) and China including Hong Kong (516). Collectively, Indian billionaires are worth $941 billion, a slight dip from $954 billion the previous year, largely due to stock declines at the conglomerates of the country's two richest individuals.
       </p>
 
       <div className="overflow-x-auto border-b border-gray-200">

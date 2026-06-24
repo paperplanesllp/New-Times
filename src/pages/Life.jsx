@@ -54,7 +54,7 @@ const stories = [
     title: 'Know your art: Shiva drinking world poison',
     author: 'Jasodhara Banerjee',
     art: 'shiva',
-    label: 'Forbes List',
+    label: 'NT list',
   },
 ];
 

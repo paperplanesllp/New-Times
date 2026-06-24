@@ -52,7 +52,7 @@ const articleCards = [
     title: ' Inside the World of Modern Entrepreneurs',
     description:
       'A new generation of founders is building and scaling with lean teams, smarter distribution, and relentless executions.',
-    image: '/fe1.webp',
+    image: '/founderss.avif',
   },
   {
     id: 2,
@@ -92,8 +92,7 @@ const articleCards = [
     title: ' India’s Next Generation of Entrepreneurs ',
     description:
       "India’s next generation of business leaders is building across AI, consumer brands, finance, manufacturing, and global SaaS.",
-    image:
-      'https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1100&q=85',
+    image: '/ente.avif',
   },
 ];
 
