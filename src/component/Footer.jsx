@@ -1,7 +1,6 @@
 import React from 'react';
 
 const companyLinks = [
-  'RSS',
   'CONTACT US',
   'COOKIE POLICY',
   'TERMS & CONDITIONS',
@@ -11,22 +10,18 @@ const companyLinks = [
 ];
 
 const categoryLinks = [
-  'LEADERSHIP',
+  'SpotLight',
   'BILLIONAIRES',
-  'INNOVATION',
-  'STARTUPS',
-  'VIDEOS',
-  'PODCASTS',
-  'PHOTOGALLERY',
-  'AI TRACKER',
+  'STARTUPS',  
+  'MAGAZINE',
 ];
 
 const specialLinks = [
   'NEWSLETTERS',
-  'W-POWER 2026',
+  'Recognitions  Series',
   'LISTS',
-  'LEADERSHIP AWARDS',
-  'INDIA RICH LIST 2025',
+  'NT AWARDS',
+  
 ];
 
 const socials = ['◉', '◍', '▶', '◎', 'f', 'in', 'X'];
