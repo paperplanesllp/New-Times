@@ -1,34 +1,44 @@
 import React from 'react';
+import crudeOilImage from './Nn.avif';
+import nseIpoImage from './Nn2.jpg';
+import fiiSelloffImage from './NN4.webp';
+import textileStocksImage from './NN5.webp';
 
 const spotlightPages = {
   'business-features': {
     kicker: 'Business Features',
-    title: 'Deep Dives on the Companies Shaping New Growth',
+    title: "India's AI Momentum Shifts Into Execution Mode",
     intro:
-      'Long-form business reporting on strategy, leadership, market expansion, and the operational choices that separate durable companies from short-term noise.',
+      'From large-scale computing infrastructure and indigenous AI models to strategic global collaborations and enterprise deployments, artificial intelligence is rapidly becoming a core business priority across industries in India.',
     badge: 'Feature Desk',
     lead: {
-      category: 'BOARDROOM',
-      title: 'How Founders Are Rewriting Scale Plans for a More Disciplined Market',
+      category: 'MARKETS',
+      title: 'Crude Oil Crash Boosts Indian Markets',
       excerpt:
-        'Capital efficiency, sharper unit economics, and stronger governance are becoming the new markers of ambition for Indian growth companies.',
-      image: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=85',
+        'Brent crude slipped below $73 a barrel for the first time since February 27, 2026, down 42% from its peak of $126 per barrel on April 30. Indian markets rallied on Wednesday, with the Sensex and Nifty gaining up to 1% amid easing crude prices, supportive global cues, and optimism over India-US trade talks. The Nifty closed above 24,000, with the rupee also strengthening against the dollar.',
+      image: crudeOilImage,
     },
     stories: [
       {
-        category: 'MARKET MAP',
-        title: 'The Sectors Drawing Patient Capital in 2026',
-        excerpt: 'Investors are looking beyond hype cycles toward resilient demand, clean execution, and founders with clear distribution advantages.',
+        category: 'CAPITAL MARKETS',
+        title: "NSE Files for India's Largest-Ever IPO",
+        excerpt:
+          "The National Stock Exchange has filed its DRHP for a Rs 25,000-30,000 crore IPO, set to be one of the largest public floats in India's capital market history. The issue comprises up to 14.89 crore equity shares, about 6% of NSE's paid-up capital, entirely via an offer for sale route. In FY2026, NSE processed an average of 12-14 billion messages daily and held a dominant 92.99% market share in India's cash equity market.",
+        image: nseIpoImage,
       },
       {
-        category: 'LEADERSHIP',
-        title: 'Why India Inc Is Building Second-Line Leadership Earlier',
-        excerpt: 'Maturing businesses are investing in operating depth before expansion stress exposes management gaps.',
+        category: 'FOREIGN FLOWS',
+        title: 'FIIs Dump Rs 64,761 Crore in First Half of June',
+        excerpt:
+          'Foreign investors offloaded shares worth a staggering Rs 64,761 crore in the first half of June, the highest since March, driven by elevated oil prices. However, domestic institutional investors countered with strong buying, keeping the overall market afloat.',
+        image: fiiSelloffImage,
       },
       {
-        category: 'STRATEGY',
-        title: 'Premium Brands Push Into Tier-Two Demand Pockets',
-        excerpt: 'A new consumption map is changing how companies design pricing, distribution, and customer experience.',
+        category: 'TEXTILES',
+        title: 'Textile Stocks Rally on Motilal Oswal Coverage',
+        excerpt:
+          'Textile exporter stocks witnessed a significant rally, boosted by positive initiation of coverage from Motilal Oswal Financial Services. The brokerage highlighted capacity expansion and supportive government policies as key growth catalysts, projecting substantial gains for leading companies. The surge reflects a new investment cycle in Indian textiles, with companies targeting higher-margin, value-added products to capitalise on global sourcing trends.',
+        image: textileStocksImage,
       },
     ],
   },
@@ -172,12 +182,15 @@ export default function SpotlightFeaturePage({ type }) {
 
           <div className="space-y-5 border-gray-200 lg:border-l lg:pl-6">
             {page.stories.map((story) => (
-              <article key={story.title} className="border-b border-gray-100 pb-5 last:border-b-0">
-                <span className="mb-2 block font-sans text-[10px] font-extrabold uppercase tracking-[0.12em] text-amber-700">
-                  {story.category}
-                </span>
-                <h3 className="m-0 font-serif text-xl font-bold leading-tight text-slate-950">{story.title}</h3>
-                <p className="mt-2 font-sans text-sm leading-6 text-slate-600">{story.excerpt}</p>
+              <article key={story.title} className="grid grid-cols-[96px_minmax(0,1fr)] gap-4 border-b border-gray-100 pb-5 last:border-b-0">
+                {story.image && <img className="h-24 w-24 object-cover" src={story.image} alt={story.title} />}
+                <div>
+                  <span className="mb-2 block font-sans text-[10px] font-extrabold uppercase tracking-[0.12em] text-amber-700">
+                    {story.category}
+                  </span>
+                  <h3 className="m-0 font-serif text-xl font-bold leading-tight text-slate-950">{story.title}</h3>
+                  <p className="mt-2 font-sans text-sm leading-6 text-slate-600">{story.excerpt}</p>
+                </div>
               </article>
             ))}
           </div>
