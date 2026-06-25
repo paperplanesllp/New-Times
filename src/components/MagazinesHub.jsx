@@ -8,8 +8,7 @@ const magazineIssues = [
     description:
       'A premium editorial look at how luxury houses are using private clienteling, craftsmanship, hospitality, and cultural storytelling to protect pricing power.',
     issue: 'Luxury Business Report',
-    image:
-      'https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=1100&q=90',
+    image: '/mg1.png',
     cta: 'Read Issue',
   },
   {
@@ -30,8 +29,7 @@ const magazineIssues = [
     description:
       'From circular fashion to private shopping experiences, luxury demand is shifting toward brands that combine exclusivity with long-term trust.',
     issue: 'Luxury Index',
-    image:
-      'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1100&q=90',
+    image: '/mg2.png',
     cta: 'Read Issue',
   },
   {
@@ -75,8 +73,7 @@ const magazineSubIssues = [
     category: 'Luxury',
     title: 'Heritage Fashion Houses Turn Archives Into New Growth Engines',
     issue: 'Heritage Strategy',
-    image:
-      'https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=85',
+    image: '/M3.avif',
     cta: 'Read Issue',
   },
   {
@@ -84,8 +81,7 @@ const magazineSubIssues = [
     category: 'Luxury',
     title: 'Private Members Clubs Become the New Luxury Brand Playground',
     issue: 'Experience Economy',
-    image:
-      'https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=900&q=85',
+    image: '/mg3.webp',
     cta: 'Read Issue',
   },
   {
@@ -93,8 +89,7 @@ const magazineSubIssues = [
     category: 'Luxury',
     title: 'Luxury Hospitality Bets on Wellness, Design, and Longer Stays',
     issue: 'Travel Ledger',
-    image:
-      'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=900&q=85',
+    image: '/m5.jpg',
     cta: 'Read Issue',
   },
   {
@@ -102,8 +97,7 @@ const magazineSubIssues = [
     category: 'Luxury',
     title: 'Premium Watchmakers Find Younger Collectors Through Digital Drops',
     issue: 'Collector Notes',
-    image:
-      'https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=900&q=85',
+    image: '/m6.jpg',
     cta: 'Read Issue',
   },
   {
