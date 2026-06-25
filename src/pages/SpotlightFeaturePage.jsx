@@ -33,7 +33,7 @@ const spotlightPages = {
     ],
   },
   'recognise-series': {
-    kicker: 'Recognise Series',
+    kicker: 'Recognition Series',
     title: 'Recognising Builders, Operators, and Emerging Leaders',
     intro:
       'A spotlight series for people and teams creating measurable impact across entrepreneurship, industry, technology, and public-facing business.',
@@ -42,7 +42,7 @@ const spotlightPages = {
       category: 'EMERGING LEADERS',
       title: "The Operators Behind India's Quiet Business Breakthroughs",
       excerpt:
-        'From product heads to regional sales leaders, the Recognise Series highlights the people turning ambitious plans into repeatable execution.',
+        'From product heads to regional sales leaders, the Recognition Series highlights the people turning ambitious plans into repeatable execution.',
       image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=85',
     },
     stories: [

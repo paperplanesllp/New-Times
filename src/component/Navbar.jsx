@@ -22,7 +22,7 @@ export default function Navbar() {
 
   const spotlightLinks = [
     { label: 'BUSINESS FEATURES', to: '/spotlight/business-features' },
-    { label: 'RECOGNISE SERIES', to: '/spotlight/recognise-series' },
+    { label: 'RECOGNITION SERIES', to: '/spotlight/recognise-series' },
     { label: 'STARTUP', to: '/spotlight/startup' },
     { label: 'COVER FEATURE', to: '/spotlight/cover-feature' },
   ];

@@ -8,7 +8,7 @@ const searchItems = [
   { title: 'Economy', category: 'Page', description: 'Economic policy, markets, growth, and macro coverage.', to: '/economy' },
   { title: 'NT Spotlight', category: 'Page', description: 'Spotlight coverage across startups, business features, and cover features.', to: '/spotlight' },
   { title: 'Business Features', category: 'Spotlight', description: 'Deep dives on companies, strategy, leadership, and markets.', to: '/spotlight/business-features' },
-  { title: 'Recognise Series', category: 'Spotlight', description: 'Profiles of builders, operators, and emerging leaders.', to: '/spotlight/recognise-series' },
+  { title: 'Recognition Series', category: 'Spotlight', description: 'Profiles of builders, operators, and emerging leaders.', to: '/spotlight/recognise-series' },
   { title: 'Startup', category: 'Spotlight', description: 'Startup stories, funding moves, and founder playbooks.', to: '/spotlight/startup' },
   { title: 'Cover Feature', category: 'Spotlight', description: 'Signature cover features from the NT Spotlight desk.', to: '/spotlight/cover-feature' },
   { title: 'Technology', category: 'Page', description: 'Technology, AI, cloud, chips, and cybersecurity coverage.', to: '/tech' },

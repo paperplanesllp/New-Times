@@ -19,7 +19,7 @@ const categoryLinks = [
 
 const specialLinks = [
   'NEWSLETTERS',
-  'Recognitions  Series',
+  'Recognition Series',
   'LISTS',
   'NT AWARDS',
   
