@@ -51,7 +51,7 @@ const TECH_SECTIONS = [
         title: "Skyroot Becomes India's First Space-Tech Unicorn",
         summary:
           'A $60 million funding round ahead of its debut orbital launch pushed the Hyderabad-based rocket maker past the billion-dollar valuation mark.',
-        image: 'https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=900&q=85',
+        image: '/s1.webp',
       },
       {
         id: 'space-2',
@@ -72,14 +72,14 @@ const TECH_SECTIONS = [
         title: "Pixxel's NASA Contract and India's Rising Earth-Observation Industry",
         summary:
           'A nearly half-billion-dollar hyperspectral imaging deal shows Indian space startups competing directly for global government contracts, not just domestic ones.',
-        image: 'https://images.unsplash.com/photo-1446776877081-d282a0f896e2?auto=format&fit=crop&w=900&q=85',
+        image: '/Sp2.avif',
       },
       {
         id: 'space-5',
         title: "Gaganyaan's Countdown: India's Path to a Crewed Spaceflight by 2027",
         summary:
           'With an uncrewed test flight carrying a humanoid robot already on the calendar, India is inching closer to its first human spaceflight mission.',
-        image: 'https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?auto=format&fit=crop&w=900&q=85',
+        image: '/Sp3.avif',
       },
     ],
   },
@@ -92,35 +92,35 @@ const TECH_SECTIONS = [
         title: "PhonePe's $15 Billion IPO Bet and the Problem with Zero-Fee UPI",
         summary:
           "India's most valuable private tech company is heading for a public listing even though its core payments business generates almost no direct revenue.",
-        image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=900&q=85',
+        image: '/Fi1.jpg',
       },
       {
         id: 'fintech-2',
         title: "RBI's New Two-Factor Authentication Mandate, Explained",
         summary:
           'A sweeping rule taking effect this year requires every digital transaction in India to use two distinct authentication factors, reshaping how banks and fintechs build their apps.',
-        image: 'https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=900&q=85',
+        image: '/Fe2.avif',
       },
       {
         id: 'fintech-3',
         title: 'From Payments to Profits: How Groww and Pine Labs Rewrote the Playbook',
         summary:
           "Both companies' move toward public listings reflects a broader shift in Indian fintech from growth-at-all-costs to sustainable, profitable business models.",
-        image: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=900&q=85',
+        image: '/Fe4.webp',
       },
       {
         id: 'fintech-4',
         title: "UPI Goes Global: India's Push to Export Its Payments Stack",
         summary:
           "Now live in over a dozen countries and central to a new cross-border payments network, UPI is becoming one of India's most influential technology exports.",
-        image: 'https://images.unsplash.com/photo-1580519542036-c47de6196ba5?auto=format&fit=crop&w=900&q=85',
+        image: '/Np5.webp',
       },
       {
         id: 'fintech-5',
         title: 'The Great Indian Lending Shift',
         summary:
           "Fintech platforms have quietly captured a majority share of India's personal loan market, raising new questions about credit risk and regulatory oversight.",
-        image: 'https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=900&q=85',
+        image: '/Np4.jpg',
       },
     ],
   },
