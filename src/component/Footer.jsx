@@ -24,7 +24,7 @@ const specialLinks = [
   
 ];
 
-const socials = ['◉', '◍', '▶', '◎', 'f', 'in', 'X'];
+const socials = [  'ig', '◎', 'f', 'in', 'X'];
 
 function FooterColumn({ title, children, items }) {
   return (

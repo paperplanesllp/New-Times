@@ -13,6 +13,7 @@ import TopStories from './pages/TopStories';
 
 import Economy from './pages/Economy';
 import NTSpotlight from './pages/NTSpotlight';
+import SpotlightFeaturePage from './pages/SpotlightFeaturePage';
 import More from './pages/More';
 import NewsMakers from './pages/NewsMakers';
 import CoverStories from './pages/CoverStories';
@@ -43,6 +44,10 @@ export default function App() {
        
         <Route path="/economy" element={<Economy />} />
         <Route path="/spotlight" element={<NTSpotlight />} />
+        <Route path="/spotlight/business-features" element={<SpotlightFeaturePage type="business-features" />} />
+        <Route path="/spotlight/recognise-series" element={<SpotlightFeaturePage type="recognise-series" />} />
+        <Route path="/spotlight/startup" element={<SpotlightFeaturePage type="startup" />} />
+        <Route path="/spotlight/cover-feature" element={<SpotlightFeaturePage type="cover-feature" />} />
         <Route path="/more" element={<More />} />
         <Route path="/newsmakers" element={<NewsMakers />} />
         <Route path="/cover-stories" element={<CoverStories />} />

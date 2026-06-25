@@ -17,6 +17,13 @@ export default function Navbar() {
     { label: 'BLOGS', to: '/blogs' },
   ];
 
+  const spotlightLinks = [
+    { label: 'BUSINESS FEATURES', to: '/spotlight/business-features' },
+    { label: 'RECOGNISE SERIES', to: '/spotlight/recognise-series' },
+    { label: 'STARTUP', to: '/spotlight/startup' },
+    { label: 'COVER FEATURE', to: '/spotlight/cover-feature' },
+  ];
+
   const drawerLinks = [
     { label: 'HOME', to: '/' },
     {
@@ -28,7 +35,11 @@ export default function Navbar() {
       ],
     },
     { label: 'TECHNOLOGY', to: '/tech' },
-    { label: 'STARTUP EVENTS', to: '/spotlight' },
+    {
+      label: 'NT SPOTLIGHT',
+      key: 'spotlight',
+      children: spotlightLinks,
+    },
     { label: 'VIDEOS', to: '/more' },
     {
       label: 'RESOURCES',
@@ -128,7 +139,25 @@ export default function Navbar() {
           <Link to="/magazine" className={navLink}>MAGAZINE</Link>
           <Link to="/billionaires" className={navLink}>NT BILLIONAIRES</Link>
           <Link to="/economy" className={navLink}>ECONOMY</Link>
-          <Link to="/spotlight" className={navLink}>
+          <div className="relative items-center self-stretch hidden lg:flex group">
+            <Link to="/spotlight" className={navLink}>
+              <span className={navBadge}>NEW</span>
+              NT SPOTLIGHT
+            </Link>
+            <div className="invisible absolute left-0 top-full w-[250px] border-t border-slate-200 bg-white px-3 pb-1 pt-3 opacity-0 shadow-lg transition group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+              <span className="absolute -top-1 left-3 h-1 w-[42px] bg-red-600" />
+              {spotlightLinks.map((item) => (
+                <Link
+                  key={item.label}
+                  to={item.to}
+                  className="block border-b border-slate-200 py-2.5 font-serif text-[13px] font-bold text-black no-underline last:border-b-0 hover:text-red-600"
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+          <Link to="/spotlight" className={`${navLink} lg:hidden`}>
             <span className={navBadge}>NEW</span>
             NT SPOTLIGHT
           </Link>
