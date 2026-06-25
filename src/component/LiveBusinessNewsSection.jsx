@@ -244,7 +244,7 @@ const liveBusinessContent = {
       title: 'AI Adoption Accelerates as Enterprises Integrate Automation Across Core Business Functions',
       description:
         'Companies are scaling AI use to improve productivity, decision-making, and operational efficiency.',
-      image: 'https://share.google/YOnzKfGY0zboJl3V2',
+      image: '/t2.avif',
     },
     sideStories: [
       {
@@ -252,36 +252,36 @@ const liveBusinessContent = {
         title: 'Generative AI Becomes Core Infrastructure in Product Development Across Global Tech Firms',
         description:
           'AI tools are now embedded directly into software, design, and engineering workflows.',
-        image: 'https://share.google/D9N9yhfhgIuCSeXoh',
+        image: '/t1.webp',
       },
       {
         id: 'ai-side-2',
         title: 'AI Startup Funding Surges as Investors Bet on Next Wave of Intelligent Applications',
         description:
           'Venture capital interest in AI-native startups continues to grow across sectors.',
-        image: 'https://share.google/XHkwVXjpsBbgrSKu9',
+        image: '/aiii.avif',
       },
     ],
     streamStories: [
       {
         id: 'ai-stream-1',
         title: 'Big Tech Expands AI Data Center Investments to Support Next-Generation Models',
-        image: 'https://share.google/JNPZ2Ve0zGpxoMA80',
+        image: '/open.avif',
       },
       {
         id: 'ai-stream-2',
         title: 'AI Talent Demand Hits Record High as Companies Compete for Specialized Engineers',
-        image: 'https://share.google/muKxovBPGe5WJ6mbU',
+        image: '/surge.webp',
       },
       {
         id: 'ai-stream-3',
         title: 'AI-Powered Tools Transform Marketing, Finance, and Customer Experience Industries',
-        image: 'https://share.google/I1XixJVLFHg9vYrEX',
+        image: '/m2.jpg',
       },
       {
         id: 'ai-stream-4',
         title: 'Governments Push AI Regulation Frameworks as Adoption Outpaces Policy',
-        image: 'https://share.google/LjHUdrzC5tJ4NTiYw',
+        image: '/t3.webp',
       },
     ],
   },
