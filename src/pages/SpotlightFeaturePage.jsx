@@ -194,20 +194,12 @@ export default function SpotlightFeaturePage({ type }) {
 
           <div className="space-y-5 border-gray-200 xl:border-l xl:pl-6">
             {page.stories.map((story) => (
-              <article
-                key={story.title}
-                className={`border-b border-gray-100 pb-5 last:border-b-0 ${
-                  story.image ? 'grid gap-4 sm:grid-cols-[128px_minmax(0,1fr)] xl:grid-cols-[116px_minmax(0,1fr)]' : ''
-                }`}
-              >
-                {story.image && <img className="h-32 w-full object-cover sm:h-32 sm:w-32 xl:h-28 xl:w-28" src={story.image} alt={story.title} />}
-                <div>
-                  <span className="mb-2 block font-sans text-[10px] font-extrabold uppercase tracking-[0.12em] text-amber-700">
-                    {story.category}
-                  </span>
-                  <h3 className="m-0 font-serif text-xl font-bold leading-tight text-slate-950 xl:text-lg">{story.title}</h3>
-                  <p className="mt-2 font-sans text-sm leading-6 text-slate-600">{story.excerpt}</p>
-                </div>
+              <article key={story.title} className="border-b border-gray-100 pb-5 last:border-b-0">
+                <span className="mb-2 block font-sans text-[10px] font-extrabold uppercase tracking-[0.12em] text-amber-700">
+                  {story.category}
+                </span>
+                <h3 className="m-0 font-serif text-xl font-bold leading-tight text-slate-950 xl:text-lg">{story.title}</h3>
+                <p className="mt-2 font-sans text-sm leading-6 text-slate-600">{story.excerpt}</p>
               </article>
             ))}
           </div>
