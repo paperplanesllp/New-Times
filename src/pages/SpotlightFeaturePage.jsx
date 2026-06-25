@@ -118,32 +118,29 @@ const spotlightPages = {
   },
   'cover-feature': {
     kicker: 'Cover Feature',
-    title: 'Signature Cover Features From the NT Spotlight Desk',
+    title: 'Flagship Stories Shaping Business and Industry',
     intro:
-      'Big narrative features on founders, companies, sectors, and ideas that deserve deeper treatment and a first-page editorial lens.',
+      'In-depth features exploring influential leaders, transformative companies, emerging sectors, and the ideas driving change across the business landscape.',
     badge: 'Cover Desk',
     lead: {
-      category: 'COVER FEATURE',
-      title: "The New Business Icons Building Across India's Next Decade",
+      category: 'Dilip Shanghvi · Sun Pharmaceutical Industries',
+      title: "India's Biggest-Ever Pharma Bet: Sun Pharma Acquires Organon for $11.75B",
       excerpt:
-        'A closer look at the leaders and companies defining ambition through resilience, technology adoption, and market creation.',
-      image: 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=85',
+        "In the largest overseas acquisition ever made by an Indian pharmaceutical company, Sun Pharma's executive chairman Dilip Shanghvi signed a definitive agreement on April 27 to acquire Organon, the women's health and generics company spun off from Merck in 2021, in an all-cash deal at $14 per share. The transaction values Organon at an enterprise value of $11.75 billion and catapults Sun Pharma into the top 25 global pharma companies with a combined revenue of $12.4 billion. The acquisition hands Sun Pharma leadership in women's health across 140 countries, a portfolio of 70+ products including biosimilars, and the position of 7th largest global biosimilar player. Organon reported $6.2B in 2025 revenue and carries $8.6B in debt, creating a significant integration and balance sheet challenge ahead. The deal is expected to close by early 2027.",
+      image: '/cover.webp',
     },
     stories: [
       {
-        category: 'SPECIAL REPORT',
-        title: 'The Companies Turning Trust Into a Competitive Advantage',
-        excerpt: 'Transparent operations, customer service, and governance are becoming core brand assets.',
+        category: 'Ajoy Chawla · Titan Company (Tata Group)',
+        title: "Titan's Rs 25,000 Crore Year: How a Tata Watchmaker Rewrote Its Story in Just 12 Months",
+        excerpt:
+          'Titan Company, which took 40 years to cross Rs 50,000 crore in annual revenue, added the next Rs 25,000 crore in a single year. FY26 total consolidated revenue reached Rs 88,136 crore, about $9.3B, a 34.4% jump, powered almost entirely by its jewellery segment which contributed Rs 79,660 crore. Soaring gold prices, surging consumer demand, and strategic acquisitions, including a majority stake in Dubai-based Damas Jewellery, drove the momentum. Q4 FY26 alone saw jewellery revenue surge 50% year-on-year. MD Ajoy Chawla called it a landmark year, while flagging caution for FY27 amid geopolitical and macro volatility. What began as a modest 1984 Tata-TIDCO watch venture is now the Tata Group\'s second most valuable company after TCS, with a market cap of Rs 3.6 lakh crore.',
       },
       {
-        category: 'PROFILE',
-        title: 'Inside the Making of a Category Leader',
-        excerpt: 'A cover-style look at how product clarity, timing, and distribution can compound into dominance.',
-      },
-      {
-        category: 'SECTOR FOCUS',
-        title: "Why India's Services Economy Keeps Creating New Champions",
-        excerpt: 'Talent density and digital demand are opening room for new scaled services businesses.',
+        category: 'Reliance & Adani · AI Infrastructure',
+        title: "Reliance and Adani Commit $210 Billion to Own India's AI Era",
+        excerpt:
+          "At India's AI Impact Summit in New Delhi, Mukesh Ambani announced Jio and Reliance will invest Rs 10,000 billion, about $110B, over seven years to build sovereign AI compute infrastructure, including multi-gigawatt data centres, a nationwide edge computing network, and AI services woven into Jio's 526 million-subscriber base. Simultaneously, Gautam Adani pledged $100B through 2035 to build renewable-powered AI data centres, expanding AdaniConnex from 2 GW to 5 GW, and partnered with Jabil to manufacture AI data centre equipment in India. Together, the two commitments, $210B in total, represent the largest private AI infrastructure bet in India's history, designed to make India a cost-competitive global AI hosting destination as the country's stock market valuation crosses $5 trillion. Meanwhile, Jio filed its DRHP with SEBI on June 19 for an IPO expected to raise Rs 27,500 crore.",
       },
     ],
   },
