@@ -168,8 +168,8 @@ export default function Navbar() {
 
       {isMenuOpen && (
         <div className="fixed inset-0 z-[9999] bg-black/65 font-sans text-white">
-          <div className="flex min-h-screen w-full max-w-[463px] flex-col overflow-y-auto bg-black px-6 pb-7 pt-2 shadow-2xl">
-            <div className="relative flex min-h-[70px] items-start justify-center">
+          <div className="flex min-h-screen w-full max-w-[463px] flex-col overflow-y-auto bg-black px-6 pb-8 pt-2 shadow-2xl">
+            <div className="relative flex min-h-[82px] items-start justify-center">
               <Link
                 to="/"
                 onClick={closeMenu}
@@ -198,7 +198,7 @@ export default function Navbar() {
                 <span className="absolute h-[4px] w-9 -rotate-45 rounded bg-current" />
               </button>
             </div>
-            <nav className="mt-1">
+            <nav className="mt-2">
               {drawerLinks.map((item) => {
                 const expanded = item.key ? openDrawerSections[item.key] : false;
                 if (item.children) {
@@ -207,7 +207,7 @@ export default function Navbar() {
                       <button
                         type="button"
                         onClick={() => toggleDrawerSection(item.key)}
-                        className="flex w-full items-center justify-between border-b border-white/10 py-[13px] text-left font-sans text-[16px] font-semibold uppercase leading-none text-white"
+                        className="flex w-full items-center justify-between border-b border-white/10 py-4 text-left font-sans text-[16px] font-semibold uppercase leading-none text-white"
                       >
                         <span>{item.label}</span>
                         <span className="text-[28px] font-semibold leading-none text-pink-600">
@@ -237,14 +237,14 @@ export default function Navbar() {
                     key={item.label}
                     to={item.to}
                     onClick={closeMenu}
-                    className="block border-b border-white/10 py-[15px] font-sans text-[16px] font-semibold uppercase leading-none text-white no-underline"
+                    className="block border-b border-white/10 py-4 font-sans text-[16px] font-semibold uppercase leading-none text-white no-underline"
                   >
                     {item.label}
                   </Link>
                 );
               })}
             </nav>
-            <div className="mt-auto text-center pt-14">
+            <div className="pt-16 text-center">
               <p className="font-sans text-[13px] font-medium uppercase text-zinc-500">
                 Connect With Us
               </p>
