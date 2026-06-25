@@ -245,8 +245,7 @@ const liveBusinessContent = {
       description:
         'Companies are scaling AI use to improve productivity, decision-making, and operational efficiency.',
       url: 'https://share.google/YOnzKfGY0zboJl3V2',
-      image:
-        'https://images.unsplash.com/photo-1677756119517-756a188d2d94?auto=format&fit=crop&w=1000&q=85',
+      image: '/A2.webp',
     },
     sideStories: [
       {
@@ -255,8 +254,7 @@ const liveBusinessContent = {
         description:
           'AI tools are now embedded directly into software, design, and engineering workflows.',
         url: 'https://share.google/D9N9yhfhgIuCSeXoh',
-        image:
-          'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=85',
+        image: '/A1.jpeg',
       },
       {
         id: 'ai-side-2',
@@ -264,8 +262,7 @@ const liveBusinessContent = {
         description:
           'Venture capital interest in AI-native startups continues to grow across sectors.',
         url: 'https://share.google/XHkwVXjpsBbgrSKu9',
-        image:
-          'https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&w=800&q=85',
+        image: '/A3.webp',
       },
     ],
     streamStories: [
@@ -273,29 +270,25 @@ const liveBusinessContent = {
         id: 'ai-stream-1',
         title: 'Big Tech Expands AI Data Center Investments to Support Next-Generation Models',
         url: 'https://share.google/JNPZ2Ve0zGpxoMA80',
-        image:
-          'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=700&q=85',
+        image: '/A4.jpg',
       },
       {
         id: 'ai-stream-2',
         title: 'AI Talent Demand Hits Record High as Companies Compete for Specialized Engineers',
         url: 'https://share.google/muKxovBPGe5WJ6mbU',
-        image:
-          'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=700&q=85',
+        image: '/A5.jpg',
       },
       {
         id: 'ai-stream-3',
         title: 'AI-Powered Tools Transform Marketing, Finance, and Customer Experience Industries',
         url: 'https://share.google/I1XixJVLFHg9vYrEX',
-        image:
-          'https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?auto=format&fit=crop&w=700&q=85',
+        image: '/A6.jpg',
       },
       {
         id: 'ai-stream-4',
         title: 'Governments Push AI Regulation Frameworks as Adoption Outpaces Policy',
         url: 'https://share.google/LjHUdrzC5tJ4NTiYw',
-        image:
-          'https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=700&q=85',
+        image: '/A6.jpg',
       },
     ],
   },
