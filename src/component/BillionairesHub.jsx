@@ -39,8 +39,7 @@ const DUMMY_BILLIONAIRE_STORIES = [
     headline: "From Young Trader to Billionaire Founder: Nikhil Kamath's Self-Made Wealth Story",
     summary:
       'Quote: "Compounding is the most powerful force in wealth creation."',
-    image:
-      'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=1100&q=90',
+    image: '/c2.webp',
   },
   {
     id: 5,
@@ -50,8 +49,7 @@ const DUMMY_BILLIONAIRE_STORIES = [
     headline: "From Startup Vision to Billion-Dollar Mobility Empire: Bhavish Aggarwal's Rise",
     summary:
       'Quote: "The future of mobility will be electric, intelligent, and built in India."',
-    image:
-      'https://images.unsplash.com/photo-1549923746-c502d488b3ea?auto=format&fit=crop&w=1100&q=90',
+    image: '/c1.avif',
   },
   {
     id: 6,
@@ -61,8 +59,7 @@ const DUMMY_BILLIONAIRE_STORIES = [
     headline: 'From Small-Town Founder to Fintech Billionaire: Vijay Shekhar Sharma’s Journey',
     summary:
       'Quote: "Don’t wait for opportunities, create them."',
-    image:
-      'https://images.unsplash.com/photo-1517242027094-631f8c218a0f?auto=format&fit=crop&w=1100&q=90',
+    image: '/c3.png',
   },
   {
     id: 7,
