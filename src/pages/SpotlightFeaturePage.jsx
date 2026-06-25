@@ -44,32 +44,38 @@ const spotlightPages = {
   },
   'recognise-series': {
     kicker: 'Recognition Series',
-    title: 'Recognising Builders, Operators, and Emerging Leaders',
+    title: 'Recognising the People Behind Progress',
     intro:
-      'A spotlight series for people and teams creating measurable impact across entrepreneurship, industry, technology, and public-facing business.',
+      'Showcasing founders, professionals, and teams whose ideas, leadership, and execution are shaping the future of business, technology, and industry.',
     badge: 'Series',
     lead: {
-      category: 'EMERGING LEADERS',
-      title: "The Operators Behind India's Quiet Business Breakthroughs",
+      category: 'FOUNDER MOVES',
+      title: 'Deepinder Goyal Bets $54M on Brain Wearables With Temple',
       excerpt:
-        'From product heads to regional sales leaders, the Recognition Series highlights the people turning ambitious plans into repeatable execution.',
-      image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=85',
+        "Weeks after stepping down as CEO of Zomato/Eternal, Goyal raised $54M in a friends-and-family round for Temple, a wearable startup targeting elite athlete brain health and performance monitoring, at a $190M post-money valuation. Backers include Peak XV Partners, Steadview Capital, Vijay Shekhar Sharma, Kunal Shah, and Zerodha's Kamath brothers. Over 30 Temple employees invested their own capital at the same valuation as external investors.",
+      image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=900&q=85',
     },
     stories: [
       {
-        category: 'FOUNDER PROFILE',
-        title: 'A Manufacturing Founder Betting on Precision and Patience',
-        excerpt: 'The next generation of industrial entrepreneurs is blending legacy know-how with sharper digital systems.',
+        category: 'ENTERPRISE AI',
+        title: 'Mukesh Bansal Launches Nurix AI After Myntra and Cure.fit',
+        excerpt:
+          "One of India's rare double-unicorn builders, Bansal, co-founder of Myntra and Cure.fit, has launched Nurix AI to build intelligent agents for enterprise workflow automation. The startup raised $27M in its maiden round co-led by Accel. Nurix targets large organisations looking to automate complex operational workflows using AI, with Bansal widely regarded as one of the most credible enterprise AI founders in India given his track record scaling two consumer category leaders.",
+        image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=85',
       },
       {
-        category: 'IMPACT',
-        title: 'Women Leaders Building Stronger Local Business Networks',
-        excerpt: 'Regional entrepreneurship groups are becoming powerful channels for hiring, mentorship, and capital access.',
+        category: 'GRASSROOTS INNOVATION',
+        title: "Gautam Adani Launches Vande Bharatam to Find India's Hidden Innovators",
+        excerpt:
+          "On his 64th birthday, June 24, Adani launched a nationwide search program to discover grassroots entrepreneurs across all 36 states and 800+ districts, addressing the fact that over 80% of India's startup founders come from just five cities. Open to all ages and backgrounds, from metro centers to rural communities, the program covers tech, manufacturing, sustainability, agriculture, and traditional crafts. 75 finalists will receive incubation, mentorship, and investment access in Ahmedabad, with a Grand Finale around Independence Day.",
+        image: 'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=85',
       },
       {
-        category: 'INNOVATION',
-        title: 'Product Teams Turning Customer Feedback Into Faster Growth',
-        excerpt: 'Recognition increasingly belongs to teams that listen closely and ship with discipline.',
+        category: 'SECOND ACTS',
+        title: "India's First-Gen Internet Founders Converge on AI for Their Second Acts",
+        excerpt:
+          "A defining pattern of 2026: Deepinder Goyal, Mukesh Bansal, Aman Gupta, Mukund Jha, and Binny Bansal all launched new ventures within the same 18-month window, nearly all converging on AI. Analysts see this as a signal that India's most credible operators believe AI is the decade's defining value-creation opportunity, shifting from distribution and logistics to intelligent automation and consumer AI.",
+        image: 'https://images.unsplash.com/photo-1677756119517-756a188d2d94?auto=format&fit=crop&w=900&q=85',
       },
     ],
   },
@@ -168,7 +174,7 @@ export default function SpotlightFeaturePage({ type }) {
           </p>
         </div>
 
-        <div className="grid gap-8 lg:grid-cols-[minmax(0,1.45fr)_minmax(300px,1fr)]">
+        <div className="grid gap-8 xl:grid-cols-[minmax(0,1.3fr)_minmax(420px,0.9fr)]">
           <article>
             <img className="mb-5 h-[380px] w-full object-cover" src={page.lead.image} alt={page.lead.title} />
             <span className="mb-2 block font-sans text-[11px] font-extrabold uppercase tracking-[0.14em] text-amber-700">
@@ -180,15 +186,20 @@ export default function SpotlightFeaturePage({ type }) {
             <p className="mt-4 font-sans text-[15px] leading-7 text-slate-600">{page.lead.excerpt}</p>
           </article>
 
-          <div className="space-y-5 border-gray-200 lg:border-l lg:pl-6">
+          <div className="space-y-5 border-gray-200 xl:border-l xl:pl-6">
             {page.stories.map((story) => (
-              <article key={story.title} className="grid grid-cols-[96px_minmax(0,1fr)] gap-4 border-b border-gray-100 pb-5 last:border-b-0">
-                {story.image && <img className="h-24 w-24 object-cover" src={story.image} alt={story.title} />}
+              <article
+                key={story.title}
+                className={`border-b border-gray-100 pb-5 last:border-b-0 ${
+                  story.image ? 'grid gap-4 sm:grid-cols-[128px_minmax(0,1fr)] xl:grid-cols-[116px_minmax(0,1fr)]' : ''
+                }`}
+              >
+                {story.image && <img className="h-32 w-full object-cover sm:h-32 sm:w-32 xl:h-28 xl:w-28" src={story.image} alt={story.title} />}
                 <div>
                   <span className="mb-2 block font-sans text-[10px] font-extrabold uppercase tracking-[0.12em] text-amber-700">
                     {story.category}
                   </span>
-                  <h3 className="m-0 font-serif text-xl font-bold leading-tight text-slate-950">{story.title}</h3>
+                  <h3 className="m-0 font-serif text-xl font-bold leading-tight text-slate-950 xl:text-lg">{story.title}</h3>
                   <p className="mt-2 font-sans text-sm leading-6 text-slate-600">{story.excerpt}</p>
                 </div>
               </article>
