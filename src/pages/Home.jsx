@@ -1,6 +1,7 @@
 // src/pages/Home.jsx
 import React, { useState } from 'react';
 import LiveBusinessNewsSection from '../component/LiveBusinessNewsSection';
+import newTimesLogo from '../assets/New Times final-02.png';
 
 import Ticker from '../component/Ticker';
 import MainDashboard from '../component/MainDashboard';
@@ -103,8 +104,7 @@ const topStories = [
     title: 'The New Business Era',
     description:
       'How AI, automation, and global connectivity are creating the next generation of market leaders.',
-    image:
-      'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=700&q=85',
+    image: newTimesLogo,
   },
   {
     id: 2,
@@ -112,8 +112,7 @@ const topStories = [
     title: 'Investors Return to High-Growth Startups',
     description:
       'Venture capital activity is showing renewed momentum across AI, fintech, and enterprise software.',
-    image:
-      'https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=700&q=85',
+    image: '/T1.jpg',
   },
   {
     id: 3,
@@ -121,8 +120,7 @@ const topStories = [
     title: "What Today's CEOs Must Get Right",
     description:
       'Leaders are balancing AI adoption, capital discipline, and talent strategy in a faster operating environment.',
-    image:
-      'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=700&q=85',
+    image: '/T.2.jpg',
   },
   {
     id: 4,
@@ -130,8 +128,7 @@ const topStories = [
     title: 'Emerging Economies Driving Growth',
     description:
       'New markets across Asia, Africa, and the Middle East are attracting global investment.',
-    image:
-      'https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?auto=format&fit=crop&w=700&q=85',
+    image: '/T.3.webp',
   },
   {
     id: 5,
@@ -139,8 +136,7 @@ const topStories = [
     title: 'Technology Is Redefining Efficiency',
     description:
       'Automation and intelligent software are helping businesses achieve more with fewer resources.',
-    image:
-      'https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=700&q=85',
+    image: '/t.4.jpg',
   },
   {
     id: 6,
@@ -148,8 +144,7 @@ const topStories = [
     title: 'Profitability Meets Responsibility',
     description:
       'Companies are increasingly focusing on long-term value creation through sustainable practices.',
-    image:
-      'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=700&q=85',
+    image: '/T.5.jpeg',
   },
   {
     id: 7,
@@ -157,8 +152,7 @@ const topStories = [
     title: 'Operating Models Shift Toward Customer Economics',
     description:
       'Companies are measuring expansion around retention, margin quality, and customer lifetime value.',
-    image:
-      'https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=700&q=85',
+    image: '/T.6.png',
   },
   {
     id: 8,
@@ -166,8 +160,7 @@ const topStories = [
     title: 'Private Capital Searches for Stronger Business Models',
     description:
       'Dealmakers are prioritizing durable cash flow, recurring revenue, and clean operating discipline.',
-    image:
-      'https://images.unsplash.com/photo-1490578474895-699cd4e2cf59?auto=format&fit=crop&w=700&q=85',
+    image: '/T.7.webp',
   },
   {
     id: 9,
@@ -175,8 +168,7 @@ const topStories = [
     title: 'Supply Chains Move From Expansion to Resilience',
     description:
       'Executives are investing in smarter sourcing, better inventory systems, and regional manufacturing depth.',
-    image:
-      'https://images.unsplash.com/photo-1497493292307-31c376b6e479?auto=format&fit=crop&w=700&q=85',
+    image: '/T.8.webp',
   },
   {
     id: 10,
@@ -184,8 +176,7 @@ const topStories = [
     title: 'CFOs Tighten Spending While Protecting Growth Bets',
     description:
       'Finance leaders are trimming low-return expenses while keeping AI, cloud, and customer growth priorities intact.',
-    image:
-      'https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=700&q=85',
+    image: '/T.9.jpg',
   },
   {
     id: 11,
@@ -379,7 +370,7 @@ function CompactTopStories() {
             <img
               src={topStories[0].image}
               alt={topStories[0].title}
-              className="h-28 w-full object-cover transition duration-500 group-hover:scale-[1.04]"
+              className="h-28 w-full object-contain p-4 transition duration-500 group-hover:scale-[1.04]"
             />
           </div>
           <div className="mt-3 text-[10px] font-semibold uppercase tracking-[0.16em] text-slate-500">
