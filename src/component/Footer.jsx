@@ -1,4 +1,5 @@
 import React from 'react';
+import newTimesLogo from '../assets/New Times final-02.png';
 
 const companyLinks = [
   'CONTACT US',
@@ -53,11 +54,18 @@ export default function Footer() {
       <div className="mx-auto max-w-[1350px] px-6 pb-7 pt-10">
         <div className="grid gap-10 lg:grid-cols-[48%_1fr_1fr_1fr]">
           <div>
-            <div className="font-serif text-[38px] font-semibold leading-none text-white">
-              NewTimes
-              <span className="ml-1 align-top font-sans text-[8px] font-semibold uppercase leading-none">
-                India
-              </span>
+            <div className="relative h-12 w-[230px] overflow-hidden" aria-label="New Times">
+              <img
+                src={newTimesLogo}
+                alt="New Times"
+                className="absolute pointer-events-none select-none max-w-none"
+                style={{
+                  width: '265px',
+                  height: '265px',
+                  left: '-14px',
+                  top: '-108px',
+                }}
+              />
             </div>
 
             <p className="mt-[50px] inline-block px-1 font-sans text-[13px] font-medium uppercase leading-[16px] tracking-[0.02em] text-white">
