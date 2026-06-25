@@ -244,7 +244,9 @@ const liveBusinessContent = {
       title: 'AI Adoption Accelerates as Enterprises Integrate Automation Across Core Business Functions',
       description:
         'Companies are scaling AI use to improve productivity, decision-making, and operational efficiency.',
-      image: '/t2.avif',
+      url: 'https://share.google/YOnzKfGY0zboJl3V2',
+      image:
+        'https://images.unsplash.com/photo-1677756119517-756a188d2d94?auto=format&fit=crop&w=1000&q=85',
     },
     sideStories: [
       {
@@ -252,36 +254,48 @@ const liveBusinessContent = {
         title: 'Generative AI Becomes Core Infrastructure in Product Development Across Global Tech Firms',
         description:
           'AI tools are now embedded directly into software, design, and engineering workflows.',
-        image: '/t1.webp',
+        url: 'https://share.google/D9N9yhfhgIuCSeXoh',
+        image:
+          'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=85',
       },
       {
         id: 'ai-side-2',
         title: 'AI Startup Funding Surges as Investors Bet on Next Wave of Intelligent Applications',
         description:
           'Venture capital interest in AI-native startups continues to grow across sectors.',
-        image: '/aiii.avif',
+        url: 'https://share.google/XHkwVXjpsBbgrSKu9',
+        image:
+          'https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&w=800&q=85',
       },
     ],
     streamStories: [
       {
         id: 'ai-stream-1',
         title: 'Big Tech Expands AI Data Center Investments to Support Next-Generation Models',
-        image: '/open.avif',
+        url: 'https://share.google/JNPZ2Ve0zGpxoMA80',
+        image:
+          'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=700&q=85',
       },
       {
         id: 'ai-stream-2',
         title: 'AI Talent Demand Hits Record High as Companies Compete for Specialized Engineers',
-        image: '/surge.webp',
+        url: 'https://share.google/muKxovBPGe5WJ6mbU',
+        image:
+          'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=700&q=85',
       },
       {
         id: 'ai-stream-3',
         title: 'AI-Powered Tools Transform Marketing, Finance, and Customer Experience Industries',
-        image: '/m2.jpg',
+        url: 'https://share.google/I1XixJVLFHg9vYrEX',
+        image:
+          'https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?auto=format&fit=crop&w=700&q=85',
       },
       {
         id: 'ai-stream-4',
         title: 'Governments Push AI Regulation Frameworks as Adoption Outpaces Policy',
-        image: '/t3.webp',
+        url: 'https://share.google/LjHUdrzC5tJ4NTiYw',
+        image:
+          'https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=700&q=85',
       },
     ],
   },
@@ -383,9 +397,15 @@ export default function LiveBusinessNewsSection() {
             {featured.title}
           </h2>
           <p className="mt-4 text-sm leading-7 text-slate-600">{featured.description}</p>
-          <span className="news-source-link mt-4 inline-flex text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-950">
-            Read Story
-          </span>
+          {featured.url ? (
+            <a className="news-source-link mt-4 inline-flex text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-950" href={featured.url} target="_blank" rel="noreferrer">
+              Read Story
+            </a>
+          ) : (
+            <span className="news-source-link mt-4 inline-flex text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-950">
+              Read Story
+            </span>
+          )}
         </article>
       </div>
 
