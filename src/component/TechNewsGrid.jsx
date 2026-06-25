@@ -43,88 +43,6 @@ const TECH_SECTIONS = [
     ],
   },
   {
-    title: 'Defence Tech',
-    accent: 'text-emerald-700',
-    stories: [
-      {
-        id: 'defence-1',
-        title: "India's Private Sector Enters the Missile Business",
-        summary:
-          'A new indigenous missile programme being developed entirely outside DRDO marks the first time a private Indian firm has taken on strategic missile development.',
-        image: 'https://images.unsplash.com/photo-1517976487492-5750f3195933?auto=format&fit=crop&w=900&q=85',
-      },
-      {
-        id: 'defence-2',
-        title: "The Drone Race: Adani, IG Defence, and DRDO's Unmanned Arsenal",
-        summary:
-          'From the Drishti-10 platform to long-range strike drones, private players are rapidly closing the gap with state-run defence manufacturers.',
-        image: 'https://images.unsplash.com/photo-1508444845599-5c89863b1c44?auto=format&fit=crop&w=900&q=85',
-      },
-      {
-        id: 'defence-3',
-        title: "India's $2 Billion Drone Tender and the Battle for Self-Reliance in the Skies",
-        summary:
-          'As the country prepares its largest-ever military drone acquisition, domestic manufacturers are racing to prove they can replace imported fleets.',
-        image: 'https://images.unsplash.com/photo-1521405924368-64c5b84bec60?auto=format&fit=crop&w=900&q=85',
-      },
-      {
-        id: 'defence-4',
-        title: 'From iDEX to ADITI: How Startups Are Reshaping Defence Innovation',
-        summary:
-          "Hundreds of startups and MSMEs have entered India's defence innovation ecosystem, turning prototypes into real procurement contracts worth thousands of crores.",
-        image: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=900&q=85',
-      },
-      {
-        id: 'defence-5',
-        title: 'DRDO Hands Over the Keys to Drone Technology',
-        summary:
-          "In a notable shift in strategy, India's defence research agency is now sharing critical UAV technology with private manufacturers to speed up indigenous production.",
-        image: 'https://images.unsplash.com/photo-1516192518150-0d8fee5425e3?auto=format&fit=crop&w=900&q=85',
-      },
-    ],
-  },
-  {
-    title: 'Semiconductor',
-    accent: 'text-rose-600',
-    stories: [
-      {
-        id: 'semi-1',
-        title: "Tata's Dholera Fab and the ASML Deal That Could Define India's Chip Future",
-        summary:
-          "A landmark partnership with the Dutch lithography giant gives India's first front-end fabrication plant a credible path to producing real silicon.",
-        image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=85',
-      },
-      {
-        id: 'semi-2',
-        title: 'Inside India Semiconductor Mission 2.0: From Chasing Fabs to Building an Ecosystem',
-        summary:
-          "The mission's second phase shifts focus from attracting single factories to building the materials, equipment, and design infrastructure chipmaking actually needs.",
-        image: 'https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?auto=format&fit=crop&w=900&q=85',
-      },
-      {
-        id: 'semi-3',
-        title: "Micron's Sanand Facility: India's First Operational Chip Plant Goes Live",
-        summary:
-          'The $2.75 billion assembly and test facility marks the first time a global memory chipmaker has put real production capacity on Indian soil.',
-        image: 'https://images.unsplash.com/photo-1562408590-e32931084e23?auto=format&fit=crop&w=900&q=85',
-      },
-      {
-        id: 'semi-4',
-        title: "Qualcomm's 2nm Chip Design Milestone, Made in India",
-        summary:
-          "Engineers across Bengaluru, Chennai, and Hyderabad completed a leading-edge chip tape-out entirely in India, signaling the country's growing role in advanced chip design.",
-        image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=900&q=85',
-      },
-      {
-        id: 'semi-5',
-        title: "From Vedanta to Kaynes: Mapping India's Fast-Growing Chip Assembly Network",
-        summary:
-          "A wave of new OSAT and ATMP facilities across Gujarat and beyond is quietly building the packaging and testing backbone of India's semiconductor ambitions.",
-        image: 'https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&w=900&q=85',
-      },
-    ],
-  },
-  {
     title: 'Space',
     accent: 'text-indigo-600',
     stories: [
@@ -247,57 +165,13 @@ const TECH_SECTIONS = [
       },
     ],
   },
-  {
-    title: 'Manufacturing',
-    accent: 'text-amber-700',
-    stories: [
-      {
-        id: 'manufacturing-1',
-        title: "How Tata Electronics Overtook Foxconn to Become Apple's Biggest Manufacturer in India",
-        summary:
-          'A homegrown Indian company now leads iPhone assembly in the country, marking a turning point in how global tech supply chains see Indian manufacturing.',
-        image: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=900&q=85',
-      },
-      {
-        id: 'manufacturing-2',
-        title: "India's iPhone Exports Cross Rs 2 Trillion as PLI Nears Its Final Year",
-        summary:
-          "The single most valuable branded export from India is now the iPhone, a remarkable shift for a product that barely existed in the country's export data a decade ago.",
-        image: 'https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=900&q=85',
-      },
-      {
-        id: 'manufacturing-3',
-        title: "Inside Foxconn's Karnataka Mega-Plant, Where Women Make Up 80% of the Workforce",
-        summary:
-          "The nearly 300-acre facility near Bengaluru is reshaping not just Apple's supply chain but employment patterns in India's electronics sector.",
-        image: 'https://images.unsplash.com/photo-1581092335878-2d9ff86ca2bf?auto=format&fit=crop&w=900&q=85',
-      },
-      {
-        id: 'manufacturing-4',
-        title: 'From Assembly to Manufacturing: Can India Close the Value-Addition Gap with China?',
-        summary:
-          'India still adds far less value per device than China does, and closing that gap is now the central challenge for the next phase of electronics policy.',
-        image: 'https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=900&q=85',
-      },
-      {
-        id: 'manufacturing-5',
-        title: "What Comes After PLI? India's Next Bet on Component Manufacturing",
-        summary:
-          'With the original incentive scheme winding down, a new push aims to move India beyond final assembly and into manufacturing the components themselves.',
-        image: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=900&q=85',
-      },
-    ],
-  },
 ];
 
 const TECH_ADS = [
   { id: 'ai-ad', label: 'AI Cloud', title: 'Scale sovereign AI workloads with managed GPU clusters', metric: '125', unit: 'PFLOPS Ready', accent: 'text-cyan-300' },
-  { id: 'defence-ad', label: 'Secure Systems', title: 'Deploy encrypted edge infrastructure for mission-critical teams', metric: '24/7', unit: 'Secure Ops', accent: 'text-emerald-300' },
-  { id: 'semi-ad', label: 'Chip Design', title: 'Accelerate silicon verification with cloud-native EDA pipelines', metric: '2nm', unit: 'Design Flow', accent: 'text-rose-300' },
   { id: 'space-ad', label: 'Space Data', title: 'Turn satellite imagery into decision-ready enterprise intelligence', metric: '400+', unit: 'Space Startups', accent: 'text-indigo-300' },
   { id: 'fintech-ad', label: 'Fintech Stack', title: 'Build compliant payments and lending products on resilient rails', metric: '18.7B', unit: 'UPI Monthly', accent: 'text-cyan-300' },
   { id: 'ev-ad', label: 'EV Platform', title: 'Monitor battery supply chains, charging networks, and fleet demand', metric: 'FY30', unit: 'EV Roadmap', accent: 'text-green-300' },
-  { id: 'manufacturing-ad', label: 'Factory Cloud', title: 'Connect electronics manufacturing lines with real-time quality data', metric: 'Rs 2T', unit: 'Exports Tracked', accent: 'text-amber-300' },
 ];
 
 function TechAdvertisement({ ad, onClose }) {
