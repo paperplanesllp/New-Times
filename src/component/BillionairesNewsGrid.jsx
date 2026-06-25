@@ -4,7 +4,7 @@ export default function BillionairesNewsGrid() {
   const mainFeature = {
     title: "How Mukesh Ambani Built Reliance Into India's Most Valuable Empire",
     author: "New Times Wealth Desk",
-    image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1200&q=85"
+    image: "/B2.webp"
   };
 
   const sideFeatures = [
@@ -12,13 +12,13 @@ export default function BillionairesNewsGrid() {
       id: 1,
       title: "Gautam Adani's Comeback: Rebuilding Investor Confidence After a Turbulent Year",
       author: "New Times Wealth Desk",
-      image: "https://images.unsplash.com/photo-1560179707-f14e90ef3623?auto=format&fit=crop&w=900&q=85"
+      image: "/B1.webp"
     },
     {
       id: 2,
       title: "The Jindal Family: Steel, Power, and a Legacy of Diversification",
       author: "New Times Wealth Desk",
-      image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?auto=format&fit=crop&w=900&q=85"
+      image: "/bb3.jpg"
     }
   ];
 
@@ -56,7 +56,7 @@ export default function BillionairesNewsGrid() {
       title: "India's Richest Women: Savitri Jindal, Roshni Nadar, and the Rise of Female Wealth",
       excerpt: "While women remain a minority among India's billionaires, a handful of inheritors and entrepreneurs are reshaping the country's wealth landscape. Who they are and how they got there.",
       author: "New Times Wealth Desk",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=520&q=85"
+      image: "/bb4.jpg"
     },
     {
       id: 2,
@@ -64,7 +64,7 @@ export default function BillionairesNewsGrid() {
       title: "Beyond the Billionaires: India's Unicorn Startups Creating the Next Generation of Wealth",
       excerpt: "While legacy conglomerates dominate the rich list today, a wave of startup founders in fintech, e-commerce, and SaaS are positioning themselves as India's next billionaire class.",
       author: "New Times Wealth Desk",
-      image: "https://images.unsplash.com/photo-1556761175-129418cb2dfe?auto=format&fit=crop&w=520&q=85"
+      image: "/bb5.jpg"
     },
     {
       id: 3,
@@ -72,7 +72,7 @@ export default function BillionairesNewsGrid() {
       title: "Why India's Billionaire Count Keeps Climbing - and What It Means for the Economy",
       excerpt: "India added billionaires even as global markets wobbled. A look at the structural forces, including IPOs, stock market growth, and family wealth concentration, driving the country's rapid wealth creation.",
       author: "New Times Wealth Desk",
-      image: "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=520&q=85"
+      image: "/BB6.webp"
     }
   ];
 
