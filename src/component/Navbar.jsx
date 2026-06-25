@@ -5,8 +5,8 @@ import newTimesLogo from '../assets/New Times final-02.png';
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openDrawerSections, setOpenDrawerSections] = useState({
-    stories: false,
-    resources: true,
+    spotlight: false,
+    resources: false,
   });
 
   const moreLinks = [
@@ -26,19 +26,11 @@ export default function Navbar() {
   const drawerLinks = [
     { label: 'HOME', to: '/' },
     {
-      label: 'STORIES',
-      key: 'stories',
-      children: [
-        { label: 'STARTUP SHOWCASE', to: '/top-stories' },
-        { label: 'ENTREPRENEUR STORIES', to: '/newsmakers' },
-      ],
-    },
-    { label: 'TECHNOLOGY', to: '/tech' },
-    {
-      label: 'NT SPOTLIGHT',
+      label: 'SPOTLIGHT',
       key: 'spotlight',
       children: spotlightLinks,
     },
+    { label: 'TECHNOLOGY', to: '/tech' },
     { label: 'VIDEOS', to: '/more' },
     {
       label: 'RESOURCES',
