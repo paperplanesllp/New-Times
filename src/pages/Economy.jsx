@@ -9,8 +9,7 @@ const economyArticles = [
     headline: "India's stock market crosses $5 trillion mark",
     summary:
       'India reclaimed sixth place globally as equity markets surged following the US-Iran peace deal, renewing foreign institutional interest across sectors.',
-    image:
-      'https://images.unsplash.com/photo-1535320903710-d993d3d77d29?auto=format&fit=crop&w=1100&q=90',
+    image: '/e2.jpg',
   },
   {
     id: 2,
@@ -20,8 +19,7 @@ const economyArticles = [
     headline: "NSE IPO set to be India's largest ever",
     summary:
       'SBI alone stands to earn Rs 5,000 crore from its NSE holdings. Major individual investors like Radhakishan Damani are choosing to hold rather than exit.',
-    image:
-      'https://images.unsplash.com/photo-1642543492481-44e81e3914a7?auto=format&fit=crop&w=1100&q=90',
+    image: '/E1.jpg',
   },
   {
     id: 3,
@@ -31,8 +29,7 @@ const economyArticles = [
     headline: 'India hits record Rs 1.78 lakh crore in defence production for FY26',
     summary:
       "Policy incentives and surging global demand drove the milestone. Defence stocks have been among the market's strongest performers year-to-date.",
-    image:
-      'https://images.unsplash.com/photo-1517976487492-5750f3195933?auto=format&fit=crop&w=1100&q=90',
+    image: '/e3.jpg',
   },
   {
     id: 4,
@@ -42,8 +39,7 @@ const economyArticles = [
     headline: 'India-US trade talks resume with broad bilateral agenda',
     summary:
       "A US delegation held intensive talks in New Delhi June 1-4, building on February's deal that cut reciprocal tariffs. Pharma, textiles, digital trade, and energy are key areas.",
-    image:
-      'https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=1100&q=90',
+    image: '/E4.jpg',
   },
   {
     id: 5,
@@ -53,8 +49,7 @@ const economyArticles = [
     headline: 'RBI holds rates, raises inflation outlook; transfers record surplus',
     summary:
       "The June MPC meeting kept rates unchanged, flagged inflation risks, and trimmed growth forecasts. The RBI's Rs 2.86 lakh crore surplus transfer to the government was a record.",
-    image:
-      'https://images.unsplash.com/photo-1601597111158-2fceff292cdc?auto=format&fit=crop&w=1100&q=90',
+    image: '/e5.webp',
   },
   {
     id: 6,
@@ -75,8 +70,7 @@ const economyArticles = [
     headline: 'QIP activity hits its highest level since Q4 2017',
     summary:
       "Twenty qualified institutional placements raised $2.3 billion in Q2 2026, the strongest quarter in nearly a decade, as institutions doubled down on India's growth story.",
-    image:
-      'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1100&q=90',
+    image: '/e6.jpg',
   },
 ];
 
