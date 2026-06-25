@@ -25,6 +25,7 @@ import TechSpace from './pages/TechSpace';
 import IndustrySpace from './pages/IndustrySpace';
 import MoneyTodaySpace from './pages/MoneyTodaySpace';
 import Subscribe from './pages/Subscribe';
+import Search from './pages/Search';
 
 export default function App() {
   const { pathname } = useLocation();
@@ -60,6 +61,7 @@ export default function App() {
         <Route path="/industry" element={<IndustrySpace />} />
         <Route path="/money" element={<MoneyTodaySpace />} />
         <Route path="/subscribe" element={<Subscribe />} /> 
+        <Route path="/search" element={<Search />} />
       </Routes>
 
       {isHomePage && <DailyQuote />}

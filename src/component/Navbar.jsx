@@ -1,9 +1,13 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useRef, useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import newTimesLogo from '../assets/New Times final-02.png';
 
 export default function Navbar() {
+  const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [searchTerm, setSearchTerm] = useState('');
+  const searchInputRef = useRef(null);
   const [openDrawerSections, setOpenDrawerSections] = useState({
     spotlight: false,
   });
@@ -40,6 +44,29 @@ export default function Navbar() {
   const closeMenu = () => {
     setIsMenuOpen(false);
     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+  };
+
+  useEffect(() => {
+    if (isSearchOpen) {
+      searchInputRef.current?.focus();
+    }
+  }, [isSearchOpen]);
+
+  const toggleSearch = () => {
+    setIsSearchOpen((current) => !current);
+  };
+
+  const handleSearchSubmit = (event) => {
+    event.preventDefault();
+    const query = searchTerm.trim();
+
+    if (!query) {
+      searchInputRef.current?.focus();
+      return;
+    }
+
+    navigate(`/search?q=${encodeURIComponent(query)}`);
+    setIsSearchOpen(false);
   };
 
   const toggleDrawerSection = (section) => {
@@ -92,7 +119,7 @@ export default function Navbar() {
 
           <Brand />
 
-          <div className="flex items-center gap-4 sm:gap-5">
+          <div className="flex items-center gap-3 sm:gap-5">
             <Link
               to="/subscribe"
               className="hidden bg-gradient-to-r from-amber-300 via-yellow-500 to-amber-600 px-5 py-2.5 text-sm font-black text-black sm:block"
@@ -100,18 +127,36 @@ export default function Navbar() {
               Subscribe
             </Link>
 
-            <button aria-label="Search" className="text-white">
-              <svg
-                className="w-5 h-5"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2.5"
+            <form onSubmit={handleSearchSubmit} className="flex items-center gap-2">
+              {isSearchOpen && (
+                <input
+                  ref={searchInputRef}
+                  type="search"
+                  value={searchTerm}
+                  onChange={(event) => setSearchTerm(event.target.value)}
+                  placeholder="Search"
+                  className="h-9 w-[150px] border border-white/20 bg-white px-3 font-sans text-sm font-semibold text-black outline-none placeholder:text-slate-500 sm:w-[220px]"
+                  aria-label="Search New Times"
+                />
+              )}
+              <button
+                type="button"
+                onClick={toggleSearch}
+                aria-label={isSearchOpen ? 'Close search' : 'Open search'}
+                className="flex h-10 w-10 items-center justify-center text-white"
               >
-                <circle cx="11" cy="11" r="8" />
-                <line x1="21" y1="21" x2="16.65" y2="16.65" />
-              </svg>
-            </button>
+                <svg
+                  className="w-5 h-5"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.5"
+                >
+                  <circle cx="11" cy="11" r="8" />
+                  <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                </svg>
+              </button>
+            </form>
           </div>
         </div>
 
