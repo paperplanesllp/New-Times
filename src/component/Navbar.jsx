@@ -6,7 +6,6 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openDrawerSections, setOpenDrawerSections] = useState({
     spotlight: false,
-    resources: false,
   });
 
   const moreLinks = [
@@ -32,18 +31,8 @@ export default function Navbar() {
       children: spotlightLinks,
     },
     { label: 'TECHNOLOGY', to: '/tech' },
-    { label: 'VIDEOS', to: '/more' },
-    {
-      label: 'RESOURCES',
-      key: 'resources',
-      children: [
-        { label: 'HOW TO', to: '/blogs' },
-        { label: 'STARTUP HACKS', to: '/industry' },
-      ],
-    },
     { label: 'SUBMIT YOUR STORY', to: '/more' },
     { label: 'BUSINESS ENQUIRY', to: '/subscribe' },
-    { label: 'BULLETIN', to: '/blogs' },
   ];
 
   const drawerSocials = ['f', 't', '◎', '▶', 'in'];
