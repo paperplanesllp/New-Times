@@ -81,32 +81,38 @@ const spotlightPages = {
   },
   startup: {
     kicker: 'Startup',
-    title: 'Startup Stories, Funding Moves, and Founder Playbooks',
+    title: "Spotlighting Tomorrow's Industry Leaders",
     intro:
-      'Coverage for early and growth-stage companies, from funding and product-market fit to hiring, GTM, profitability, and founder decision-making.',
+      'Covering ambitious startups, visionary founders, breakthrough innovations, growth milestones, and the strategies shaping the future of business.',
     badge: 'Startup Watch',
     lead: {
-      category: 'FUNDING',
-      title: 'Startups Return to Focused Growth as Investors Reward Discipline',
+      category: 'AI STARTUP',
+      title: 'Emergent Hits $100M ARR With Plain-Language App Building',
       excerpt:
-        'The funding market is warming selectively, with stronger attention on revenue quality, repeat customers, and clear paths to profitability.',
-      image: 'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=85',
+        'Mukund Jha, CEO, and Madhav Jha, CTO, alumni of Columbia Engineering and Penn State, built Emergent, a vibe-coding platform that lets anyone create full-stack apps using plain language with no code required. Launched in 2024, Emergent hit $50M ARR in 7 months and doubled to $100M ARR in just 30 more days. With 5M+ users across 190 countries and 6M+ apps built, the startup raised $100M total, including a $70M Series B led by SoftBank Vision Fund 2 and Khosla Ventures, tripling its valuation to $300M. Nearly 40% of users are small businesses, and 70% have zero prior coding experience.',
+      image: '/sT1.jpg',
     },
     stories: [
       {
-        category: 'PLAYBOOK',
-        title: 'What Seed Founders Are Changing Before Raising Again',
-        excerpt: 'Founders are entering conversations with cleaner metrics, tighter burn, and sharper customer proof.',
+        category: 'DEEPTECH',
+        title: "Kalam Labs Builds India's Near-Space Drone Edge",
+        excerpt:
+          'Harshit Awasthi, Sashakt Tripathi, and Ahmad Faraaz started Kalam Labs in 2018 as a space edtech platform, then pivoted entirely into stratospheric UAV development, a transition Lightspeed called unexpected and spectacular. Their drones operate at 100,000+ ft, cost 1/10th of competing systems, and are already deployed at Pokhran nuclear test site and the Indo-China Line of Control. After Shark Tank India Season 5, Deepinder Goyal entered talks to invest about $1M as part of a $5-7M funding round. Missions are live with the Indian Army and India Meteorological Department.',
+        image: '/start.avif',
       },
       {
-        category: 'PRODUCT',
-        title: 'AI Tools Give Small Teams Enterprise-Grade Leverage',
-        excerpt: 'Automation is helping compact teams compete on support, analytics, marketing, and workflow speed.',
+        category: 'BIOCOMPUTE',
+        title: 'BioCompute Stores Data in Bacterial DNA and Heads to Silicon Valley',
+        excerpt:
+          "In a tiny Bengaluru lab, founder Anagha Rajesh and her team at BioCompute successfully stored and retrieved data inside bacterial DNA. The startup is pioneering next-generation biological data storage, a field projected to outlast silicon-based storage in density and longevity. Now expanding into Silicon Valley, BioCompute is attracting attention as a symbol of India's shift from software services to hard science and deep-tech IP creation. An Emergent Ventures winner, Rajesh represents a new generation of Indian founders entering fields once dominated by global research giants.",
+        image: '/stam.avif',
       },
       {
-        category: 'ECOSYSTEM',
-        title: 'Incubators Shift From Demo Days to Revenue Support',
-        excerpt: 'The best startup programs are now judged by pilots, customers, and repeatable sales motions.',
+        category: 'STARTUP GEOGRAPHY',
+        title: "India's Startup Geography Shifts Beyond the Big Three Cities",
+        excerpt:
+          "For the first time in India's startup history, nearly 48% of all DPIIT-recognised startups are emerging from Tier II and Tier III cities, not Bengaluru, Mumbai, or Delhi. Lucknow gave us Kalam Labs. Bihar gave us Emergent's twin-founder story. Cities like Jaipur, Bhubaneswar, Surat, and Indore are now hosting some of the fastest-growing startups in deeptech, agritech, and climate solutions.",
+        image: 'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=85',
       },
     ],
   },
