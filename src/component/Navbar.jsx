@@ -12,6 +12,7 @@ export default function Navbar() {
   const moreLinks = [
     { label: 'NEWSLETTERS', to: '/more' },
     { label: 'NEWSMAKERS', to: '/newsmakers' },
+    { label: 'CREATORS ECONOMY', to: '/creators-economy' },
     { label: 'LIFE', to: '/life' },
     { label: 'BLOGS', to: '/blogs' },
   ];
