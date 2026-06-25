@@ -10,35 +10,35 @@ const TECH_SECTIONS = [
         title: "Inside India's AI Impact Summit: How One Event Triggered $200 Billion in Commitments",
         summary:
           "The February 2026 Delhi summit drew Sam Altman, Sundar Pichai, and Dario Amodei, and became the moment global capital started taking India's AI ambitions seriously.",
-        image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=900&q=85',
+        image: '/Te1.webp',
       },
       {
         id: 'ai-2',
         title: "Sarvam AI and the Race to Build India's Own Foundation Models",
         summary:
           'Backed by government-allocated GPU clusters under the IndiaAI Mission, Sarvam is among a handful of startups trying to build sovereign, multilingual large language models instead of layering on top of Western ones.',
-        image: 'https://images.unsplash.com/photo-1677756119517-756a188d2d94?auto=format&fit=crop&w=900&q=85',
+        image: '/Te2.webp',
       },
       {
         id: 'ai-3',
         title: "Krutrim: How Ola's AI Bet Became India's First AI Unicorn",
         summary:
           "Bhavish Aggarwal's pivot from ride-hailing to foundation models turned Krutrim into a symbol of India's ambitions to build, not just consume, AI technology.",
-        image: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=900&q=85',
+        image: '/Te3.jpg',
       },
       {
         id: 'ai-4',
         title: "Neysa's Billion-Dollar Gamble on AI Infrastructure",
         summary:
           "With backing from Blackstone and plans to deploy over 20,000 GPUs, Neysa is betting that India's AI boom needs compute infrastructure more than it needs another chatbot.",
-        image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=900&q=85',
+        image: '/Te4.webp',
       },
       {
         id: 'ai-5',
         title: "Adani's $100 Billion Plan to Power AI Data Centers with Renewable Energy",
         summary:
           "The conglomerate's pledge to build fully renewable-powered AI data centers by 2035 could reshape both India's energy mix and its position in global AI infrastructure.",
-        image: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=900&q=85',
+        image: '/Te5.webp',
       },
     ],
   },
@@ -140,28 +140,28 @@ const TECH_SECTIONS = [
         title: "Ola Electric's Bharat Cell: Can India Build Its Own Battery Supply Chain?",
         summary:
           "As the only company producing lithium-ion cells domestically at commercial scale, Ola's bet on in-house battery manufacturing is being closely watched across the industry.",
-        image: 'https://images.unsplash.com/photo-1593941707874-ef25b8b4a92b?auto=format&fit=crop&w=900&q=85',
+        image: '/Ev4.webp',
       },
       {
         id: 'ev-3',
         title: "The Gigafactory Race: Tata, Reliance, and Amara Raja's Battery Bets",
         summary:
           "Multiple billion-dollar battery plants are under construction across Gujarat and Telangana, each aiming to reduce India's heavy reliance on imported cells.",
-        image: 'https://images.unsplash.com/photo-1565636192335-9c4d9f71ba21?auto=format&fit=crop&w=900&q=85',
+        image: '/Ev3.avif',
       },
       {
         id: 'ev-4',
         title: "Why India's Battery Cell Manufacturing Still Lags Its EV Ambitions",
         summary:
           "Despite billions in incentives, domestic cell production capacity remains a fraction of what India's automakers will eventually need.",
-        image: 'https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=900&q=85',
+        image: '/Ev2.jpg',
       },
       {
         id: 'ev-5',
         title: 'Two Wheels, One Battle: Ather, TVS, and Ola Fight for the E-Scooter Market',
         summary:
           "As India's largest EV segment by volume, electric two-wheelers have become the most competitive and most closely watched battleground in the industry.",
-        image: 'https://images.unsplash.com/photo-1619767886558-efdc259cde1a?auto=format&fit=crop&w=900&q=85',
+        image: '/Ev1.jpg',
       },
     ],
   },
