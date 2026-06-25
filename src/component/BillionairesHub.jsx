@@ -115,7 +115,6 @@ export default function BillionairesHub() {
   const visibleStories = filteredStories.length ? filteredStories : DUMMY_BILLIONAIRE_STORIES;
   const mainFeature = visibleStories[0];
   const sideStories = getStorySlots(visibleStories, 1, 2);
-  const streamStories = getStorySlots(visibleStories, 0, 4);
 
   return (
     <section className="px-4 py-8 font-serif sm:px-6 lg:px-8 text-slate-950">
@@ -174,22 +173,6 @@ export default function BillionairesHub() {
                 Read More
               </button>
             </article>
-          </div>
-
-          <div className="grid gap-6 border-t border-gray-200 pt-7 md:grid-cols-2">
-            {streamStories.map((story, index) => (
-              <article key={`${story.id}-wealth-small-${index}`} className="grid grid-cols-[80px_minmax(0,1fr)] gap-4 border-b border-gray-100 pb-5">
-                <img src={story.image} alt={story.headline} className="object-cover w-20 h-20 rounded-2xl" />
-                <div>
-                  <div className="mb-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-500">{story.issue}</div>
-                  <h4 className="m-0 font-serif text-[15px] font-semibold leading-tight text-slate-950">{story.headline}</h4>
-                  <p className="mt-2 text-xs leading-5 text-slate-600">{story.summary}</p>
-                  <button type="button" className="news-source-link mt-2 inline-flex text-[10px] font-semibold uppercase tracking-[0.18em] text-slate-950">
-                    Read More
-                  </button>
-                </div>
-              </article>
-            ))}
           </div>
         </>
       )}
