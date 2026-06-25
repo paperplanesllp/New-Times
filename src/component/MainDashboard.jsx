@@ -2,36 +2,28 @@ import React from 'react';
 
 const EXECUTIVE_NEWS = [
   {
-    
-    title: 'India’s Startup Ecosystem Enters New Funding Cycle as Late-Stage Investments Regain Momentum',
+    title: "India's Startup Ecosystem Enters New Funding Cycle as Late-Stage Investments Regain Momentum",
     description:
       'Venture capital activity is picking up across growth-stage startups, especially in AI, SaaS, and fintech segments.',
-    image:
-      'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=900&q=85',
+    image: '/b1.png',
   },
   {
-   
     title: 'Global Firms Accelerate India Expansion Plans Amid Strong Talent and AI Capability Growth',
     description:
       'Multinational companies are increasing R&D investments and scaling engineering hubs across major Indian cities.',
-    image:
-      'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=900&q=85',
+    image: '/b2.avif',
   },
   {
-    
     title: 'Private Equity Firms Shift Focus Toward Profitable Consumer and Tech-Driven Businesses',
     description:
       'Investors are prioritizing sustainable growth and strong unit economics over aggressive expansion strategies.',
-    image:
-      'https://images.unsplash.com/photo-1556745757-8d76bdb6984b?auto=format&fit=crop&w=900&q=85',
+    image: '/b3.jpg',
   },
   {
-   
     title: 'Enterprise AI Adoption Surges as Companies Rebuild Operations Around Automation and Efficiency',
     description:
-      'Businesses across industries are integrating AI tools to streamline workflows and reduce operational costs. ',
-    image:
-      'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=85',
+      'Businesses across industries are integrating AI tools to streamline workflows and reduce operational costs.',
+    image: '/b4.png',
   },
 ];
 
@@ -45,11 +37,9 @@ export default function MainDashboard() {
       </div>
 
       <div className="pb-5 border-b border-gray-100 mb-7">
-       
         <h3 className="max-w-4xl m-0 font-serif text-3xl font-semibold leading-tight featured-headline text-slate-950 md:text-4xl">
           High-impact business intelligence and insights for leaders shaping markets and companies.
         </h3>
-        
       </div>
 
       <div className="grid gap-5">
@@ -65,9 +55,6 @@ export default function MainDashboard() {
             />
 
             <div className="flex flex-col justify-center">
-              <div className="text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-500">
-                {story.category}
-              </div>
               <h3 className="m-0 mt-2 font-serif text-2xl font-semibold leading-tight story-headline text-slate-950 md:text-3xl">
                 {story.title}
               </h3>
@@ -81,8 +68,6 @@ export default function MainDashboard() {
           </article>
         ))}
       </div>
-
-      
     </section>
   );
 }
