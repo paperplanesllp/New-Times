@@ -39,8 +39,7 @@ const magazineIssues = [
     description:
       'Indian founders are building across AI, space, semiconductors, biotech, and defense technology as deep-tech ecosystems mature.',
     issue: 'Deep-Tech Brief',
-    image:
-      'https://images.unsplash.com/photo-1535223289827-42f1e9919769?auto=format&fit=crop&w=1100&q=90',
+    image: '/I1.jpg',
     cta: 'Explore Magazine',
   },
   {
@@ -123,8 +122,7 @@ const magazineSubIssues = [
     category: 'Innovation',
     title: 'Industrial Automation Gets a New Layer of Predictive Intelligence',
     issue: 'Factory Systems',
-    image:
-      'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=900&q=85',
+    image: '/i2.webp',
     cta: 'Explore Magazine',
   },
   {
