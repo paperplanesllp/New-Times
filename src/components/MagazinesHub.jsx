@@ -69,6 +69,81 @@ const magazineIssues = [
   },
 ];
 
+const magazineSubIssues = [
+  {
+    id: 'luxury-sub-1',
+    category: 'Luxury',
+    title: 'Heritage Fashion Houses Turn Archives Into New Growth Engines',
+    issue: 'Heritage Strategy',
+    image:
+      'https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=85',
+    cta: 'Read Issue',
+  },
+  {
+    id: 'luxury-sub-2',
+    category: 'Luxury',
+    title: 'Private Members Clubs Become the New Luxury Brand Playground',
+    issue: 'Experience Economy',
+    image:
+      'https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=900&q=85',
+    cta: 'Read Issue',
+  },
+  {
+    id: 'luxury-sub-3',
+    category: 'Luxury',
+    title: 'Luxury Hospitality Bets on Wellness, Design, and Longer Stays',
+    issue: 'Travel Ledger',
+    image:
+      'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=900&q=85',
+    cta: 'Read Issue',
+  },
+  {
+    id: 'luxury-sub-4',
+    category: 'Luxury',
+    title: 'Premium Watchmakers Find Younger Collectors Through Digital Drops',
+    issue: 'Collector Notes',
+    image:
+      'https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=900&q=85',
+    cta: 'Read Issue',
+  },
+  {
+    id: 'innovation-sub-1',
+    category: 'Innovation',
+    title: 'AI Chip Startups Chase Efficiency as Compute Costs Keep Rising',
+    issue: 'Compute Watch',
+    image:
+      'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=85',
+    cta: 'Explore Magazine',
+  },
+  {
+    id: 'innovation-sub-2',
+    category: 'Innovation',
+    title: 'Space-Tech Founders Build Commercial Services Beyond Launches',
+    issue: 'Space Economy',
+    image:
+      'https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=900&q=85',
+    cta: 'Explore Magazine',
+  },
+  {
+    id: 'innovation-sub-3',
+    category: 'Innovation',
+    title: 'Industrial Automation Gets a New Layer of Predictive Intelligence',
+    issue: 'Factory Systems',
+    image:
+      'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=900&q=85',
+    cta: 'Explore Magazine',
+  },
+  {
+    id: 'innovation-sub-4',
+    category: 'Innovation',
+    title: 'Health-Tech Labs Move Faster With Data-Driven Diagnostics',
+    issue: 'Bio Innovation',
+    image:
+      'https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=900&q=85',
+    cta: 'Explore Magazine',
+  },
+];
+
 function getIssueSlots(items, startIndex, count) {
   if (!items.length) {
     return [];
@@ -88,7 +163,12 @@ export default function MagazinesHub() {
   const visibleIssues = filteredIssues.length ? filteredIssues : magazineIssues;
   const mainFeature = visibleIssues[0];
   const sideIssues = getIssueSlots(visibleIssues, 1, 2);
-  const streamIssues = getIssueSlots(visibleIssues, 0, 4);
+  const streamIssues =
+    selectedCategory === 'ALL'
+      ? magazineSubIssues.slice(0, 4)
+      : magazineSubIssues
+          .filter((issue) => issue.category.toUpperCase() === selectedCategory)
+          .slice(0, 4);
 
   return (
     <section className="px-4 py-8 font-serif sm:px-6 lg:px-8 text-slate-950">
