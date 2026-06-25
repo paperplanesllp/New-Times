@@ -6,42 +6,42 @@ const spotlightStories = [
     title: "Meta's India Compute Ambition Puts Data Centers Back in the Spotlight",
     excerpt:
       "As global AI platforms chase massive compute capacity, India is becoming a strategic market for data center buildouts, energy planning, and enterprise AI deployment.",
-    image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=900&q=85',
+    image: '/N1.webp',
   },
   {
     category: 'SOVEREIGN AI',
     title: "Sarvam AI's India-First Models Signal a New Enterprise Software Race",
     excerpt:
       'Indian-language models, voice interfaces, and local deployment needs are creating a new market for AI products built around domestic business workflows.',
-    image: 'https://images.unsplash.com/photo-1677756119517-756a188d2d94?auto=format&fit=crop&w=900&q=85',
+    image: '/N2.avif',
   },
   {
     category: 'GLOBAL PARTNERSHIPS',
     title: 'India Courts Open-Weight AI Partnerships as Global Labs Look East',
     excerpt:
       'Conversations with global AI companies are shifting from model access to deeper partnerships around trust, open systems, compute, and local adoption.',
-    image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=85',
+    image: '/N3.jpg',
   },
   {
     category: 'REAL ESTATE',
     title: 'AI Becomes the New Growth Engine for Commercial Real Estate',
     excerpt:
       'Developers are using predictive analytics, automation, and digital sales systems to improve project planning, tenant targeting, and property management.',
-    image: 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=85',
+    image: '/N4.webp',
   },
   {
     category: 'CREATOR ECONOMY',
     title: "India's Creator Economy Gets an AI Productivity Layer",
     excerpt:
       'AI tools are changing how creators produce, localize, distribute, and monetize content, turning digital media into a more scalable business category.',
-    image: 'https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?auto=format&fit=crop&w=900&q=85',
+    image: '/N5.jpg',
   },
   {
     category: 'BOARDROOM STRATEGY',
     title: 'Why CEOs Are Treating AI as Operating Infrastructure, Not a Side Project',
     excerpt:
       'The next phase of AI adoption is moving from pilots to budgets, governance, vendor selection, and measurable productivity gains across business units.',
-    image: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=85',
+    image: '/N6.jpg',
   },
 ];
 
