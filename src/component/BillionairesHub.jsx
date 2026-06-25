@@ -69,8 +69,7 @@ const DUMMY_BILLIONAIRE_STORIES = [
     headline: 'How Wealth Creators Build Long-Term Power Through Ownership and Focus',
     summary:
       'Great founders compound influence by owning distribution, protecting trust, and staying disciplined through market cycles.',
-    image:
-      'https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1100&q=90',
+    image: '/L1.jpg',
   },
   {
     id: 8,
@@ -80,8 +79,7 @@ const DUMMY_BILLIONAIRE_STORIES = [
     headline: 'Modern CEOs Are Balancing Ambition With Operating Discipline',
     summary:
       'The strongest leaders are scaling with clearer capital allocation, tighter teams, and measurable execution rhythms.',
-    image:
-      'https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1100&q=90',
+    image: '/L3.jpg',
   },
   {
     id: 9,
@@ -91,8 +89,7 @@ const DUMMY_BILLIONAIRE_STORIES = [
     headline: 'Founder-Led Companies Turn Culture Into a Strategic Advantage',
     summary:
       'Culture becomes a business asset when teams move faster, make clearer decisions, and stay aligned around customer outcomes.',
-    image:
-      'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1100&q=90',
+    image: '/L2.jpg',
   },
 ];
 
