@@ -9,8 +9,7 @@ const DUMMY_BILLIONAIRE_STORIES = [
     headline: 'Indian Equities See Strong Wealth Creation as Large-Cap Stocks Hit New Highs',
     summary:
       'Investor wealth is rising as benchmark indices continue to gain on strong corporate earnings and steady foreign inflows.',
-    image:
-      'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1100&q=90',
+    image: '/w2.avif',
   },
   {
     id: 2,
@@ -20,8 +19,7 @@ const DUMMY_BILLIONAIRE_STORIES = [
     headline: 'Mutual Fund Industry Expands as Retail Wealth Participation Reaches Record Levels',
     summary:
       'Systematic investment plans continue to drive long-term wealth creation among Indian retail investors.',
-    image:
-      'https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=1100&q=90',
+    image: '/w1.avif',
   },
   {
     id: 3,
@@ -31,8 +29,7 @@ const DUMMY_BILLIONAIRE_STORIES = [
     headline: 'Real Estate Wealth Growth Accelerates in Major Indian Cities Amid Rising Demand',
     summary:
       'Property values in key urban markets are strengthening, boosting long-term wealth accumulation for investors and developers.',
-    image:
-      'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1100&q=90',
+    image: '/w3.webp',
   },
   {
     id: 4,
