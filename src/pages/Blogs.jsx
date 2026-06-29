@@ -196,6 +196,22 @@ function BlogAdvertisement() {
           Income.
         </p>
       </div>
+      <div className="mt-8 border-t border-slate-300 pt-2 text-center font-sans text-[9px] uppercase tracking-wide text-slate-500">
+        Advertisement
+      </div>
+      <div className="mt-2 flex min-h-[520px] items-center justify-center overflow-hidden bg-[radial-gradient(circle_at_100%_0,#6d19d8_0_19%,transparent_20%),radial-gradient(circle_at_0_100%,#6d19d8_0_18%,transparent_19%),linear-gradient(180deg,#ffffff_0%,#f8fbff_100%)] px-7 text-center">
+        <p className="font-sans text-[34px] font-black leading-tight text-blue-700">
+          Where Market
+          <br />
+          Leaders Came
+          <br />
+          Together To
+          <br />
+          Decode Fixed
+          <br />
+          Income.
+        </p>
+      </div>
     </aside>
   );
 }
