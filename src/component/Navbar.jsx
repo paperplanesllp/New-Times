@@ -20,8 +20,8 @@ export default function Navbar() {
   const spotlightLinks = [
     { label: 'BUSINESS FEATURES', to: '/spotlight/business-features' },
     { label: 'RECOGNITION SERIES', to: '/spotlight/recognise-series' },
-    { label: 'STARTUP', to: '/spotlight/startup' },
-    { label: 'COVER FEATURE', to: '/spotlight/cover-feature' },
+    { label: 'STARTUPS', to: '/spotlight/startup' },
+    { label: 'COVER FEATURES', to: '/spotlight/cover-feature' },
   ];
 
   const drawerLinks = [
@@ -139,7 +139,7 @@ export default function Navbar() {
                 type="button"
                 onClick={toggleSearch}
                 aria-label={isSearchOpen ? 'Close search' : 'Open search'}
-                className="flex h-10 w-10 items-center justify-center text-white"
+                className="flex items-center justify-center w-10 h-10 text-white"
               >
                 <svg
                   className="w-5 h-5"
