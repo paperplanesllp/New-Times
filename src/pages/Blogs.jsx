@@ -49,12 +49,24 @@ const blogSections = [
   },
   {
     title: 'SPORTS',
-    imageTitle: 'Pro Kabaddi League: How a rustic, rural.',
-    imageAuthor: 'Amrit Mathur',
+    imageTitle: "False Dawn at Lord's: India crash out of Women's T20 World Cup, eliminated in group stage for second straight time",
+    imageAuthor: 'New Times Sports Desk',
+    imageExcerpt:
+      "India's Women's T20 World Cup 2026 campaign came to a painful end at Lord's on Sunday. Needing a win to advance, India posted 170/4, with Harmanpreet Kaur's blazing 56 off 27 balls providing late momentum. But Australia, led by Ellyse Perry and Ashleigh Gardner, chased down the target with six wickets in hand and an over to spare. A 100-run Perry-Gardner partnership, a run-out of Smriti Mandhana, costly no-balls, and an unsettled batting combination exposed India's recurring T20 problems. Coming off a historic ODI World Cup triumph, India's T20 fragility remains deeply structural.",
     art: 'sports',
     links: [
-      ["The Indian Athlete Has Arrived: Overview of India's sports", 'Divyanshu Singh'],
-      ['Why leagues need stronger grassroots pathways', 'Kunal Pradhan'],
+      {
+        title: 'Signing Off in Style: India hold nerves in shootout to beat England 3-2, cap a remarkable European resurgence',
+        author: 'New Times Sports Desk',
+        excerpt:
+          "India ended their FIH Men's Hockey Pro League 2025-26 season on a high at London's Lee Valley Hockey and Tennis Centre, earning a shootout victory over England after a goalless 60 minutes. Goalkeeper Mohith HS was the hero, while Abhishek, Shilanand Lakra, and Hardik Singh converted India's attempts. The European leg brought four wins, a draw, and only two defeats on the road, including historic back-to-back victories over Pakistan in London.",
+      },
+      {
+        title: "More History for Ireland: India's T20I dominance ended by a 2-0 series sweep in Belfast",
+        author: 'New Times Sports Desk',
+        excerpt:
+          "Ireland completed a historic 2-0 T20I series sweep over India in Belfast at Stormont Cricket Ground, defeating the reigning T20 World Champions by a single run in the 2nd T20I. Tilak Varma's fighting fifty took India close, but last-ball drama handed Ireland a famous victory. The result ended India's seven-consecutive bilateral T20I series winning streak and signalled that the gap between Associate and Full Members is closing fast.",
+      },
     ],
   },
   {
