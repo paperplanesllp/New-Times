@@ -18,6 +18,7 @@ import CoverStories from './pages/CoverStories';
 import CreatorsEconomy from './pages/CreatorsEconomy';
 import Blogs from './pages/Blogs';
 import Lists from './pages/Lists';
+import NTAwards from './pages/NTAwards';
 
 import TechSpace from './pages/TechSpace';
 import IndustrySpace from './pages/IndustrySpace';
@@ -52,6 +53,7 @@ export default function App() {
         <Route path="/creators-economy" element={<CreatorsEconomy />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/lists" element={<Lists />} />
+        <Route path="/nt-awards" element={<NTAwards />} />
         
         <Route path="/tech" element={<TechSpace />} />
         <Route path="/industry" element={<IndustrySpace />} />

@@ -15,6 +15,7 @@ export default function Navbar() {
   const moreLinks = [
     { label: 'CREATORS ECONOMY', to: '/creators-economy' },
     { label: 'BLOGS', to: '/blogs' },
+    { label: 'NT AWARDS', to: '/nt-awards' },
   ];
 
   const spotlightLinks = [

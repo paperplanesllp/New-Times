@@ -17,6 +17,7 @@ const searchItems = [
   { title: 'Lists', category: 'Page', description: 'Curated rankings, special lists, and editorial collections.', to: '/lists' },
   { title: 'Creators Economy', category: 'More', description: 'The business of influence, creator platforms, and monetization.', to: '/creators-economy' },
   { title: 'Blogs', category: 'More', description: 'Opinion, analysis, explainers, and editorial blogs.', to: '/blogs' },
+  { title: 'NT Awards', category: 'More', description: 'Honours, nominations, and special recognitions from New Times.', to: '/nt-awards' },
   {
     title: 'Generative AI Becomes Core Infrastructure in Product Development Across Global Tech Firms',
     category: 'AI',
