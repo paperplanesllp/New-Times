@@ -3,12 +3,26 @@ import React from 'react';
 const blogSections = [
   {
     title: 'TECHNOLOGY',
-    imageTitle: 'From constraints to commerce.',
-    imageAuthor: 'Thampy Koshy',
+    imageTitle: '$48 Billion and Counting: Amazon bets its AI future on India',
+    imageSubtitle:
+      "How Andy Jassy's New Delhi meeting with PM Modi became the defining AI infrastructure announcement of the year",
+    imageAuthor: 'New Times Tech Desk',
+    imageExcerpt:
+      "On June 25, Amazon CEO Andy Jassy met Prime Minister Narendra Modi in New Delhi and announced an additional $13 billion investment in India's AI and cloud infrastructure, lifting the company's total planned commitment in India to $48 billion through 2030. The funds expand AWS data centre capacity in Mumbai and Hyderabad, with a focus on custom AI chips, managed AI services, and developer tools. Amazon pledged to support more than 3.8 million jobs, enable $80 billion in cumulative e-commerce exports, and bring AI access to 15 million small businesses and 4 million government school students by 2030. The move follows similar commitments from Google and Microsoft, signalling India has become the defining battleground for global cloud and AI infrastructure dominance.",
     art: 'commerce',
     links: [
-      ['India’s semiconductor boom hinges on ecosystem growth', 'Manjunath Jyothiagara'],
-      ['AI adoption needs trust before scale can follow', 'Ritu Sharma'],
+      {
+        title: "India's Own ChatGPT Moment: Sarvam AI hits $1.5B, and the government may buy in",
+        author: 'New Times Tech Desk',
+        excerpt:
+          "Sarvam AI, the Bengaluru startup founded by IIT Madras researchers Vivek Raghavan and Pratyush Kumar, became India's newest AI unicorn on June 15, raising $234 million in its Series B at a $1.5 billion valuation. HCLTech led with $150 million, acquiring just over 10% of the company. Reports later said the Indian government is in talks to convert its compute subsidies under the IndiaAI Mission into a 1-2% equity stake. Sarvam has built 30B and 105B-parameter models trained from scratch in India, open-sourced under Apache 2.0, supporting 22 Indian languages.",
+      },
+      {
+        title: "India's AI Rulebook Takes Shape: Deepfake labels, accountability bills, and a pro-innovation stance",
+        author: 'New Times Tech Desk',
+        excerpt:
+          'India is assembling its AI governance architecture through a deliberate techno-legal mosaic. MeitY notified amendments to intermediary rules introducing labelling obligations for AI-generated or synthetically generated information, including prominent marks, watermarks, user declarations, and automated systems to block harmful synthetic media. Healthcare frameworks such as SAHI and BODH, plus the AI (Ethics and Accountability) Bill, 2025, signal a safeguards-first approach without imposing a blanket ban.',
+      },
     ],
   },
   {
@@ -38,7 +52,7 @@ const blogSections = [
     art: 'markets',
     links: [
       ['How to remove human biases and build an "all-weather"', 'Prashant Tandon'],
-      ["India's Economic Rise: From GDP growth to surge in equities ", 'Rishabh Parakh'],
+      ["India's Economic Rise: From GDP growth to surge in equities", 'Rishabh Parakh'],
     ],
   },
   {
@@ -128,7 +142,7 @@ function RightRail() {
 
       <div className="mt-7 bg-[#faf8ef] px-5 py-5">
         <div className="border-y border-black py-4 text-center font-sans text-[18px] font-black uppercase tracking-wide text-black">
-          On Everyone’s Radar
+          On Everyone's Radar
         </div>
         <article className="border-b mt-7 border-slate-300 pb-7">
           <div className="relative h-[250px] overflow-hidden bg-[linear-gradient(135deg,#93c5fd,#e0f2fe)]">
@@ -182,21 +196,42 @@ export default function Blogs() {
                   <h3 className="mt-4 font-serif text-[27px] font-bold leading-[1.22] text-black">
                     {section.imageTitle}
                   </h3>
+                  {section.imageSubtitle && (
+                    <p className="mt-2 font-serif text-[18px] font-semibold leading-snug text-slate-700">
+                      {section.imageSubtitle}
+                    </p>
+                  )}
                   <p className="mt-3 font-sans text-[15px] font-semibold text-slate-500">
                     By {section.imageAuthor}
                   </p>
+                  {section.imageExcerpt && (
+                    <p className="mt-3 font-sans text-[15px] leading-7 text-slate-700">
+                      {section.imageExcerpt}
+                    </p>
+                  )}
                 </div>
                 <div className="mt-5 border-t border-slate-200">
-                  {section.links.map(([title, author]) => (
-                    <div key={title} className="py-4 border-b border-slate-200">
-                      <h4 className="font-serif text-[20px] font-bold leading-snug text-black">
-                        {title}
-                      </h4>
-                      <p className="mt-2 font-sans text-[15px] font-semibold text-slate-500">
-                        By {author}
-                      </p>
-                    </div>
-                  ))}
+                  {section.links.map((item) => {
+                    const story = Array.isArray(item)
+                      ? { title: item[0], author: item[1] }
+                      : item;
+
+                    return (
+                      <div key={story.title} className="py-4 border-b border-slate-200">
+                        <h4 className="font-serif text-[20px] font-bold leading-snug text-black">
+                          {story.title}
+                        </h4>
+                        <p className="mt-2 font-sans text-[15px] font-semibold text-slate-500">
+                          By {story.author}
+                        </p>
+                        {story.excerpt && (
+                          <p className="mt-3 font-sans text-[14px] leading-6 text-slate-700">
+                            {story.excerpt}
+                          </p>
+                        )}
+                      </div>
+                    );
+                  })}
                 </div>
               </article>
             ))}
