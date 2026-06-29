@@ -32,6 +32,7 @@ export default function Navbar() {
       children: spotlightLinks,
     },
     { label: 'TECHNOLOGY', to: '/tech' },
+    { label: 'LISTS', to: '/lists' },
     { label: 'BUSINESS ENQUIRY', to: '/subscribe' },
   ];
 
@@ -186,6 +187,7 @@ export default function Navbar() {
           <Link to="/tech" className={navLink}>TECH</Link>
           <Link to="/industry" className={navLink}>INDUSTRY</Link>
           <Link to="/money" className={navLink}>MONEY TODAY</Link>
+          <Link to="/lists" className={navLink}>LISTS</Link>
 
           <div className="relative items-center self-stretch hidden lg:flex group">
             <Link to="/creators-economy" className={navLink}>MORE</Link>

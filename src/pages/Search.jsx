@@ -14,6 +14,7 @@ const searchItems = [
   { title: 'Technology', category: 'Page', description: 'Technology, AI, cloud, chips, and cybersecurity coverage.', to: '/tech' },
   { title: 'Industry', category: 'Page', description: 'Industry analysis, company updates, and operating trends.', to: '/industry' },
   { title: 'Money Today', category: 'Page', description: 'Markets, personal finance, investments, and money coverage.', to: '/money' },
+  { title: 'Lists', category: 'Page', description: 'Curated rankings, special lists, and editorial collections.', to: '/lists' },
   { title: 'Creators Economy', category: 'More', description: 'The business of influence, creator platforms, and monetization.', to: '/creators-economy' },
   { title: 'Blogs', category: 'More', description: 'Opinion, analysis, explainers, and editorial blogs.', to: '/blogs' },
   {

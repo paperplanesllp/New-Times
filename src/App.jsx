@@ -17,6 +17,7 @@ import SpotlightFeaturePage from './pages/SpotlightFeaturePage';
 import CoverStories from './pages/CoverStories';
 import CreatorsEconomy from './pages/CreatorsEconomy';
 import Blogs from './pages/Blogs';
+import Lists from './pages/Lists';
 
 import TechSpace from './pages/TechSpace';
 import IndustrySpace from './pages/IndustrySpace';
@@ -50,6 +51,7 @@ export default function App() {
         <Route path="/cover-stories" element={<CoverStories />} />
         <Route path="/creators-economy" element={<CreatorsEconomy />} />
         <Route path="/blogs" element={<Blogs />} />
+        <Route path="/lists" element={<Lists />} />
         
         <Route path="/tech" element={<TechSpace />} />
         <Route path="/industry" element={<IndustrySpace />} />
