@@ -9,6 +9,7 @@ const blogSections = [
     imageAuthor: 'New Times Tech Desk',
     imageExcerpt:
       "On June 25, Amazon CEO Andy Jassy met Prime Minister Narendra Modi in New Delhi and announced an additional $13 billion investment in India's AI and cloud infrastructure, lifting the company's total planned commitment in India to $48 billion through 2030. The funds expand AWS data centre capacity in Mumbai and Hyderabad, with a focus on custom AI chips, managed AI services, and developer tools. Amazon pledged to support more than 3.8 million jobs, enable $80 billion in cumulative e-commerce exports, and bring AI access to 15 million small businesses and 4 million government school students by 2030. The move follows similar commitments from Google and Microsoft, signalling India has become the defining battleground for global cloud and AI infrastructure dominance.",
+    image: '/bl1.avif',
     art: 'commerce',
     links: [
       {
@@ -31,6 +32,7 @@ const blogSections = [
     imageAuthor: 'New Times Health Desk',
     imageExcerpt:
       "On June 29, 2026, Union Health Minister Jagat Prakash Nadda launched India's most ambitious digital health overhaul. Aarogya Setu 2.0 transitions from its pandemic-era roots into a full-scale national health gateway, letting citizens locate nearby hospitals, blood banks, ambulances, and Jan Aushadhi centres, access AB PM-JAY insurance details, and view their complete treatment history. Alongside it, the government launched the National Health Claims Exchange, a digital public infrastructure standardising insurance claim data across public and private programmes. A new WhatsApp-based chatbot, Ayushman Sarathi, allows beneficiaries to interact with PM-JAY services conversationally. The government also rolled out a national Drug Registry and Common LOINC Codes for India to standardise pharmaceutical and diagnostic data across health platforms.",
+    image: '/Bll2.avif',
     art: 'health',
     links: [
       {
@@ -53,6 +55,7 @@ const blogSections = [
     imageAuthor: 'New Times Sports Desk',
     imageExcerpt:
       "India's Women's T20 World Cup 2026 campaign came to a painful end at Lord's on Sunday. Needing a win to advance, India posted 170/4, with Harmanpreet Kaur's blazing 56 off 27 balls providing late momentum. But Australia, led by Ellyse Perry and Ashleigh Gardner, chased down the target with six wickets in hand and an over to spare. A 100-run Perry-Gardner partnership, a run-out of Smriti Mandhana, costly no-balls, and an unsettled batting combination exposed India's recurring T20 problems. Coming off a historic ODI World Cup triumph, India's T20 fragility remains deeply structural.",
+    image: '/Bl3.jpg',
     art: 'sports',
     links: [
       {
@@ -71,22 +74,48 @@ const blogSections = [
   },
   {
     title: 'MARKETS',
-    imageTitle: 'Investing in a high-valuation market',
-    imageAuthor: 'Rishabh Parakh',
+    imageTitle: 'Iran flare-up drags Sensex 372 pts lower on June 29, Pharma and FMCG hold while IT, Energy, Defence bleed',
+    imageAuthor: 'New Times Markets Desk',
+    imageExcerpt:
+      "Indian equity markets opened cautiously on Monday, June 29, after a weekend resumption of US-Iran hostilities revived fears over the Strait of Hormuz. Brent crude climbed 0.8% to $72.57 a barrel in early trade. By mid-session, Sensex had fallen 372 points and Nifty was at 23,946. Nifty IT fell 0.66%, Nifty Energy slid 0.73%, and Nifty India Defence dropped 0.94%. On the bright side, Nifty Healthcare surged 0.91%, with Dr Reddy's up 3.76%, while Nifty Pharma added 0.86%. Kotak Mahindra Bank fell after CEO Ashok Vaswani said he would not seek reappointment beyond December 2026.",
+    image: '/Bl5.avif',
     art: 'markets',
     links: [
-      ['How to remove human biases and build an "all-weather"', 'Prashant Tandon'],
-      ["India's Economic Rise: From GDP growth to surge in equities", 'Rishabh Parakh'],
+      {
+        title: "Week Ahead: Nifty's Doji signal, 24,400 resistance, and why Bank Nifty looks stronger than the headline index",
+        author: 'New Times Markets Desk',
+        excerpt:
+          "Nifty ended last week at 24,056, registering a modest 0.18% weekly gain after a volatile session range of 23,785 to 24,262. The index formed a Doji-like candlestick on the weekly chart and holds above the 100-week EMA, but still trades below the 20-week and 50-week EMAs, keeping resistance at 24,400 and 24,500. Bank Nifty looks stronger, settling at 58,177 with a 0.85% weekly gain and remaining above all key EMAs. Key support levels are Nifty at 23,700-23,800 and Bank Nifty at 57,400-57,500.",
+      },
+      {
+        title: "Pharma and FMCG shine while IT posts a 30% yearly decline, India's sectoral rotation story of June 2026",
+        author: 'New Times Markets Desk',
+        excerpt:
+          "June 2026's market has been defined by sharp sectoral divergence. Nifty IT has fallen 30.06% year-on-year and continues to underperform, weighed by global uncertainty and weakening demand from US clients. Nifty Energy is pressured by oil volatility from the Iran conflict. On the winning side, Nifty Pharma has strengthened on Sun Pharma's $11.75B Organon acquisition and domestic drug demand, while Nifty Healthcare is hitting new highs. Eternal has rallied 26% from its 52-week low, HCLTech completed its $150M Sarvam AI investment, and Torrent Power finalised the Nabha Power acquisition.",
+      },
     ],
   },
   {
     title: 'LUXURY-LIFESTYLE',
-    imageTitle: 'The 3-P strategy: Navigating.',
-    imageAuthor: 'Vinay Golikeri',
+    imageTitle: "The Longevity Shift: Why India's urban 30s and 40s are now building health systems, not buying wellness products",
+    imageAuthor: 'New Times Lifestyle Desk',
+    imageExcerpt:
+      "India is the world's 7th largest wellness economy, growing at 11.3% annually, nearly double the global average. But the bigger story in 2026 is behavioural: affluent urban consumers have stopped buying wellness products and started building wellness systems. Upper-middle-class Indians in their 30s and 40s are investing in metabolic testing, biomarker tracking, longevity-focused diagnostics, and functional fitness. Pilates, mobility training, and functional movement formats are growing faster than traditional gym memberships in Bengaluru, Mumbai, and Gurugram. Neurowellness, forest retreats, and Ayurveda tourism are driving the premium end.",
+    image: '/Bl7.webp',
     art: 'luxury',
     links: [
-      ['How India fashion and lifestyle brands can reinvent their retail...', 'Kearney'],
-      ['Zomato, you have bitten off more than you can chew with video...', 'Abhik Choudhury'],
+      {
+        title: "From Serum to Clinic: India's luxury beauty consumers are now spending lakhs on regenerative treatments",
+        author: 'New Times Lifestyle Desk',
+        excerpt:
+          "India's luxury beauty market is undergoing a fundamental redefinition. Prestige counters and premium serums are being eclipsed by high-end aesthetic clinics offering regenerative treatments, personalised skin diagnostics, and long-term skin health protocols. For high-net-worth consumers, spending Rs 1 lakh or more on clinical beauty treatments is framed as investment in longevity and appearance. Luxury houses are also leaning into barrier-repairing formulations for India's heat-to-monsoon transition, while male consumers now drive nearly 10% of Ayurvedic skincare sales.",
+      },
+      {
+        title: "Luxury Every Day: How India's new consumer class is making premium not a milestone, but a lifestyle",
+        author: 'New Times Lifestyle Desk',
+        excerpt:
+          "India's luxury consumption story in 2026 is one of democratisation. Premium spending is no longer reserved for milestone celebrations; it is woven into everyday life. Brands such as Just Cavalli, Swarovski, Rado, Grand Seiko, and Bateel are seeing traction among younger Indian consumers who want personalised service and meaningful brand experiences. Beyond fashion, urban Indians are spending on smart homes, gated community living, fine dining, entertainment, and international travel with wellness experiences embedded.",
+      },
     ],
   },
 ];
@@ -240,7 +269,15 @@ export default function Blogs() {
                     {section.title}
                   </h2>
                   <div className="mt-8">
-                    <BlogArt type={section.art} />
+                    {section.image ? (
+                      <img
+                        className="h-[240px] w-full object-cover"
+                        src={section.image}
+                        alt={section.imageTitle}
+                      />
+                    ) : (
+                      <BlogArt type={section.art} />
+                    )}
                     <h3 className="mt-4 font-serif text-[27px] font-bold leading-[1.22] text-black">
                       {section.imageTitle}
                     </h3>
