@@ -14,10 +14,7 @@ const searchItems = [
   { title: 'Technology', category: 'Page', description: 'Technology, AI, cloud, chips, and cybersecurity coverage.', to: '/tech' },
   { title: 'Industry', category: 'Page', description: 'Industry analysis, company updates, and operating trends.', to: '/industry' },
   { title: 'Money Today', category: 'Page', description: 'Markets, personal finance, investments, and money coverage.', to: '/money' },
-  { title: 'Newsletters', category: 'More', description: 'Editorial newsletters and weekly digests.', to: '/more' },
-  { title: 'Newsmakers', category: 'More', description: 'People shaping business, policy, markets, and culture.', to: '/newsmakers' },
   { title: 'Creators Economy', category: 'More', description: 'The business of influence, creator platforms, and monetization.', to: '/creators-economy' },
-  { title: 'Life', category: 'More', description: 'Culture, art, lifestyle, interviews, and personal stories.', to: '/life' },
   { title: 'Blogs', category: 'More', description: 'Opinion, analysis, explainers, and editorial blogs.', to: '/blogs' },
   {
     title: 'Generative AI Becomes Core Infrastructure in Product Development Across Global Tech Firms',

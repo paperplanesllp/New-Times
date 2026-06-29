@@ -13,10 +13,7 @@ export default function Navbar() {
   });
 
   const moreLinks = [
-    { label: 'NEWSLETTERS', to: '/more' },
-    { label: 'NEWSMAKERS', to: '/newsmakers' },
     { label: 'CREATORS ECONOMY', to: '/creators-economy' },
-    { label: 'LIFE', to: '/life' },
     { label: 'BLOGS', to: '/blogs' },
   ];
 
@@ -35,7 +32,6 @@ export default function Navbar() {
       children: spotlightLinks,
     },
     { label: 'TECHNOLOGY', to: '/tech' },
-    { label: 'SUBMIT YOUR STORY', to: '/more' },
     { label: 'BUSINESS ENQUIRY', to: '/subscribe' },
   ];
 
@@ -192,7 +188,7 @@ export default function Navbar() {
           <Link to="/money" className={navLink}>MONEY TODAY</Link>
 
           <div className="relative items-center self-stretch hidden lg:flex group">
-            <Link to="/more" className={navLink}>MORE</Link>
+            <Link to="/creators-economy" className={navLink}>MORE</Link>
             <div className="invisible absolute right-0 top-full w-[230px] border-t border-slate-200 bg-white px-3 pb-1 pt-3 opacity-0 shadow-lg transition group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
               <span className="absolute -top-1 right-3 h-1 w-[42px] bg-red-600" />
               {moreLinks.map((item) => (
@@ -207,7 +203,7 @@ export default function Navbar() {
             </div>
           </div>
 
-          <Link to="/more" className={`${navLink} lg:hidden`}>MORE</Link>
+          <Link to="/creators-economy" className={`${navLink} lg:hidden`}>MORE</Link>
         </nav>
       </header>
 

@@ -42,16 +42,6 @@ const blogSections = [
     ],
   },
   {
-    title: 'LIFE',
-    imageTitle: 'How young mothers have become the new face of entrepreneurship ',
-    imageAuthor: 'Rukmini Banerji',
-    art: 'life',
-    links: [
-      ['How my annual health check-up made me cancer-free', 'Luis Miranda'],
-      ["Ravi Kapoor: Citi's equity banker whose retirement is a moments.", 'Shifan'],
-    ],
-  },
-  {
     title: 'LUXURY-LIFESTYLE',
     imageTitle: 'The 3-P strategy: Navigating.',
     imageAuthor: 'Vinay Golikeri',
@@ -69,7 +59,6 @@ function BlogArt({ type }) {
     health: 'linear-gradient(135deg,#0f172a,#38bdf8)',
     sports: 'linear-gradient(135deg,#581c87,#f97316)',
     markets: 'linear-gradient(135deg,#020617,#0ea5e9)',
-    life: 'linear-gradient(135deg,#fef3c7,#ffffff)',
     luxury: 'linear-gradient(135deg,#3b1705,#f59e0b)',
   };
 
@@ -108,13 +97,6 @@ function BlogArt({ type }) {
               <span key={height} className="w-3 bg-sky-400" style={{ height }} />
             ))}
           </div>
-        </>
-      )}
-      {type === 'life' && (
-        <>
-          <div className="absolute bottom-0 left-16 h-[165px] w-[90px] rounded-t-full bg-[#c68b68]" />
-          <div className="absolute bottom-0 right-20 h-[120px] w-[74px] rounded-t-full bg-[#d6a17d]" />
-          <div className="absolute w-20 border-8 right-16 top-12 h-28 border-amber-700" />
         </>
       )}
       {type === 'luxury' && (

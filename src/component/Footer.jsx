@@ -18,7 +18,6 @@ const categoryLinks = [
 ];
 
 const specialLinks = [
-  'NEWSLETTERS',
   'Recognition Series',
   'LISTS',
   'NT AWARDS',

@@ -1,8 +1,8 @@
 import React from 'react';
-import crudeOilImage from './Nn.avif';
-import nseIpoImage from './Nn2.jpg';
-import fiiSelloffImage from './NN4.webp';
-import textileStocksImage from './NN5.webp';
+import crudeOilImage from '../assets/Nn.avif';
+import nseIpoImage from '../assets/Nn2.jpg';
+import fiiSelloffImage from '../assets/NN4.webp';
+import textileStocksImage from '../assets/NN5.webp';
 
 const spotlightPages = {
   'business-features': {

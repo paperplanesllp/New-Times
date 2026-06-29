@@ -14,11 +14,8 @@ import TopStories from './pages/TopStories';
 import Economy from './pages/Economy';
 import NTSpotlight from './pages/NTSpotlight';
 import SpotlightFeaturePage from './pages/SpotlightFeaturePage';
-import More from './pages/More';
-import NewsMakers from './pages/NewsMakers';
 import CoverStories from './pages/CoverStories';
 import CreatorsEconomy from './pages/CreatorsEconomy';
-import Life from './pages/Life';
 import Blogs from './pages/Blogs';
 
 import TechSpace from './pages/TechSpace';
@@ -50,11 +47,8 @@ export default function App() {
         <Route path="/spotlight/recognise-series" element={<SpotlightFeaturePage type="recognise-series" />} />
         <Route path="/spotlight/startup" element={<SpotlightFeaturePage type="startup" />} />
         <Route path="/spotlight/cover-feature" element={<SpotlightFeaturePage type="cover-feature" />} />
-        <Route path="/more" element={<More />} />
-        <Route path="/newsmakers" element={<NewsMakers />} />
         <Route path="/cover-stories" element={<CoverStories />} />
         <Route path="/creators-economy" element={<CreatorsEconomy />} />
-        <Route path="/life" element={<Life />} />
         <Route path="/blogs" element={<Blogs />} />
         
         <Route path="/tech" element={<TechSpace />} />
