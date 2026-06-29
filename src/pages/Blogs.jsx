@@ -27,12 +27,24 @@ const blogSections = [
   },
   {
     title: 'HEALTH',
-    imageTitle: "Mitigating risks for India's doctors with...",
-    imageAuthor: 'Tarun Mathur',
+    imageTitle: "Aarogya Setu 2.0 Launches Today: India's pandemic app is now a full national health gateway",
+    imageAuthor: 'New Times Health Desk',
+    imageExcerpt:
+      "On June 29, 2026, Union Health Minister Jagat Prakash Nadda launched India's most ambitious digital health overhaul. Aarogya Setu 2.0 transitions from its pandemic-era roots into a full-scale national health gateway, letting citizens locate nearby hospitals, blood banks, ambulances, and Jan Aushadhi centres, access AB PM-JAY insurance details, and view their complete treatment history. Alongside it, the government launched the National Health Claims Exchange, a digital public infrastructure standardising insurance claim data across public and private programmes. A new WhatsApp-based chatbot, Ayushman Sarathi, allows beneficiaries to interact with PM-JAY services conversationally. The government also rolled out a national Drug Registry and Common LOINC Codes for India to standardise pharmaceutical and diagnostic data across health platforms.",
     art: 'health',
     links: [
-      ['Mental Health in the Workplace: Why resilience and relevance.', 'Arundhati Bhattacharya'],
-      ['What digital health must get right next', 'Dr Meera Rao'],
+      {
+        title: 'Surgery Without Borders: AIIMS Delhi mentors AIIMS Raipur remotely, live in the operating theatre',
+        author: 'New Times Health Desk',
+        excerpt:
+          "In a landmark collaboration, the Departments of Surgery at AIIMS Delhi and AIIMS Raipur performed India's first tele-mentored robotic-assisted surgery, a cholecystectomy conducted at AIIMS Raipur with real-time remote guidance from Dr. Sunil Chumber at AIIMS Delhi via Intuitive's da Vinci telepresence platform. AIIMS Delhi has completed over 1,000 robotic-assisted surgeries and is now sharing that expertise remotely, helping specialist surgical knowledge reach Tier II and Tier III hospitals in real time.",
+      },
+      {
+        title: "$310 Million and a Sector Coming of Age: India's HealthTech funding story from H1 2026",
+        author: 'New Times Health Desk',
+        excerpt:
+          "India's healthtech startups raised nearly $310 million in the first half of 2026, with capital flowing into AI diagnostics, oncology, genomics, healthcare fintech, rehabilitation, neurotechnology, and precision medicine. AI-powered diagnostics are being deployed in district hospitals, while startups such as Qure.ai, Niramai, Dozee, and NemoCare are winning on clinical evidence. India now hosts 10,000+ DPIIT-recognised health and life sciences startups, with the medical devices market projected to reach $31.85 billion by 2034.",
+      },
     ],
   },
   {
