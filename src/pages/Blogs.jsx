@@ -148,6 +148,29 @@ function BlogArt({ type }) {
   );
 }
 
+function BlogAdvertisement() {
+  return (
+    <aside className="self-start">
+      <div className="border-t border-slate-300 pt-2 text-center font-sans text-[9px] uppercase tracking-wide text-slate-500">
+        Advertisement
+      </div>
+      <div className="mt-2 flex min-h-[360px] items-center justify-center overflow-hidden bg-[radial-gradient(circle_at_0_0,#6d19d8_0_20%,transparent_21%),radial-gradient(circle_at_100%_100%,#6d19d8_0_18%,transparent_19%),linear-gradient(135deg,#ffffff_0%,#f8fbff_100%)] px-7 text-center">
+        <p className="font-sans text-[30px] font-black leading-tight text-blue-700">
+          Where Market
+          <br />
+          Leaders Came
+          <br />
+          Together To
+          <br />
+          Decode Fixed
+          <br />
+          Income.
+        </p>
+      </div>
+    </aside>
+  );
+}
+
 function RightRail() {
   return (
     <aside className="hidden pl-3 border-l border-slate-300 lg:block">
@@ -211,53 +234,56 @@ export default function Blogs() {
 
           <div className="grid mt-8 gap-x-7 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
             {blogSections.map((section) => (
-              <article key={section.title}>
-                <h2 className="border-y border-slate-300 py-5 text-center font-sans text-[25px] font-black uppercase tracking-wide text-slate-800">
-                  {section.title}
-                </h2>
-                <div className="mt-8">
-                  <BlogArt type={section.art} />
-                  <h3 className="mt-4 font-serif text-[27px] font-bold leading-[1.22] text-black">
-                    {section.imageTitle}
-                  </h3>
-                  {section.imageSubtitle && (
-                    <p className="mt-2 font-serif text-[18px] font-semibold leading-snug text-slate-700">
-                      {section.imageSubtitle}
+              <React.Fragment key={section.title}>
+                <article>
+                  <h2 className="border-y border-slate-300 py-5 text-center font-sans text-[25px] font-black uppercase tracking-wide text-slate-800">
+                    {section.title}
+                  </h2>
+                  <div className="mt-8">
+                    <BlogArt type={section.art} />
+                    <h3 className="mt-4 font-serif text-[27px] font-bold leading-[1.22] text-black">
+                      {section.imageTitle}
+                    </h3>
+                    {section.imageSubtitle && (
+                      <p className="mt-2 font-serif text-[18px] font-semibold leading-snug text-slate-700">
+                        {section.imageSubtitle}
+                      </p>
+                    )}
+                    <p className="mt-3 font-sans text-[15px] font-semibold text-slate-500">
+                      By {section.imageAuthor}
                     </p>
-                  )}
-                  <p className="mt-3 font-sans text-[15px] font-semibold text-slate-500">
-                    By {section.imageAuthor}
-                  </p>
-                  {section.imageExcerpt && (
-                    <p className="mt-3 font-sans text-[15px] leading-7 text-slate-700">
-                      {section.imageExcerpt}
-                    </p>
-                  )}
-                </div>
-                <div className="mt-5 border-t border-slate-200">
-                  {section.links.map((item) => {
-                    const story = Array.isArray(item)
-                      ? { title: item[0], author: item[1] }
-                      : item;
+                    {section.imageExcerpt && (
+                      <p className="mt-3 font-sans text-[15px] leading-7 text-slate-700">
+                        {section.imageExcerpt}
+                      </p>
+                    )}
+                  </div>
+                  <div className="mt-5 border-t border-slate-200">
+                    {section.links.map((item) => {
+                      const story = Array.isArray(item)
+                        ? { title: item[0], author: item[1] }
+                        : item;
 
-                    return (
-                      <div key={story.title} className="py-4 border-b border-slate-200">
-                        <h4 className="font-serif text-[20px] font-bold leading-snug text-black">
-                          {story.title}
-                        </h4>
-                        <p className="mt-2 font-sans text-[15px] font-semibold text-slate-500">
-                          By {story.author}
-                        </p>
-                        {story.excerpt && (
-                          <p className="mt-3 font-sans text-[14px] leading-6 text-slate-700">
-                            {story.excerpt}
+                      return (
+                        <div key={story.title} className="py-4 border-b border-slate-200">
+                          <h4 className="font-serif text-[20px] font-bold leading-snug text-black">
+                            {story.title}
+                          </h4>
+                          <p className="mt-2 font-sans text-[15px] font-semibold text-slate-500">
+                            By {story.author}
                           </p>
-                        )}
-                      </div>
-                    );
-                  })}
-                </div>
-              </article>
+                          {story.excerpt && (
+                            <p className="mt-3 font-sans text-[14px] leading-6 text-slate-700">
+                              {story.excerpt}
+                            </p>
+                          )}
+                        </div>
+                      );
+                    })}
+                  </div>
+                </article>
+                {section.title === 'MARKETS' && <BlogAdvertisement />}
+              </React.Fragment>
             ))}
           </div>
         </section>
