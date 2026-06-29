@@ -101,6 +101,9 @@ export default function Navbar() {
   const navBadge =
     'absolute left-1/2 top-1 inline-flex h-[16px] min-w-[38px] -translate-x-1/2 items-center justify-center rounded-full bg-[#ff2d55] px-2 text-[9px] font-black uppercase leading-none tracking-[0.04em] text-white';
 
+  const downArrow =
+    'ml-1.5 mt-0.5 inline-block h-0 w-0 border-l-[4px] border-r-[4px] border-t-[5px] border-l-transparent border-r-transparent border-t-white';
+
   return (
     <>
       <header className="sticky top-0 z-[1000] w-full bg-black font-sans text-white">
@@ -166,7 +169,8 @@ export default function Navbar() {
           <div className="relative items-center self-stretch hidden lg:flex group">
             <Link to="/spotlight" className={navLink}>
               <span className={navBadge}>NEW</span>
-              NT SPOTLIGHT
+              <span>NT SPOTLIGHT</span>
+              <span className={downArrow} aria-hidden="true" />
             </Link>
             <div className="invisible absolute left-0 top-full w-[250px] border-t border-slate-200 bg-white px-3 pb-1 pt-3 opacity-0 shadow-lg transition group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
               <span className="absolute -top-1 left-3 h-1 w-[42px] bg-red-600" />
@@ -191,7 +195,10 @@ export default function Navbar() {
           <Link to="/lists" className={navLink}>LISTS</Link>
 
           <div className="relative items-center self-stretch hidden lg:flex group">
-            <Link to="/creators-economy" className={navLink}>MORE</Link>
+            <Link to="/creators-economy" className={navLink}>
+              <span>MORE</span>
+              <span className={downArrow} aria-hidden="true" />
+            </Link>
             <div className="invisible absolute right-0 top-full w-[230px] border-t border-slate-200 bg-white px-3 pb-1 pt-3 opacity-0 shadow-lg transition group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
               <span className="absolute -top-1 right-3 h-1 w-[42px] bg-red-600" />
               {moreLinks.map((item) => (
