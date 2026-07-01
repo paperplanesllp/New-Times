@@ -23,7 +23,18 @@ const specialLinks = [
   
 ];
 
-const socials = [  'ig',  'f', 'in', 'X'];
+const socials = [
+  {
+    label: 'Instagram',
+    text: 'ig',
+    href: 'https://www.instagram.com/newtimesindia/',
+  },
+  {
+    label: 'LinkedIn',
+    text: 'in',
+    href: 'https://www.newtimes.in/',
+  },
+];
 
 function FooterColumn({ title, children, items }) {
   return (
@@ -73,12 +84,14 @@ export default function Footer() {
             <div className="mt-[46px] flex flex-wrap gap-4">
               {socials.map((item) => (
                 <a
-                  key={item}
-                  href={`#social-${item}`}
+                  key={item.label}
+                  href={item.href}
+                  target="_blank"
+                  rel="noreferrer"
                   className="flex h-[36px] w-[36px] items-center justify-center rounded-full bg-white font-sans text-[14px] font-semibold text-black no-underline"
-                  aria-label={`Social ${item}`}
+                  aria-label={item.label}
                 >
-                  {item}
+                  {item.text}
                 </a>
               ))}
             </div>
