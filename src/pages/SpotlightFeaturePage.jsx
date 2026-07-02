@@ -294,7 +294,11 @@ export default function SpotlightFeaturePage({ type }) {
 
         <div className="grid gap-8 xl:grid-cols-[minmax(0,1.3fr)_minmax(420px,0.9fr)]">
           <article className="group">
-            <img className="mb-5 h-[380px] w-full object-cover" src={page.lead.image} alt={page.lead.title} />
+            <img
+              className={`mb-5 h-[380px] w-full object-cover ${page.lead.slug === 'nikhil-kamath-zerodha-journey' ? 'object-top' : ''}`}
+              src={page.lead.image}
+              alt={page.lead.title}
+            />
             <span className="mb-2 block font-sans text-[11px] font-extrabold uppercase tracking-[0.14em] text-amber-700">
               {page.lead.category}
             </span>
