@@ -44,11 +44,18 @@ const businessFeatureArticles = [
       'The premium tea brand is strengthening its international presence while expanding its footprint in India. Its global-first strategy continues to drive strong revenue growth and brand recognition.',
     image: nseIpoImage,
     body: [
-      "Vahdam India is sharpening its global expansion strategy as it targets Rs 500 crore in revenue. The premium tea and wellness brand has built its identity around taking Indian-origin products to international consumers while keeping the supply chain closely connected to domestic growers.",
-      "The company has focused on digital-first distribution, premium packaging, and direct access to overseas customers. This approach helped Vahdam stand out in crowded international markets where Indian tea has historically been sold more as a commodity than a branded experience.",
-      "Global markets remain central to the company's growth story, but India is becoming an increasingly important part of the next phase. Rising demand for premium teas, wellness blends, and gifting-led consumption gives the brand room to deepen its domestic presence.",
-      "For Vahdam, the challenge now is execution at scale. The brand must keep quality consistent, manage costs, and expand retail visibility while protecting the premium positioning that helped it gain recognition abroad.",
-      "Its journey reflects a larger shift in Indian consumer brands: companies are no longer building only for local markets first. Many are launching with international ambition from day one, using digital channels, strong storytelling, and differentiated products to compete globally.",
+      "How Bala Sarda Built an Indian Wellness Brand into a Global Direct-to-Consumer Success Story",
+      "India has long been known as one of the world's largest producers of tea and spices. Yet for decades, much of the value created by these products was captured by international brands rather than Indian businesses. Vahdam India is changing that narrative. By combining premium Indian products with a digital-first, direct-to-consumer strategy, the company has emerged as one of India's fastest-growing global wellness brands.",
+      "Founded by entrepreneur Bala Sarda, Vahdam India is now aiming to cross Rs 500 crore in annual revenue, driven by strong international demand for premium teas, herbal infusions, spices, and wellness products. Its growth reflects not only changing consumer preferences but also India's increasing ability to build globally recognized consumer brands.",
+      "Bala Sarda launched Vahdam India with a simple but ambitious vision: create an Indian brand that sells directly to consumers worldwide instead of relying on traditional export channels.",
+      "Historically, India's tea industry has supplied raw products to international companies, which package, market, and sell them under foreign labels. While India remained one of the largest producers, much of the value addition happened outside the country. Vahdam sought to change this model.",
+      "The company sources premium teas directly from Indian plantations and delivers them to customers across the globe with minimal intermediaries. This approach allows the freshness of the products to be preserved while enabling better returns for growers and creating stronger value for consumers.",
+      "Unlike many traditional consumer companies that expand through physical retail first, Vahdam adopted a digital-first strategy from the beginning. Its products are sold through its own website as well as leading global e-commerce platforms, allowing the company to reach customers in North America, Europe, Australia, the Middle East, and Asia without investing heavily in physical stores.",
+      "Although premium tea remains its flagship category, Vahdam has significantly diversified its portfolio over the past few years. The company now offers herbal infusions, turmeric blends, Ayurvedic wellness products, superfoods, spices, and gift collections designed for international consumers seeking natural and health-focused alternatives.",
+      "One of Vahdam India's biggest competitive advantages lies in its direct-to-consumer business model. Products move directly from Indian producers to international consumers, ensuring faster delivery, better quality control, and higher operational efficiency.",
+      "Recognizing the growing importance of responsible business, Vahdam has integrated sustainability into its strategy through recyclable packaging, ethical sourcing practices, and initiatives aimed at improving the livelihoods of tea-growing communities.",
+      "Vahdam's goal of achieving Rs 500 crore in annual revenue reflects both its confidence in international demand and the scalability of its business model. To reach this milestone, the company plans to strengthen its presence in existing international markets while expanding into new geographies with high demand for premium wellness products.",
+      "As international demand for premium wellness products continues to rise, Vahdam is well positioned to benefit from long-term trends in health-conscious consumption, digital commerce, and sustainable living.",
     ],
   },
   {
@@ -59,11 +66,18 @@ const businessFeatureArticles = [
       'What began as a Jaipur startup has evolved into an international technology partner serving businesses worldwide. The company credits customer trust and innovation for its decade-long success.',
     image: fiiSelloffImage,
     body: [
-      "HabileLabs has completed 10 years of growth, marking its evolution from a Jaipur-based startup into a technology services company with international reach. The milestone reflects the growing strength of India's regional technology hubs beyond the traditional metro centres.",
-      "The company has built its business around software engineering, product development, enterprise solutions, and digital transformation services. Over the years, it has worked with clients looking to modernize technology systems, improve digital products, and scale engineering capacity.",
-      "Customer trust has been central to HabileLabs' expansion. In services businesses, long-term relationships often matter as much as technical capability, and the company credits consistent delivery and innovation for its decade-long progress.",
-      "Its growth also mirrors a broader industry pattern. Businesses worldwide are seeking reliable technology partners that can combine engineering depth with flexibility, speed, and cost efficiency. Indian firms outside the largest technology cities are increasingly competing for this demand.",
-      "As HabileLabs enters its next phase, global delivery, talent development, and deeper specialization will likely shape its expansion. The company now stands as an example of how regional startups can grow into international technology partners through sustained execution.",
+      "From a Jaipur Startup to a Global Digital Engineering Partner, HabileLabs Enters Its Next Decade with an AI-First Vision",
+      "Completing a decade in business is a significant milestone for any technology company. In an industry where rapid innovation, changing customer expectations, and intense competition define success, surviving and continuing to grow for ten years reflects resilience, adaptability, and consistent execution.",
+      "HabileLabs, the Jaipur-founded technology company specializing in digital engineering and enterprise transformation, has reached this landmark while expanding its presence across international markets.",
+      "Over the past decade, HabileLabs has evolved from a regional technology startup into a global digital engineering partner serving clients across multiple industries. Through investments in cloud computing, artificial intelligence, enterprise software development, automation, and digital transformation, the company has established itself as a trusted technology provider.",
+      "Starting operations in Jaipur, the company focused on building strong engineering capabilities rather than pursuing rapid expansion. During its early years, the emphasis was placed on understanding client requirements, delivering customized technology solutions, and building long-term relationships through consistent execution.",
+      "Recognizing changes in technology consulting, HabileLabs broadened its capabilities beyond traditional application development. Today, its portfolio includes digital engineering, enterprise application development, cloud solutions, artificial intelligence, automation, data analytics, quality engineering, DevOps, and digital consulting.",
+      "The global pandemic accelerated digital transformation across industries, increasing demand for partners capable of supporting cloud migration, remote collaboration, cybersecurity, automation, and AI-powered business solutions.",
+      "Artificial intelligence has become one of the defining technologies of the current decade. HabileLabs has expanded its capabilities in intelligent automation, machine learning, predictive analytics, and AI-powered enterprise solutions to help businesses improve efficiency and unlock new growth opportunities.",
+      "One of the defining characteristics of HabileLabs' growth has been its emphasis on customer collaboration. Instead of offering standardized technology solutions, the company works closely with clients to understand specific business challenges before designing customized digital strategies.",
+      "Over the past ten years, HabileLabs has also focused on building a culture that encourages continuous learning, collaboration, and technical excellence. As technologies evolve rapidly, engineers are expected to regularly update their skills in cloud computing, AI, cybersecurity, software architecture, and emerging frameworks.",
+      "As demand for digital engineering services has grown internationally, HabileLabs has expanded its reach beyond India. Global expansion has strengthened its ability to compete with larger consulting firms by offering flexible engineering teams, specialized expertise, and customer-focused delivery models.",
+      "Its tenth anniversary marks not only a celebration of past accomplishments but also the beginning of a new chapter. With AI, cloud computing, and enterprise transformation shaping the future of business, HabileLabs enters its second decade positioned to support organizations seeking scalable, technology-driven growth.",
     ],
   },
   {
@@ -74,11 +88,19 @@ const businessFeatureArticles = [
       'Founder Hari Menon has stepped down as CEO as the company sharpens its focus on profitability and quick commerce. The leadership change reflects the next phase of growth under new management.',
     image: textileStocksImage,
     body: [
-      "BigBasket has entered a new leadership chapter after founder Hari Menon stepped down as CEO. The transition comes at a crucial moment for the online grocery company as quick commerce, profitability, and operational efficiency reshape the sector.",
-      "Menon played a defining role in building BigBasket into one of India's best-known grocery platforms. Under his leadership, the company scaled across cities, developed supply chain depth, and became a major player in online grocery before the quick-commerce wave transformed consumer expectations.",
-      "The next phase will require sharper execution. Grocery delivery is a high-frequency but operationally demanding business, and companies must balance speed, assortment, margins, inventory control, and customer retention.",
-      "BigBasket's leadership transition signals a move toward a more focused operating model. As competition intensifies, the company will need to strengthen its quick-commerce capabilities while improving profitability across core grocery operations.",
-      "The change also reflects the maturity of India's digital commerce sector. Founder-led businesses are increasingly moving into professionalized growth phases where systems, discipline, and execution depth matter as much as early-market vision.",
+      "Tata Digital's online grocery platform enters a new phase as new leadership takes charge amid India's fast-growing quick-commerce race.",
+      "India's online grocery industry is undergoing one of its biggest transformations since the rise of e-commerce. Consumer expectations have shifted dramatically, with faster deliveries, wider product selection, and seamless digital experiences becoming the new standard.",
+      "At the center of this evolution is BigBasket, one of India's largest online grocery platforms, which has entered a new leadership era following the transition of long-time CEO and co-founder Hari Menon.",
+      "After leading the company for more than a decade, Hari Menon has stepped down as Chief Executive Officer, passing the responsibility to former Amazon executive Amit Nanda. Menon will continue contributing as a member of the company's board alongside co-founder Vipul Parekh.",
+      "Founded in 2011 by Hari Menon and his co-founders, BigBasket was established with a simple mission: make grocery shopping easier for Indian households. The company introduced a platform that allowed customers to order fresh produce, packaged foods, household essentials, dairy products, and personal care items directly from their homes.",
+      "Building consumer trust was not easy. Unlike electronics or fashion, groceries require consistent quality, freshness, and reliable delivery. BigBasket invested heavily in supply chain infrastructure, warehousing, inventory management, and delivery logistics to ensure customers received fresh products on time.",
+      "A major turning point came when Tata Digital acquired a majority stake in the company. The acquisition strengthened BigBasket's financial position while integrating it into one of India's most respected business groups.",
+      "With Amit Nanda taking over as CEO, the company enters a new chapter focused on operational efficiency, digital innovation, and faster execution. His experience scaling technology-driven businesses is increasingly important in today's competitive commerce landscape.",
+      "India's retail landscape has changed dramatically with the rapid growth of quick commerce. Consumers increasingly expect groceries and daily essentials to be delivered within minutes rather than hours or days.",
+      "BigBasket has responded by strengthening its quick-commerce offerings while continuing to leverage its established supply chain infrastructure. The company is expanding dark stores, improving inventory management systems, and investing in technology that enables more efficient order processing and faster deliveries.",
+      "Competition within India's grocery and quick-commerce sectors continues to accelerate. Rather than competing solely on price, BigBasket has focused on maintaining product quality, reliable delivery, and a broad product assortment.",
+      "Future investments are expected to focus on AI-powered recommendations, smarter warehouse management, improved route optimization, and greater integration across Tata Digital's broader ecosystem.",
+      "The transition from Hari Menon's leadership to Amit Nanda's marks a strategic shift designed to prepare the company for its next decade of growth. With a strong foundation and the backing of Tata Digital, BigBasket now enters a new era focused on innovation, scalability, and sustainable growth.",
     ],
   },
 ];
@@ -280,17 +302,28 @@ export default function SpotlightFeaturePage({ type }) {
               {page.lead.category}
             </span>
             {page.lead.slug ? (
-              <Link to={`/spotlight/business-features/${page.lead.slug}`} className="no-underline">
-                <h2 className="m-0 font-serif text-3xl font-bold leading-tight text-slate-950 underline-offset-4 group-hover:underline">
+              <>
+                <Link to={`/spotlight/business-features/${page.lead.slug}`} className="no-underline">
+                  <h2 className="m-0 font-serif text-3xl font-bold leading-tight text-slate-950 underline-offset-4 group-hover:underline">
+                    {page.lead.title}
+                  </h2>
+                </Link>
+                <p className="mt-4 font-sans text-[15px] leading-7 text-slate-600">{page.lead.excerpt}</p>
+                <Link
+                  to={`/spotlight/business-features/${page.lead.slug}`}
+                  className="mt-5 inline-flex bg-slate-950 px-5 py-3 font-sans text-[11px] font-bold uppercase tracking-[0.18em] text-white no-underline transition hover:bg-red-700"
+                >
+                  Read More
+                </Link>
+              </>
+            ) : (
+              <>
+                <h2 className="m-0 font-serif text-3xl font-bold leading-tight text-slate-950">
                   {page.lead.title}
                 </h2>
-              </Link>
-            ) : (
-              <h2 className="m-0 font-serif text-3xl font-bold leading-tight text-slate-950">
-                {page.lead.title}
-              </h2>
+                <p className="mt-4 font-sans text-[15px] leading-7 text-slate-600">{page.lead.excerpt}</p>
+              </>
             )}
-            <p className="mt-4 font-sans text-[15px] leading-7 text-slate-600">{page.lead.excerpt}</p>
           </article>
 
           <div className="space-y-5 border-gray-200 xl:border-l xl:pl-6">
@@ -300,13 +333,24 @@ export default function SpotlightFeaturePage({ type }) {
                   {story.category}
                 </span>
                 {story.slug ? (
-                  <Link to={`/spotlight/business-features/${story.slug}`} className="no-underline">
-                    <h3 className="m-0 font-serif text-xl font-bold leading-tight text-slate-950 underline-offset-4 group-hover:underline xl:text-lg">{story.title}</h3>
-                  </Link>
+                  <>
+                    <Link to={`/spotlight/business-features/${story.slug}`} className="no-underline">
+                      <h3 className="m-0 font-serif text-xl font-bold leading-tight text-slate-950 underline-offset-4 group-hover:underline xl:text-lg">{story.title}</h3>
+                    </Link>
+                    <p className="mt-2 font-sans text-sm leading-6 text-slate-600">{story.excerpt}</p>
+                    <Link
+                      to={`/spotlight/business-features/${story.slug}`}
+                      className="mt-4 inline-flex border border-slate-950 px-4 py-2 font-sans text-[10px] font-bold uppercase tracking-[0.16em] text-slate-950 no-underline transition hover:bg-slate-950 hover:text-white"
+                    >
+                      Read More
+                    </Link>
+                  </>
                 ) : (
-                  <h3 className="m-0 font-serif text-xl font-bold leading-tight text-slate-950 xl:text-lg">{story.title}</h3>
+                  <>
+                    <h3 className="m-0 font-serif text-xl font-bold leading-tight text-slate-950 xl:text-lg">{story.title}</h3>
+                    <p className="mt-2 font-sans text-sm leading-6 text-slate-600">{story.excerpt}</p>
+                  </>
                 )}
-                <p className="mt-2 font-sans text-sm leading-6 text-slate-600">{story.excerpt}</p>
               </article>
             ))}
           </div>
