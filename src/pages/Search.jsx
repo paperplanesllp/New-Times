@@ -3,6 +3,7 @@ import { Link, useSearchParams } from 'react-router-dom';
 
 const searchItems = [
   { title: 'Home', category: 'Page', description: 'Latest New Times homepage coverage.', to: '/' },
+  { title: 'About', category: 'Page', description: 'Learn about New Times, our coverage, purpose, and editorial voice.', to: '/about' },
   { title: 'Magazine', category: 'Page', description: 'New Times magazine features and issues.', to: '/magazine' },
   { title: 'NT Billionaires', category: 'Page', description: 'Billionaire rankings, profiles, and wealth coverage.', to: '/billionaires' },
   { title: 'Economy', category: 'Page', description: 'Economic policy, markets, growth, and macro coverage.', to: '/economy' },

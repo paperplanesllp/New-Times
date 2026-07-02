@@ -26,6 +26,7 @@ import MoneyTodaySpace from './pages/MoneyTodaySpace';
 import Subscribe from './pages/Subscribe';
 import Search from './pages/Search';
 import PartnerWithUs from './pages/PartnerWithUs';
+import About from './pages/About';
 
 export default function App() {
   const { pathname } = useLocation();
@@ -39,6 +40,7 @@ export default function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
     
         <Route path="/magazine" element={<Magazines />} />
         <Route path="/billionaires" element={<Billionaires />} />
