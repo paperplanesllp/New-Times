@@ -1,9 +1,6 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import nikhilKamathImage from '../assets/kk.jpg';
-import nseIpoImage from '../assets/Nn2.jpg';
-import fiiSelloffImage from '../assets/NN4.webp';
-import textileStocksImage from '../assets/NN5.webp';
 
 const businessFeatureArticles = [
   {
@@ -42,7 +39,7 @@ const businessFeatureArticles = [
     title: 'Vahdam India Targets Rs 500 Crore Revenue Through Global Expansion',
     excerpt:
       'The premium tea brand is strengthening its international presence while expanding its footprint in India. Its global-first strategy continues to drive strong revenue growth and brand recognition.',
-    image: nseIpoImage,
+    image: '/vah.jpg',
     body: [
       "How Bala Sarda Built an Indian Wellness Brand into a Global Direct-to-Consumer Success Story",
       "India has long been known as one of the world's largest producers of tea and spices. Yet for decades, much of the value created by these products was captured by international brands rather than Indian businesses. Vahdam India is changing that narrative. By combining premium Indian products with a digital-first, direct-to-consumer strategy, the company has emerged as one of India's fastest-growing global wellness brands.",
@@ -64,7 +61,7 @@ const businessFeatureArticles = [
     title: 'HabileLabs Marks 10 Years of Growth as It Expands Global Technology Services',
     excerpt:
       'What began as a Jaipur startup has evolved into an international technology partner serving businesses worldwide. The company credits customer trust and innovation for its decade-long success.',
-    image: fiiSelloffImage,
+    image: '/habi.jpg',
     body: [
       "From a Jaipur Startup to a Global Digital Engineering Partner, HabileLabs Enters Its Next Decade with an AI-First Vision",
       "Completing a decade in business is a significant milestone for any technology company. In an industry where rapid innovation, changing customer expectations, and intense competition define success, surviving and continuing to grow for ten years reflects resilience, adaptability, and consistent execution.",
@@ -86,7 +83,7 @@ const businessFeatureArticles = [
     title: 'BigBasket Begins New Leadership Chapter With CEO Transition',
     excerpt:
       'Founder Hari Menon has stepped down as CEO as the company sharpens its focus on profitability and quick commerce. The leadership change reflects the next phase of growth under new management.',
-    image: textileStocksImage,
+    image: '/big.avif',
     body: [
       "Tata Digital's online grocery platform enters a new phase as new leadership takes charge amid India's fast-growing quick-commerce race.",
       "India's online grocery industry is undergoing one of its biggest transformations since the rise of e-commerce. Consumer expectations have shifted dramatically, with faster deliveries, wider product selection, and seamless digital experiences becoming the new standard.",
@@ -331,6 +328,15 @@ export default function SpotlightFeaturePage({ type }) {
           <div className="space-y-5 border-gray-200 xl:border-l xl:pl-6">
             {page.stories.map((story) => (
               <article key={story.title} className="group border-b border-gray-100 pb-5 last:border-b-0">
+                {story.image && (
+                  <Link to={story.slug ? `/spotlight/business-features/${story.slug}` : '#'} className="mb-4 block overflow-hidden bg-slate-100 no-underline">
+                    <img
+                      className="h-40 w-full object-cover transition duration-500 group-hover:scale-[1.03]"
+                      src={story.image}
+                      alt={story.title}
+                    />
+                  </Link>
+                )}
                 <span className="mb-2 block font-sans text-[10px] font-extrabold uppercase tracking-[0.12em] text-amber-700">
                   {story.category}
                 </span>
