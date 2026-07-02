@@ -424,7 +424,7 @@ export default function Home() {
                   <img
                     src={nikhilKamathImage}
                     alt="Nikhil Kamath Zerodha business feature"
-                    className="h-[240px] w-full object-cover object-top transition duration-500 group-hover:scale-[1.03] sm:h-[330px] lg:h-[400px]"
+                    className="h-[240px] w-full object-contain object-center transition duration-500 group-hover:scale-[1.03] sm:h-[330px] lg:h-[400px]"
                   />
                 </div>
 
