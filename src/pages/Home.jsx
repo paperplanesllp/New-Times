@@ -421,7 +421,7 @@ export default function Home() {
 
                 <div className="overflow-hidden bg-neutral-100 lg:mr-2">
                   <img
-                    src="/KK.jpg"
+                    src="/kk.jpg"
                     alt="Nikhil Kamath Zerodha business feature"
                     className="h-[240px] w-full object-cover object-top transition duration-500 group-hover:scale-[1.03] sm:h-[330px] lg:h-[400px]"
                   />
