@@ -25,6 +25,7 @@ import IndustrySpace from './pages/IndustrySpace';
 import MoneyTodaySpace from './pages/MoneyTodaySpace';
 import Subscribe from './pages/Subscribe';
 import Search from './pages/Search';
+import PartnerWithUs from './pages/PartnerWithUs';
 
 export default function App() {
   const { pathname } = useLocation();
@@ -60,6 +61,10 @@ export default function App() {
         <Route path="/money" element={<MoneyTodaySpace />} />
         <Route path="/subscribe" element={<Subscribe />} /> 
         <Route path="/search" element={<Search />} />
+        <Route path="/partner/get-featured" element={<PartnerWithUs type="get-featured" />} />
+        <Route path="/partner/ad-options" element={<PartnerWithUs type="ad-options" />} />
+        <Route path="/partner/agency-partnership" element={<PartnerWithUs type="agency-partnership" />} />
+        <Route path="/partner/media-partnership" element={<PartnerWithUs type="media-partnership" />} />
       </Routes>
 
       {isHomePage && <DailyQuote />}

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import newTimesLogo from '../assets/New Times final-02.png';
 
 const companyLinks = [
@@ -6,8 +7,14 @@ const companyLinks = [
   'COOKIE POLICY',
   'TERMS & CONDITIONS',
   'PRIVACY POLICY',
-  'ADVERTISE WITH US',
   'DISCLAIMER',
+];
+
+const partnerLinks = [
+  { label: 'GET FEATURED', to: '/partner/get-featured' },
+  { label: 'AD OPTIONS', to: '/partner/ad-options' },
+  { label: 'AGENCY PARTNERSHIP', to: '/partner/agency-partnership' },
+  { label: 'MEDIA PARTNERSHIP', to: '/partner/media-partnership' },
 ];
 
 const categoryLinks = [
@@ -36,7 +43,7 @@ const socials = [
   },
 ];
 
-function FooterColumn({ title, children, items }) {
+function FooterColumn({ title, children, items, showPartnerLinks = false }) {
   return (
     <div>
       <h3 className="font-sans text-[16px] font-semibold uppercase leading-tight text-white">
@@ -52,6 +59,25 @@ function FooterColumn({ title, children, items }) {
             {item}
           </a>
         ))}
+        {showPartnerLinks && (
+          <details className="group">
+            <summary className="flex cursor-pointer list-none items-center justify-between gap-3 font-sans text-[14px] font-semibold uppercase leading-tight text-white hover:text-slate-300">
+              <span>Partner With Us</span>
+              <span className="text-lg leading-none transition group-open:rotate-45">+</span>
+            </summary>
+            <div className="mt-4 space-y-3 border-l border-white/25 pl-4">
+              {partnerLinks.map((item) => (
+                <Link
+                  key={item.label}
+                  to={item.to}
+                  className="block font-sans text-[13px] font-semibold uppercase leading-tight text-white/85 no-underline hover:text-white"
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </div>
+          </details>
+        )}
       </div>
     </div>
   );
@@ -97,7 +123,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <FooterColumn title="Company" items={companyLinks} />
+          <FooterColumn title="Company" items={companyLinks} showPartnerLinks />
           <FooterColumn title="Categories" items={categoryLinks} />
           <FooterColumn items={specialLinks}>
             NewTimes

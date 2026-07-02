@@ -18,6 +18,10 @@ const searchItems = [
   { title: 'Creators Economy', category: 'More', description: 'The business of influence, creator platforms, and monetization.', to: '/creators-economy' },
   { title: 'Blogs', category: 'More', description: 'Opinion, analysis, explainers, and editorial blogs.', to: '/blogs' },
   { title: 'NT Awards', category: 'More', description: 'Honours, nominations, and special recognitions from New Times.', to: '/nt-awards' },
+  { title: 'Get Featured', category: 'Partner With Us', description: 'Feature opportunities for brands, founders, and professionals.', to: '/partner/get-featured' },
+  { title: 'Ad Options', category: 'Partner With Us', description: 'Advertising placements and campaign packages with New Times.', to: '/partner/ad-options' },
+  { title: 'Agency Partnership', category: 'Partner With Us', description: 'Media support and campaign planning for agency clients.', to: '/partner/agency-partnership' },
+  { title: 'Media Partnership', category: 'Partner With Us', description: 'Collaborations for events, awards, launches, and industry initiatives.', to: '/partner/media-partnership' },
   {
     title: 'Generative AI Becomes Core Infrastructure in Product Development Across Global Tech Firms',
     category: 'AI',
