@@ -10,6 +10,7 @@ import MainDashboard from '../component/MainDashboard';
 import BusinessHubGrid from '../component/BusinessHubGrid';
 import FounderSandbox from '../component/FounderSandbox';
 import BillionairesHub from '../component/BillionairesHub';
+import GetReadyCta from '../component/GetReadyCta';
 
 const tickerItems = [
   { name: 'NIFTY 50', value: '23,269.40', change: '-0.15', percent: '0.23%' },
@@ -555,6 +556,8 @@ export default function Home() {
             <BillionairesHub />
           </div>
         </EditorialShell>
+
+        <GetReadyCta />
 
         <section className="text-center bg-white border-black py-9 my-9 border-y">
           <div className="max-w-2xl mx-auto">
