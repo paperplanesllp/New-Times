@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
+import nikhilKamathImage from '../assets/kk.jpg';
 import nseIpoImage from '../assets/Nn2.jpg';
 import fiiSelloffImage from '../assets/NN4.webp';
 import textileStocksImage from '../assets/NN5.webp';
@@ -11,7 +12,7 @@ const businessFeatureArticles = [
     title: "From College Dropout to Fintech Pioneer: Nikhil Kamath's Zerodha Journey",
     excerpt:
       "Bootstrapped without external funding, Zerodha has grown into one of India's largest stockbroking platforms. Nikhil Kamath's journey reflects the power of disciplined execution and long-term thinking.",
-    image: '/kk.jpg',
+    image: nikhilKamathImage,
     body: [
       "When Nikhil Kamath left school after the 10th grade, few could have predicted that he would go on to build one of India's most influential fintech companies. Starting as a trader at a young age while working in a call centre, Kamath learned the markets through experience rather than formal education. Alongside his brother, Nithin Kamath, he co-founded Zerodha in 2010 with a vision of making stock market investing affordable and accessible to millions of Indians.",
       "Unlike many technology startups, Zerodha was built without raising venture capital. The company introduced a flat-fee brokerage model that disrupted India's traditional brokerage industry, helping millions of first-time investors enter the equity markets. Today, Zerodha is India's largest retail stockbroker and remains one of the country's most successful bootstrapped businesses.",

@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import LiveBusinessNewsSection from '../component/LiveBusinessNewsSection';
 import newTimesLogo from '../assets/New Times final-02.png';
+import nikhilKamathImage from '../assets/kk.jpg';
 
 import Ticker from '../component/Ticker';
 import MainDashboard from '../component/MainDashboard';
@@ -421,7 +422,7 @@ export default function Home() {
 
                 <div className="overflow-hidden bg-neutral-100 lg:mr-2">
                   <img
-                    src="/kk.jpg"
+                    src={nikhilKamathImage}
                     alt="Nikhil Kamath Zerodha business feature"
                     className="h-[240px] w-full object-cover object-top transition duration-500 group-hover:scale-[1.03] sm:h-[330px] lg:h-[400px]"
                   />
