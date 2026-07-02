@@ -7,37 +7,37 @@ import textileStocksImage from '../assets/NN5.webp';
 const spotlightPages = {
   'business-features': {
     kicker: 'Business Features',
-    title: "India's AI Momentum Shifts Into Execution Mode",
+    title: 'Business Stories Shaping Modern India',
     intro:
-      'From large-scale computing infrastructure and indigenous AI models to strategic global collaborations and enterprise deployments, artificial intelligence is rapidly becoming a core business priority across industries in India.',
+      'Founder journeys, global expansion, technology services, and leadership transitions define this edition of New Times Business Features.',
     badge: 'Feature Desk',
     lead: {
-      category: 'MARKETS',
-      title: 'Crude Oil Crash Boosts Indian Markets',
+      category: 'FINTECH',
+      title: "From College Dropout to Fintech Pioneer: Nikhil Kamath's Zerodha Journey",
       excerpt:
-        'Brent crude slipped below $73 a barrel for the first time since February 27, 2026, down 42% from its peak of $126 per barrel on April 30. Indian markets rallied on Wednesday, with the Sensex and Nifty gaining up to 1% amid easing crude prices, supportive global cues, and optimism over India-US trade talks. The Nifty closed above 24,000, with the rupee also strengthening against the dollar.',
+        "Bootstrapped without external funding, Zerodha has grown into one of India's largest stockbroking platforms. Nikhil Kamath's journey reflects the power of disciplined execution and long-term thinking.",
       image: crudeOilImage,
     },
     stories: [
       {
-        category: 'CAPITAL MARKETS',
-        title: "NSE Files for India's Largest-Ever IPO",
+        category: 'GLOBAL BRANDS',
+        title: 'Vahdam India Targets Rs 500 Crore Revenue Through Global Expansion',
         excerpt:
-          "The National Stock Exchange has filed its DRHP for a Rs 25,000-30,000 crore IPO, set to be one of the largest public floats in India's capital market history. The issue comprises up to 14.89 crore equity shares, about 6% of NSE's paid-up capital, entirely via an offer for sale route. In FY2026, NSE processed an average of 12-14 billion messages daily and held a dominant 92.99% market share in India's cash equity market.",
+          'The premium tea brand is strengthening its international presence while expanding its footprint in India. Its global-first strategy continues to drive strong revenue growth and brand recognition.',
         image: nseIpoImage,
       },
       {
-        category: 'FOREIGN FLOWS',
-        title: 'FIIs Dump Rs 64,761 Crore in First Half of June',
+        category: 'TECHNOLOGY SERVICES',
+        title: 'HabileLabs Marks 10 Years of Growth as It Expands Global Technology Services',
         excerpt:
-          'Foreign investors offloaded shares worth a staggering Rs 64,761 crore in the first half of June, the highest since March, driven by elevated oil prices. However, domestic institutional investors countered with strong buying, keeping the overall market afloat.',
+          'What began as a Jaipur startup has evolved into an international technology partner serving businesses worldwide. The company credits customer trust and innovation for its decade-long success.',
         image: fiiSelloffImage,
       },
       {
-        category: 'TEXTILES',
-        title: 'Textile Stocks Rally on Motilal Oswal Coverage',
+        category: 'QUICK COMMERCE',
+        title: 'BigBasket Begins New Leadership Chapter With CEO Transition',
         excerpt:
-          'Textile exporter stocks witnessed a significant rally, boosted by positive initiation of coverage from Motilal Oswal Financial Services. The brokerage highlighted capacity expansion and supportive government policies as key growth catalysts, projecting substantial gains for leading companies. The surge reflects a new investment cycle in Indian textiles, with companies targeting higher-margin, value-added products to capitalise on global sourcing trends.',
+          'Founder Hari Menon has stepped down as CEO as the company sharpens its focus on profitability and quick commerce. The leadership change reflects the next phase of growth under new management.',
         image: textileStocksImage,
       },
     ],
