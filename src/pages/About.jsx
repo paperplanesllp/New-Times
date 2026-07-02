@@ -1,88 +1,52 @@
 import React from 'react';
 
-const pillars = [
-  {
-    title: 'Business First',
-    copy: 'We track companies, founders, markets, technology, wealth, and industry shifts with a clear focus on what matters to decision makers.',
-  },
-  {
-    title: 'Sharp Storytelling',
-    copy: 'New Times brings together newsroom discipline and magazine-style presentation so every feature feels useful, current, and polished.',
-  },
-  {
-    title: 'India With A Global Lens',
-    copy: 'Our coverage follows Indian ambition while connecting it to global capital, innovation, policy, culture, and entrepreneurship.',
-  },
-];
-
 export default function About() {
   return (
-    <main className="min-h-[80vh] bg-white px-4 py-8 text-slate-950 sm:px-6 lg:px-8">
-      <section className="mx-auto max-w-7xl border border-gray-200 bg-white p-5 sm:p-8 lg:p-10">
-        <div className="mb-6 h-1 w-full bg-slate-950" />
-
-        <div className="grid gap-8 border-b border-gray-200 pb-8 lg:grid-cols-[minmax(0,1.1fr)_minmax(340px,0.75fr)] lg:items-end">
-          <div>
-            <span className="mb-3 block font-sans text-[11px] font-extrabold uppercase tracking-[0.2em] text-red-600">
-              About New Times
-            </span>
-            <h1 className="m-0 max-w-4xl font-serif text-4xl font-extrabold leading-tight text-slate-950 md:text-6xl">
-              Business stories for a changing generation.
-            </h1>
-          </div>
-          <p className="font-sans text-base leading-7 text-slate-600">
-            New Times is a digital-first media platform covering the people, companies, sectors, and ideas shaping modern India. We publish crisp business journalism, profile-led features, market updates, technology coverage, and spotlight stories built for readers who want context without clutter.
+    <main className="min-h-[80vh] bg-white px-4 py-10 text-slate-950 sm:px-6 lg:px-8">
+      <section className="mx-auto max-w-5xl">
+        <div className="border-b border-slate-200 pb-8 text-center">
+          <span className="font-sans text-xs font-bold uppercase tracking-[0.18em] text-red-600">
+            About Us
+          </span>
+          <h1 className="mt-4 font-serif text-4xl font-bold leading-tight text-slate-950 md:text-5xl">
+            About New Times
+          </h1>
+          <p className="mx-auto mt-4 max-w-3xl font-sans text-base leading-7 text-slate-600 md:text-lg">
+            New Times is a digital media platform covering business, startups, technology, economy, money, lifestyle, and stories that matter to modern readers.
           </p>
         </div>
 
-        <div className="mt-10 grid gap-8 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1fr)]">
-          <div className="bg-slate-50 p-7 ring-1 ring-gray-200">
-            <span className="font-mono text-[12px] font-bold uppercase tracking-[0.14em] text-green-600">
-              Our Purpose
-            </span>
-            <h2 className="mt-3 font-serif text-3xl font-bold leading-tight text-slate-950">
-              To make business coverage more readable, relevant, and ambitious.
-            </h2>
-            <p className="mt-4 font-sans text-[15px] leading-7 text-slate-600">
-              We believe business news should be direct enough for daily readers and deep enough for builders, investors, creators, professionals, and brand leaders. Our work highlights momentum, explains change, and gives visibility to the people moving industries forward.
-            </p>
-          </div>
-
-          <div className="grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
-            {pillars.map((pillar) => (
-              <article key={pillar.title} className="border border-gray-200 bg-white p-5">
-                <h3 className="font-serif text-xl font-bold leading-tight text-slate-950">
-                  {pillar.title}
-                </h3>
-                <p className="mt-3 font-sans text-sm leading-6 text-slate-600">{pillar.copy}</p>
-              </article>
-            ))}
-          </div>
+        <div className="mx-auto mt-10 max-w-3xl space-y-5 font-sans text-base leading-8 text-slate-700">
+          <p>
+            Our goal is to bring useful and easy-to-read coverage for readers who want to stay updated with the changing world of business and innovation. We focus on clear reporting, meaningful stories, and content that helps people understand what is happening around them.
+          </p>
+          <p>
+            From startup journeys and market updates to technology trends, inspiring leaders, and industry developments, New Times presents information in a simple and engaging way.
+          </p>
+          <p>
+            We believe good media should be informative, trustworthy, and accessible. That is why our content is built for entrepreneurs, professionals, students, creators, investors, and everyday readers.
+          </p>
         </div>
 
-        <div className="mt-10 grid gap-6 border-t border-gray-200 pt-8 md:grid-cols-3">
-          <div>
-            <span className="block font-sans text-[10px] font-extrabold uppercase tracking-[0.16em] text-amber-700">
-              Coverage
-            </span>
-            <p className="mt-2 font-sans text-sm leading-6 text-slate-600">
-              Economy, technology, startups, billionaires, money, industry, creators, awards, and long-form spotlight features.
+        <div className="mt-12 grid gap-5 md:grid-cols-3">
+          <div className="border border-slate-200 bg-white p-6">
+            <h2 className="font-serif text-2xl font-bold text-slate-950">What We Cover</h2>
+            <p className="mt-3 font-sans text-sm leading-6 text-slate-600">
+              Business, economy, startups, technology, money, industry, billionaires, magazines, awards, and special features.
             </p>
           </div>
-          <div>
-            <span className="block font-sans text-[10px] font-extrabold uppercase tracking-[0.16em] text-amber-700">
-              Audience
-            </span>
-            <p className="mt-2 font-sans text-sm leading-6 text-slate-600">
-              Founders, executives, professionals, investors, students, creators, agencies, and readers following India’s growth story.
+
+          <div className="border border-slate-200 bg-white p-6">
+            <h2 className="font-serif text-2xl font-bold text-slate-950">Our Mission</h2>
+            <p className="mt-3 font-sans text-sm leading-6 text-slate-600">
+              To share stories and updates that help readers stay informed, inspired, and connected with new opportunities.
             </p>
           </div>
-          <div>
-            <span className="block font-sans text-[10px] font-extrabold uppercase tracking-[0.16em] text-amber-700">
-              Voice
-            </span>
-            <p className="mt-2 font-sans text-sm leading-6 text-slate-600">
-              Clear, energetic, premium, and practical, with a strong editorial identity across every New Times page.
+
+          <div className="border border-slate-200 bg-white p-6">
+            <h2 className="font-serif text-2xl font-bold text-slate-950">Our Readers</h2>
+            <p className="mt-3 font-sans text-sm leading-6 text-slate-600">
+              Founders, business leaders, professionals, creators, students, investors, agencies, and curious readers.
             </p>
           </div>
         </div>
