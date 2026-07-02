@@ -222,6 +222,298 @@ const spotlightPages = {
   },
 };
 
+const shareActions = ['f', 'X', 'in', 'wa', 'save'];
+
+const sidebarRadarStories = businessFeatureArticles.slice(1, 4);
+
+const newTimesLists = [
+  {
+    title: "India's Most Watched Founder Journeys",
+    category: 'Founder Lists',
+    image: '/leader.jpg',
+  },
+  {
+    title: 'Breakout Consumer Brands Scaling Globally',
+    category: 'Brand Lists',
+    image: '/marketing.jpg',
+  },
+  {
+    title: 'Companies Rewriting the Startup Playbook',
+    category: 'Business Lists',
+    image: '/billio.webp',
+  },
+];
+
+function SpotlightImage({ src, alt, className = '', category }) {
+  if (!src) {
+    return (
+      <div
+        className={`flex min-h-[260px] w-full items-end bg-gradient-to-br from-slate-950 via-slate-800 to-slate-500 p-6 text-white ${className}`}
+        role="img"
+        aria-label={alt}
+      >
+        <span className="font-sans text-xs font-bold uppercase tracking-[0.22em] text-white/80">
+          {category || 'NT Spotlight'}
+        </span>
+      </div>
+    );
+  }
+
+  return (
+    <img
+      className={`w-full object-cover ${className}`}
+      src={src}
+      alt={alt}
+    />
+  );
+}
+
+function SocialActions({ compact = false }) {
+  return (
+    <div className="flex max-w-full flex-wrap items-center justify-center gap-2 sm:justify-start">
+      {shareActions.map((action) => (
+        <button
+          key={action}
+          type="button"
+          aria-label={`Share on ${action}`}
+          className={`${compact ? 'h-9 w-9 text-[10px]' : 'h-10 w-10 text-[11px]'} inline-flex shrink-0 items-center justify-center rounded-full border border-slate-300 bg-white font-sans font-bold uppercase text-slate-950 transition hover:border-slate-950 hover:bg-slate-950 hover:text-white`}
+        >
+          {action}
+        </button>
+      ))}
+    </div>
+  );
+}
+
+function NextArticleCard({ article }) {
+  if (!article) return null;
+
+  return (
+    <Link
+      to={`/spotlight/business-features/${article.slug}`}
+      className="block w-full max-w-full border border-slate-200 bg-white p-4 text-left no-underline shadow-[0_18px_45px_rgba(15,23,42,0.12)] transition hover:-translate-y-0.5 hover:border-slate-950"
+    >
+      <div className="flex min-w-0 items-start gap-3">
+        <span className="mt-1 inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-slate-950 font-sans text-sm font-bold text-slate-950">
+          &rarr;
+        </span>
+        <div className="min-w-0">
+          <span className="block font-sans text-[10px] font-extrabold uppercase tracking-[0.18em] text-red-700">
+            Next Article
+          </span>
+          <h3 className="mt-1 line-clamp-2 font-serif text-[17px] font-bold leading-snug text-slate-950">
+            {article.title}
+          </h3>
+        </div>
+      </div>
+    </Link>
+  );
+}
+
+function SidebarStoryCard({ story, rank }) {
+  return (
+    <Link
+      to={story.slug ? `/spotlight/business-features/${story.slug}` : '#'}
+      className="group grid min-w-0 grid-cols-[84px_minmax(0,1fr)] gap-3 border-b border-slate-100 pb-4 text-slate-950 no-underline last:border-b-0 last:pb-0"
+    >
+      <div className="relative h-24 overflow-hidden bg-slate-100">
+        <SpotlightImage
+          src={story.image}
+          alt={story.title}
+          category={story.category}
+          className="h-full transition duration-500 group-hover:scale-[1.04]"
+        />
+        <span className="absolute left-2 top-2 bg-slate-950 px-2 py-1 font-sans text-[10px] font-bold text-white">
+          #{rank}
+        </span>
+      </div>
+      <div className="min-w-0">
+        <span className="block font-sans text-[10px] font-extrabold uppercase tracking-[0.12em] text-amber-700">
+          {story.category}
+        </span>
+        <h4 className="mt-1 line-clamp-3 font-serif text-base font-bold leading-tight text-slate-950 group-hover:underline">
+          {story.title}
+        </h4>
+        <p className="mt-2 font-sans text-[11px] font-semibold uppercase tracking-[0.08em] text-slate-500">
+          New Times Desk
+        </p>
+      </div>
+    </Link>
+  );
+}
+
+function SpotlightArticleSidebar() {
+  return (
+    <aside className="min-w-0 border-slate-200 lg:border-l lg:pl-8">
+      <div className="space-y-8 lg:sticky lg:top-8">
+        <section>
+          <span className="mb-2 block text-center font-sans text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400">
+            Advertisement
+          </span>
+          <div className="flex h-64 items-center justify-center bg-slate-100 ring-1 ring-slate-200">
+            <span className="font-sans text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">
+              Ad Space
+            </span>
+          </div>
+        </section>
+
+        <section className="border border-slate-200 bg-white p-5">
+          <h3 className="mb-5 font-sans text-[12px] font-extrabold uppercase tracking-[0.18em] text-slate-950">
+            On Everyone's Radar
+          </h3>
+          <div className="space-y-4">
+            {sidebarRadarStories.map((story, index) => (
+              <SidebarStoryCard key={story.title} story={story} rank={index + 1} />
+            ))}
+          </div>
+        </section>
+
+        <section className="border border-slate-200 bg-slate-50 p-5">
+          <h3 className="mb-5 font-sans text-[12px] font-extrabold uppercase tracking-[0.18em] text-slate-950">
+            New Times Lists
+          </h3>
+          <div className="space-y-4">
+            {newTimesLists.map((item, index) => (
+              <div key={item.title} className="grid min-w-0 grid-cols-[76px_minmax(0,1fr)] gap-3 border-b border-slate-200 pb-4 last:border-b-0 last:pb-0">
+                <div className="relative h-20 overflow-hidden bg-white">
+                  <SpotlightImage src={item.image} alt={item.title} category={item.category} className="h-full" />
+                  <span className="absolute left-2 top-2 bg-white px-2 py-1 font-sans text-[10px] font-bold text-slate-950 ring-1 ring-slate-200">
+                    #{index + 1}
+                  </span>
+                </div>
+                <div className="min-w-0">
+                  <span className="block font-sans text-[10px] font-extrabold uppercase tracking-[0.12em] text-red-700">
+                    {item.category}
+                  </span>
+                  <h4 className="mt-1 font-serif text-base font-bold leading-tight text-slate-950">
+                    {item.title}
+                  </h4>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      </div>
+    </aside>
+  );
+}
+
+function SpotlightArticleDetail({ article, nextArticle }) {
+  const publishedDate = 'June 24, 2026';
+
+  return (
+    <main className="min-h-[80vh] w-full overflow-x-hidden bg-white px-4 py-6 text-slate-950 sm:px-6 lg:px-8 lg:py-10">
+      <article className="mx-auto w-full max-w-[1380px] min-w-0">
+        <Link
+          to="/spotlight/business-features"
+          className="mb-6 inline-flex font-sans text-[12px] font-bold uppercase tracking-[0.16em] text-slate-600 no-underline hover:text-red-700"
+        >
+          &larr; Business Features
+        </Link>
+
+        <header className="grid min-w-0 gap-8 border-b border-slate-200 pb-10 lg:grid-cols-[minmax(0,0.95fr)_minmax(420px,0.85fr)] lg:items-center xl:gap-12">
+          <div className="min-w-0 text-center sm:text-left">
+            <span className="mb-4 block font-sans text-[11px] font-extrabold uppercase tracking-[0.22em] text-amber-700">
+              {article.category}
+            </span>
+            <h1 className="mx-auto max-w-[700px] break-words font-serif text-[34px] font-extrabold leading-[1.15] text-black sm:mx-0 sm:text-[42px] lg:text-[50px] xl:text-[56px]">
+              {article.title}
+            </h1>
+            <p className="mx-auto mt-5 max-w-[700px] font-serif text-[19px] leading-8 text-slate-700 sm:mx-0 md:text-[22px]">
+              {article.excerpt}
+            </p>
+
+            <div className="mt-6 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 font-sans text-xs font-semibold uppercase tracking-[0.12em] text-slate-500 sm:justify-start">
+              <span>By New Times Desk</span>
+              <span className="hidden text-slate-300 sm:inline">/</span>
+              <span>Last updated {publishedDate}</span>
+              <span className="hidden text-slate-300 sm:inline">/</span>
+              <span>{Math.max(4, Math.ceil(article.body.join(' ').split(' ').length / 220))} min read</span>
+            </div>
+
+            <div className="mt-6">
+              <SocialActions />
+            </div>
+
+            <div className="mt-6 flex max-w-full flex-wrap justify-center gap-3 sm:justify-start">
+              <Link
+                to="/partner/get-featured"
+                className="inline-flex min-h-11 items-center justify-center rounded-full bg-slate-950 px-6 font-sans text-xs font-bold uppercase tracking-[0.14em] text-white no-underline transition hover:bg-red-700"
+              >
+                Join Us
+              </Link>
+              <button
+                type="button"
+                className="inline-flex min-h-11 items-center justify-center rounded-full bg-slate-950 px-6 font-sans text-xs font-bold uppercase tracking-[0.14em] text-white transition hover:bg-red-700"
+              >
+                Prefer us on Google
+              </button>
+            </div>
+          </div>
+
+          <div className="relative min-w-0">
+            <SpotlightImage
+              src={article.image}
+              alt={article.title}
+              category={article.category}
+              className={`h-[300px] sm:h-[420px] lg:h-[520px] ${article.slug === 'nikhil-kamath-zerodha-journey' ? 'object-top' : ''}`}
+            />
+            <div className="mt-5 lg:absolute lg:-bottom-8 lg:right-6 lg:w-[360px]">
+              <NextArticleCard article={nextArticle} />
+            </div>
+          </div>
+        </header>
+
+        <div className="grid min-w-0 gap-10 pt-10 lg:grid-cols-[minmax(0,0.68fr)_minmax(320px,0.32fr)] lg:gap-12">
+          <section className="min-w-0">
+            <div className="space-y-8 break-words font-serif text-[20px] leading-[1.8] text-slate-800 md:text-[23px] lg:text-[25px]">
+              {article.body.map((paragraph) => (
+                <p key={paragraph} className="m-0">
+                  {paragraph}
+                </p>
+              ))}
+            </div>
+
+            <section className="mt-12 border-t border-slate-200 pt-7">
+              <p className="font-sans text-xs font-bold uppercase tracking-[0.16em] text-slate-500">
+                First Published: {publishedDate}
+              </p>
+              <div className="mt-5">
+                <SocialActions compact />
+              </div>
+            </section>
+
+            <section className="mt-9 grid min-w-0 gap-5 bg-slate-100 p-5 sm:grid-cols-[120px_minmax(0,1fr)] sm:p-6">
+              <div className="h-32 overflow-hidden bg-white">
+                <SpotlightImage src="/mg1.png" alt="New Times magazine cover" category="Subscribe" className="h-full object-contain p-3" />
+              </div>
+              <div className="min-w-0">
+                <span className="font-sans text-[11px] font-extrabold uppercase tracking-[0.18em] text-red-700">
+                  New Times Premium
+                </span>
+                <h2 className="mt-2 font-serif text-2xl font-bold leading-tight text-slate-950">
+                  Become a Subscriber
+                </h2>
+                <p className="mt-2 max-w-2xl font-sans text-sm leading-6 text-slate-600">
+                  Get deeper business features, founder stories, and curated magazine editions from New Times.
+                </p>
+                <Link
+                  to="/subscribe"
+                  className="mt-4 inline-flex rounded-full bg-slate-950 px-5 py-3 font-sans text-xs font-bold uppercase tracking-[0.14em] text-white no-underline transition hover:bg-red-700"
+                >
+                  Subscribe Now &rarr;
+                </Link>
+              </div>
+            </section>
+          </section>
+
+          <SpotlightArticleSidebar />
+        </div>
+      </article>
+    </main>
+  );
+}
+
 export default function SpotlightFeaturePage({ type }) {
   const { slug } = useParams();
   const page = spotlightPages[type] || spotlightPages['business-features'];
@@ -230,36 +522,10 @@ export default function SpotlightFeaturePage({ type }) {
     : null;
 
   if (article) {
-    return (
-      <main className="mx-auto min-h-[80vh] max-w-5xl bg-white px-4 py-8 sm:px-6 lg:px-8">
-        <article className="border border-gray-200 bg-white p-5 sm:p-8 lg:p-10">
-          <Link
-            to="/spotlight/business-features"
-            className="mb-6 inline-flex font-sans text-[12px] font-bold uppercase tracking-[0.16em] text-slate-600 no-underline hover:text-red-600"
-          >
-            &larr; Business Features
-          </Link>
+    const currentIndex = businessFeatureArticles.findIndex((item) => item.slug === article.slug);
+    const nextArticle = businessFeatureArticles[(currentIndex + 1) % businessFeatureArticles.length];
 
-          <div className="mb-6 h-1 w-full bg-slate-950" />
-
-          <span className="mb-3 block font-sans text-[11px] font-extrabold uppercase tracking-[0.14em] text-amber-700">
-            {article.category}
-          </span>
-          <h1 className="m-0 max-w-4xl font-serif text-4xl font-extrabold leading-tight text-slate-950 md:text-5xl">
-            {article.title}
-          </h1>
-          <p className="mt-5 max-w-3xl font-sans text-lg leading-8 text-slate-600">
-            {article.excerpt}
-          </p>
-
-          <div className="mx-auto mt-8 max-w-3xl space-y-5 font-serif text-[18px] leading-8 text-slate-800">
-            {article.body.map((paragraph) => (
-              <p key={paragraph}>{paragraph}</p>
-            ))}
-          </div>
-        </article>
-      </main>
-    );
+    return <SpotlightArticleDetail article={article} nextArticle={nextArticle} />;
   }
 
   return (
