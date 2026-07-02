@@ -49,6 +49,7 @@ export default function App() {
         <Route path="/economy" element={<Economy />} />
         <Route path="/spotlight" element={<NTSpotlight />} />
         <Route path="/spotlight/business-features" element={<SpotlightFeaturePage type="business-features" />} />
+        <Route path="/spotlight/business-features/:slug" element={<SpotlightFeaturePage type="business-features" />} />
         <Route path="/spotlight/recognise-series" element={<SpotlightFeaturePage type="recognise-series" />} />
         <Route path="/spotlight/startup" element={<SpotlightFeaturePage type="startup" />} />
         <Route path="/spotlight/cover-feature" element={<SpotlightFeaturePage type="cover-feature" />} />

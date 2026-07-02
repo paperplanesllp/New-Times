@@ -1,8 +1,87 @@
 import React from 'react';
+import { Link, useParams } from 'react-router-dom';
 import crudeOilImage from '../assets/Nn.avif';
 import nseIpoImage from '../assets/Nn2.jpg';
 import fiiSelloffImage from '../assets/NN4.webp';
 import textileStocksImage from '../assets/NN5.webp';
+
+const businessFeatureArticles = [
+  {
+    slug: 'nikhil-kamath-zerodha-journey',
+    category: 'FINTECH',
+    title: "From College Dropout to Fintech Pioneer: Nikhil Kamath's Zerodha Journey",
+    excerpt:
+      "Bootstrapped without external funding, Zerodha has grown into one of India's largest stockbroking platforms. Nikhil Kamath's journey reflects the power of disciplined execution and long-term thinking.",
+    image: crudeOilImage,
+    body: [
+      "When Nikhil Kamath left school after the 10th grade, few could have predicted that he would go on to build one of India's most influential fintech companies. Starting as a trader at a young age while working in a call centre, Kamath learned the markets through experience rather than formal education. Alongside his brother, Nithin Kamath, he co-founded Zerodha in 2010 with a vision of making stock market investing affordable and accessible to millions of Indians.",
+      "Unlike many technology startups, Zerodha was built without raising venture capital. The company introduced a flat-fee brokerage model that disrupted India's traditional brokerage industry, helping millions of first-time investors enter the equity markets. Today, Zerodha is India's largest retail stockbroker and remains one of the country's most successful bootstrapped businesses.",
+      "Beyond Zerodha, Kamath has expanded into wealth management through True Beacon, startup investments via Gruhas, and thought leadership through his podcast featuring global business, technology, and policy leaders. His journey continues to inspire aspiring entrepreneurs by proving that disciplined execution, patience, and long-term thinking can outperform aggressive fundraising and rapid expansion.",
+      "Nikhil Kamath's entrepreneurial story is unique because it challenges the conventional belief that academic excellence is the only route to business success. Instead of pursuing higher education, Kamath immersed himself in the world of financial markets at a young age. While working night shifts at a call centre, he spent countless hours studying stocks, understanding market movements, and learning the psychology behind investing.",
+      "Those early experiences shaped his practical approach to finance. Rather than relying solely on textbooks, he developed his knowledge through real market participation, making mistakes, learning from them, and gradually refining his investment strategies. This hands-on learning became the foundation of his future success.",
+      "In 2010, Nikhil and his brother Nithin identified a major gap in India's financial services industry. Traditional stockbrokers charged high brokerage fees, making investing expensive for ordinary individuals. Many potential investors avoided the stock market altogether because of the high costs and complicated trading processes.",
+      "The Kamath brothers saw an opportunity to change this landscape. They launched Zerodha with a disruptive pricing model that offered flat brokerage charges instead of percentage-based commissions. The platform also focused on simplicity, technology, and transparency, making investing easier for beginners and experienced traders alike.",
+      "Initially, competing against established brokerage firms was not easy. Zerodha had limited financial resources and almost no marketing budget. Instead of spending heavily on advertising, the founders invested in technology, customer support, and product development. Their strategy relied on customer satisfaction and word-of-mouth referrals rather than expensive promotional campaigns.",
+      "This approach proved remarkably successful. As more investors experienced Zerodha's low-cost model and easy-to-use platform, the company's customer base expanded rapidly. Within a decade, Zerodha had become India's largest retail stockbroker, serving millions of investors across the country.",
+      "One of Zerodha's most remarkable achievements is that it reached industry leadership without raising external venture capital. In an ecosystem where startups often depend on multiple funding rounds, Zerodha chose a different path by focusing on profitability from the very beginning.",
+      "This decision gave the founders complete control over the company's long-term vision. Without pressure from outside investors, Zerodha was able to prioritize customer experience, technological innovation, and sustainable growth instead of chasing rapid expansion at any cost.",
+      "The company's financial discipline became one of its greatest strengths. Every business decision was evaluated based on long-term value creation rather than short-term valuation increases. As a result, Zerodha became one of India's most profitable fintech companies while remaining entirely founder-owned.",
+      "Zerodha's impact extends far beyond brokerage services. The company has played a significant role in democratizing investing across India. By reducing trading costs and simplifying access to financial markets, it has encouraged millions of first-time investors to begin their wealth creation journeys.",
+      "The company also invested heavily in financial education. Through initiatives such as Varsity, Zerodha created one of India's most comprehensive free learning platforms for stock market education. The platform covers everything from basic investing concepts to advanced trading strategies, helping individuals make informed financial decisions.",
+      "Technology has been another cornerstone of Zerodha's success. Products such as Kite, Coin, and Console have streamlined investing, portfolio management, and mutual fund investments, making sophisticated financial tools accessible to everyday investors.",
+      "As Zerodha matured, Nikhil Kamath expanded his entrepreneurial interests beyond stockbroking. He co-founded True Beacon, an asset management firm that focuses on serving high-net-worth individuals with a transparent investment approach.",
+      "He also launched Gruhas, an investment platform that backs startups operating in sectors including proptech, consumer technology, sustainability, healthcare, and climate innovation. Through these ventures, Kamath has become an active supporter of India's startup ecosystem, helping founders build businesses through strategic guidance and capital.",
+      "In recent years, Nikhil Kamath has become a prominent public voice in India's business ecosystem. Through his podcast and public conversations, he engages with entrepreneurs, economists, policymakers, athletes, and global business leaders on topics ranging from artificial intelligence and investing to leadership and innovation.",
+      "Throughout his entrepreneurial journey, Kamath has consistently emphasized discipline, patience, and continuous learning. He believes that sustainable businesses are built through consistent execution rather than aggressive expansion.",
+      "Today, Zerodha stands as one of India's most admired fintech companies and a benchmark for sustainable entrepreneurship. For entrepreneurs and investors alike, his story offers a timeless lesson: lasting success is rarely built overnight; it is achieved through consistent effort, disciplined decision-making, and an unwavering commitment to creating value.",
+    ],
+  },
+  {
+    slug: 'vahdam-india-global-expansion',
+    category: 'GLOBAL BRANDS',
+    title: 'Vahdam India Targets Rs 500 Crore Revenue Through Global Expansion',
+    excerpt:
+      'The premium tea brand is strengthening its international presence while expanding its footprint in India. Its global-first strategy continues to drive strong revenue growth and brand recognition.',
+    image: nseIpoImage,
+    body: [
+      "Vahdam India is sharpening its global expansion strategy as it targets Rs 500 crore in revenue. The premium tea and wellness brand has built its identity around taking Indian-origin products to international consumers while keeping the supply chain closely connected to domestic growers.",
+      "The company has focused on digital-first distribution, premium packaging, and direct access to overseas customers. This approach helped Vahdam stand out in crowded international markets where Indian tea has historically been sold more as a commodity than a branded experience.",
+      "Global markets remain central to the company's growth story, but India is becoming an increasingly important part of the next phase. Rising demand for premium teas, wellness blends, and gifting-led consumption gives the brand room to deepen its domestic presence.",
+      "For Vahdam, the challenge now is execution at scale. The brand must keep quality consistent, manage costs, and expand retail visibility while protecting the premium positioning that helped it gain recognition abroad.",
+      "Its journey reflects a larger shift in Indian consumer brands: companies are no longer building only for local markets first. Many are launching with international ambition from day one, using digital channels, strong storytelling, and differentiated products to compete globally.",
+    ],
+  },
+  {
+    slug: 'habilelabs-10-years-global-technology-services',
+    category: 'TECHNOLOGY SERVICES',
+    title: 'HabileLabs Marks 10 Years of Growth as It Expands Global Technology Services',
+    excerpt:
+      'What began as a Jaipur startup has evolved into an international technology partner serving businesses worldwide. The company credits customer trust and innovation for its decade-long success.',
+    image: fiiSelloffImage,
+    body: [
+      "HabileLabs has completed 10 years of growth, marking its evolution from a Jaipur-based startup into a technology services company with international reach. The milestone reflects the growing strength of India's regional technology hubs beyond the traditional metro centres.",
+      "The company has built its business around software engineering, product development, enterprise solutions, and digital transformation services. Over the years, it has worked with clients looking to modernize technology systems, improve digital products, and scale engineering capacity.",
+      "Customer trust has been central to HabileLabs' expansion. In services businesses, long-term relationships often matter as much as technical capability, and the company credits consistent delivery and innovation for its decade-long progress.",
+      "Its growth also mirrors a broader industry pattern. Businesses worldwide are seeking reliable technology partners that can combine engineering depth with flexibility, speed, and cost efficiency. Indian firms outside the largest technology cities are increasingly competing for this demand.",
+      "As HabileLabs enters its next phase, global delivery, talent development, and deeper specialization will likely shape its expansion. The company now stands as an example of how regional startups can grow into international technology partners through sustained execution.",
+    ],
+  },
+  {
+    slug: 'bigbasket-ceo-transition',
+    category: 'QUICK COMMERCE',
+    title: 'BigBasket Begins New Leadership Chapter With CEO Transition',
+    excerpt:
+      'Founder Hari Menon has stepped down as CEO as the company sharpens its focus on profitability and quick commerce. The leadership change reflects the next phase of growth under new management.',
+    image: textileStocksImage,
+    body: [
+      "BigBasket has entered a new leadership chapter after founder Hari Menon stepped down as CEO. The transition comes at a crucial moment for the online grocery company as quick commerce, profitability, and operational efficiency reshape the sector.",
+      "Menon played a defining role in building BigBasket into one of India's best-known grocery platforms. Under his leadership, the company scaled across cities, developed supply chain depth, and became a major player in online grocery before the quick-commerce wave transformed consumer expectations.",
+      "The next phase will require sharper execution. Grocery delivery is a high-frequency but operationally demanding business, and companies must balance speed, assortment, margins, inventory control, and customer retention.",
+      "BigBasket's leadership transition signals a move toward a more focused operating model. As competition intensifies, the company will need to strengthen its quick-commerce capabilities while improving profitability across core grocery operations.",
+      "The change also reflects the maturity of India's digital commerce sector. Founder-led businesses are increasingly moving into professionalized growth phases where systems, discipline, and execution depth matter as much as early-market vision.",
+    ],
+  },
+];
 
 const spotlightPages = {
   'business-features': {
@@ -11,36 +90,8 @@ const spotlightPages = {
     intro:
       'Founder journeys, global expansion, technology services, and leadership transitions define this edition of New Times Business Features.',
     badge: 'Feature Desk',
-    lead: {
-      category: 'FINTECH',
-      title: "From College Dropout to Fintech Pioneer: Nikhil Kamath's Zerodha Journey",
-      excerpt:
-        "Bootstrapped without external funding, Zerodha has grown into one of India's largest stockbroking platforms. Nikhil Kamath's journey reflects the power of disciplined execution and long-term thinking.",
-      image: crudeOilImage,
-    },
-    stories: [
-      {
-        category: 'GLOBAL BRANDS',
-        title: 'Vahdam India Targets Rs 500 Crore Revenue Through Global Expansion',
-        excerpt:
-          'The premium tea brand is strengthening its international presence while expanding its footprint in India. Its global-first strategy continues to drive strong revenue growth and brand recognition.',
-        image: nseIpoImage,
-      },
-      {
-        category: 'TECHNOLOGY SERVICES',
-        title: 'HabileLabs Marks 10 Years of Growth as It Expands Global Technology Services',
-        excerpt:
-          'What began as a Jaipur startup has evolved into an international technology partner serving businesses worldwide. The company credits customer trust and innovation for its decade-long success.',
-        image: fiiSelloffImage,
-      },
-      {
-        category: 'QUICK COMMERCE',
-        title: 'BigBasket Begins New Leadership Chapter With CEO Transition',
-        excerpt:
-          'Founder Hari Menon has stepped down as CEO as the company sharpens its focus on profitability and quick commerce. The leadership change reflects the next phase of growth under new management.',
-        image: textileStocksImage,
-      },
-    ],
+    lead: businessFeatureArticles[0],
+    stories: businessFeatureArticles.slice(1),
   },
   'recognise-series': {
     kicker: 'Recognition Series',
@@ -153,7 +204,46 @@ const spotlightPages = {
 };
 
 export default function SpotlightFeaturePage({ type }) {
+  const { slug } = useParams();
   const page = spotlightPages[type] || spotlightPages['business-features'];
+  const article = type === 'business-features'
+    ? businessFeatureArticles.find((item) => item.slug === slug)
+    : null;
+
+  if (article) {
+    return (
+      <main className="mx-auto min-h-[80vh] max-w-5xl bg-white px-4 py-8 sm:px-6 lg:px-8">
+        <article className="border border-gray-200 bg-white p-5 sm:p-8 lg:p-10">
+          <Link
+            to="/spotlight/business-features"
+            className="mb-6 inline-flex font-sans text-[12px] font-bold uppercase tracking-[0.16em] text-slate-600 no-underline hover:text-red-600"
+          >
+            &larr; Business Features
+          </Link>
+
+          <div className="mb-6 h-1 w-full bg-slate-950" />
+
+          <span className="mb-3 block font-sans text-[11px] font-extrabold uppercase tracking-[0.14em] text-amber-700">
+            {article.category}
+          </span>
+          <h1 className="m-0 max-w-4xl font-serif text-4xl font-extrabold leading-tight text-slate-950 md:text-5xl">
+            {article.title}
+          </h1>
+          <p className="mt-5 max-w-3xl font-sans text-lg leading-8 text-slate-600">
+            {article.excerpt}
+          </p>
+
+          <img className="my-8 h-[420px] w-full object-cover" src={article.image} alt={article.title} />
+
+          <div className="mx-auto max-w-3xl space-y-5 font-serif text-[18px] leading-8 text-slate-800">
+            {article.body.map((paragraph) => (
+              <p key={paragraph}>{paragraph}</p>
+            ))}
+          </div>
+        </article>
+      </main>
+    );
+  }
 
   return (
     <main className="mx-auto min-h-[80vh] max-w-7xl bg-white px-4 py-8 sm:px-6 lg:px-8">
@@ -184,24 +274,38 @@ export default function SpotlightFeaturePage({ type }) {
         </div>
 
         <div className="grid gap-8 xl:grid-cols-[minmax(0,1.3fr)_minmax(420px,0.9fr)]">
-          <article>
+          <article className="group">
             <img className="mb-5 h-[380px] w-full object-cover" src={page.lead.image} alt={page.lead.title} />
             <span className="mb-2 block font-sans text-[11px] font-extrabold uppercase tracking-[0.14em] text-amber-700">
               {page.lead.category}
             </span>
-            <h2 className="m-0 font-serif text-3xl font-bold leading-tight text-slate-950">
-              {page.lead.title}
-            </h2>
+            {page.lead.slug ? (
+              <Link to={`/spotlight/business-features/${page.lead.slug}`} className="no-underline">
+                <h2 className="m-0 font-serif text-3xl font-bold leading-tight text-slate-950 underline-offset-4 group-hover:underline">
+                  {page.lead.title}
+                </h2>
+              </Link>
+            ) : (
+              <h2 className="m-0 font-serif text-3xl font-bold leading-tight text-slate-950">
+                {page.lead.title}
+              </h2>
+            )}
             <p className="mt-4 font-sans text-[15px] leading-7 text-slate-600">{page.lead.excerpt}</p>
           </article>
 
           <div className="space-y-5 border-gray-200 xl:border-l xl:pl-6">
             {page.stories.map((story) => (
-              <article key={story.title} className="border-b border-gray-100 pb-5 last:border-b-0">
+              <article key={story.title} className="group border-b border-gray-100 pb-5 last:border-b-0">
                 <span className="mb-2 block font-sans text-[10px] font-extrabold uppercase tracking-[0.12em] text-amber-700">
                   {story.category}
                 </span>
-                <h3 className="m-0 font-serif text-xl font-bold leading-tight text-slate-950 xl:text-lg">{story.title}</h3>
+                {story.slug ? (
+                  <Link to={`/spotlight/business-features/${story.slug}`} className="no-underline">
+                    <h3 className="m-0 font-serif text-xl font-bold leading-tight text-slate-950 underline-offset-4 group-hover:underline xl:text-lg">{story.title}</h3>
+                  </Link>
+                ) : (
+                  <h3 className="m-0 font-serif text-xl font-bold leading-tight text-slate-950 xl:text-lg">{story.title}</h3>
+                )}
                 <p className="mt-2 font-sans text-sm leading-6 text-slate-600">{story.excerpt}</p>
               </article>
             ))}
