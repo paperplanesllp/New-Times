@@ -478,32 +478,6 @@ function SpotlightArticleDetail({ article, nextArticle }) {
               <p className="font-sans text-xs font-bold uppercase tracking-[0.16em] text-slate-500">
                 First Published: {publishedDate}
               </p>
-              <div className="mt-5">
-                <SocialActions compact />
-              </div>
-            </section>
-
-            <section className="mt-9 grid min-w-0 gap-5 bg-slate-100 p-5 sm:grid-cols-[120px_minmax(0,1fr)] sm:p-6">
-              <div className="h-32 overflow-hidden bg-white">
-                <SpotlightImage src="/mg1.png" alt="New Times magazine cover" category="Subscribe" className="h-full object-contain p-3" />
-              </div>
-              <div className="min-w-0">
-                <span className="font-sans text-[11px] font-extrabold uppercase tracking-[0.18em] text-red-700">
-                  New Times Premium
-                </span>
-                <h2 className="mt-2 font-serif text-2xl font-bold leading-tight text-slate-950">
-                  Become a Subscriber
-                </h2>
-                <p className="mt-2 max-w-2xl font-sans text-sm leading-6 text-slate-600">
-                  Get deeper business features, founder stories, and curated magazine editions from New Times.
-                </p>
-                <Link
-                  to="/subscribe"
-                  className="mt-4 inline-flex rounded-full bg-slate-950 px-5 py-3 font-sans text-xs font-bold uppercase tracking-[0.14em] text-white no-underline transition hover:bg-red-700"
-                >
-                  Subscribe Now &rarr;
-                </Link>
-              </div>
             </section>
           </section>
 

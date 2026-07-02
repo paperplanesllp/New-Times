@@ -7,6 +7,7 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
+  const [istTime, setIstTime] = useState('');
   const searchInputRef = useRef(null);
   const [openDrawerSections, setOpenDrawerSections] = useState({
     spotlight: false,
@@ -50,6 +51,25 @@ export default function Navbar() {
       searchInputRef.current?.focus();
     }
   }, [isSearchOpen]);
+
+  useEffect(() => {
+    const formatter = new Intl.DateTimeFormat('en-IN', {
+      timeZone: 'Asia/Kolkata',
+      hour: '2-digit',
+      minute: '2-digit',
+      second: '2-digit',
+      hour12: true,
+    });
+
+    const updateIstTime = () => {
+      setIstTime(formatter.format(new Date()));
+    };
+
+    updateIstTime();
+    const timer = window.setInterval(updateIstTime, 1000);
+
+    return () => window.clearInterval(timer);
+  }, []);
 
   const toggleSearch = () => {
     setIsSearchOpen((current) => !current);
@@ -109,15 +129,24 @@ export default function Navbar() {
     <>
       <header className="sticky top-0 z-[1000] w-full bg-black font-sans text-white">
         <div className="flex items-center justify-between px-4 py-3 border-b border-slate-800 sm:px-6">
-          <button
-            onClick={() => setIsMenuOpen(true)}
-            className="flex w-8 cursor-pointer flex-col gap-1.5 p-1"
-            aria-label="Open menu"
-          >
-            <span className="h-[3px] w-full rounded bg-white" />
-            <span className="h-[3px] w-3/4 rounded bg-white" />
-            <span className="h-[3px] w-full rounded bg-white" />
-          </button>
+          <div className="flex min-w-0 items-center gap-3 sm:gap-4">
+            <button
+              onClick={() => setIsMenuOpen(true)}
+              className="flex w-8 shrink-0 cursor-pointer flex-col gap-1.5 p-1"
+              aria-label="Open menu"
+            >
+              <span className="h-[3px] w-full rounded bg-white" />
+              <span className="h-[3px] w-3/4 rounded bg-white" />
+              <span className="h-[3px] w-full rounded bg-white" />
+            </button>
+            <time
+              dateTime={istTime}
+              className="hidden whitespace-nowrap border-l border-white/20 pl-3 font-sans text-[11px] font-bold uppercase tracking-[0.08em] text-white/85 sm:block"
+              aria-label="Indian Standard Time"
+            >
+              IST {istTime}
+            </time>
+          </div>
 
           <Brand />
 
