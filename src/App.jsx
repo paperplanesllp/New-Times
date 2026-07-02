@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import Navbar from './component/Navbar';
 import BreakingTicker from './components/BreakingTicker';
 import Footer from './component/Footer';
@@ -12,7 +12,6 @@ import Billionaires from './pages/Billionaires';
 import TopStories from './pages/TopStories';
 
 import Economy from './pages/Economy';
-import NTSpotlight from './pages/NTSpotlight';
 import SpotlightFeaturePage from './pages/SpotlightFeaturePage';
 import CoverStories from './pages/CoverStories';
 import CreatorsEconomy from './pages/CreatorsEconomy';
@@ -47,7 +46,7 @@ export default function App() {
         <Route path="/top-stories" element={<TopStories />} />
        
         <Route path="/economy" element={<Economy />} />
-        <Route path="/spotlight" element={<NTSpotlight />} />
+        <Route path="/spotlight" element={<Navigate to="/spotlight/business-features" replace />} />
         <Route path="/spotlight/business-features" element={<SpotlightFeaturePage type="business-features" />} />
         <Route path="/spotlight/business-features/:slug" element={<SpotlightFeaturePage type="business-features" />} />
         <Route path="/spotlight/recognise-series" element={<SpotlightFeaturePage type="recognise-series" />} />

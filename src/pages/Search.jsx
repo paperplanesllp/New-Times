@@ -7,7 +7,6 @@ const searchItems = [
   { title: 'Magazine', category: 'Page', description: 'New Times magazine features and issues.', to: '/magazine' },
   { title: 'NT Billionaires', category: 'Page', description: 'Billionaire rankings, profiles, and wealth coverage.', to: '/billionaires' },
   { title: 'Economy', category: 'Page', description: 'Economic policy, markets, growth, and macro coverage.', to: '/economy' },
-  { title: 'NT Spotlight', category: 'Page', description: 'Spotlight coverage across startups, business features, and cover features.', to: '/spotlight' },
   { title: 'Business Features', category: 'Spotlight', description: 'Deep dives on companies, strategy, leadership, and markets.', to: '/spotlight/business-features' },
   { title: 'Recognition Series', category: 'Spotlight', description: 'Profiles of builders, operators, and emerging leaders.', to: '/spotlight/recognise-series' },
   { title: 'Startup', category: 'Spotlight', description: 'Startup stories, funding moves, and founder playbooks.', to: '/spotlight/startup' },

@@ -169,7 +169,7 @@ export default function Navbar() {
           <Link to="/billionaires" className={navLink}>NT BILLIONAIRES</Link>
           <Link to="/economy" className={navLink}>ECONOMY</Link>
           <div className="relative items-center self-stretch hidden lg:flex group">
-            <Link to="/spotlight" className={navLink}>
+            <Link to="/spotlight/business-features" className={navLink}>
               <span className={navBadge}>NEW</span>
               <span>NT SPOTLIGHT</span>
               <span className={downArrow} aria-hidden="true" />
@@ -187,7 +187,7 @@ export default function Navbar() {
               ))}
             </div>
           </div>
-          <Link to="/spotlight" className={`${navLink} lg:hidden`}>
+          <Link to="/spotlight/business-features" className={`${navLink} lg:hidden`}>
             <span className={navBadge}>NEW</span>
             NT SPOTLIGHT
           </Link>
