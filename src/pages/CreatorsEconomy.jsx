@@ -147,6 +147,88 @@ const creatorStories = [
       "India's digital finance ecosystem is entering a new phase where influence must be matched by responsibility. For creators, transparency, compliance, and credibility are becoming long-term competitive advantages. For consumers, stronger oversight promises greater confidence in the financial information they encounter online."
     ],
   },
+  {
+    slug: 'creator-infrastructure-startups-monetisation-tools-india',
+    category: 'CREATOR INFRASTRUCTURE',
+    title: "Creator Infrastructure Startups Are Building the Business Stack for India's Digital Entrepreneurs",
+    excerpt:
+      "As creators move beyond content into commerce, education, memberships, and brand partnerships, a new generation of startups is building the tools that help them operate like full-scale businesses.",
+    image: '/marketing.jpg',
+    summary:
+      "Analytics, payments, legal compliance, AI-assisted production, e-commerce, and brand discovery tools are becoming the backbone of India's next creator-led businesses.",
+    body: [
+      "India's creator economy is no longer limited to posting videos, building followers, or securing occasional brand collaborations. As creators become entrepreneurs, they need infrastructure that helps them manage revenue, audiences, compliance, production, partnerships, and commerce.",
+      "This shift is creating a major opportunity for startups building software and services around the creator economy. These companies are not simply serving influencers; they are building the operating systems for a new generation of digital entrepreneurs.",
+      "The Rise of Creator Business Tools",
+      "Creators today need analytics dashboards, content planning systems, payment tools, tax support, brand collaboration platforms, legal templates, e-commerce integrations, community management products, and AI-powered production tools.",
+      "For many creators, managing these functions manually becomes difficult as their audience and revenue grow. Infrastructure startups are stepping in to simplify this work and help creators professionalise faster.",
+      "Monetisation Is Moving Beyond Sponsorships",
+      "Brand deals remain important, but creators are increasingly building multiple income streams through courses, paid communities, affiliate commerce, live events, newsletters, merchandise, consulting, and direct product sales.",
+      "Each revenue stream requires different tools. A creator selling a course needs payments, customer support, email communication, and learning management. A creator launching merchandise needs inventory, fulfilment, design, and commerce integrations. A creator running a membership needs community tools and recurring billing.",
+      "Why Investors Are Paying Attention",
+      "The creator economy's growth has made infrastructure especially attractive to investors. Instead of betting on individual creators, infrastructure companies can serve thousands or millions of creators across categories.",
+      "Software platforms that help creators earn, manage, and scale revenue can benefit from the broader expansion of digital entrepreneurship in India.",
+      "AI Will Accelerate the Stack",
+      "Artificial intelligence is becoming central to creator infrastructure. AI can help creators write scripts, edit videos, generate thumbnails, translate content, repurpose long videos into short clips, analyse engagement, and plan publishing schedules.",
+      "The biggest opportunity will belong to tools that combine automation with authenticity. Creators want efficiency, but audiences still reward trust, originality, and a clear human voice.",
+      "A More Professional Creator Economy",
+      "As the ecosystem matures, creators will increasingly operate with the discipline of small businesses. They will need accounting, compliance, intellectual property protection, campaign reporting, brand safety processes, and long-term audience strategy.",
+      "This professionalisation will create space for a large creator infrastructure market in India, supporting not only influencers but educators, founders, artists, financial educators, podcasters, gamers, community builders, and independent media operators.",
+      "Outlook",
+      "The next phase of India's creator economy will be shaped not only by creators themselves, but also by the technology companies that help them become sustainable businesses. Infrastructure may become the quiet engine behind the country's creator-led growth story."
+    ],
+  },
+];
+
+const creatorSignals = [
+  {
+    category: 'MARKET SIGNAL',
+    title: '$1 Trillion Influence Economy',
+    excerpt:
+      'Creator-led influence is expected to reshape discovery, trust, and purchase decisions across consumer categories by 2030.',
+    image: '/social.png',
+    slug: 'india-creator-economy-1-trillion-consumer-spending-bcg',
+  },
+  {
+    category: 'COMPLIANCE',
+    title: 'AI Influencer Disclosure Becomes Mandatory',
+    excerpt:
+      'Brands using virtual influencers will need clearer labels, stronger creative review, and more transparent campaign planning.',
+    image: '/aiii.avif',
+    slug: 'asci-2026-ai-influencer-rules-digital-humans',
+  },
+  {
+    category: 'LEGAL RIGHTS',
+    title: 'Personality Rights Enter the Creator Economy',
+    excerpt:
+      'Digital creators are gaining stronger protection against AI deepfakes, fake endorsements, and identity misuse.',
+    image: '/media.jpeg',
+    slug: 'raj-shamani-delhi-high-court-personality-rights-ai-deepfakes',
+  },
+  {
+    category: 'GROWTH',
+    title: '$15B Market, $62B Runway',
+    excerpt:
+      "India's creator economy is moving from niche content creation to a major digital industry with strong long-term growth.",
+    image: '/influ.png',
+    slug: 'india-creator-economy-15-billion-62-billion-2033',
+  },
+  {
+    category: 'BUSINESS STACK',
+    title: 'Creator Infrastructure Gets Investor Attention',
+    excerpt:
+      'Payments, analytics, AI production, e-commerce, and compliance tools are becoming core business infrastructure for creators.',
+    image: '/marketing.jpg',
+    slug: 'creator-infrastructure-startups-monetisation-tools-india',
+  },
+  {
+    category: 'FINANCE',
+    title: 'Finfluencers Face a Stricter Rulebook',
+    excerpt:
+      'Financial creators must separate education from advice while brands build disclosure and compliance into campaign briefs.',
+    image: '/m2.jpg',
+    slug: 'sebi-asci-finfluencer-rules-accountability-digital-finance',
+  },
 ];
 
 function renderArticleBody(paragraphs) {
@@ -351,6 +433,51 @@ export default function CreatorsEconomy() {
             ))}
           </div>
         </div>
+
+        <section className="mt-12 border-t border-slate-200 pt-8">
+          <div className="mb-6 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <span className="mb-2 block text-[11px] font-extrabold uppercase tracking-[0.2em] text-slate-500">
+                More Coverage
+              </span>
+              <h2 className="m-0 text-3xl font-extrabold leading-tight text-slate-950">
+                Creator Economy Signals
+              </h2>
+            </div>
+            <span className="text-[11px] font-bold uppercase tracking-[0.16em] text-slate-500">
+              New Times Desk
+            </span>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+            {creatorSignals.map((signal) => (
+              <Link
+                key={signal.title}
+                to={`/creators-economy/${signal.slug}`}
+                className="group block border border-slate-200 bg-white text-slate-950 no-underline transition hover:-translate-y-1 hover:border-slate-950 hover:shadow-[0_18px_40px_rgba(15,23,42,0.08)]"
+              >
+                <div className="overflow-hidden bg-slate-100">
+                  <img
+                    src={signal.image}
+                    alt={signal.title}
+                    className="h-48 w-full object-cover transition duration-500 group-hover:scale-[1.04]"
+                  />
+                </div>
+                <div className="p-5">
+                  <span className="mb-2 block text-[10px] font-extrabold uppercase tracking-[0.14em] text-amber-700">
+                    {signal.category}
+                  </span>
+                  <h3 className="m-0 text-xl font-bold leading-tight underline-offset-4 group-hover:underline">
+                    {signal.title}
+                  </h3>
+                  <p className="mt-3 text-sm leading-6 text-slate-600">
+                    {signal.excerpt}
+                  </p>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
       </section>
     </main>
   );
