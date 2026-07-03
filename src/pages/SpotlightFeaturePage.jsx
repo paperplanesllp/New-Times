@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
-import nikhilKamathImage from '../assets/kk.jpg';
+
+const nikhilKamathImage = '/kammath.jpg';
 
 const businessFeatureArticles = [
   {

@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import LiveBusinessNewsSection from '../component/LiveBusinessNewsSection';
 import newTimesLogo from '../assets/New Times final-02.png';
-import nikhilKamathImage from '../assets/kk.jpg';
 
 import Ticker from '../component/Ticker';
 import MainDashboard from '../component/MainDashboard';
@@ -11,6 +10,8 @@ import BusinessHubGrid from '../component/BusinessHubGrid';
 import FounderSandbox from '../component/FounderSandbox';
 import BillionairesHub from '../component/BillionairesHub';
 import GetReadyCta from '../component/GetReadyCta';
+
+const nikhilKamathImage = '/kammath.jpg';
 
 const tickerItems = [
   { name: 'NIFTY 50', value: '23,269.40', change: '-0.15', percent: '0.23%' },
