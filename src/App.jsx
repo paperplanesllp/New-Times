@@ -55,6 +55,7 @@ export default function App() {
         <Route path="/spotlight/cover-feature" element={<SpotlightFeaturePage type="cover-feature" />} />
         <Route path="/cover-stories" element={<CoverStories />} />
         <Route path="/creators-economy" element={<CreatorsEconomy />} />
+        <Route path="/creators-economy/:slug" element={<CreatorsEconomy />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/lists" element={<Lists />} />
         <Route path="/nt-awards" element={<NTAwards />} />
