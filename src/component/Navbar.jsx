@@ -193,7 +193,6 @@ export default function Navbar() {
 
         <nav className="flex min-h-[64px] w-full items-center justify-start gap-5 overflow-x-auto bg-black px-4 sm:justify-center sm:px-6 lg:gap-6 lg:overflow-visible">
           <Link to="/" className={navLink}>HOME</Link>
-          <Link to="/about" className={navLink}>ABOUT</Link>
           <Link to="/magazine" className={navLink}>MAGAZINE</Link>
           <Link to="/billionaires" className={navLink}>NT BILLIONAIRES</Link>
           <Link to="/economy" className={navLink}>ECONOMY</Link>
