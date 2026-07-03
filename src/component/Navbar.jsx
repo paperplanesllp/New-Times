@@ -149,7 +149,12 @@ export default function Navbar() {
             </time>
           </div>
 
-          <Brand />
+          <div className="flex flex-col items-center">
+            <Brand />
+            <p className="mt-1 font-sans text-[10px] font-semibold uppercase tracking-[0.18em] text-white/75 sm:text-[11px]">
+              Stories That Shape Business.
+            </p>
+          </div>
 
           <div className="flex items-center gap-3 sm:gap-5">
             <Link
