@@ -89,7 +89,7 @@ export default function BillionairesNewsGrid() {
   return (
     <section className="mt-14 w-full bg-white pb-16 text-gray-950">
       <div className="mb-8 flex flex-col gap-4 border-b border-gray-200 pb-4 md:flex-row md:items-end md:justify-between">
-        <h1 className="font-serif text-4xl font-normal leading-none text-gray-950 md:text-5xl">
+        <h1 className="text-4xl font-normal leading-none text-gray-950 md:text-5xl">
           Related Articles
         </h1>
         <div className="flex gap-5 overflow-x-auto text-xs font-semibold text-gray-500">
@@ -106,7 +106,7 @@ export default function BillionairesNewsGrid() {
           {sideFeatures.map((article, index) => (
             <article key={article.id} className={index > 0 ? 'border-t border-gray-200 pt-8 md:border-t-0 lg:border-t' : ''}>
               <img className="mb-4 aspect-[16/9] w-full object-cover" src={article.image} alt={article.title} />
-              <h3 className="mb-3 font-serif text-2xl font-semibold leading-tight text-gray-950">
+              <h3 className="mb-3 text-2xl font-semibold leading-tight text-gray-950">
                 {article.title}
               </h3>
               {byline(article.author)}
@@ -116,7 +116,7 @@ export default function BillionairesNewsGrid() {
 
         <article className="order-1 lg:order-2">
           <img className="mb-6 aspect-[16/9] w-full object-cover lg:aspect-[16/8.5]" src={mainFeature.image} alt={mainFeature.title} />
-          <h2 className="mx-auto max-w-5xl text-center font-serif text-3xl font-semibold leading-tight text-gray-950 md:text-4xl">
+          <h2 className="mx-auto max-w-5xl text-center text-3xl font-semibold leading-tight text-gray-950 md:text-4xl">
             {mainFeature.title}
           </h2>
           <p className="mx-auto mt-4 max-w-3xl text-center text-sm leading-6 text-gray-600">
@@ -131,7 +131,7 @@ export default function BillionairesNewsGrid() {
           <article key={article.id} className="grid grid-cols-[96px_minmax(0,1fr)] gap-5 border-b border-gray-100 pb-6 last:border-b-0 md:border-b-0">
             <img className="h-24 w-24 object-cover" src={article.image} alt={article.title} />
             <div>
-              <h4 className="mb-3 font-serif text-xl font-semibold leading-tight text-gray-950">
+              <h4 className="mb-3 text-xl font-semibold leading-tight text-gray-950">
                 {article.title}
               </h4>
               {byline(article.author)}
@@ -146,7 +146,7 @@ export default function BillionairesNewsGrid() {
             <article key={article.id} className={`grid gap-5 pb-8 md:grid-cols-[minmax(0,1fr)_220px] ${idx !== listFeatures.length - 1 ? 'mb-8 border-b border-gray-200' : ''}`}>
               <div>
                 <span className="mb-2 block text-xs text-gray-500">{article.time}</span>
-                <h3 className="mb-3 font-serif text-2xl font-semibold leading-tight text-gray-950">
+                <h3 className="mb-3 text-2xl font-semibold leading-tight text-gray-950">
                   {article.title}
                 </h3>
                 <p className="mb-4 text-sm leading-6 text-gray-600">{article.excerpt}</p>

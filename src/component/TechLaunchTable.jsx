@@ -10,7 +10,7 @@ const TRACKING_INDEX = [
 
 export default function TechLaunchTable() {
   return (
-    <div style={{ marginBottom: '48px', fontFamily: 'system-ui, -apple-system, sans-serif' }}>
+    <div style={{ marginBottom: '48px' }}>
       <div style={{ marginBottom: '20px' }}>
         <h3 style={{ fontSize: '20px', fontWeight: '800', color: '#09090b', letterSpacing: '-0.5px', margin: '0 0 6px 0' }}>
           Hardware Pipeline & Silicon Registry
@@ -45,7 +45,7 @@ export default function TechLaunchTable() {
               >
                 <td style={{ padding: '16px', fontWeight: '700', color: '#09090b' }}>{row.platform}</td>
                 <td style={{ padding: '16px', color: '#27272a', fontWeight: '500' }}>{row.architecture}</td>
-                <td style={{ padding: '16px', color: '#52525b', fontFamily: 'monospace', fontSize: '13px' }}>{row.benchmark}</td>
+                <td style={{ padding: '16px', color: '#52525b', fontSize: '13px' }}>{row.benchmark}</td>
                 <td style={{ padding: '16px', color: '#27272a', fontWeight: '600' }}>{row.tier}</td>
                 <td style={{ padding: '16px' }}>
                   <span style={{ 

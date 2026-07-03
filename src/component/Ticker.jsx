@@ -11,7 +11,6 @@ const Ticker = ({ items }) => {
     borderTop: '1px solid #eaeaea',
     borderBottom: '1px solid #eaeaea',
     padding: '12px 0',
-    fontFamily: 'system-ui, -apple-system, sans-serif',
     fontSize: '15px',
     display: 'flex',
     alignItems: 'center',

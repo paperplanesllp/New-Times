@@ -80,16 +80,16 @@ export default function Search() {
     <main className="min-h-[70vh] bg-white px-4 py-10 text-slate-950 sm:px-6 lg:px-8">
       <section className="mx-auto max-w-5xl">
         <div className="border-b border-slate-200 pb-6">
-          <span className="font-sans text-[11px] font-extrabold uppercase tracking-[0.2em] text-slate-500">
+          <span className="text-[11px] font-extrabold uppercase tracking-[0.2em] text-slate-500">
             New Times Search
           </span>
-          <h1 className="mt-3 font-serif text-4xl font-extrabold leading-tight text-slate-950 md:text-5xl">
+          <h1 className="mt-3 text-4xl font-extrabold leading-tight text-slate-950 md:text-5xl">
             {query ? `Search results for "${query}"` : 'Search New Times'}
           </h1>
         </div>
 
         {query && (
-          <p className="mt-5 font-sans text-sm font-semibold uppercase tracking-[0.14em] text-slate-500">
+          <p className="mt-5 text-sm font-semibold uppercase tracking-[0.14em] text-slate-500">
             {results.length} result{results.length === 1 ? '' : 's'} found
           </p>
         )}
@@ -101,20 +101,20 @@ export default function Search() {
               to={item.to}
               className="block border border-slate-200 bg-white p-5 text-slate-950 no-underline transition hover:border-red-500"
             >
-              <span className="font-sans text-[10px] font-black uppercase tracking-[0.16em] text-red-600">
+              <span className="text-[10px] font-black uppercase tracking-[0.16em] text-red-600">
                 {item.category}
               </span>
-              <h2 className="mt-2 font-serif text-2xl font-bold leading-tight text-slate-950">
+              <h2 className="mt-2 text-2xl font-bold leading-tight text-slate-950">
                 {item.title}
               </h2>
-              <p className="mt-2 font-sans text-sm leading-6 text-slate-600">{item.description}</p>
+              <p className="mt-2 text-sm leading-6 text-slate-600">{item.description}</p>
             </Link>
           ))}
         </div>
 
         {query && results.length === 0 && (
           <div className="mt-8 border border-slate-200 bg-slate-50 p-6">
-            <p className="font-sans text-base font-semibold text-slate-700">
+            <p className="text-base font-semibold text-slate-700">
               No results found. Try searching for AI, startup, economy, creators, spotlight, or money.
             </p>
           </div>

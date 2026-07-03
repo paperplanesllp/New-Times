@@ -40,9 +40,9 @@ export default function FounderSandbox() {
   const sideStrategies = FOUNDER_STRATEGIES.slice(1);
 
   return (
-    <section className="px-4 py-8 font-serif sm:px-6 lg:px-8 text-slate-950">
+    <section className="px-4 py-8 sm:px-6 lg:px-8 text-slate-950">
       <div className="pb-3 mb-6 border-b border-gray-200">
-        <h2 className="flex items-center gap-2 m-0 font-sans text-2xl font-semibold tracking-tight text-slate-950">
+        <h2 className="flex items-center gap-2 m-0 text-2xl font-semibold tracking-tight text-slate-950">
          Founder Brief <span className="text-lg font-normal">-&gt;</span>
         </h2>
       </div>
@@ -50,7 +50,7 @@ export default function FounderSandbox() {
       <div className="grid gap-8 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1.9fr)]">
         <div className="border-gray-200 lg:border-r lg:pr-6">
          
-          <h3 className="m-0 font-serif text-3xl font-semibold leading-tight featured-headline text-slate-950 md:text-4xl">
+          <h3 className="m-0 text-3xl font-semibold leading-tight featured-headline text-slate-950 md:text-4xl">
             Strategies That Turn Vision Into Growth
           </h3>
           <p className="mt-4 text-sm leading-7 text-slate-600">
@@ -61,7 +61,7 @@ export default function FounderSandbox() {
             <div className="text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-500">
               Priority score
             </div>
-            <div className="mt-3 font-serif text-5xl font-semibold text-slate-950">9.1</div>
+            <div className="mt-3 text-5xl font-semibold text-slate-950">9.1</div>
             <p className="mt-3 text-sm leading-7 text-slate-600">
               This quarter's founder agenda should tilt toward repeatable growth with cash preservation in equal measure.
             </p>
@@ -73,7 +73,7 @@ export default function FounderSandbox() {
             <div className="mb-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-500">
               {mainStrategy.topic} / {mainStrategy.difficulty}
             </div>
-            <h3 className="m-0 font-serif text-2xl font-semibold leading-tight story-headline text-slate-950">
+            <h3 className="m-0 text-2xl font-semibold leading-tight story-headline text-slate-950">
               {mainStrategy.insight}
             </h3>
             <p className="mt-4 text-sm leading-7 text-slate-600">{mainStrategy.action}</p>
@@ -88,7 +88,7 @@ export default function FounderSandbox() {
                 <div className="mb-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-500">
                   {strategy.topic}
                 </div>
-                <h4 className="m-0 font-serif text-2xl font-semibold leading-tight tracking-tight text-slate-950">
+                <h4 className="m-0 text-2xl font-semibold leading-tight tracking-tight text-slate-950">
                   {strategy.insight}
                 </h4>
                 <p className="mt-3 text-sm leading-6 text-slate-600">{strategy.action}</p>

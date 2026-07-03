@@ -315,7 +315,7 @@ function BusinessStory({ story, compact = false }) {
         className={compact ? 'object-cover w-20 h-20 rounded-2xl' : 'mb-4 h-[220px] w-full rounded-3xl object-cover'}
       />
       <div>
-        <h3 className={compact ? 'story-headline m-0 font-serif text-[15px] font-semibold leading-tight text-slate-950' : 'story-headline m-0 font-serif text-xl font-semibold leading-tight text-slate-950'}>
+        <h3 className={compact ? 'story-headline m-0 text-[15px] font-semibold leading-tight text-slate-950' : 'story-headline m-0 text-xl font-semibold leading-tight text-slate-950'}>
           {story.title}
         </h3>
         {story.description && (
@@ -341,14 +341,14 @@ export default function LiveBusinessNewsSection() {
   const { featured, sideStories, streamStories } = activeContent;
 
   return (
-    <section className="px-4 py-8 font-serif bg-white shadow-sm sm:px-6 lg:px-8 text-slate-950">
+    <section className="px-4 py-8 bg-white shadow-sm sm:px-6 lg:px-8 text-slate-950">
       <div className="pb-3 mb-6 border-b border-gray-200">
-        <h2 className="flex items-center gap-2 m-0 font-sans text-2xl font-semibold tracking-tight text-slate-950">
+        <h2 className="flex items-center gap-2 m-0 text-2xl font-semibold tracking-tight text-slate-950">
           Business news and Updates
         </h2>
       </div>
 
-      <div className="flex flex-wrap gap-2 pb-3 font-sans border-b border-gray-100 mb-7" role="tablist" aria-label="Business news topics">
+      <div className="flex flex-wrap gap-2 pb-3 border-b border-gray-100 mb-7" role="tablist" aria-label="Business news topics">
         {businessTopics.map((topic) => {
           const isActive = activeTopic === topic.id;
 
@@ -386,7 +386,7 @@ export default function LiveBusinessNewsSection() {
             }}
             className="mb-5 h-[360px] w-full rounded-3xl object-cover"
           />
-          <h2 className="m-0 font-serif text-3xl font-semibold leading-tight featured-headline text-slate-950 md:text-4xl">
+          <h2 className="m-0 text-3xl font-semibold leading-tight featured-headline text-slate-950 md:text-4xl">
             {featured.title}
           </h2>
           <p className="mt-4 text-sm leading-7 text-slate-600">{featured.description}</p>

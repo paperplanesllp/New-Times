@@ -69,7 +69,7 @@ export default function LiveNewsSection() {
               <span className="h-2 w-2 rounded-full bg-white" aria-hidden="true" />
               Live News
             </div>
-            <h2 className="mt-3 font-serif text-3xl font-bold leading-tight sm:text-4xl">
+            <h2 className="mt-3 text-3xl font-bold leading-tight sm:text-4xl">
               Latest headlines across {activeLabel}
             </h2>
             <p className="mt-2 max-w-2xl text-sm leading-6 text-slate-300">

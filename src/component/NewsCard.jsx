@@ -40,7 +40,7 @@ export default function NewsCard({ article, featured = false }) {
         </div>
 
         <h3
-          className={`mt-3 font-serif font-bold leading-tight text-slate-950 group-hover:text-red-700 ${
+          className={`mt-3 font-bold leading-tight text-slate-950 group-hover:text-red-700 ${
             featured ? 'text-2xl sm:text-4xl' : 'text-xl'
           }`}
         >

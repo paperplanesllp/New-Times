@@ -36,7 +36,7 @@ export default function Magazine() {
   ];
 
   return (
-    <div style={{ fontFamily: 'system-ui, sans-serif', marginBottom: '40px' }}>
+    <div style={{ marginBottom: '40px' }}>
       
       {/* Injected CSS for hiding scrollbars and adding smooth hover effects */}
       <style>

@@ -32,7 +32,7 @@ export default function App() {
   const isHomePage = pathname === '/';
 
   return (
-    <div className="min-h-screen font-sans bg-white text-gray-950">
+    <div className="min-h-screen bg-white text-gray-950">
       <ScrollToTop />
       <Navbar />
       {isHomePage && <BreakingTicker />}

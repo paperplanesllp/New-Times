@@ -13,10 +13,10 @@ export default function Magazines() {
         </div>
 
         <div className="text-center lg:text-left">
-          <p className="mb-4 font-sans text-xs font-black uppercase tracking-[0.35em] text-red-600">
+          <p className="mb-4 text-xs font-black uppercase tracking-[0.35em] text-red-600">
             Magazine
           </p>
-          <h1 className="m-0 font-serif text-5xl font-black uppercase leading-none tracking-normal text-black sm:text-6xl lg:text-7xl">
+          <h1 className="m-0 text-5xl font-black uppercase leading-none tracking-normal text-black sm:text-6xl lg:text-7xl">
             Coming Soon
           </h1>
           <div className="mx-auto mt-6 h-1 w-24 bg-black lg:mx-0" />

@@ -239,7 +239,7 @@ const topStories = [
 function SectionTitle({ children }) {
   return (
     <div className="pt-4">
-      <h2 className="inline-block pb-2 font-serif text-2xl font-bold leading-none tracking-tight text-black border-b-[3px] border-blue-600 sm:text-3xl">
+      <h2 className="inline-block pb-2 text-2xl font-bold leading-none tracking-tight text-black border-b-[3px] border-blue-600 sm:text-3xl">
         {children}
       </h2>
     </div>
@@ -324,7 +324,7 @@ function FeaturedCarousel() {
                       <div className="mb-2 text-[11px] font-semibold uppercase tracking-[0.25em] text-blue-700">
                         {article.category}
                       </div>
-                      <h3 className="mx-auto max-w-[820px] font-serif text-3xl font-bold leading-tight tracking-tight text-black underline-offset-4 group-hover:underline sm:text-4xl">
+                      <h3 className="mx-auto max-w-[820px] text-3xl font-bold leading-tight tracking-tight text-black underline-offset-4 group-hover:underline sm:text-4xl">
                         {article.title}
                       </h3>
                       <p className="mx-auto mt-4 max-w-[720px] text-sm leading-7 text-black/60 sm:text-base">
@@ -361,9 +361,9 @@ function FeaturedCarousel() {
 
 function CompactTopStories() {
   return (
-    <aside className="h-full px-4 font-serif bg-white shadow-sm py-7 sm:px-5 text-slate-950">
+    <aside className="h-full px-4 bg-white shadow-sm py-7 sm:px-5 text-slate-950">
       <div className="pb-3 mb-5 border-b border-gray-200">
-        <h3 className="flex items-center gap-2 m-0 font-sans text-xl font-semibold tracking-tight text-slate-950">
+        <h3 className="flex items-center gap-2 m-0 text-xl font-semibold tracking-tight text-slate-950">
           Top Stories <span className="text-base font-normal">-&gt;</span>
         </h3>
       </div>
@@ -380,7 +380,7 @@ function CompactTopStories() {
           <div className="mt-3 text-[10px] font-semibold uppercase tracking-[0.16em] text-slate-500">
             {topStories[0].category}
           </div>
-          <h4 className="m-0 mt-2 font-serif text-[17px] font-bold leading-snug text-slate-950 underline-offset-4 group-hover:underline">
+          <h4 className="m-0 mt-2 text-[17px] font-bold leading-snug text-slate-950 underline-offset-4 group-hover:underline">
             {topStories[0].title}
           </h4>
         </div>
@@ -396,7 +396,7 @@ function CompactTopStories() {
                   <span>{story.category}</span>
                   <span className="text-slate-300">{String(index + 2).padStart(2, '0')}</span>
                 </div>
-                <h4 className="m-0 font-serif text-[15px] font-bold leading-snug text-slate-950 underline-offset-4 group-hover:underline">
+                <h4 className="m-0 text-[15px] font-bold leading-snug text-slate-950 underline-offset-4 group-hover:underline">
                   {story.title}
                 </h4>
               </div>
@@ -418,7 +418,7 @@ export default function Home() {
           <div className="grid gap-7 lg:grid-cols-[minmax(0,1fr)_340px] lg:gap-9 xl:grid-cols-[minmax(0,1fr)_360px]">
             <article className="group lg:border-r lg:border-black/30 lg:pr-9">
               <Link to="/spotlight/business-features/nikhil-kamath-zerodha-journey" className="block no-underline">
-                <h1 className="mb-5 font-serif text-3xl font-bold leading-none tracking-tight text-black sm:text-4xl">
+                <h1 className="mb-5 text-3xl font-bold leading-none tracking-tight text-black sm:text-4xl">
                   Business
                 </h1>
 
@@ -430,7 +430,7 @@ export default function Home() {
                   />
                 </div>
 
-                <h2 className="mx-auto mt-3 max-w-[820px] text-center font-serif text-2xl font-bold leading-tight tracking-tight text-black underline-offset-4 group-hover:underline sm:text-3xl lg:text-4xl xl:text-4xl">
+                <h2 className="mx-auto mt-3 max-w-[820px] text-center text-2xl font-bold leading-tight tracking-tight text-black underline-offset-4 group-hover:underline sm:text-3xl lg:text-4xl xl:text-4xl">
                   From College Dropout to Fintech Pioneer: Nikhil Kamath's Zerodha Journey
                 </h2>
 
@@ -468,7 +468,7 @@ export default function Home() {
                       Sponsored
                     </div>
 
-                    <h3 className="mt-3 font-serif text-2xl font-bold leading-tight tracking-tight text-black transition duration-300 group-hover/sponsored:text-blue-700 sm:text-3xl lg:text-[34px]">
+                    <h3 className="mt-3 text-2xl font-bold leading-tight tracking-tight text-black transition duration-300 group-hover/sponsored:text-blue-700 sm:text-3xl lg:text-[34px]">
                       The Future of AI-Native Companies Is Being Built Today
                     </h3>
 
@@ -487,7 +487,7 @@ export default function Home() {
             <aside className="space-y-6 lg:max-w-[360px]">
               {sideSections.map((section) => (
                 <div key={section.title} className="pt-4 border-t border-black">
-                  <h3 className="pb-3 font-serif text-xl font-semibold tracking-tight text-black border-b border-black sm:text-2xl">
+                  <h3 className="pb-3 text-xl font-semibold tracking-tight text-black border-b border-black sm:text-2xl">
                     {section.title}
                   </h3>
 
@@ -495,7 +495,7 @@ export default function Home() {
                     {section.items.map((item) => (
                       <div
                         key={item}
-                        className="block py-3 font-serif text-base font-semibold leading-snug text-black transition underline-offset-4 hover:underline sm:text-lg"
+                        className="block py-3 text-base font-semibold leading-snug text-black transition underline-offset-4 hover:underline sm:text-lg"
                       >
                         {item}
                       </div>

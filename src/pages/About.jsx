@@ -5,19 +5,19 @@ export default function About() {
     <main className="min-h-[80vh] bg-white px-4 py-12 text-slate-950 sm:px-6 lg:px-8">
       <section className="mx-auto max-w-5xl">
         <div className="border-b border-slate-200 pb-8">
-          <span className="font-sans text-xs font-bold uppercase tracking-[0.18em] text-red-600">
+          <span className="text-xs font-bold uppercase tracking-[0.18em] text-red-600">
             About
           </span>
-          <h1 className="mt-4 font-serif text-4xl font-bold leading-tight text-slate-950 md:text-5xl">
+          <h1 className="mt-4 text-4xl font-bold leading-tight text-slate-950 md:text-5xl">
             About New Times
           </h1>
-          <p className="mt-5 max-w-4xl font-sans text-lg leading-8 text-slate-700">
+          <p className="mt-5 max-w-4xl text-lg leading-8 text-slate-700">
             New Times India is a digital-first business publication dedicated to documenting the people,
             ideas, and innovations shaping the future of business.
           </p>
         </div>
 
-        <div className="mt-10 space-y-5 font-sans text-base leading-8 text-slate-700">
+        <div className="mt-10 space-y-5 text-base leading-8 text-slate-700">
           <p>
             We bring together stories of founders, startups, business leaders, brands, innovators, and
             creators through credible editorial content, in-depth features, interviews, industry insights,
@@ -43,21 +43,21 @@ export default function About() {
 
         <div className="mt-12 grid gap-6">
           <article className="border border-slate-200 bg-white p-6 sm:p-8">
-            <h2 className="font-serif text-3xl font-bold text-slate-950">Vision</h2>
-            <p className="mt-4 font-sans text-base leading-8 text-slate-700">
+            <h2 className="text-3xl font-bold text-slate-950">Vision</h2>
+            <p className="mt-4 text-base leading-8 text-slate-700">
               To become India's most trusted digital business publication, empowering entrepreneurs,
               startups, businesses, business leaders, and creators through impactful storytelling,
               credible journalism, and meaningful recognition.
             </p>
-            <p className="mt-4 font-sans text-base leading-8 text-slate-700">
+            <p className="mt-4 text-base leading-8 text-slate-700">
               We envision a platform where innovation is celebrated, leadership is recognized, and
               business success inspires future generations.
             </p>
           </article>
 
           <article className="border border-slate-200 bg-white p-6 sm:p-8">
-            <h2 className="font-serif text-3xl font-bold text-slate-950">Mission</h2>
-            <p className="mt-4 font-sans text-base leading-8 text-slate-700">
+            <h2 className="text-3xl font-bold text-slate-950">Mission</h2>
+            <p className="mt-4 text-base leading-8 text-slate-700">
               Our mission is to deliver credible, high-quality business journalism that informs, inspires,
               and connects the entrepreneurial ecosystem. Through insightful stories, founder interviews,
               startup spotlights, leadership features, creator economy coverage, and industry insights,
@@ -68,8 +68,8 @@ export default function About() {
           </article>
 
           <article className="border border-slate-200 bg-white p-6 sm:p-8">
-            <h2 className="font-serif text-3xl font-bold text-slate-950">Who Can Get Featured?</h2>
-            <p className="mt-4 font-sans text-base leading-8 text-slate-700">
+            <h2 className="text-3xl font-bold text-slate-950">Who Can Get Featured?</h2>
+            <p className="mt-4 text-base leading-8 text-slate-700">
               New Times India features founders, entrepreneurs, startups, business leaders, established
               brands, innovators, investors, industry experts, and creators who are driving meaningful
               impact in their fields. Whether you're building a business, leading an organization, creating

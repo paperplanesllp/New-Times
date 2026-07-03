@@ -128,7 +128,7 @@ export default function Navbar() {
 
   return (
     <>
-      <header className="sticky top-0 z-[1000] w-full bg-black font-sans text-white">
+      <header className="sticky top-0 z-[1000] w-full bg-black text-white">
         <div className="flex items-center justify-between px-4 py-3 border-b border-slate-800 sm:px-6">
           <div className="flex min-w-0 items-center gap-3 sm:gap-4">
             <button
@@ -142,7 +142,7 @@ export default function Navbar() {
             </button>
             <time
               dateTime={istTime}
-              className="hidden whitespace-nowrap border-l border-white/20 pl-3 font-sans text-[11px] font-bold uppercase tracking-[0.08em] text-white/85 sm:block"
+              className="hidden whitespace-nowrap border-l border-white/20 pl-3 text-[11px] font-bold uppercase tracking-[0.08em] text-white/85 sm:block"
               aria-label="Indian Standard Time"
             >
               IST {istTime}
@@ -151,7 +151,7 @@ export default function Navbar() {
 
           <div className="flex flex-col items-center">
             <Brand />
-            <p className="mt-1 font-sans text-[10px] font-semibold uppercase tracking-[0.18em] text-white/75 sm:text-[11px]">
+            <p className="mt-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-white/75 sm:text-[11px]">
               Stories That Shape Business.
             </p>
           </div>
@@ -172,7 +172,7 @@ export default function Navbar() {
                   value={searchTerm}
                   onChange={(event) => setSearchTerm(event.target.value)}
                   placeholder="Search"
-                  className="h-9 w-[150px] border border-white/20 bg-white px-3 font-sans text-sm font-semibold text-black outline-none placeholder:text-slate-500 sm:w-[220px]"
+                  className="h-9 w-[150px] border border-white/20 bg-white px-3 text-sm font-semibold text-black outline-none placeholder:text-slate-500 sm:w-[220px]"
                   aria-label="Search New Times"
                 />
               )}
@@ -213,7 +213,7 @@ export default function Navbar() {
                 <Link
                   key={item.label}
                   to={item.to}
-                  className="block border-b border-slate-200 py-2.5 font-serif text-[13px] font-bold text-black no-underline last:border-b-0 hover:text-red-600"
+                  className="block border-b border-slate-200 py-2.5 text-[13px] font-bold text-black no-underline last:border-b-0 hover:text-red-600"
                 >
                   {item.label}
                 </Link>
@@ -240,7 +240,7 @@ export default function Navbar() {
                 <Link
                   key={item.label}
                   to={item.to}
-                  className="block border-b border-slate-200 py-2.5 font-serif text-[13px] font-bold text-black no-underline last:border-b-0 hover:text-red-600"
+                  className="block border-b border-slate-200 py-2.5 text-[13px] font-bold text-black no-underline last:border-b-0 hover:text-red-600"
                 >
                   {item.label}
                 </Link>
@@ -253,7 +253,7 @@ export default function Navbar() {
       </header>
 
       {isMenuOpen && (
-        <div className="fixed inset-0 z-[9999] bg-black/65 font-sans text-white">
+        <div className="fixed inset-0 z-[9999] bg-black/65 text-white">
           <div className="flex min-h-screen w-full max-w-[463px] flex-col overflow-y-auto bg-black px-6 pb-8 pt-2 shadow-2xl">
             <div className="relative flex min-h-[82px] items-start justify-center">
               <Link
@@ -293,7 +293,7 @@ export default function Navbar() {
                       <button
                         type="button"
                         onClick={() => toggleDrawerSection(item.key)}
-                        className="flex w-full items-center justify-between border-b border-white/10 py-4 text-left font-sans text-[16px] font-semibold uppercase leading-none text-white"
+                        className="flex w-full items-center justify-between border-b border-white/10 py-4 text-left text-[16px] font-semibold uppercase leading-none text-white"
                       >
                         <span>{item.label}</span>
                         <span className="text-[28px] font-semibold leading-none text-pink-600">
@@ -307,7 +307,7 @@ export default function Navbar() {
                               key={child.label}
                               to={child.to}
                               onClick={closeMenu}
-                              className="ml-4 block border-b border-white/10 py-[14px] font-sans text-[15px] font-semibold uppercase leading-none text-white no-underline last:border-b-0"
+                              className="ml-4 block border-b border-white/10 py-[14px] text-[15px] font-semibold uppercase leading-none text-white no-underline last:border-b-0"
                             >
                               {child.label}
                             </Link>
@@ -323,7 +323,7 @@ export default function Navbar() {
                     key={item.label}
                     to={item.to}
                     onClick={closeMenu}
-                    className="block border-b border-white/10 py-4 font-sans text-[16px] font-semibold uppercase leading-none text-white no-underline"
+                    className="block border-b border-white/10 py-4 text-[16px] font-semibold uppercase leading-none text-white no-underline"
                   >
                     {item.label}
                   </Link>
@@ -331,7 +331,7 @@ export default function Navbar() {
               })}
             </nav>
             <div className="pt-16 text-center">
-              <p className="font-sans text-[13px] font-medium uppercase text-zinc-500">
+              <p className="text-[13px] font-medium uppercase text-zinc-500">
                 Connect With Us
               </p>
               <div className="flex justify-center gap-3 mt-5">
@@ -339,7 +339,7 @@ export default function Navbar() {
                   <a
                     key={item}
                     href={`#drawer-social-${item}`}
-                    className="flex h-10 w-10 items-center justify-center rounded-full bg-zinc-800 font-sans text-[17px] font-black text-white no-underline"
+                    className="flex h-10 w-10 items-center justify-center rounded-full bg-zinc-800 text-[17px] font-black text-white no-underline"
                     aria-label={`Social ${item}`}
                   >
                     {item}

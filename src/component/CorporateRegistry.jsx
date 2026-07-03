@@ -10,7 +10,7 @@ const SECTOR_COMPANIES = [
 
 export default function CorporateRegistry() {
   return (
-    <div style={{ fontFamily: 'system-ui, sans-serif' }}>
+    <div>
       <div style={{ marginBottom: '16px' }}>
         <h3 style={{ fontSize: '16px', fontWeight: '800', textTransform: 'uppercase', color: '#0f172a', letterSpacing: '0.5px', margin: 0 }}>
           Market Weight & Allocations Index

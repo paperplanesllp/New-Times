@@ -87,7 +87,7 @@ export default function DailyQuote() {
           Quote of the Day
         </div>
 
-        <blockquote className="mx-auto max-w-6xl font-serif text-2xl font-bold leading-tight tracking-tight text-slate-950 sm:text-3xl lg:text-[34px]">
+        <blockquote className="mx-auto max-w-6xl text-2xl font-bold leading-tight tracking-tight text-slate-950 sm:text-3xl lg:text-[34px]">
           &ldquo;{quote.quote}&rdquo;
         </blockquote>
 

@@ -82,12 +82,12 @@ export default function Economy() {
 
   return (
     <main className="mx-auto min-h-[80vh] max-w-7xl bg-white px-4 py-8 sm:px-6 lg:px-8">
-      <section className="px-4 py-8 font-serif sm:px-6 lg:px-8 text-slate-950">
+      <section className="px-4 py-8 sm:px-6 lg:px-8 text-slate-950">
         <div className="pb-3 mb-6 border-b border-gray-200">
-          <h1 className="m-0 font-sans text-2xl font-semibold tracking-tight text-slate-950">
+          <h1 className="m-0 text-2xl font-semibold tracking-tight text-slate-950">
             Economy
           </h1>
-          <p className="mt-2 font-sans text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-500">
+          <p className="mt-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-500">
             Growth Signals
           </p>
         </div>
@@ -100,7 +100,7 @@ export default function Economy() {
                 <div className="mb-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-500">
                   {article.source} / {article.category}
                 </div>
-                <h2 className="m-0 font-serif text-xl font-semibold leading-tight story-headline text-slate-950">
+                <h2 className="m-0 text-xl font-semibold leading-tight story-headline text-slate-950">
                   {article.headline}
                 </h2>
                 <p className="mt-3 text-sm leading-6 text-slate-600">{article.summary}</p>
@@ -116,7 +116,7 @@ export default function Economy() {
             <div className="mb-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-500">
               {mainFeature.source} / {mainFeature.issue}
             </div>
-            <h2 className="m-0 font-serif text-3xl font-semibold leading-tight featured-headline text-slate-950 md:text-4xl">
+            <h2 className="m-0 text-3xl font-semibold leading-tight featured-headline text-slate-950 md:text-4xl">
               {mainFeature.headline}
             </h2>
             <p className="mt-4 text-sm leading-7 text-slate-600">{mainFeature.summary}</p>
@@ -132,7 +132,7 @@ export default function Economy() {
               <img src={article.image} alt={article.headline} className="object-cover w-20 h-20 rounded-2xl" />
               <div>
                 <div className="mb-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-500">{article.issue}</div>
-                <h3 className="m-0 font-serif text-[15px] font-semibold leading-tight text-slate-950">{article.headline}</h3>
+                <h3 className="m-0 text-[15px] font-semibold leading-tight text-slate-950">{article.headline}</h3>
                 <p className="mt-2 text-xs leading-5 text-slate-600">{article.summary}</p>
                 <button type="button" className="news-source-link mt-2 inline-flex text-[10px] font-semibold uppercase tracking-[0.18em] text-slate-950">
                   Read More

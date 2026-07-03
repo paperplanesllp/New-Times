@@ -33,7 +33,7 @@ export default function FeaturedNews() {
         />
 
         <div className="absolute -bottom-8 z-10 w-[88%] max-w-4xl bg-white px-5 py-6 text-center shadow-xl sm:px-8">
-          <h1 className="m-0 font-serif text-2xl font-semibold leading-tight text-black md:text-4xl">
+          <h1 className="m-0 text-2xl font-semibold leading-tight text-black md:text-4xl">
             {heroArticle.title}
           </h1>
         </div>
@@ -51,7 +51,7 @@ export default function FeaturedNews() {
               )}
             </div>
 
-            <h3 className="mb-2 font-serif text-xl font-semibold leading-snug text-gray-950">
+            <h3 className="mb-2 text-xl font-semibold leading-snug text-gray-950">
               {article.title}
             </h3>
             <span className="text-xs font-medium text-gray-500">{article.source}</span>

@@ -14,7 +14,7 @@ export default function TopStories() {
   return (
     <main className="mx-auto min-h-[80vh] max-w-7xl bg-white px-4 py-10 sm:px-6 lg:px-8">
       <div className="pb-4 mb-8 border-b border-slate-200">
-        <h1 className="font-serif text-4xl font-semibold tracking-tight text-slate-950">More Top Stories</h1>
+        <h1 className="text-4xl font-semibold tracking-tight text-slate-950">More Top Stories</h1>
         <p className="mt-3 max-w-2xl text-sm leading-7 text-slate-600">
           Browse the latest headlines, breaking updates, and expert commentary from around the globe.
         </p>

@@ -60,7 +60,6 @@ export default function TheBuzz() {
       display: 'grid', 
       gridTemplateColumns: '3fr 1fr', 
       gap: '32px', 
-      fontFamily: 'system-ui, sans-serif',
       marginBottom: '40px',
       alignItems: 'start'
     }}>

@@ -180,11 +180,11 @@ function BlogArt({ type }) {
 function BlogAdvertisement() {
   return (
     <aside className="self-start">
-      <div className="border-t border-slate-300 pt-2 text-center font-sans text-[9px] uppercase tracking-wide text-slate-500">
+      <div className="border-t border-slate-300 pt-2 text-center text-[9px] uppercase tracking-wide text-slate-500">
         Advertisement
       </div>
       <div className="mt-2 flex min-h-[360px] items-center justify-center overflow-hidden bg-[radial-gradient(circle_at_0_0,#6d19d8_0_20%,transparent_21%),radial-gradient(circle_at_100%_100%,#6d19d8_0_18%,transparent_19%),linear-gradient(135deg,#ffffff_0%,#f8fbff_100%)] px-7 text-center">
-        <p className="font-sans text-[30px] font-black leading-tight text-blue-700">
+        <p className="text-[30px] font-black leading-tight text-blue-700">
           Where Market
           <br />
           Leaders Came
@@ -196,11 +196,11 @@ function BlogAdvertisement() {
           Income.
         </p>
       </div>
-      <div className="mt-8 border-t border-slate-300 pt-2 text-center font-sans text-[9px] uppercase tracking-wide text-slate-500">
+      <div className="mt-8 border-t border-slate-300 pt-2 text-center text-[9px] uppercase tracking-wide text-slate-500">
         Advertisement
       </div>
       <div className="mt-2 flex min-h-[520px] items-center justify-center overflow-hidden bg-[radial-gradient(circle_at_100%_0,#6d19d8_0_19%,transparent_20%),radial-gradient(circle_at_0_100%,#6d19d8_0_18%,transparent_19%),linear-gradient(180deg,#ffffff_0%,#f8fbff_100%)] px-7 text-center">
-        <p className="font-sans text-[34px] font-black leading-tight text-blue-700">
+        <p className="text-[34px] font-black leading-tight text-blue-700">
           Where Market
           <br />
           Leaders Came
@@ -219,11 +219,11 @@ function BlogAdvertisement() {
 function RightRail() {
   return (
     <aside className="hidden pl-3 border-l border-slate-300 lg:block">
-      <div className="border-t border-slate-300 pt-2 text-center font-sans text-[9px] uppercase tracking-wide text-slate-500">
+      <div className="border-t border-slate-300 pt-2 text-center text-[9px] uppercase tracking-wide text-slate-500">
         Advertisement
       </div>
       <div className="mt-2 flex h-[314px] items-center justify-center overflow-hidden bg-[radial-gradient(circle_at_45%_100%,#ffffff_0_32%,transparent_33%),linear-gradient(135deg,#5b00b8_0_20%,#ffffff_21%_62%,#5b00b8_63%_100%)] px-7 text-center">
-        <p className="font-sans text-[27px] font-black leading-tight text-blue-700">
+        <p className="text-[27px] font-black leading-tight text-blue-700">
           Where Market Leaders
           <br />
           Came Together To
@@ -233,28 +233,28 @@ function RightRail() {
       </div>
 
       <div className="mt-7 bg-[#faf8ef] px-5 py-5">
-        <div className="border-y border-black py-4 text-center font-sans text-[18px] font-black uppercase tracking-wide text-black">
+        <div className="border-y border-black py-4 text-center text-[18px] font-black uppercase tracking-wide text-black">
           On Everyone's Radar
         </div>
         <article className="border-b mt-7 border-slate-300 pb-7">
           <div className="relative h-[250px] overflow-hidden bg-[linear-gradient(135deg,#93c5fd,#e0f2fe)]">
             <div className="absolute bottom-0 left-1/2 h-[190px] w-[120px] -translate-x-1/2 rounded-t-full bg-[#d7a07a]" />
-            <span className="absolute right-3 top-3 rounded-[8px] bg-red-600 px-3 py-1 font-sans text-[17px] font-black text-white">
+            <span className="absolute right-3 top-3 rounded-[8px] bg-red-600 px-3 py-1 text-[17px] font-black text-white">
               #1
             </span>
           </div>
-          <h3 className="mt-3 font-serif text-[21px] font-bold leading-snug text-black">
+          <h3 className="mt-3 text-[21px] font-bold leading-snug text-black">
             Tamannaah Bhatia&apos;s affair to remember
           </h3>
-          <p className="mt-4 font-serif text-[15px] text-slate-600">By Kunal Purandare</p>
+          <p className="mt-4 text-[15px] text-slate-600">By Kunal Purandare</p>
         </article>
       </div>
 
-      <div className="mt-7 border-t border-slate-300 pt-2 text-center font-sans text-[9px] uppercase tracking-wide text-slate-500">
+      <div className="mt-7 border-t border-slate-300 pt-2 text-center text-[9px] uppercase tracking-wide text-slate-500">
         Advertisement
       </div>
       <div className="mt-2 flex min-h-[560px] items-center justify-center overflow-hidden bg-[radial-gradient(circle_at_30%_0,#ffffff_0_26%,transparent_27%),linear-gradient(135deg,#5b00b8_0_18%,#ffffff_19%_100%)] px-7 text-center">
-        <p className="font-sans text-[36px] font-black leading-tight text-blue-700">
+        <p className="text-[36px] font-black leading-tight text-blue-700">
           Where Market
           <br />
           Leaders Came
@@ -275,13 +275,13 @@ export default function Blogs() {
     <main className="text-black bg-white">
       <div className="mx-auto grid max-w-[1360px] gap-3 px-1 py-10 lg:grid-cols-[minmax(0,1fr)_390px]">
         <section className="min-w-0 overflow-hidden">
-          <h1 className="font-serif text-[32px] font-bold leading-tight text-black">Blogs</h1>
+          <h1 className="text-[32px] font-bold leading-tight text-black">Blogs</h1>
 
           <div className="grid mt-8 gap-x-7 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
             {blogSections.map((section) => (
               <React.Fragment key={section.title}>
                 <article>
-                  <h2 className="border-y border-slate-300 py-5 text-center font-sans text-[25px] font-black uppercase tracking-wide text-slate-800">
+                  <h2 className="border-y border-slate-300 py-5 text-center text-[25px] font-black uppercase tracking-wide text-slate-800">
                     {section.title}
                   </h2>
                   <div className="mt-8">
@@ -294,19 +294,19 @@ export default function Blogs() {
                     ) : (
                       <BlogArt type={section.art} />
                     )}
-                    <h3 className="mt-4 font-serif text-[27px] font-bold leading-[1.22] text-black">
+                    <h3 className="mt-4 text-[27px] font-bold leading-[1.22] text-black">
                       {section.imageTitle}
                     </h3>
                     {section.imageSubtitle && (
-                      <p className="mt-2 font-serif text-[18px] font-semibold leading-snug text-slate-700">
+                      <p className="mt-2 text-[18px] font-semibold leading-snug text-slate-700">
                         {section.imageSubtitle}
                       </p>
                     )}
-                    <p className="mt-3 font-sans text-[15px] font-semibold text-slate-500">
+                    <p className="mt-3 text-[15px] font-semibold text-slate-500">
                       By {section.imageAuthor}
                     </p>
                     {section.imageExcerpt && (
-                      <p className="mt-3 font-sans text-[15px] leading-7 text-slate-700">
+                      <p className="mt-3 text-[15px] leading-7 text-slate-700">
                         {section.imageExcerpt}
                       </p>
                     )}
@@ -319,14 +319,14 @@ export default function Blogs() {
 
                       return (
                         <div key={story.title} className="py-4 border-b border-slate-200">
-                          <h4 className="font-serif text-[20px] font-bold leading-snug text-black">
+                          <h4 className="text-[20px] font-bold leading-snug text-black">
                             {story.title}
                           </h4>
-                          <p className="mt-2 font-sans text-[15px] font-semibold text-slate-500">
+                          <p className="mt-2 text-[15px] font-semibold text-slate-500">
                             By {story.author}
                           </p>
                           {story.excerpt && (
-                            <p className="mt-3 font-sans text-[14px] leading-6 text-slate-700">
+                            <p className="mt-3 text-[14px] leading-6 text-slate-700">
                               {story.excerpt}
                             </p>
                           )}

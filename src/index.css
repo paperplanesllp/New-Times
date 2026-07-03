@@ -1,19 +1,18 @@
 @import "tailwindcss";
 
 :root {
-  --font-heading: Arial, Helvetica, sans-serif;
-  --font-body: Georgia, "Times New Roman", Times, serif;
+  --app-font: Georgia, "Times New Roman", Times, serif;
 }
 
 @theme {
-  --font-serif: var(--font-body);
-  --font-sans: var(--font-heading);
+  --font-serif: var(--app-font);
+  --font-sans: var(--app-font);
+  --font-mono: var(--app-font);
 }
 
 .news-headline,
 .featured-headline,
 .story-headline {
-  font-family: var(--font-heading);
   font-weight: 700;
   letter-spacing: 0;
   line-height: 1.1;
@@ -79,67 +78,25 @@
     min-width: 320px;
     background: #ffffff;
     color: #111827;
-    font-family: var(--font-body);
+    line-height: 1.6;
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  button,
-  nav,
-  .navbar,
-  .menu,
-  label {
-    font-family: var(--font-heading);
-    font-weight: 700;
-  }
-
-  p,
-  span,
-  li,
-  article,
-  section {
-    font-family: var(--font-body);
-    line-height: 1.65;
-  }
-
-  nav,
-  nav *,
-  .navbar,
-  .navbar *,
-  .menu,
-  .menu *,
-  button,
-  button *,
-  label {
-    font-family: var(--font-heading);
-  }
-
-  h1,
-  h1 *,
-  h2,
-  h2 *,
-  h3,
-  h3 *,
-  h4,
-  h4 *,
-  h5,
-  h5 *,
-  h6,
-  h6 * {
-    font-family: var(--font-heading);
-  }
-
   img {
     max-width: 100%;
   }
+}
+
+html,
+body,
+#root,
+*,
+*::before,
+*::after {
+  font-family: var(--app-font) !important;
 }
 
 html,

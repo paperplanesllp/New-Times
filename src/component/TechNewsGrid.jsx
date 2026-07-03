@@ -181,31 +181,31 @@ function TechAdvertisement({ ad, onClose }) {
         type="button"
         aria-label="Close advertisement"
         onClick={onClose}
-        className="absolute flex items-center justify-center w-8 h-8 font-sans text-sm font-bold text-white transition border right-3 top-3 border-white/25 bg-black/30 hover:bg-white hover:text-black"
+        className="absolute flex items-center justify-center w-8 h-8 text-sm font-bold text-white transition border right-3 top-3 border-white/25 bg-black/30 hover:bg-white hover:text-black"
       >
         X
       </button>
-      <div className="mb-2 px-6 pt-6 font-sans text-[10px] uppercase tracking-[0.08em] text-gray-400">Advertisement</div>
+      <div className="mb-2 px-6 pt-6 text-[10px] uppercase tracking-[0.08em] text-gray-400">Advertisement</div>
       <div className="grid md:grid-cols-[minmax(0,1fr)_160px]">
         <div className="p-6 pt-2">
-          <div className={`mb-3 font-sans text-[11px] font-bold uppercase tracking-[0.18em] ${ad.accent}`}>
+          <div className={`mb-3 text-[11px] font-bold uppercase tracking-[0.18em] ${ad.accent}`}>
             {ad.label}
           </div>
-          <h3 className="max-w-xl m-0 font-serif text-2xl font-bold leading-tight">
+          <h3 className="max-w-xl m-0 text-2xl font-bold leading-tight">
             {ad.title}
           </h3>
-          <button className="mt-5 bg-white px-4 py-3 font-sans text-[10px] font-bold uppercase tracking-[0.18em] text-zinc-950 transition hover:bg-cyan-200">
+          <button className="mt-5 bg-white px-4 py-3 text-[10px] font-bold uppercase tracking-[0.18em] text-zinc-950 transition hover:bg-cyan-200">
             Explore Stack
           </button>
         </div>
         <div className="min-h-[160px] bg-[radial-gradient(circle_at_top,#22d3ee,transparent_34%),linear-gradient(135deg,#0f172a,#111827_52%,#020617)] p-5">
           <div className="flex flex-col justify-between h-full p-5 border border-white/20">
-            <div className="font-sans text-[10px] font-bold uppercase tracking-[0.18em] text-cyan-200">
+            <div className="text-[10px] font-bold uppercase tracking-[0.18em] text-cyan-200">
               Sponsored
             </div>
             <div>
-              <div className="font-sans text-4xl font-black text-white">{ad.metric}</div>
-              <div className="font-sans text-xs font-bold uppercase tracking-[0.16em] text-zinc-300">{ad.unit}</div>
+              <div className="text-4xl font-black text-white">{ad.metric}</div>
+              <div className="text-xs font-bold uppercase tracking-[0.16em] text-zinc-300">{ad.unit}</div>
             </div>
           </div>
         </div>
@@ -219,9 +219,9 @@ export default function TechNewsGrid() {
   const closeAd = (id) => setClosedAds((current) => [...current, id]);
 
   return (
-    <section className="mt-10 font-serif bg-white text-gray-950">
+    <section className="mt-10 bg-white text-gray-950">
       <div className="pb-2 border-b border-gray-300 mb-7">
-        <h2 className="flex items-center gap-2 m-0 font-sans text-2xl font-bold text-black">
+        <h2 className="flex items-center gap-2 m-0 text-2xl font-bold text-black">
           India Deep-Tech Dispatches
         </h2>
       </div>
@@ -235,18 +235,18 @@ export default function TechNewsGrid() {
           return (
             <React.Fragment key={section.title}>
               <div className="pb-10 border-b border-gray-200 last:border-b-0">
-                <div className={`mb-5 font-sans text-[12px] font-bold uppercase tracking-[0.12em] ${section.accent}`}>
+                <div className={`mb-5 text-[12px] font-bold uppercase tracking-[0.12em] ${section.accent}`}>
                   {section.title}
                 </div>
 
                 <div className="grid gap-8 lg:grid-cols-[minmax(0,2fr)_minmax(300px,1fr)]">
                   <article>
                     <img className="mb-5 h-[360px] w-full object-cover" src={leadStory.image} alt={leadStory.title} />
-                    <h2 className="m-0 font-serif text-3xl font-bold leading-tight text-black underline decoration-black underline-offset-4">
+                    <h2 className="m-0 text-3xl font-bold leading-tight text-black underline decoration-black underline-offset-4">
                       {leadStory.title}
                     </h2>
-                    <p className="mt-4 font-serif text-[15px] leading-7 text-slate-700">{leadStory.summary}</p>
-                    <div className="font-sans text-[11px] font-semibold text-slate-500">By Technology Desk / India Edition</div>
+                    <p className="mt-4 text-[15px] leading-7 text-slate-700">{leadStory.summary}</p>
+                    <div className="text-[11px] font-semibold text-slate-500">By Technology Desk / India Edition</div>
                     {showAd && <TechAdvertisement ad={ad} onClose={() => closeAd(ad.id)} />}
                   </article>
 
@@ -255,9 +255,9 @@ export default function TechNewsGrid() {
                       <article key={story.id} className="grid grid-cols-[96px_minmax(0,1fr)] gap-4 border-b border-gray-100 pb-5 last:border-b-0">
                         <img className="object-cover w-24 h-24" src={story.image} alt={story.title} />
                         <div>
-                          <h3 className="m-0 font-serif text-lg font-bold leading-tight text-black">{story.title}</h3>
-                          <p className="my-2 font-serif text-sm leading-6 text-slate-600">{story.summary}</p>
-                          <div className="font-sans text-[10px] font-semibold uppercase tracking-[0.04em] text-slate-500">
+                          <h3 className="m-0 text-lg font-bold leading-tight text-black">{story.title}</h3>
+                          <p className="my-2 text-sm leading-6 text-slate-600">{story.summary}</p>
+                          <div className="text-[10px] font-semibold uppercase tracking-[0.04em] text-slate-500">
                             Technology Desk
                           </div>
                         </div>

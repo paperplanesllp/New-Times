@@ -9,7 +9,7 @@ export default function GetReadyCta() {
           <p className="text-[11px] font-bold uppercase tracking-[0.28em] text-amber-300">
             To Join Us
           </p>
-          <h2 className="mt-3 font-serif text-3xl font-bold leading-tight sm:text-5xl">
+          <h2 className="mt-3 text-3xl font-bold leading-tight sm:text-5xl">
             Get Ready ?
           </h2> 
         </div>

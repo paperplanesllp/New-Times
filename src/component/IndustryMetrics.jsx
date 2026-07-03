@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function IndustryMetrics() {
   return (
-    <div style={{ fontFamily: '"Playfair Display", Georgia, serif', marginBottom: '48px' }}>
+    <div style={{ marginBottom: '48px' }}>
       <div style={{ width: '100%', height: '4px', backgroundColor: '#0f172a', marginBottom: '20px' }} />
 
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', marginBottom: '24px' }}>
@@ -14,7 +14,7 @@ export default function IndustryMetrics() {
             Artificial Intelligence
           </h1>
         </div>
-        <span style={{ fontSize: '13px', color: '#16a34a', fontFamily: 'monospace', fontWeight: '700', textTransform: 'uppercase' }}>
+        <span style={{ fontSize: '13px', color: '#16a34a', fontWeight: '700', textTransform: 'uppercase' }}>
           Accelerating
         </span>
       </div>
@@ -23,10 +23,10 @@ export default function IndustryMetrics() {
         <h2 style={{ fontSize: '28px', fontWeight: '800', color: '#0f172a', margin: '0 0 12px 0', lineHeight: '1.2' }}>
           India's Sovereign Compute Push Enters Commercial Deployment Phase
         </h2>
-        <p style={{ maxWidth: '820px', margin: '0 0 18px 0', fontFamily: 'system-ui, -apple-system, sans-serif', fontSize: '16px', lineHeight: '1.7', color: '#334155' }}>
+        <p style={{ maxWidth: '820px', margin: '0 0 18px 0', fontSize: '16px', lineHeight: '1.7', color: '#334155' }}>
           Government-backed AI infrastructure and enterprise adoption are moving from policy announcements to operational deployment across India's technology ecosystem.
         </p>
-        <p style={{ margin: 0, fontFamily: 'system-ui, -apple-system, sans-serif', fontSize: '13px', lineHeight: '1.6', color: '#64748b', fontWeight: '600' }}>
+        <p style={{ margin: 0, fontSize: '13px', lineHeight: '1.6', color: '#64748b', fontWeight: '600' }}>
           Based on recent developments in the IndiaAI Mission, domestic AI model launches, and enterprise AI investments.
         </p>
       </div>

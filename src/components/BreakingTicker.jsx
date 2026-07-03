@@ -109,7 +109,7 @@ export default function BreakingTicker() {
 
               <a
                 href={item.link}
-                className="font-serif text-[20px] font-bold leading-tight text-black underline-offset-4 transition hover:underline"
+                className="text-[20px] font-bold leading-tight text-black underline-offset-4 transition hover:underline"
               >
                 {item.title}
               </a>

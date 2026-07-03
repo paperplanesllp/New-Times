@@ -35,7 +35,7 @@ const WIRE_BRIEFS = [
 
 export default function IndustryAnalysis() {
   return (
-    <div style={{ fontFamily: 'system-ui, -apple-system, sans-serif', marginBottom: '48px' }}>
+    <div style={{ marginBottom: '48px' }}>
       <div style={{ borderBottom: '1px solid #0f172a', paddingBottom: '8px', marginBottom: '24px' }}>
         <h3 style={{ margin: 0, fontSize: '14px', fontWeight: '800', textTransform: 'uppercase', letterSpacing: '1.5px', color: '#0f172a' }}>
           Executive Briefings & Dispatches
@@ -55,7 +55,7 @@ export default function IndustryAnalysis() {
             <span style={{ fontSize: '11px', fontWeight: '800', color: '#b45309', letterSpacing: '1px', display: 'block', marginBottom: '8px' }}>
               {brief.tag}
             </span>
-            <h4 style={{ fontFamily: '"Playfair Display", Georgia, serif', fontSize: '24px', fontWeight: '700', color: '#0f172a', margin: '0 0 12px 0', lineHeight: '1.25' }}>
+            <h4 style={{ fontSize: '24px', fontWeight: '700', color: '#0f172a', margin: '0 0 12px 0', lineHeight: '1.25' }}>
               {brief.title}
             </h4>
             <p style={{ maxWidth: '900px', fontSize: '15px', color: '#475569', lineHeight: '1.7', margin: 0 }}>

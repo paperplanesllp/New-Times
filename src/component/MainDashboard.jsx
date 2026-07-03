@@ -29,15 +29,15 @@ const EXECUTIVE_NEWS = [
 
 export default function MainDashboard() {
   return (
-    <section className="h-full px-4 py-8 font-serif bg-white shadow-sm sm:px-6 lg:px-8 text-slate-950">
+    <section className="h-full px-4 py-8 bg-white shadow-sm sm:px-6 lg:px-8 text-slate-950">
       <div className="pb-3 mb-6 border-b border-gray-200">
-        <h2 className="flex items-center gap-2 m-0 font-sans text-2xl font-semibold tracking-tight text-slate-950">
+        <h2 className="flex items-center gap-2 m-0 text-2xl font-semibold tracking-tight text-slate-950">
           Executive Overview
         </h2>
       </div>
 
       <div className="pb-5 border-b border-gray-100 mb-7">
-        <h3 className="max-w-4xl m-0 font-serif text-3xl font-semibold leading-tight featured-headline text-slate-950 md:text-4xl">
+        <h3 className="max-w-4xl m-0 text-3xl font-semibold leading-tight featured-headline text-slate-950 md:text-4xl">
           High-impact business intelligence and insights for leaders shaping markets and companies.
         </h3>
       </div>
@@ -55,7 +55,7 @@ export default function MainDashboard() {
             />
 
             <div className="flex flex-col justify-center">
-              <h3 className="m-0 mt-2 font-serif text-2xl font-semibold leading-tight story-headline text-slate-950 md:text-3xl">
+              <h3 className="m-0 mt-2 text-2xl font-semibold leading-tight story-headline text-slate-950 md:text-3xl">
                 {story.title}
               </h3>
               <p className="mt-3 text-sm leading-7 text-slate-600">

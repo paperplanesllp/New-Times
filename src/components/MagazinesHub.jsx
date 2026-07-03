@@ -163,14 +163,14 @@ export default function MagazinesHub() {
           .slice(0, 4);
 
   return (
-    <section className="px-4 py-8 font-serif sm:px-6 lg:px-8 text-slate-950">
+    <section className="px-4 py-8 sm:px-6 lg:px-8 text-slate-950">
       <div className="pb-3 mb-6 border-b border-gray-200">
-        <h2 className="flex items-center gap-2 m-0 font-sans text-2xl font-semibold tracking-tight text-slate-950">
+        <h2 className="flex items-center gap-2 m-0 text-2xl font-semibold tracking-tight text-slate-950">
           Magazines <span className="text-lg font-normal">-&gt;</span>
         </h2>
       </div>
 
-      <div className="flex flex-wrap gap-2 pb-3 font-sans border-b border-gray-100 mb-7">
+      <div className="flex flex-wrap gap-2 pb-3 border-b border-gray-100 mb-7">
         {categories.map((cat) => (
           <button
             key={cat}
@@ -193,7 +193,7 @@ export default function MagazinesHub() {
               <div className="mb-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-500">
                 {issue.issue} / {issue.category}
               </div>
-              <h3 className="m-0 font-serif text-xl font-semibold leading-tight story-headline text-slate-950">
+              <h3 className="m-0 text-xl font-semibold leading-tight story-headline text-slate-950">
                 {issue.title}
               </h3>
               <div className="mt-3 text-sm leading-6 text-slate-600">
@@ -211,7 +211,7 @@ export default function MagazinesHub() {
           <div className="mb-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-500">
             {mainFeature.issue} / {mainFeature.category}
           </div>
-          <h2 className="m-0 font-serif text-3xl font-semibold leading-tight featured-headline text-slate-950 md:text-4xl">
+          <h2 className="m-0 text-3xl font-semibold leading-tight featured-headline text-slate-950 md:text-4xl">
             {mainFeature.title}
           </h2>
           <p className="mt-4 text-sm leading-7 text-slate-600">{mainFeature.description}</p>
@@ -227,7 +227,7 @@ export default function MagazinesHub() {
             <img src={issue.image} alt={issue.title} className="object-cover w-20 h-20 rounded-2xl" />
             <div>
               <div className="mb-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-500">{issue.issue}</div>
-              <h4 className="m-0 font-serif text-[15px] font-semibold leading-tight text-slate-950">{issue.title}</h4>
+              <h4 className="m-0 text-[15px] font-semibold leading-tight text-slate-950">{issue.title}</h4>
               <button type="button" className="news-source-link mt-2 inline-flex text-[10px] font-semibold uppercase tracking-[0.18em] text-slate-950">
                 {issue.cta}
               </button>

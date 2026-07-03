@@ -46,7 +46,7 @@ const socials = [
 function FooterColumn({ title, children, items, showPartnerLinks = false }) {
   return (
     <div>
-      <h3 className="font-sans text-[16px] font-semibold uppercase leading-tight text-white">
+      <h3 className="text-[16px] font-semibold uppercase leading-tight text-white">
         {children || title}
       </h3>
       <div className="mt-5 space-y-[17px]">
@@ -54,14 +54,14 @@ function FooterColumn({ title, children, items, showPartnerLinks = false }) {
           <a
             key={item}
             href={`#${item.toLowerCase().replaceAll(' ', '-')}`}
-            className="block font-sans text-[14px] font-semibold uppercase leading-tight text-white no-underline hover:text-slate-300"
+            className="block text-[14px] font-semibold uppercase leading-tight text-white no-underline hover:text-slate-300"
           >
             {item}
           </a>
         ))}
         {showPartnerLinks && (
           <details className="group">
-            <summary className="flex cursor-pointer list-none items-center justify-between gap-3 font-sans text-[14px] font-semibold uppercase leading-tight text-white hover:text-slate-300">
+            <summary className="flex cursor-pointer list-none items-center justify-between gap-3 text-[14px] font-semibold uppercase leading-tight text-white hover:text-slate-300">
               <span>Partner With Us</span>
               <span className="text-lg leading-none transition group-open:rotate-45">+</span>
             </summary>
@@ -70,7 +70,7 @@ function FooterColumn({ title, children, items, showPartnerLinks = false }) {
                 <Link
                   key={item.label}
                   to={item.to}
-                  className="block font-sans text-[13px] font-semibold uppercase leading-tight text-white/85 no-underline hover:text-white"
+                  className="block text-[13px] font-semibold uppercase leading-tight text-white/85 no-underline hover:text-white"
                 >
                   {item.label}
                 </Link>
@@ -103,7 +103,7 @@ export default function Footer() {
               />
             </div>
 
-            <p className="mt-[50px] inline-block px-1 font-sans text-[13px] font-medium uppercase leading-[16px] tracking-[0.02em] text-white">
+            <p className="mt-[50px] inline-block px-1 text-[13px] font-medium uppercase leading-[16px] tracking-[0.02em] text-white">
               © Copyright 2026, NewTimes.in All Rights Reserved
             </p>
 
@@ -114,7 +114,7 @@ export default function Footer() {
                   href={item.href}
                   target="_blank"
                   rel="noreferrer"
-                  className="flex h-[36px] w-[36px] items-center justify-center rounded-full bg-white font-sans text-[14px] font-semibold text-black no-underline"
+                  className="flex h-[36px] w-[36px] items-center justify-center rounded-full bg-white text-[14px] font-semibold text-black no-underline"
                   aria-label={item.label}
                 >
                   {item.text}

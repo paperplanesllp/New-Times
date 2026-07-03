@@ -55,26 +55,26 @@ export default function NTSpotlight() {
 
         <div className="mb-8 flex flex-col gap-4 border-b border-gray-200 pb-6 lg:flex-row lg:items-end lg:justify-between">
           <div>
-            <span className="mb-2 block font-sans text-[11px] font-extrabold uppercase tracking-[0.2em] text-slate-500">
+            <span className="mb-2 block text-[11px] font-extrabold uppercase tracking-[0.2em] text-slate-500">
               NT Spotlight
             </span>
-            <h1 className="m-0 font-serif text-4xl font-extrabold leading-tight text-slate-950 md:text-5xl">
+            <h1 className="m-0 text-4xl font-extrabold leading-tight text-slate-950 md:text-5xl">
               Artificial Intelligence
             </h1>
           </div>
-          <span className="font-mono text-[12px] font-bold uppercase tracking-[0.14em] text-green-600">
+          <span className="text-[12px] font-bold uppercase tracking-[0.14em] text-green-600">
             Business Focus
           </span>
         </div>
 
         <div className="mb-10 bg-slate-50 p-7 ring-1 ring-gray-200">
-          <h2 className="m-0 max-w-4xl font-serif text-3xl font-extrabold leading-tight text-slate-950">
+          <h2 className="m-0 max-w-4xl text-3xl font-extrabold leading-tight text-slate-950">
             India's AI Business Wave Moves From Promise to Operating Plans
           </h2>
-          <p className="mt-4 max-w-4xl font-sans text-base leading-7 text-slate-600">
+          <p className="mt-4 max-w-4xl text-base leading-7 text-slate-600">
             New compute investments, sovereign models, enterprise pilots, and sector-specific use cases are turning artificial intelligence into a boardroom priority across Indian business.
           </p>
-          <p className="mt-4 max-w-4xl font-sans text-sm font-semibold leading-6 text-slate-500">
+          <p className="mt-4 max-w-4xl text-sm font-semibold leading-6 text-slate-500">
             Based on recent developments across AI infrastructure, India-first models, global AI partnerships, and enterprise adoption.
           </p>
         </div>
@@ -82,13 +82,13 @@ export default function NTSpotlight() {
         <div className="grid gap-8 lg:grid-cols-[minmax(0,1.5fr)_minmax(320px,1fr)]">
           <article>
             <img className="mb-5 h-[380px] w-full object-cover" src={leadStory.image} alt={leadStory.title} />
-            <span className="mb-2 block font-sans text-[11px] font-extrabold uppercase tracking-[0.14em] text-amber-700">
+            <span className="mb-2 block text-[11px] font-extrabold uppercase tracking-[0.14em] text-amber-700">
               {leadStory.category}
             </span>
-            <h2 className="m-0 font-serif text-3xl font-bold leading-tight text-slate-950">
+            <h2 className="m-0 text-3xl font-bold leading-tight text-slate-950">
               {leadStory.title}
             </h2>
-            <p className="mt-4 font-sans text-[15px] leading-7 text-slate-600">{leadStory.excerpt}</p>
+            <p className="mt-4 text-[15px] leading-7 text-slate-600">{leadStory.excerpt}</p>
           </article>
 
           <div className="space-y-6 border-gray-200 lg:border-l lg:pl-6">
@@ -96,11 +96,11 @@ export default function NTSpotlight() {
               <article key={story.title} className="grid grid-cols-[96px_minmax(0,1fr)] gap-4 border-b border-gray-100 pb-5 last:border-b-0">
                 <img className="h-24 w-24 object-cover" src={story.image} alt={story.title} />
                 <div>
-                  <span className="mb-1 block font-sans text-[10px] font-extrabold uppercase tracking-[0.12em] text-amber-700">
+                  <span className="mb-1 block text-[10px] font-extrabold uppercase tracking-[0.12em] text-amber-700">
                     {story.category}
                   </span>
-                  <h3 className="m-0 font-serif text-lg font-bold leading-tight text-slate-950">{story.title}</h3>
-                  <p className="mt-2 font-sans text-sm leading-6 text-slate-600">{story.excerpt}</p>
+                  <h3 className="m-0 text-lg font-bold leading-tight text-slate-950">{story.title}</h3>
+                  <p className="mt-2 text-sm leading-6 text-slate-600">{story.excerpt}</p>
                 </div>
               </article>
             ))}

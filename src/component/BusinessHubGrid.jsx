@@ -29,9 +29,9 @@ const HUB_CARDS = [
 
 export default function BusinessHubGrid() {
   return (
-    <section className="px-4 py-8 font-serif bg-white shadow-sm sm:px-6 lg:px-8 text-slate-950">
+    <section className="px-4 py-8 bg-white shadow-sm sm:px-6 lg:px-8 text-slate-950">
       <div className="pb-3 mb-6 border-b border-gray-200">
-        <h2 className="flex items-center gap-2 m-0 font-sans text-2xl font-semibold tracking-tight text-slate-950">
+        <h2 className="flex items-center gap-2 m-0 text-2xl font-semibold tracking-tight text-slate-950">
          Insight Grid
         </h2>
       </div>
@@ -52,7 +52,7 @@ export default function BusinessHubGrid() {
             <div className="text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-500">
               {card.topic}
             </div>
-            <h3 className="m-0 mt-3 font-serif text-xl font-semibold leading-tight story-headline text-slate-950">
+            <h3 className="m-0 mt-3 text-xl font-semibold leading-tight story-headline text-slate-950">
               {card.insight}
             </h3>
             <div className="flex flex-wrap items-center gap-3 mt-5">

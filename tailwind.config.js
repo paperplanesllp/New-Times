@@ -5,15 +5,8 @@ export default {
     extend: {
       fontFamily: {
         serif: ['Georgia', '"Times New Roman"', 'Times', 'serif'],
-        sans: [
-          'Inter',
-          'ui-sans-serif',
-          'system-ui',
-          '-apple-system',
-          'BlinkMacSystemFont',
-          '"Segoe UI"',
-          'sans-serif',
-        ],
+        sans: ['Georgia', '"Times New Roman"', 'Times', 'serif'],
+        mono: ['Georgia', '"Times New Roman"', 'Times', 'serif'],
       },
     },
   },

@@ -18,7 +18,7 @@ export default function TechHubHeader() {
       </div>
 
       <div className="mb-8 border-b border-zinc-200 pb-6">
-        <h1 className="mb-3 font-serif text-4xl font-semibold leading-tight text-zinc-950 md:text-5xl">
+        <h1 className="mb-3 text-4xl font-semibold leading-tight text-zinc-950 md:text-5xl">
           The India Stack Agenda
         </h1>
         <p className="max-w-3xl text-base leading-7 text-zinc-600">

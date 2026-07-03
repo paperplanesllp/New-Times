@@ -111,14 +111,14 @@ export default function BillionairesHub() {
   const sideStories = getStorySlots(visibleStories, 1, 2);
 
   return (
-    <section className="px-4 py-8 font-serif sm:px-6 lg:px-8 text-slate-950">
+    <section className="px-4 py-8 sm:px-6 lg:px-8 text-slate-950">
       <div className="pb-3 mb-6 border-b border-gray-200">
-        <h2 className="flex items-center gap-2 m-0 font-sans text-2xl font-semibold tracking-tight text-slate-950">
+        <h2 className="flex items-center gap-2 m-0 text-2xl font-semibold tracking-tight text-slate-950">
           Wealth Titans <span className="text-lg font-normal">-&gt;</span>
         </h2>
       </div>
 
-      <div className="flex flex-wrap gap-2 pb-3 font-sans border-b border-gray-100 mb-7">
+      <div className="flex flex-wrap gap-2 pb-3 border-b border-gray-100 mb-7">
         {categories.map((cat) => (
           <button
             key={cat}
@@ -143,7 +143,7 @@ export default function BillionairesHub() {
                   <div className="mb-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-500">
                     {story.source} / {story.industry}
                   </div>
-                  <h3 className="m-0 font-serif text-xl font-semibold leading-tight story-headline text-slate-950">
+                  <h3 className="m-0 text-xl font-semibold leading-tight story-headline text-slate-950">
                     {story.headline}
                   </h3>
                   <p className="mt-3 text-sm leading-6 text-slate-600">{story.summary}</p>
@@ -159,7 +159,7 @@ export default function BillionairesHub() {
               <div className="mb-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-500">
                 {mainFeature.source} / {mainFeature.issue}
               </div>
-              <h2 className="m-0 font-serif text-3xl font-semibold leading-tight featured-headline text-slate-950 md:text-4xl">
+              <h2 className="m-0 text-3xl font-semibold leading-tight featured-headline text-slate-950 md:text-4xl">
                 {mainFeature.headline}
               </h2>
               <p className="mt-4 text-sm leading-7 text-slate-600">{mainFeature.summary}</p>

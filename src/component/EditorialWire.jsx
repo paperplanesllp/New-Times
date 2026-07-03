@@ -67,12 +67,12 @@ export default function EditorialWire() {
               <span style={{ display: 'inline-block', fontSize: '10px', fontWeight: '800', letterSpacing: '1px', color: '#ffffff', backgroundColor: '#1c1b18', padding: '3px 8px', borderRadius: '3px', marginBottom: '12px' }}>
                 {story.category}
               </span>
-              <h4 style={{ fontFamily: 'Georgia, serif', fontSize: '22px', fontWeight: '700', color: '#1c1b18', margin: 0, lineHeight: '1.3' }}>
+              <h4 style={{ fontSize: '22px', fontWeight: '700', color: '#1c1b18', margin: 0, lineHeight: '1.3' }}>
                 {story.title}
               </h4>
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
-              <p style={{ margin: '0 0 12px 0', fontSize: '14px', color: '#545048', lineHeight: '1.6', fontFamily: 'system-ui' }}>
+              <p style={{ margin: '0 0 12px 0', fontSize: '14px', color: '#545048', lineHeight: '1.6' }}>
                 {story.excerpt}
               </p>
               <span style={{ fontSize: '12px', color: '#a19c91', fontWeight: '500' }}>By Money Today Desk</span>
