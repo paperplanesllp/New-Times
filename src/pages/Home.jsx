@@ -559,36 +559,6 @@ export default function Home() {
 
         <GetReadyCta />
 
-        <section className="text-center bg-white border-black py-9 my-9 border-y">
-          <div className="max-w-2xl mx-auto">
-            <div className="text-[11px] font-semibold uppercase tracking-[0.25em] text-blue-700">
-              Newsletter
-            </div>
-
-            <h2 className="mt-3 font-serif text-3xl font-bold leading-tight tracking-tight text-black sm:text-4xl">
-              Get the essential business briefing.
-            </h2>
-
-            <p className="mt-4 text-sm leading-6 text-black/65">
-              Smart analysis on markets, founders, money and technology, delivered with an editorial lens.
-            </p>
-
-            <form className="flex flex-col max-w-xl gap-3 mx-auto mt-7 sm:flex-row">
-              <input
-                type="email"
-                placeholder="Email address"
-                className="flex-1 px-4 text-sm transition border border-black outline-none min-h-12 focus:border-blue-700"
-              />
-
-              <button
-                type="submit"
-                className="min-h-12 bg-blue-700 px-6 text-xs font-semibold uppercase tracking-[0.25em] text-white transition hover:bg-blue-800"
-              >
-                Sign Up
-              </button>
-            </form>
-          </div>
-        </section>
       </div>
     </main>
   );

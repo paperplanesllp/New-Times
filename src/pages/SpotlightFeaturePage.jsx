@@ -119,33 +119,61 @@ const spotlightPages = {
       'Showcasing founders, professionals, and teams whose ideas, leadership, and execution are shaping the future of business, technology, and industry.',
     badge: 'Series',
     lead: {
+      slug: 'deepinder-goyal-temple-brain-wearables',
       category: 'FOUNDER MOVES',
       title: 'Deepinder Goyal Bets $54M on Brain Wearables With Temple',
       excerpt:
         "Weeks after stepping down as CEO of Zomato/Eternal, Goyal raised $54M in a friends-and-family round for Temple, a wearable startup targeting elite athlete brain health and performance monitoring, at a $190M post-money valuation. Backers include Peak XV Partners, Steadview Capital, Vijay Shekhar Sharma, Kunal Shah, and Zerodha's Kamath brothers. Over 30 Temple employees invested their own capital at the same valuation as external investors.",
       image: '/d1.webp',
+      body: [
+        "Weeks after stepping down as CEO of Zomato/Eternal, Deepinder Goyal has moved into a new founder chapter with Temple, a wearable startup focused on elite athlete brain health and performance monitoring.",
+        "The company raised $54 million in a friends-and-family round at a $190 million post-money valuation. Backers include Peak XV Partners, Steadview Capital, Vijay Shekhar Sharma, Kunal Shah, and Zerodha's Kamath brothers.",
+        "The round also stands out because more than 30 Temple employees invested their own capital at the same valuation as external investors, signalling internal conviction around the company's long-term opportunity.",
+        "For India's founder ecosystem, the move reflects a broader pattern of proven operators building in specialised, high-conviction categories after scaling consumer internet companies.",
+      ],
     },
     stories: [
       {
+        slug: 'mukesh-bansal-nurix-ai',
         category: 'ENTERPRISE AI',
         title: 'Mukesh Bansal Launches Nurix AI After Myntra and Cure.fit',
         excerpt:
           "One of India's rare double-unicorn builders, Bansal, co-founder of Myntra and Cure.fit, has launched Nurix AI to build intelligent agents for enterprise workflow automation. The startup raised $27M in its maiden round co-led by Accel. Nurix targets large organisations looking to automate complex operational workflows using AI, with Bansal widely regarded as one of the most credible enterprise AI founders in India given his track record scaling two consumer category leaders.",
         image: '/d2.avif',
+        body: [
+          "Mukesh Bansal, co-founder of Myntra and Cure.fit, has launched Nurix AI to build intelligent agents for enterprise workflow automation.",
+          "The startup raised $27 million in its maiden round co-led by Accel, giving it early institutional backing as enterprise AI adoption accelerates across India and global markets.",
+          "Nurix is targeting large organisations that want to automate complex operational workflows using AI, a category where founder credibility, product execution, and customer trust matter deeply.",
+          "Bansal's track record across two consumer category leaders makes this new venture one of the most closely watched second acts in India's technology ecosystem.",
+        ],
       },
       {
+        slug: 'gautam-adani-vande-bharatam-hidden-innovators',
         category: 'GRASSROOTS INNOVATION',
         title: "Gautam Adani Launches Vande Bharatam to Find India's Hidden Innovators",
         excerpt:
           "On his 64th birthday, June 24, Adani launched a nationwide search program to discover grassroots entrepreneurs across all 36 states and 800+ districts, addressing the fact that over 80% of India's startup founders come from just five cities. Open to all ages and backgrounds, from metro centers to rural communities, the program covers tech, manufacturing, sustainability, agriculture, and traditional crafts. 75 finalists will receive incubation, mentorship, and investment access in Ahmedabad, with a Grand Finale around Independence Day.",
         image: '/D3.jpg',
+        body: [
+          "On his 64th birthday, June 24, Gautam Adani launched Vande Bharatam, a nationwide search program designed to discover grassroots entrepreneurs across all 36 states and more than 800 districts.",
+          "The program responds to a familiar imbalance in India's startup ecosystem: more than 80% of founders come from just five cities, even as innovation is emerging across smaller towns, rural communities, and traditional industries.",
+          "Open to participants across ages and backgrounds, Vande Bharatam covers technology, manufacturing, sustainability, agriculture, and traditional crafts.",
+          "Seventy-five finalists will receive incubation, mentorship, and investment access in Ahmedabad, with a Grand Finale planned around Independence Day.",
+        ],
       },
       {
+        slug: 'first-gen-internet-founders-ai-second-acts',
         category: 'SECOND ACTS',
         title: "India's First-Gen Internet Founders Converge on AI for Their Second Acts",
         excerpt:
           "A defining pattern of 2026: Deepinder Goyal, Mukesh Bansal, Aman Gupta, Mukund Jha, and Binny Bansal all launched new ventures within the same 18-month window, nearly all converging on AI. Analysts see this as a signal that India's most credible operators believe AI is the decade's defining value-creation opportunity, shifting from distribution and logistics to intelligent automation and consumer AI.",
         image: '/D5.webp',
+        body: [
+          "A defining pattern of 2026 is the return of India's first-generation internet founders with new companies, many of them built around artificial intelligence.",
+          "Deepinder Goyal, Mukesh Bansal, Aman Gupta, Mukund Jha, and Binny Bansal have all launched new ventures within the same 18-month window, creating a visible wave of second acts from proven operators.",
+          "The convergence around AI suggests that experienced founders see the next decade of value creation moving beyond distribution and logistics into intelligent automation, consumer AI, and enterprise workflows.",
+          "For investors and operators, this wave matters because it combines founder-market credibility with a technology shift that is still early enough to shape new category leaders.",
+        ],
       },
     ],
   },
@@ -244,6 +272,12 @@ const newTimesLists = [
   },
 ];
 
+function getPageArticles(page) {
+  if (!page) return [];
+
+  return [page.lead, ...(page.stories || [])].filter((article) => article?.slug);
+}
+
 function SpotlightImage({ src, alt, className = '', category }) {
   if (!src) {
     return (
@@ -285,12 +319,12 @@ function SocialActions({ compact = false }) {
   );
 }
 
-function NextArticleCard({ article }) {
+function NextArticleCard({ article, basePath }) {
   if (!article) return null;
 
   return (
     <Link
-      to={`/spotlight/business-features/${article.slug}`}
+      to={`${basePath}/${article.slug}`}
       className="block w-full max-w-full border border-slate-200 bg-white p-4 text-left no-underline shadow-[0_18px_45px_rgba(15,23,42,0.12)] transition hover:-translate-y-0.5 hover:border-slate-950"
     >
       <div className="flex min-w-0 items-start gap-3">
@@ -398,17 +432,17 @@ function SpotlightArticleSidebar() {
   );
 }
 
-function SpotlightArticleDetail({ article, nextArticle }) {
+function SpotlightArticleDetail({ article, nextArticle, page, basePath }) {
   const publishedDate = 'June 24, 2026';
 
   return (
     <main className="min-h-[80vh] w-full overflow-x-hidden bg-white px-4 py-6 text-slate-950 sm:px-6 lg:px-8 lg:py-10">
       <article className="mx-auto w-full max-w-[1380px] min-w-0">
         <Link
-          to="/spotlight/business-features"
+          to={basePath}
           className="mb-6 inline-flex font-sans text-[12px] font-bold uppercase tracking-[0.16em] text-slate-600 no-underline hover:text-red-700"
         >
-          &larr; Business Features
+          &larr; {page.kicker}
         </Link>
 
         <header className="grid min-w-0 gap-8 border-b border-slate-200 pb-10 lg:grid-cols-[minmax(0,0.95fr)_minmax(420px,0.85fr)] lg:items-center xl:gap-12">
@@ -459,7 +493,7 @@ function SpotlightArticleDetail({ article, nextArticle }) {
               className={`h-[300px] sm:h-[420px] lg:h-[520px] ${article.slug === 'nikhil-kamath-zerodha-journey' ? 'object-top' : ''}`}
             />
             <div className="mt-5 lg:absolute lg:-bottom-8 lg:right-6 lg:w-[360px]">
-              <NextArticleCard article={nextArticle} />
+              <NextArticleCard article={nextArticle} basePath={basePath} />
             </div>
           </div>
         </header>
@@ -491,15 +525,15 @@ function SpotlightArticleDetail({ article, nextArticle }) {
 export default function SpotlightFeaturePage({ type }) {
   const { slug } = useParams();
   const page = spotlightPages[type] || spotlightPages['business-features'];
-  const article = type === 'business-features'
-    ? businessFeatureArticles.find((item) => item.slug === slug)
-    : null;
+  const basePath = `/spotlight/${type}`;
+  const pageArticles = getPageArticles(page);
+  const article = pageArticles.find((item) => item.slug === slug);
 
   if (article) {
-    const currentIndex = businessFeatureArticles.findIndex((item) => item.slug === article.slug);
-    const nextArticle = businessFeatureArticles[(currentIndex + 1) % businessFeatureArticles.length];
+    const currentIndex = pageArticles.findIndex((item) => item.slug === article.slug);
+    const nextArticle = pageArticles[(currentIndex + 1) % pageArticles.length];
 
-    return <SpotlightArticleDetail article={article} nextArticle={nextArticle} />;
+    return <SpotlightArticleDetail article={article} nextArticle={nextArticle} page={page} basePath={basePath} />;
   }
 
   return (
@@ -542,14 +576,14 @@ export default function SpotlightFeaturePage({ type }) {
             </span>
             {page.lead.slug ? (
               <>
-                <Link to={`/spotlight/business-features/${page.lead.slug}`} className="no-underline">
+                <Link to={`${basePath}/${page.lead.slug}`} className="no-underline">
                   <h2 className="m-0 font-serif text-3xl font-bold leading-tight text-slate-950 underline-offset-4 group-hover:underline">
                     {page.lead.title}
                   </h2>
                 </Link>
                 <p className="mt-4 font-sans text-[15px] leading-7 text-slate-600">{page.lead.excerpt}</p>
                 <Link
-                  to={`/spotlight/business-features/${page.lead.slug}`}
+                  to={`${basePath}/${page.lead.slug}`}
                   className="mt-5 inline-flex bg-slate-950 px-5 py-3 font-sans text-[11px] font-bold uppercase tracking-[0.18em] text-white no-underline transition hover:bg-red-700"
                 >
                   Read More
@@ -569,7 +603,7 @@ export default function SpotlightFeaturePage({ type }) {
             {page.stories.map((story) => (
               <article key={story.title} className="group border-b border-gray-100 pb-5 last:border-b-0">
                 {story.image && (
-                  <Link to={story.slug ? `/spotlight/business-features/${story.slug}` : '#'} className="mb-4 block overflow-hidden bg-slate-100 no-underline">
+                  <Link to={story.slug ? `${basePath}/${story.slug}` : '#'} className="mb-4 block overflow-hidden bg-slate-100 no-underline">
                     <img
                       className="h-40 w-full object-cover transition duration-500 group-hover:scale-[1.03]"
                       src={story.image}
@@ -582,12 +616,12 @@ export default function SpotlightFeaturePage({ type }) {
                 </span>
                 {story.slug ? (
                   <>
-                    <Link to={`/spotlight/business-features/${story.slug}`} className="no-underline">
+                    <Link to={`${basePath}/${story.slug}`} className="no-underline">
                       <h3 className="m-0 font-serif text-xl font-bold leading-tight text-slate-950 underline-offset-4 group-hover:underline xl:text-lg">{story.title}</h3>
                     </Link>
                     <p className="mt-2 font-sans text-sm leading-6 text-slate-600">{story.excerpt}</p>
                     <Link
-                      to={`/spotlight/business-features/${story.slug}`}
+                      to={`${basePath}/${story.slug}`}
                       className="mt-4 inline-flex border border-slate-950 px-4 py-2 font-sans text-[10px] font-bold uppercase tracking-[0.16em] text-slate-950 no-underline transition hover:bg-slate-950 hover:text-white"
                     >
                       Read More
