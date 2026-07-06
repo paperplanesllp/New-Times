@@ -478,45 +478,24 @@ const hubAdSlots = [
     cta: 'Start Campaign',
   },
   {
-    label: 'Advertisement',
-    kicker: 'Creator Event Partner',
-    title: 'Promote summits, awards, webinars, and creator meetups.',
-    body: 'Place your event in front of readers following the creator economy, digital media, influencer marketing, and startup ecosystem.',
-    cta: 'Promote Event',
-  },
-  {
     label: 'Sponsored Insight',
     kicker: 'Research Sponsor',
     title: 'Sponsor reports, surveys, market maps, and trend explainers.',
     body: 'Support thought leadership around creator commerce, AI tools, fintech creators, brand partnerships, and digital entrepreneurship.',
     cta: 'Sponsor Report',
   },
-  {
-    label: 'Advertisement',
-    kicker: 'Hiring Visibility',
-    title: 'Reach creator managers, editors, producers, and growth teams.',
-    body: 'Use category visibility to promote hiring, agency openings, platform roles, creator-tech teams, and media partnerships.',
-    cta: 'Post Opportunity',
-  },
-  {
-    label: 'Brand Studio',
-    kicker: 'Founder Story Slot',
-    title: 'Turn your company milestone into a polished business feature.',
-    body: 'Build credibility with a sponsored story package for founders, platforms, creator brands, agencies, and digital-first companies.',
-    cta: 'Get Featured',
-  },
 ];
 
 function HubAdvertisementStack() {
   return (
-    <aside aria-label="Advertisements" className="mt-8 space-y-4">
+    <aside aria-label="Advertisements" className="mt-10 space-y-8">
       {hubAdSlots.map((slot) => (
         <Link
           key={slot.title}
           to="/partner/ad-options"
-          className="group block border-y-2 border-slate-950 bg-slate-50 px-5 py-5 text-slate-950 no-underline transition hover:bg-white"
+          className="group block border-y-2 border-slate-950 bg-slate-50 px-6 py-7 text-slate-950 no-underline transition hover:bg-white hover:shadow-[0_18px_40px_rgba(15,23,42,0.08)]"
         >
-          <div className="mb-4 flex flex-wrap items-center justify-between gap-3 border-b border-slate-200 pb-3">
+          <div className="mb-5 flex flex-wrap items-center justify-between gap-3 border-b border-slate-200 pb-4">
             <span className="text-[10px] font-black uppercase tracking-[0.22em] text-slate-500">
               {slot.label}
             </span>
@@ -527,13 +506,13 @@ function HubAdvertisementStack() {
           <span className="text-[11px] font-extrabold uppercase tracking-[0.18em] text-amber-700">
             {slot.kicker}
           </span>
-          <h2 className="mt-3 max-w-3xl text-2xl font-extrabold leading-tight text-slate-950 md:text-3xl">
+          <h2 className="mt-3 max-w-3xl text-3xl font-extrabold leading-tight text-slate-950">
             {slot.title}
           </h2>
-          <p className="mt-3 max-w-2xl text-base leading-7 text-slate-700">
+          <p className="mt-4 max-w-2xl text-base leading-7 text-slate-700">
             {slot.body}
           </p>
-          <span className="mt-4 inline-flex bg-slate-950 px-5 py-3 text-[11px] font-black uppercase tracking-[0.18em] text-white transition group-hover:bg-red-700">
+          <span className="mt-5 inline-flex bg-slate-950 px-5 py-3 text-[11px] font-black uppercase tracking-[0.18em] text-white transition group-hover:bg-red-700">
             {slot.cta}
           </span>
         </Link>
