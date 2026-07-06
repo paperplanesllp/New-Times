@@ -391,6 +391,61 @@ function StoryImage({ story, className = '' }) {
   );
 }
 
+function ArticleAdvertisement() {
+  return (
+    <aside
+      aria-label="Advertisement"
+      className="mt-12 border-y-2 border-slate-950 bg-slate-50 px-5 py-7 sm:px-7 lg:min-h-[360px]"
+    >
+      <div className="mb-5 flex flex-wrap items-center justify-between gap-3 border-b border-slate-200 pb-4">
+        <span className="text-[10px] font-black uppercase tracking-[0.22em] text-slate-500">
+          Advertisement
+        </span>
+        <span className="text-[10px] font-black uppercase tracking-[0.18em] text-red-700">
+          New Times Brand Studio
+        </span>
+      </div>
+
+      <div className="grid gap-6 md:grid-cols-[minmax(0,1fr)_190px] md:items-stretch">
+        <div>
+          <span className="text-[11px] font-extrabold uppercase tracking-[0.18em] text-amber-700">
+            Sponsored Feature Slot
+          </span>
+          <h2 className="mt-3 max-w-2xl text-3xl font-extrabold leading-tight text-slate-950 md:text-4xl">
+            Reach founders, creators, agencies, and digital business leaders.
+          </h2>
+          <p className="mt-4 max-w-2xl text-base leading-7 text-slate-700 md:text-lg">
+            Promote launches, reports, events, tools, and brand stories across New Times creator economy coverage.
+          </p>
+          <Link
+            to="/partner/ad-options"
+            className="mt-6 inline-flex bg-slate-950 px-5 py-3 text-[11px] font-black uppercase tracking-[0.18em] text-white no-underline transition hover:bg-red-700"
+          >
+            Book Ad Space
+          </Link>
+        </div>
+
+        <div className="flex min-h-[190px] flex-col justify-between border border-slate-300 bg-white p-4">
+          <span className="text-[10px] font-black uppercase tracking-[0.18em] text-slate-500">
+            Display Package
+          </span>
+          <div>
+            <p className="text-5xl font-extrabold leading-none text-slate-950">
+              NT
+            </p>
+            <p className="mt-2 text-sm font-bold uppercase tracking-[0.14em] text-slate-700">
+              Creator Economy Ad
+            </p>
+          </div>
+          <span className="text-[11px] font-bold uppercase tracking-[0.14em] text-red-700">
+            Sponsored visibility
+          </span>
+        </div>
+      </div>
+    </aside>
+  );
+}
+
 function CreatorsEconomyArticle({ story }) {
   const nextStory = creatorStories[(creatorStories.findIndex((item) => item.slug === story.slug) + 1) % creatorStories.length];
 
@@ -441,6 +496,7 @@ function CreatorsEconomyArticle({ story }) {
         <div className="grid gap-10 pt-10 lg:grid-cols-[minmax(0,0.7fr)_minmax(280px,0.3fr)]">
           <section className="space-y-7">
             {renderArticleBody(story.body)}
+            <ArticleAdvertisement />
           </section>
 
           <aside className="border-slate-200 lg:border-l lg:pl-8">
