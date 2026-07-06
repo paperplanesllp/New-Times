@@ -14,7 +14,6 @@ export default function Navbar() {
   });
 
   const moreLinks = [
-    { label: 'NT BILLIONAIRES', to: '/billionaires' },
     { label: 'LISTS', to: '/lists' },
     { label: 'CREATORS ECONOMY', to: '/creators-economy' },
     { label: 'BLOGS', to: '/blogs' },
