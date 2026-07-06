@@ -244,7 +244,7 @@ function RightRail() {
             </span>
           </div>
           <h3 className="mt-3 text-[21px] font-bold leading-snug text-black">
-            Tamannaah Bhatia&apos;s affair to remember
+            Tamannaah Bhatia's affair to remember
           </h3>
           <p className="mt-4 text-[15px] text-slate-600">By Kunal Purandare</p>
         </article>

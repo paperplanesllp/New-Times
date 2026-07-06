@@ -141,10 +141,10 @@ export default function CoverStories() {
             <CoverArt large />
             <div className="pt-1">
               <h2 className="max-w-[470px] text-[30px] font-bold leading-[1.18] text-black">
-                How Tim Cook turned Apple&apos;s $350 Billion into $4 Trillion
+                How Tim Cook turned Apple's $350 Billion into $4 Trillion
               </h2>
               <p className="mt-4 max-w-[520px] text-[22px] leading-[1.28] text-black">
-                Fifteen years of operational discipline, not product genius, created the stock market&apos;s favourite returns machine. Under Cook, revenue rose 4x to $416 billion. A look at what led to this surge
+                Fifteen years of operational discipline, not product genius, created the stock market's favourite returns machine. Under Cook, revenue rose 4x to $416 billion. A look at what led to this surge
               </p>
               <p className="mt-4 text-[18px] text-black">By New-Times Reporter</p>
             </div>
