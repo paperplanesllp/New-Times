@@ -620,6 +620,8 @@ export default function CreatorsEconomy() {
           </div>
         </div>
 
+        <ArticleAdvertisement />
+
         <section className="mt-12 border-t border-slate-200 pt-8">
           <div className="mb-6 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
             <div>
