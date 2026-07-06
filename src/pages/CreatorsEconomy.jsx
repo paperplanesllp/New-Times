@@ -236,7 +236,7 @@ const creatorStories = [
     title: '5 Billion Views and a Production House: How Bhuvan Bam Turned a Phone Camera Into a Media Empire',
     excerpt:
       "From a Delhi bedroom in 2015 to 5 billion cumulative YouTube views, a Filmfare Award, two OTT series, and The Revolutionaries in production, BB Ki Vines is now a studio.",
-    image: '/media.jpeg',
+    image: '/social.png',
     summary:
       "Bhuvan Bam's journey from individual creator to IP owner and studio head shows the full lifecycle of India's maturing creator economy.",
     body: [
@@ -262,7 +262,7 @@ const creatorStories = [
     title: "Changemaker of the Year: How Food Pharmer's Campaign Got Sugar Boards Into Every CBSE School in India",
     excerpt:
       "Revant Himatsingka was named Changemaker of the Year at Entrepreneur India's Influencer Awards 2026, but the larger win came when CBSE installed Sugar Boards in classrooms nationwide.",
-    image: '/influ.png',
+    image: '/m2.jpg',
     summary:
       "Food Pharmer's campaign shows creator influence moving beyond purchase decisions into public health, regulation, and school-level behaviour change.",
     body: [
@@ -288,7 +288,7 @@ const creatorStories = [
     title: "The Rs 70 Crore Creator: How Ranveer Allahbadia Built BeerBiceps Into a Multi-Venture Business Empire",
     excerpt:
       "From a nervous fitness YouTuber in 2015 to a Rs 60-70 crore net worth, a national award, a talent agency, a wellness app, and an education startup, Ranveer Allahbadia has written India's creator-to-founder playbook.",
-    image: '/marketing.jpg',
+    image: '/leader.jpg',
     summary:
       "Ranveer Allahbadia's portfolio shows how creator trust can be converted into companies across talent management, wellness, education, content, and digital products.",
     body: [
@@ -332,7 +332,7 @@ const creatorSignals = [
     title: '5 Billion Views and a Production House',
     excerpt:
       'Bhuvan Bam has turned BB Ki Vines from a phone-camera channel into a studio with OTT series and original IP.',
-    image: '/media.jpeg',
+    image: '/social.png',
     slug: 'bhuvan-bam-five-billion-views-production-house',
   },
   {
@@ -340,7 +340,7 @@ const creatorSignals = [
     title: "Food Pharmer's Sugar Board Win",
     excerpt:
       "Revant Himatsingka's campaign helped push Sugar Boards into CBSE schools, proving creator influence can drive policy outcomes.",
-    image: '/influ.png',
+    image: '/m2.jpg',
     slug: 'food-pharmer-sugar-boards-cbse-creator-influence',
   },
   {
@@ -348,7 +348,7 @@ const creatorSignals = [
     title: 'The Rs 70 Crore Creator',
     excerpt:
       "Ranveer Allahbadia's BeerBiceps journey shows how audience trust can become a multi-venture business empire.",
-    image: '/marketing.jpg',
+    image: '/leader.jpg',
     slug: 'ranveer-allahbadia-beerbiceps-creator-founder-playbook',
   },
   {
@@ -356,7 +356,7 @@ const creatorSignals = [
     title: 'AI Influencer Disclosure Becomes Mandatory',
     excerpt:
       'Brands using virtual influencers will need clearer labels, stronger creative review, and more transparent campaign planning.',
-    image: '/aiii.avif',
+    image: '/Asci.webp',
     slug: 'asci-2026-ai-influencer-rules-digital-humans',
   },
 ];
