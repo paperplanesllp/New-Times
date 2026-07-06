@@ -178,56 +178,186 @@ const creatorStories = [
       "The next phase of India's creator economy will be shaped not only by creators themselves, but also by the technology companies that help them become sustainable businesses. Infrastructure may become the quiet engine behind the country's creator-led growth story."
     ],
   },
+  {
+    slug: 'raj-shamani-first-creator-personality-rights-ruling',
+    category: 'CREATOR RIGHTS',
+    title: "Your Face Is Your IP: Raj Shamani Wins India's First Creator Personality Rights Ruling",
+    excerpt:
+      "When deepfakes of a podcaster began selling scam products to his own audience, Raj Shamani took the fight to the Delhi High Court and won a ruling India's creator world had been waiting years for.",
+    image: '/Del.webp',
+    summary:
+      "The Delhi High Court recognised a digital creator's face, voice, and online identity as protectable intellectual property, creating a precedent for India's creator class.",
+    body: [
+      "Raj Shamani built his reputation the slow way. Across hundreds of podcast episodes of Figuring Out, thousands of hours of content on business, entrepreneurship, and personal growth, and 200-plus speaking engagements across 26 countries, he became one of the most recognisable faces in India's creator and entrepreneurship ecosystem.",
+      "He has hosted Bill Gates, MrBeast, MS Dhoni, and Vijay Mallya. He wrote the bestselling book Build, Don't Talk. He became an active angel investor in fintech, FMCG, and the passion economy. Then AI arrived, and strangers began using his face to sell things he would never endorse.",
+      "The Deepfake Threat",
+      "The deepfakes were persuasive, cheap to produce, and damaging to his brand. AI voice clones mimicked his cadence. Morphed videos showed him endorsing financial scams. Fake advertisements ran across YouTube, Instagram, and Telegram, reaching audiences who trusted his face and his voice.",
+      "Brands that had partnered with him began asking questions. Followers began sending confused messages. The harm was real, measurable, and accelerating.",
+      "The Court Fight",
+      "Shamani took his case to the Delhi High Court, seeking a permanent injunction against unnamed third parties misusing his name, likeness, and identity across digital platforms. He sought protection under personality rights, trademark, copyright, and passing off.",
+      "The court granted protection. For the first time in India, a court affirmed that a digital content creator's face, voice, and digital presence can constitute intellectual property with the same legal standing as a celebrity's publicity rights.",
+      "A Precedent for Creators",
+      "The ruling's implications stretch far beyond Raj Shamani. India has millions of active creators, and the threat of AI-generated impersonation scales with popularity. The cheaper and faster AI tools get, the more vulnerable every creator with a recognisable face becomes.",
+      "What Shamani has done is establish legal infrastructure for the creator class. Any creator who now faces deepfakes, voice clones, or fake endorsements has a precedent to cite, a framework to operate within, and a court that has recognised digital identity as property worth protecting.",
+      "The Larger AI Governance Moment",
+      "In the broader context of India's evolving AI governance, including synthetic content labelling rules and the pending Digital India Act, this ruling acts as the judicial arm of a larger regulatory awakening.",
+      "For Indian creators, the message is clear: their face, voice, name, and trust are not just audience assets. They are business assets, legal assets, and intellectual property."
+    ],
+  },
+  {
+    slug: 'zerodha-zero1-shuts-down-sebi-finfluencer-crackdown',
+    category: 'FINFLUENCERS',
+    title: "The End of Zero1: Zerodha Shuts Down Its Landmark Creator Network After SEBI's Finfluencer Crackdown",
+    excerpt:
+      "It had 7 lakh YouTube subscribers, 10 crore views, and 30-plus of India's best financial creators. In April 2026, Zerodha wound down Zero1, and the reason shows where creator finance is headed.",
+    image: '/Seb.webp',
+    summary:
+      "Zero1's shutdown shows how SEBI's finfluencer framework is forcing financial creators, platforms, and regulated brands into a stricter compliance era.",
+    body: [
+      "When Zerodha launched Zero1 in October 2023, it felt like the future of financial education in India. A joint venture between LearnApp and Zerodha, backed by co-founder Nithin Kamath, Zero1 was designed as a new-age content network that would make complex conversations about finance, health, climate, and investing accessible to everyday Indians.",
+      "Under the model, creators received research support, production infrastructure, and distribution muscle from Zerodha while retaining editorial independence. The network quickly attracted more than 30 digital creators including Varun Mayya, Loveena Kamath, and Revant Himatsingka. Its YouTube channel crossed 7 lakh subscribers and accumulated more than 10 crore views.",
+      "Why Zero1 Shut Down",
+      "In April 2026, Zerodha shut it down entirely. The official reason was regulatory uncertainty. The real story is more specific: SEBI's finfluencer framework drew a clear line between financial education and financial advice.",
+      "Registered investment advisors may discuss specific products, make recommendations, and address personal financial situations. Everyone else, however large their audience or trusted their brand, must stay in the lane of general financial literacy.",
+      "The Compliance Grey Zone",
+      "The new rules also barred regulated entities such as Zerodha from directly engaging with unlicensed financial influencers in ways that could be construed as using them to promote financial products.",
+      "Zero1's model, which gave creators independence while associating them with Zerodha's brand, sat in a compliance grey zone that the company ultimately decided was not worth the regulatory risk.",
+      "A Signal to the Industry",
+      "The closure is being read across the industry as a signal: the era of informal, engagement-driven financial content, where charisma and reach substituted for credentials and accountability, is over.",
+      "For India's finfluencers, the SEBI framework is not a distant regulatory threat. It is an immediate operational reality reshaping what they can say, how they can say it, and who they can partner with.",
+      "What Continues",
+      "The closure of Zero1 does not diminish Zerodha's contribution to financial literacy in India. Varsity, Rainmatter, and Markets by Zerodha continue. But Zero1 represents the most high-profile casualty of the regulatory recalibration.",
+      "A platform that helped millions of Indians engage with financial concepts disappeared not because it failed commercially, but because the rules changed around it. As agencies, brand managers, and creator platforms absorb this lesson, the creator economy's professionalisation accelerates."
+    ],
+  },
+  {
+    slug: 'bhuvan-bam-five-billion-views-production-house',
+    category: 'CREATOR IP',
+    title: '5 Billion Views and a Production House: How Bhuvan Bam Turned a Phone Camera Into a Media Empire',
+    excerpt:
+      "From a Delhi bedroom in 2015 to 5 billion cumulative YouTube views, a Filmfare Award, two OTT series, and The Revolutionaries in production, BB Ki Vines is now a studio.",
+    image: '/media.jpeg',
+    summary:
+      "Bhuvan Bam's journey from individual creator to IP owner and studio head shows the full lifecycle of India's maturing creator economy.",
+    body: [
+      "Bhuvan Bam was 21 years old when he uploaded his first BB Ki Vines video on Facebook in 2015. He was working as a singer at a Delhi restaurant and living at home.",
+      "His first viral moment came from a comment he overheard about flood victims and his outraged response. He filmed it on a front-facing phone camera. There was no crew, no lighting setup, no production budget, and no strategy. There was just a young man who had something to say and a phone in his hand.",
+      "A Five Billion View Milestone",
+      "In 2026, Bhuvan Bam crossed 5 billion cumulative views on YouTube, placing him among the most-watched individual creators in India's history.",
+      "The milestone reflects a decade of consistency across comedy sketches, music releases, short films, and full OTT productions. His 2019 short film Plus Minus won a Filmfare Award. That same year, he appeared on Forbes 30 Under 30. In 2020, he spoke at the World Economic Forum.",
+      "From Channel to Studio",
+      "The most significant evolution is structural. BB Ki Vines Productions, the company Bam runs with producer Rohit Raj, is now a fully operational content studio.",
+      "Taaza Khabar, their flagship Disney+ Hotstar series about a sanitation worker who gains the ability to predict the future, ran to a second season featuring Swanand Kirkire. Another project, The Revolutionaries, is in production for a 2026 OTT release.",
+      "The Creator Economy Lesson",
+      "What Bhuvan Bam represents is the full creator lifecycle: from individual creator to IP owner to studio head. He is no longer dependent only on platform algorithms for income.",
+      "He is building properties, characters, shows, and stories that have value independent of any single platform.",
+      "A Different Engine for the Next Era",
+      "At 32 in 2026, Bam is one of India's strongest examples of what it looks like when a creator makes the transition from performer to producer.",
+      "The next phase of his growth will be built through original IP and cinematic storytelling, not just a front-facing camera."
+    ],
+  },
+  {
+    slug: 'food-pharmer-sugar-boards-cbse-creator-influence',
+    category: 'CREATOR IMPACT',
+    title: "Changemaker of the Year: How Food Pharmer's Campaign Got Sugar Boards Into Every CBSE School in India",
+    excerpt:
+      "Revant Himatsingka was named Changemaker of the Year at Entrepreneur India's Influencer Awards 2026, but the larger win came when CBSE installed Sugar Boards in classrooms nationwide.",
+    image: '/influ.png',
+    summary:
+      "Food Pharmer's campaign shows creator influence moving beyond purchase decisions into public health, regulation, and school-level behaviour change.",
+    body: [
+      "Awards given to creators often measure follower counts, engagement rates, brand deal volumes, and campaign performance. The Changemaker of the Year award at Entrepreneur India's Influencer Awards 2026 measured something different: what actually changed in the world because of what a creator did.",
+      "In Revant Himatsingka's case, the change was specific and extraordinary. CBSE mandated the installation of Sugar Boards in schools nationwide.",
+      "From Content to Policy Outcome",
+      "The Sugar Board initiative is a downstream consequence of Himatsingka's years of campaigns documenting the sugar content in products marketed to children, from Bournvita to breakfast cereals, flavoured milk drinks, and packaged snacks.",
+      "He did not just make videos. He wrote to regulators, engaged with FSSAI, submitted evidence, and publicly challenged company claims with documentation.",
+      "Why It Matters",
+      "CBSE's Sugar Boards, displayed in school cafeterias and canteens, communicate to children how much sugar is in the food they are served in a format they can understand.",
+      "For the creator economy, this is a landmark data point. It answers one of the most persistent questions about digital influence: does it actually change anything beyond purchasing behaviour?",
+      "A New Kind of Creator Power",
+      "Himatsingka's case says yes. A creator with millions of Instagram followers and no institutional backing changed what children read about food in classrooms across one of the world's largest educational systems.",
+      "The Changemaker award recognised not just reach or consistency, but the causal chain that led from videos to a policy outcome.",
+      "Recognition Infrastructure Is Growing",
+      "The award ceremony also highlighted others shaping the creator-influencer landscape, while the National Creators Award continues to institutionalise the recognition of digital creators at the highest levels of public life.",
+      "India's creator recognition infrastructure is growing as fast as its creator economy. Himatsingka's story will be remembered as the case of an influencer who changed not just what people bought, but what children learn."
+    ],
+  },
+  {
+    slug: 'ranveer-allahbadia-beerbiceps-creator-founder-playbook',
+    category: 'CREATOR FOUNDER',
+    title: "The Rs 70 Crore Creator: How Ranveer Allahbadia Built BeerBiceps Into a Multi-Venture Business Empire",
+    excerpt:
+      "From a nervous fitness YouTuber in 2015 to a Rs 60-70 crore net worth, a national award, a talent agency, a wellness app, and an education startup, Ranveer Allahbadia has written India's creator-to-founder playbook.",
+    image: '/marketing.jpg',
+    summary:
+      "Ranveer Allahbadia's portfolio shows how creator trust can be converted into companies across talent management, wellness, education, content, and digital products.",
+    body: [
+      "When Ranveer Allahbadia started uploading fitness content to YouTube in August 2015, he described himself as nervous, underconfident, and angry at life. He was 22, had graduated from engineering college in Mumbai, and was deeply unhappy about where life appeared to be going.",
+      "Fitness had changed him, and he wanted to share what he had learned. He had no idea that BeerBiceps would eventually become one of India's most recognised creator brands.",
+      "The Evolution of BeerBiceps",
+      "The evolution happened in phases. Phase one was fitness content: workout guides, nutrition advice, and accessible health education that was still scarce on Indian YouTube in 2015.",
+      "Phase two was the pivot to long-form conversations through The Ranveer Show, which began interviewing Indian entrepreneurs and expanded to global figures, spiritual leaders, scientists, and politicians.",
+      "Phase three was business building: the move from creator to operator, and from audience to enterprise.",
+      "The Venture Portfolio",
+      "In 2026, Allahbadia's business portfolio includes three distinct ventures alongside his content work. Monk-E, formerly Monk Entertainment, is a creator talent management agency representing and building businesses around prominent digital personalities.",
+      "Level SuperMind is a mind-performance wellness app focused on meditation, sleep, and cognitive enhancement. BigBrainCo is his education venture, building digital learning products at the intersection of business and personal development.",
+      "Across these ventures, plus YouTube revenue, podcast income, brand deals, and digital course sales, his estimated net worth in 2026 stands between Rs 60 crore and Rs 70 crore.",
+      "The Creator-to-Founder Playbook",
+      "What makes Allahbadia's story instructive is the deliberateness of each transition. He did not stumble into entrepreneurship. He identified where audience trust could be translated into economic value and built companies in those spaces.",
+      "Monk-E now helps other creators do what he did. It is a business that monetises the knowledge of how to monetise an audience.",
+      "India's next generation of creator-founders are studying this playbook carefully. With a rapidly growing creator economy, there has never been a better moment to put it into practice."
+    ],
+  },
 ];
 
 const creatorSignals = [
   {
-    category: 'MARKET SIGNAL',
-    title: '$1 Trillion Influence Economy',
+    category: 'CREATOR RIGHTS',
+    title: 'Your Face Is Your IP',
     excerpt:
-      'Creator-led influence is expected to reshape discovery, trust, and purchase decisions across consumer categories by 2030.',
-    image: '/social.png',
-    slug: 'india-creator-economy-1-trillion-consumer-spending-bcg',
+      "Raj Shamani's court win gives Indian creators a stronger legal shield against deepfakes, fake endorsements, and identity theft.",
+    image: '/Del.webp',
+    slug: 'raj-shamani-first-creator-personality-rights-ruling',
   },
   {
-    category: 'COMPLIANCE',
+    category: 'FINFLUENCERS',
+    title: 'The End of Zero1',
+    excerpt:
+      "Zerodha's creator network shutdown shows how SEBI's finfluencer rules are reshaping financial content partnerships.",
+    image: '/Seb.webp',
+    slug: 'zerodha-zero1-shuts-down-sebi-finfluencer-crackdown',
+  },
+  {
+    category: 'CREATOR IP',
+    title: '5 Billion Views and a Production House',
+    excerpt:
+      'Bhuvan Bam has turned BB Ki Vines from a phone-camera channel into a studio with OTT series and original IP.',
+    image: '/media.jpeg',
+    slug: 'bhuvan-bam-five-billion-views-production-house',
+  },
+  {
+    category: 'CREATOR IMPACT',
+    title: "Food Pharmer's Sugar Board Win",
+    excerpt:
+      "Revant Himatsingka's campaign helped push Sugar Boards into CBSE schools, proving creator influence can drive policy outcomes.",
+    image: '/influ.png',
+    slug: 'food-pharmer-sugar-boards-cbse-creator-influence',
+  },
+  {
+    category: 'CREATOR FOUNDER',
+    title: 'The Rs 70 Crore Creator',
+    excerpt:
+      "Ranveer Allahbadia's BeerBiceps journey shows how audience trust can become a multi-venture business empire.",
+    image: '/marketing.jpg',
+    slug: 'ranveer-allahbadia-beerbiceps-creator-founder-playbook',
+  },
+  {
+    category: 'AI RULES',
     title: 'AI Influencer Disclosure Becomes Mandatory',
     excerpt:
       'Brands using virtual influencers will need clearer labels, stronger creative review, and more transparent campaign planning.',
     image: '/aiii.avif',
     slug: 'asci-2026-ai-influencer-rules-digital-humans',
-  },
-  {
-    category: 'LEGAL RIGHTS',
-    title: 'Personality Rights Enter the Creator Economy',
-    excerpt:
-      'Digital creators are gaining stronger protection against AI deepfakes, fake endorsements, and identity misuse.',
-    image: '/media.jpeg',
-    slug: 'raj-shamani-delhi-high-court-personality-rights-ai-deepfakes',
-  },
-  {
-    category: 'GROWTH',
-    title: '$15B Market, $62B Runway',
-    excerpt:
-      "India's creator economy is moving from niche content creation to a major digital industry with strong long-term growth.",
-    image: '/influ.png',
-    slug: 'india-creator-economy-15-billion-62-billion-2033',
-  },
-  {
-    category: 'BUSINESS STACK',
-    title: 'Creator Infrastructure Gets Investor Attention',
-    excerpt:
-      'Payments, analytics, AI production, e-commerce, and compliance tools are becoming core business infrastructure for creators.',
-    image: '/marketing.jpg',
-    slug: 'creator-infrastructure-startups-monetisation-tools-india',
-  },
-  {
-    category: 'FINANCE',
-    title: 'Finfluencers Face a Stricter Rulebook',
-    excerpt:
-      'Financial creators must separate education from advice while brands build disclosure and compliance into campaign briefs.',
-    image: '/m2.jpg',
-    slug: 'sebi-asci-finfluencer-rules-accountability-digital-finance',
   },
 ];
 
@@ -438,10 +568,10 @@ export default function CreatorsEconomy() {
           <div className="mb-6 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
             <div>
               <span className="mb-2 block text-[11px] font-extrabold uppercase tracking-[0.2em] text-slate-500">
-                More Coverage
+                Internal Pages
               </span>
               <h2 className="m-0 text-3xl font-extrabold leading-tight text-slate-950">
-                Creator Economy Signals
+                Creator Economy Power Stories
               </h2>
             </div>
             <span className="text-[11px] font-bold uppercase tracking-[0.16em] text-slate-500">
