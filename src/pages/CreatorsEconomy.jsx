@@ -40,6 +40,7 @@ const creatorStories = [
     excerpt:
       "India's advertising regulator introduces a new compliance framework for AI-generated influencers, signalling a major shift in how brands, agencies, and creators approach transparency in the age of artificial intelligence.",
     image: '/Asci.webp',
+    thumbnailImage: '/aiii.avif',
     summary:
       'Every piece of content featuring an AI-generated influencer must carry a clear disclosure stating that the persona is virtual or AI-generated, with stricter rules for video visibility and child-focused campaigns.',
     body: [
@@ -69,6 +70,7 @@ const creatorStories = [
     excerpt:
       "Historic ruling extends personality rights protection to India's digital creators, setting a new legal precedent against AI-driven misuse of names, images, voices, and likenesses.",
     image: '/Del.webp',
+    thumbnailImage: '/per.webp',
     summary:
       "In a landmark ruling, podcaster and entrepreneur Raj Shamani secured protection against misuse of his identity, reshaping India's creator economy legal landscape.",
     body: [
@@ -126,6 +128,7 @@ const creatorStories = [
     excerpt:
       "India's financial influencers are entering a stricter regulatory environment as SEBI and ASCI introduce stronger compliance standards aimed at protecting investors and improving transparency in digital content.",
     image: '/Seb.webp',
+    thumbnailImage: '/equity.avif',
     summary:
       'SEBI draws a clear line between education and advice, while ASCI hardens disclosure requirements across finance, health, beauty, and beyond.',
     body: [
@@ -154,6 +157,7 @@ const creatorStories = [
     excerpt:
       "As creators move beyond content into commerce, education, memberships, and brand partnerships, a new generation of startups is building the tools that help them operate like full-scale businesses.",
     image: '/star.jpg',
+    thumbnailImage: '/marketing.jpg',
     summary:
       "Analytics, payments, legal compliance, AI-assisted production, e-commerce, and brand discovery tools are becoming the backbone of India's next creator-led businesses.",
     body: [
@@ -185,6 +189,7 @@ const creatorStories = [
     excerpt:
       "When deepfakes of a podcaster began selling scam products to his own audience, Raj Shamani took the fight to the Delhi High Court and won a ruling India's creator world had been waiting years for.",
     image: '/Del.webp',
+    thumbnailImage: '/per.webp',
     summary:
       "The Delhi High Court recognised a digital creator's face, voice, and online identity as protectable intellectual property, creating a precedent for India's creator class.",
     body: [
@@ -211,6 +216,7 @@ const creatorStories = [
     excerpt:
       "It had 7 lakh YouTube subscribers, 10 crore views, and 30-plus of India's best financial creators. In April 2026, Zerodha wound down Zero1, and the reason shows where creator finance is headed.",
     image: '/Seb.webp',
+    thumbnailImage: '/equity.avif',
     summary:
       "Zero1's shutdown shows how SEBI's finfluencer framework is forcing financial creators, platforms, and regulated brands into a stricter compliance era.",
     body: [
@@ -237,6 +243,7 @@ const creatorStories = [
     excerpt:
       "From a Delhi bedroom in 2015 to 5 billion cumulative YouTube views, a Filmfare Award, two OTT series, and The Revolutionaries in production, BB Ki Vines is now a studio.",
     image: '/social.png',
+    thumbnailImage: '/media.jpeg',
     summary:
       "Bhuvan Bam's journey from individual creator to IP owner and studio head shows the full lifecycle of India's maturing creator economy.",
     body: [
@@ -263,6 +270,7 @@ const creatorStories = [
     excerpt:
       "Revant Himatsingka was named Changemaker of the Year at Entrepreneur India's Influencer Awards 2026, but the larger win came when CBSE installed Sugar Boards in classrooms nationwide.",
     image: '/m2.jpg',
+    thumbnailImage: '/influ.png',
     summary:
       "Food Pharmer's campaign shows creator influence moving beyond purchase decisions into public health, regulation, and school-level behaviour change.",
     body: [
@@ -289,6 +297,7 @@ const creatorStories = [
     excerpt:
       "From a nervous fitness YouTuber in 2015 to a Rs 60-70 crore net worth, a national award, a talent agency, a wellness app, and an education startup, Ranveer Allahbadia has written India's creator-to-founder playbook.",
     image: '/leader.jpg',
+    thumbnailImage: '/star.jpg',
     summary:
       "Ranveer Allahbadia's portfolio shows how creator trust can be converted into companies across talent management, wellness, education, content, and digital products.",
     body: [
@@ -381,10 +390,10 @@ function renderArticleBody(paragraphs) {
   });
 }
 
-function StoryImage({ story, className = '' }) {
+function StoryImage({ story, className = '', imageKey = 'image' }) {
   return (
     <img
-      src={story.image}
+      src={story[imageKey] || story.image}
       alt={story.title}
       className={`w-full object-cover transition duration-500 group-hover:scale-[1.03] ${className}`}
     />
@@ -515,7 +524,7 @@ function CreatorsEconomyArticle({ story }) {
                         to={`/creators-economy/${item.slug}`}
                         className="group grid grid-cols-[76px_minmax(0,1fr)] gap-3 border-b border-slate-200 pb-4 text-slate-950 no-underline last:border-b-0 last:pb-0"
                       >
-                        <StoryImage story={item} className="h-20" />
+                        <StoryImage story={item} imageKey="thumbnailImage" className="h-20" />
                         <div>
                           <span className="block text-[10px] font-extrabold uppercase tracking-[0.12em] text-amber-700">
                             {item.category}
@@ -604,7 +613,7 @@ export default function CreatorsEconomy() {
                 className="group grid grid-cols-[96px_minmax(0,1fr)] gap-4 border-b border-gray-100 pb-5 text-slate-950 no-underline last:border-b-0"
               >
                 <div className="overflow-hidden bg-slate-100">
-                  <StoryImage story={story} className="h-24 w-24" />
+                  <StoryImage story={story} imageKey="thumbnailImage" className="h-24 w-24" />
                 </div>
                 <article>
                   <span className="mb-1 block text-[10px] font-extrabold uppercase tracking-[0.12em] text-amber-700">
