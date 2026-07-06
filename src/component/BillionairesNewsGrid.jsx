@@ -80,15 +80,15 @@ export default function BillionairesNewsGrid() {
     const [name, rest] = author.split(/,(.+)/);
     return (
       <p className="m-0 text-[11px] font-medium uppercase tracking-[0.04em] text-gray-500">
-        By <span className="font-semibold text-gray-950 underline decoration-gray-400 underline-offset-2">{name}</span>
+        By <span className="font-semibold underline text-gray-950 decoration-gray-400 underline-offset-2">{name}</span>
         {rest ? `,${rest}` : ''}
       </p>
     );
   };
 
   return (
-    <section className="mt-14 w-full bg-white pb-16 text-gray-950">
-      <div className="mb-8 flex flex-col gap-4 border-b border-gray-200 pb-4 md:flex-row md:items-end md:justify-between">
+    <section className="w-full pb-16 bg-white mt-14 text-gray-950">
+      <div className="flex flex-col gap-4 pb-4 mb-8 border-b border-gray-200 md:flex-row md:items-end md:justify-between">
         <h1 className="text-4xl font-normal leading-none text-gray-950 md:text-5xl">
           Related Articles
         </h1>
@@ -101,8 +101,8 @@ export default function BillionairesNewsGrid() {
         </div>
       </div>
 
-      <div className="grid gap-8 border-b border-gray-200 pb-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,2fr)]">
-        <aside className="order-2 grid gap-8 md:grid-cols-2 lg:order-1 lg:grid-cols-1 lg:border-r lg:border-gray-200 lg:pr-6">
+      <div className="grid gap-8 border-b border-gray-00 pb-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,2fr)]">
+        <aside className="grid order-2 gap-8 md:grid-cols-2 lg:order-1 lg:grid-cols-1 lg:border-r lg:border-gray-200 lg:pr-6">
           {sideFeatures.map((article, index) => (
             <article key={article.id} className={index > 0 ? 'border-t border-gray-200 pt-8 md:border-t-0 lg:border-t' : ''}>
               <img className="mb-4 aspect-[16/9] w-full object-cover" src={article.image} alt={article.title} />
@@ -116,20 +116,20 @@ export default function BillionairesNewsGrid() {
 
         <article className="order-1 lg:order-2">
           <img className="mb-6 aspect-[16/9] w-full object-cover lg:aspect-[16/8.5]" src={mainFeature.image} alt={mainFeature.title} />
-          <h2 className="mx-auto max-w-5xl text-center text-3xl font-semibold leading-tight text-gray-950 md:text-4xl">
+          <h2 className="max-w-5xl mx-auto text-3xl font-semibold leading-tight text-center text-gray-950 md:text-4xl">
             {mainFeature.title}
           </h2>
-          <p className="mx-auto mt-4 max-w-3xl text-center text-sm leading-6 text-gray-600">
+          <p className="max-w-3xl mx-auto mt-4 text-sm leading-6 text-center text-gray-600">
             Reliance Industries' rise from a textile trading firm to a conglomerate spanning energy, telecom, and retail mirrors India's own economic transformation. A look at the strategic bets that built Ambani's fortune.
           </p>
           <div className="mt-4 text-center">{byline(mainFeature.author)}</div>
         </article>
       </div>
 
-      <div className="grid gap-8 border-b border-gray-200 py-8 md:grid-cols-2">
+      <div className="grid gap-8 py-8 border-b border-gray-200 md:grid-cols-2">
         {subGridFeatures.map(article => (
           <article key={article.id} className="grid grid-cols-[96px_minmax(0,1fr)] gap-5 border-b border-gray-100 pb-6 last:border-b-0 md:border-b-0">
-            <img className="h-24 w-24 object-cover" src={article.image} alt={article.title} />
+            <img className="object-cover w-24 h-24" src={article.image} alt={article.title} />
             <div>
               <h4 className="mb-3 text-xl font-semibold leading-tight text-gray-950">
                 {article.title}
@@ -145,7 +145,7 @@ export default function BillionairesNewsGrid() {
           {listFeatures.map((article, idx) => (
             <article key={article.id} className={`grid gap-5 pb-8 md:grid-cols-[minmax(0,1fr)_220px] ${idx !== listFeatures.length - 1 ? 'mb-8 border-b border-gray-200' : ''}`}>
               <div>
-                <span className="mb-2 block text-xs text-gray-500">{article.time}</span>
+                <span className="block mb-2 text-xs text-gray-500">{article.time}</span>
                 <h3 className="mb-3 text-2xl font-semibold leading-tight text-gray-950">
                   {article.title}
                 </h3>
@@ -156,8 +156,8 @@ export default function BillionairesNewsGrid() {
             </article>
           ))}
 
-          <div className="mt-5 flex justify-center">
-            <button className="bg-gray-800 px-6 py-3 text-sm font-bold text-white transition hover:bg-black">
+          <div className="flex justify-center mt-5">
+            <button className="px-6 py-3 text-sm font-bold text-white transition bg-gray-800 hover:bg-black">
               More Articles
             </button>
           </div>
@@ -169,7 +169,7 @@ export default function BillionairesNewsGrid() {
             <div className="mb-4 text-3xl font-black text-emerald-500">MIC</div>
             <h3 className="mb-4 text-3xl font-bold leading-tight text-white">Trade the World's Most Dynamic Stocks</h3>
             <p className="mb-6 text-emerald-400">Leverage up to 1:20</p>
-            <button className="mb-8 w-full bg-emerald-500 px-6 py-3 font-bold text-black">
+            <button className="w-full px-6 py-3 mb-8 font-bold text-black bg-emerald-500">
               Start Trading
             </button>
             <p className="text-[10px] leading-5 text-gray-500">

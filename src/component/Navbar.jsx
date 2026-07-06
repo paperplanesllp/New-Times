@@ -130,7 +130,7 @@ export default function Navbar() {
     <>
       <header className="sticky top-0 z-[1000] w-full bg-black text-white">
         <div className="flex items-center justify-between px-4 py-3 border-b border-slate-800 sm:px-6">
-          <div className="flex min-w-0 items-center gap-3 sm:gap-4">
+          <div className="flex items-center min-w-0 gap-3 sm:gap-4">
             <button
               onClick={() => setIsMenuOpen(true)}
               className="flex w-8 shrink-0 cursor-pointer flex-col gap-1.5 p-1"
@@ -151,9 +151,7 @@ export default function Navbar() {
 
           <div className="flex flex-col items-center">
             <Brand />
-            <p className="mt-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-white/75 sm:text-[11px]">
-              Stories That Shape Business.
-            </p>
+           
           </div>
 
           <div className="flex items-center gap-3 sm:gap-5">
