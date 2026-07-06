@@ -8,7 +8,7 @@ const creatorStories = [
     title: "India's Creator Economy Could Influence $1 Trillion in Consumer Spending by 2030: BCG",
     excerpt:
       "New Boston Consulting Group report reveals how India's digital creators are transforming from social media personalities into one of the country's most influential economic forces.",
-    image: '/social.png',
+    image: '/ec.webp',
     summary:
       "India currently has around 2 to 2.5 million monetised digital creators who influence more than 30 per cent of consumer purchase decisions, with creator-led influence already shaping an estimated $350-400 billion in annual consumer spending.",
     body: [
@@ -39,7 +39,7 @@ const creatorStories = [
     title: "ASCI's 2026 AI Influencer Rules Are Here: Why Brands Can No Longer Hide Their Digital Humans",
     excerpt:
       "India's advertising regulator introduces a new compliance framework for AI-generated influencers, signalling a major shift in how brands, agencies, and creators approach transparency in the age of artificial intelligence.",
-    image: '/aiii.avif',
+    image: '/Asci.webp',
     summary:
       'Every piece of content featuring an AI-generated influencer must carry a clear disclosure stating that the persona is virtual or AI-generated, with stricter rules for video visibility and child-focused campaigns.',
     body: [
@@ -68,7 +68,7 @@ const creatorStories = [
     title: 'Raj Shamani Wins Landmark Delhi High Court Personality Rights Case Against AI Deepfakes',
     excerpt:
       "Historic ruling extends personality rights protection to India's digital creators, setting a new legal precedent against AI-driven misuse of names, images, voices, and likenesses.",
-    image: '/media.jpeg',
+    image: '/Del.webp',
     summary:
       "In a landmark ruling, podcaster and entrepreneur Raj Shamani secured protection against misuse of his identity, reshaping India's creator economy legal landscape.",
     body: [
@@ -96,7 +96,7 @@ const creatorStories = [
     title: "India's Creator Economy Hits $15 Billion, Set to Reach Nearly $62 Billion by 2033",
     excerpt:
       "Rapid digital adoption, expanding monetisation opportunities, and growing brand investment are transforming India's creator economy into one of the world's fastest-growing digital industries.",
-    image: '/influ.png',
+    image: '/mar.jpg',
     summary:
       "A new market intelligence report pegs India's creator economy at $15.03 billion in 2026, growing at a compound annual rate of 22.4% to reach $61.87 billion by 2033.",
     body: [
@@ -125,7 +125,7 @@ const creatorStories = [
     title: "SEBI and ASCI Tighten the Rules for Finfluencers: A New Era of Accountability in India's Digital Finance Ecosystem",
     excerpt:
       "India's financial influencers are entering a stricter regulatory environment as SEBI and ASCI introduce stronger compliance standards aimed at protecting investors and improving transparency in digital content.",
-    image: '/m2.jpg',
+    image: '/Seb.webp',
     summary:
       'SEBI draws a clear line between education and advice, while ASCI hardens disclosure requirements across finance, health, beauty, and beyond.',
     body: [
@@ -153,7 +153,7 @@ const creatorStories = [
     title: "Creator Infrastructure Startups Are Building the Business Stack for India's Digital Entrepreneurs",
     excerpt:
       "As creators move beyond content into commerce, education, memberships, and brand partnerships, a new generation of startups is building the tools that help them operate like full-scale businesses.",
-    image: '/marketing.jpg',
+    image: '/star.jpg',
     summary:
       "Analytics, payments, legal compliance, AI-assisted production, e-commerce, and brand discovery tools are becoming the backbone of India's next creator-led businesses.",
     body: [
