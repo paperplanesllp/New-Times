@@ -455,6 +455,65 @@ function ArticleAdvertisement() {
   );
 }
 
+const hubAdSlots = [
+  {
+    label: 'Advertisement',
+    kicker: 'Creator Growth Report',
+    title: "Put your creator tools in front of India's digital entrepreneurs.",
+    body: 'Sponsor reports, product launches, creator-tech tools, and business services inside New Times creator economy coverage.',
+    cta: 'Explore Ad Options',
+  },
+  {
+    label: 'Partner Spotlight',
+    kicker: 'Brand Launch Desk',
+    title: 'Announce launches, funding moves, events, and creator campaigns.',
+    body: 'Built for agencies, platforms, fintech brands, creator networks, and founder-led companies looking for relevant visibility.',
+    cta: 'Book Sponsored Slot',
+  },
+  {
+    label: 'Media Partnership',
+    kicker: 'Agency Campaigns',
+    title: 'Reach marketers, founders, creators, and digital business readers.',
+    body: 'Run a campaign package across category pages, internal stories, spotlight features, and partner placements.',
+    cta: 'Start Campaign',
+  },
+];
+
+function HubAdvertisementStack() {
+  return (
+    <aside aria-label="Advertisements" className="mt-10 space-y-6">
+      {hubAdSlots.map((slot) => (
+        <Link
+          key={slot.title}
+          to="/partner/ad-options"
+          className="group block border-y-2 border-slate-950 bg-slate-50 px-5 py-6 text-slate-950 no-underline transition hover:bg-white"
+        >
+          <div className="mb-5 flex flex-wrap items-center justify-between gap-3 border-b border-slate-200 pb-3">
+            <span className="text-[10px] font-black uppercase tracking-[0.22em] text-slate-500">
+              {slot.label}
+            </span>
+            <span className="text-[10px] font-black uppercase tracking-[0.18em] text-red-700">
+              New Times Brand Studio
+            </span>
+          </div>
+          <span className="text-[11px] font-extrabold uppercase tracking-[0.18em] text-amber-700">
+            {slot.kicker}
+          </span>
+          <h2 className="mt-3 max-w-3xl text-3xl font-extrabold leading-tight text-slate-950">
+            {slot.title}
+          </h2>
+          <p className="mt-4 max-w-2xl text-base leading-7 text-slate-700">
+            {slot.body}
+          </p>
+          <span className="mt-5 inline-flex bg-slate-950 px-5 py-3 text-[11px] font-black uppercase tracking-[0.18em] text-white transition group-hover:bg-red-700">
+            {slot.cta}
+          </span>
+        </Link>
+      ))}
+    </aside>
+  );
+}
+
 function CreatorsEconomyArticle({ story }) {
   const nextStory = creatorStories[(creatorStories.findIndex((item) => item.slug === story.slug) + 1) % creatorStories.length];
 
@@ -584,26 +643,30 @@ export default function CreatorsEconomy() {
         </div>
 
         <div className="grid gap-8 lg:grid-cols-[minmax(0,1.45fr)_minmax(300px,1fr)]">
-          <Link
-            to={`/creators-economy/${leadStory.slug}`}
-            className="group block text-slate-950 no-underline"
-          >
-            <article>
-              <div className="overflow-hidden bg-slate-100">
-                <StoryImage story={leadStory} className="h-[380px]" />
-              </div>
-              <span className="mb-2 mt-5 block text-[11px] font-extrabold uppercase tracking-[0.14em] text-amber-700">
-                {leadStory.category}
-              </span>
-              <h2 className="m-0 text-3xl font-bold leading-tight text-slate-950 underline-offset-4 group-hover:underline">
-                {leadStory.title}
-              </h2>
-              <p className="mt-4 text-[15px] leading-7 text-slate-600">{leadStory.summary}</p>
-              <span className="mt-5 inline-flex bg-slate-950 px-5 py-3 text-[11px] font-bold uppercase tracking-[0.18em] text-white transition group-hover:bg-red-700">
-                Read More
-              </span>
-            </article>
-          </Link>
+          <div>
+            <Link
+              to={`/creators-economy/${leadStory.slug}`}
+              className="group block text-slate-950 no-underline"
+            >
+              <article>
+                <div className="overflow-hidden bg-slate-100">
+                  <StoryImage story={leadStory} className="h-[380px]" />
+                </div>
+                <span className="mb-2 mt-5 block text-[11px] font-extrabold uppercase tracking-[0.14em] text-amber-700">
+                  {leadStory.category}
+                </span>
+                <h2 className="m-0 text-3xl font-bold leading-tight text-slate-950 underline-offset-4 group-hover:underline">
+                  {leadStory.title}
+                </h2>
+                <p className="mt-4 text-[15px] leading-7 text-slate-600">{leadStory.summary}</p>
+                <span className="mt-5 inline-flex bg-slate-950 px-5 py-3 text-[11px] font-bold uppercase tracking-[0.18em] text-white transition group-hover:bg-red-700">
+                  Read More
+                </span>
+              </article>
+            </Link>
+
+            <HubAdvertisementStack />
+          </div>
 
           <div className="space-y-6 border-gray-200 lg:border-l lg:pl-6">
             {sideStories.map((story) => (
@@ -628,8 +691,6 @@ export default function CreatorsEconomy() {
             ))}
           </div>
         </div>
-
-        <ArticleAdvertisement />
 
         <section className="mt-12 border-t border-slate-200 pt-8">
           <div className="mb-6 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
