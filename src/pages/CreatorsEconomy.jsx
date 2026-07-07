@@ -39,8 +39,8 @@ const creatorStories = [
     title: "ASCI's 2026 AI Influencer Rules Are Here: Why Brands Can No Longer Hide Their Digital Humans",
     excerpt:
       "India's advertising regulator introduces a new compliance framework for AI-generated influencers, signalling a major shift in how brands, agencies, and creators approach transparency in the age of artificial intelligence.",
-    image: '/Asci.webp',
-    thumbnailImage: '/aiii.avif',
+    image: '/asccc.avif',
+    thumbnailImage: '/asccc.avif',
     summary:
       'Every piece of content featuring an AI-generated influencer must carry a clear disclosure stating that the persona is virtual or AI-generated, with stricter rules for video visibility and child-focused campaigns.',
     body: [
@@ -98,7 +98,8 @@ const creatorStories = [
     title: "India's Creator Economy Hits $15 Billion, Set to Reach Nearly $62 Billion by 2033",
     excerpt:
       "Rapid digital adoption, expanding monetisation opportunities, and growing brand investment are transforming India's creator economy into one of the world's fastest-growing digital industries.",
-    image: '/mar.jpg',
+    image: '/SSS.webp',
+    thumbnailImage: '/SSS.webp',
     summary:
       "A new market intelligence report pegs India's creator economy at $15.03 billion in 2026, growing at a compound annual rate of 22.4% to reach $61.87 billion by 2033.",
     body: [
@@ -127,8 +128,8 @@ const creatorStories = [
     title: "SEBI and ASCI Tighten the Rules for Finfluencers: A New Era of Accountability in India's Digital Finance Ecosystem",
     excerpt:
       "India's financial influencers are entering a stricter regulatory environment as SEBI and ASCI introduce stronger compliance standards aimed at protecting investors and improving transparency in digital content.",
-    image: '/Seb.webp',
-    thumbnailImage: '/equity.avif',
+    image: '/ss.avif',
+    thumbnailImage: '/ss.avif',
     summary:
       'SEBI draws a clear line between education and advice, while ASCI hardens disclosure requirements across finance, health, beauty, and beyond.',
     body: [
@@ -156,8 +157,8 @@ const creatorStories = [
     title: "Creator Infrastructure Startups Are Building the Business Stack for India's Digital Entrepreneurs",
     excerpt:
       "As creators move beyond content into commerce, education, memberships, and brand partnerships, a new generation of startups is building the tools that help them operate like full-scale businesses.",
-    image: '/star.jpg',
-    thumbnailImage: '/marketing.jpg',
+    image: '/cc.jpeg',
+    thumbnailImage: '/cc.jpeg',
     summary:
       "Analytics, payments, legal compliance, AI-assisted production, e-commerce, and brand discovery tools are becoming the backbone of India's next creator-led businesses.",
     body: [
@@ -188,8 +189,8 @@ const creatorStories = [
     title: "Your Face Is Your IP: Raj Shamani Wins India's First Creator Personality Rights Ruling",
     excerpt:
       "When deepfakes of a podcaster began selling scam products to his own audience, Raj Shamani took the fight to the Delhi High Court and won a ruling India's creator world had been waiting years for.",
-    image: '/Del.webp',
-    thumbnailImage: '/per.webp',
+    image: '/deep.avif',
+    thumbnailImage: '/deep.avif',
     summary:
       "The Delhi High Court recognised a digital creator's face, voice, and online identity as protectable intellectual property, creating a precedent for India's creator class.",
     body: [
@@ -215,8 +216,8 @@ const creatorStories = [
     title: "The End of Zero1: Zerodha Shuts Down Its Landmark Creator Network After SEBI's Finfluencer Crackdown",
     excerpt:
       "It had 7 lakh YouTube subscribers, 10 crore views, and 30-plus of India's best financial creators. In April 2026, Zerodha wound down Zero1, and the reason shows where creator finance is headed.",
-    image: '/Seb.webp',
-    thumbnailImage: '/equity.avif',
+    image: '/zero.webp',
+    thumbnailImage: '/zero.webp',
     summary:
       "Zero1's shutdown shows how SEBI's finfluencer framework is forcing financial creators, platforms, and regulated brands into a stricter compliance era.",
     body: [
@@ -325,7 +326,7 @@ const creatorSignals = [
     title: 'Your Face Is Your IP',
     excerpt:
       "Raj Shamani's court win gives Indian creators a stronger legal shield against deepfakes, fake endorsements, and identity theft.",
-    image: '/Del.webp',
+    image: '/deep.avif',
     slug: 'raj-shamani-first-creator-personality-rights-ruling',
   },
   {
@@ -333,7 +334,7 @@ const creatorSignals = [
     title: 'The End of Zero1',
     excerpt:
       "Zerodha's creator network shutdown shows how SEBI's finfluencer rules are reshaping financial content partnerships.",
-    image: '/Seb.webp',
+    image: '/zero.webp',
     slug: 'zerodha-zero1-shuts-down-sebi-finfluencer-crackdown',
   },
   {
@@ -365,7 +366,7 @@ const creatorSignals = [
     title: 'AI Influencer Disclosure Becomes Mandatory',
     excerpt:
       'Brands using virtual influencers will need clearer labels, stronger creative review, and more transparent campaign planning.',
-    image: '/Asci.webp',
+    image: '/asccc.avif',
     slug: 'asci-2026-ai-influencer-rules-digital-humans',
   },
 ];
