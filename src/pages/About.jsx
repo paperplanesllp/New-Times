@@ -1,9 +1,70 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+
+function GetFeaturedAboutAd({ onClose }) {
+  return (
+    <aside className="sticky top-6 hidden h-fit overflow-hidden border border-black bg-black text-white shadow-[0_22px_60px_rgba(0,0,0,0.22)] lg:block">
+      <button
+        type="button"
+        onClick={onClose}
+        className="absolute right-2 top-2 z-20 flex h-7 w-7 items-center justify-center rounded-full border border-white/35 bg-black text-lg leading-none text-white transition hover:bg-white hover:text-black"
+        aria-label="Close get featured advertisement"
+      >
+        &times;
+      </button>
+
+      <Link
+        to="/partner/get-featured"
+        className="flex min-h-[650px] w-[178px] flex-col items-center justify-between px-4 pb-7 pt-10 text-center no-underline"
+        aria-label="Apply to get featured in New Times"
+      >
+        <div>
+          <p className="text-[23px] font-black uppercase leading-[1.08] tracking-[0.03em] text-white">
+            Get
+            <br />
+            Featured.
+          </p>
+          <p className="mt-4 text-[16px] font-black uppercase leading-snug tracking-[0.1em] text-white/90">
+            Unlock
+            <br />
+            Your Story
+          </p>
+        </div>
+
+        <div className="relative my-8 h-[245px] w-full">
+          <div className="absolute left-1 top-12 h-[170px] w-[108px] rotate-[-11deg] overflow-hidden border border-white/25 bg-zinc-950 shadow-xl">
+            <img src="/magazine.png" alt="" className="h-full w-full object-cover" />
+          </div>
+          <div className="absolute right-1 top-7 h-[185px] w-[116px] rotate-[8deg] overflow-hidden border border-white/25 bg-zinc-950 shadow-xl">
+            <img src="/magazine.png" alt="" className="h-full w-full object-cover" />
+          </div>
+          <div className="absolute left-1/2 top-16 h-[180px] w-[122px] -translate-x-1/2 rotate-[-2deg] overflow-hidden border border-white/55 bg-zinc-950 shadow-2xl">
+            <img src="/magazine.png" alt="New Times magazine cover" className="h-full w-full object-cover" />
+          </div>
+        </div>
+
+        <div className="w-full">
+          <span className="inline-flex w-full items-center justify-center rounded-full bg-blue-700 px-4 py-4 text-[13px] font-black uppercase leading-none tracking-[0.04em] text-white transition hover:bg-blue-600">
+            Apply Now
+          </span>
+          <p className="mt-8 text-[34px] font-black leading-[0.9] tracking-tight text-white">
+            New
+            <br />
+            Times
+          </p>
+        </div>
+      </Link>
+    </aside>
+  );
+}
 
 export default function About() {
+  const [showFeaturedAd, setShowFeaturedAd] = useState(true);
+
   return (
     <main className="min-h-[80vh] bg-white px-4 py-12 text-slate-950 sm:px-6 lg:px-8">
-      <section className="max-w-5xl mx-auto">
+      <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[minmax(0,1fr)_178px]">
+      <section className="max-w-5xl">
         <div className="pb-8 border-b border-slate-200">
           <span className="text-xs font-bold uppercase tracking-[0.18em] text-red-600">
             About
@@ -84,6 +145,8 @@ export default function About() {
           </article>
         </div>
       </section>
+      {showFeaturedAd && <GetFeaturedAboutAd onClose={() => setShowFeaturedAd(false)} />}
+      </div>
     </main>
   );
 }
