@@ -74,7 +74,7 @@ export default function About() {
               <span className="pr-3">About</span>
               <span>New Times</span>
             </h1>
-            <p className="col-start-2 mt-1 font-semibold text-slate-950">
+            <p className="col-span-2 mt-1 text-xl font-bold leading-tight text-slate-950">
               New Times India &mdash; Stories That Influence.
             </p>
           </div>
