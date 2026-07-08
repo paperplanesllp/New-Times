@@ -11,7 +11,7 @@ export default function About() {
           <h1 className="mt-4 text-4xl font-bold leading-tight text-slate-950 md:text-5xl">
             About New Times
           </h1>
-          <p className="font-semibold text-slate-950">
+          <p className="font-semibold text-slate-950 ">
             New Times India — Stories That Shape Business.
           </p>
           <p className="max-w-4xl mt-5 text-lg leading-8 text-slate-700">

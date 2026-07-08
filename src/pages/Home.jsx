@@ -407,11 +407,70 @@ function CompactTopStories() {
   );
 }
 
+function GetFeaturedSideAd({ onClose }) {
+  return (
+    <aside className="fixed right-3 top-20 z-50 hidden w-[148px] overflow-hidden border border-white/20 bg-black text-white shadow-[0_24px_70px_rgba(0,0,0,0.35)] lg:block xl:right-5">
+      <button
+        type="button"
+        onClick={onClose}
+        className="absolute right-2 top-2 z-20 flex h-7 w-7 items-center justify-center rounded-full border border-white/25 bg-black text-lg leading-none text-white transition hover:bg-white hover:text-black"
+        aria-label="Close get featured advertisement"
+      >
+        &times;
+      </button>
+
+      <Link
+        to="/partner/get-featured"
+        className="flex min-h-[620px] flex-col items-center justify-between px-3 pb-6 pt-12 text-center no-underline"
+        aria-label="Get featured with New Times"
+      >
+        <div>
+          <p className="text-[18px] font-black uppercase leading-tight tracking-[0.02em] text-white">
+            Get
+            <br />
+            Featured.
+          </p>
+          <p className="mt-3 text-[13px] font-bold uppercase leading-snug tracking-[0.08em] text-white/85">
+            Unlock
+            <br />
+            Your Story
+          </p>
+        </div>
+
+        <div className="relative my-7 h-[185px] w-full">
+          <div className="absolute left-5 top-7 h-[120px] w-[82px] rotate-[-11deg] overflow-hidden border border-white/25 bg-zinc-900 shadow-xl">
+            <img src="/magazine.png" alt="" className="h-full w-full object-cover" />
+          </div>
+          <div className="absolute right-4 top-2 h-[136px] w-[88px] rotate-[9deg] overflow-hidden border border-white/25 bg-zinc-900 shadow-xl">
+            <img src="/magazine.png" alt="" className="h-full w-full object-cover" />
+          </div>
+          <div className="absolute left-1/2 top-12 h-[132px] w-[92px] -translate-x-1/2 rotate-[-2deg] overflow-hidden border border-white/40 bg-zinc-900 shadow-2xl">
+            <img src="/magazine.png" alt="New Times magazine cover" className="h-full w-full object-cover" />
+          </div>
+        </div>
+
+        <div className="w-full">
+          <span className="inline-flex w-full items-center justify-center rounded-full bg-blue-700 px-3 py-3 text-[10px] font-black uppercase leading-tight tracking-[0.08em] text-white transition hover:bg-blue-600">
+            Apply Now
+          </span>
+          <p className="mt-7 text-[28px] font-black leading-none tracking-tight text-white">
+            New
+            <br />
+            Times
+          </p>
+        </div>
+      </Link>
+    </aside>
+  );
+}
+
 export default function Home() {
   const [showAd, setShowAd] = useState(true);
 
   return (
     <main className="min-h-screen text-black bg-white">
+      {showAd && <GetFeaturedSideAd onClose={() => setShowAd(false)} />}
+
       <div className="mx-auto max-w-[1500px] px-4 py-5 sm:px-6 lg:px-8">
         <section>
           <div className="grid gap-7 lg:grid-cols-[minmax(0,1fr)_340px] lg:gap-9 xl:grid-cols-[minmax(0,1fr)_360px]">
@@ -442,45 +501,6 @@ export default function Home() {
                   </p>
                 </div>
               </Link>
-
-              {showAd && (
-                <div className="group/sponsored relative mx-auto mt-8 max-w-[720px] overflow-hidden border border-black/15 bg-[#faf8f3] text-left transition duration-300 hover:shadow-[0_24px_70px_rgba(15,23,42,0.14)]">
-                  <button
-                    type="button"
-                    onClick={() => setShowAd(false)}
-                    className="absolute z-20 flex items-center justify-center w-8 h-8 text-lg leading-none text-black transition border rounded-full right-3 top-3 border-black/20 bg-white/80 hover:bg-black hover:text-white"
-                    aria-label="Close sponsored advertisement"
-                  >
-                    &times;
-                  </button>
-
-                  <div className="overflow-hidden bg-neutral-100">
-                    <img
-                      src="https://images.unsplash.com/photo-1674027444485-cec3da58eef4?auto=format&fit=crop&w=1400&q=85"
-                      alt="Founders reviewing AI dashboard screens in a modern office"
-                      className="h-[210px] w-full object-cover transition duration-500 group-hover/sponsored:scale-[1.04] sm:h-[250px] lg:h-[280px]"
-                    />
-                  </div>
-
-                  <div className="px-5 py-6 sm:px-7 lg:px-8">
-                    <div className="text-[10px] font-semibold uppercase tracking-[0.28em] text-black/45">
-                      Sponsored
-                    </div>
-
-                    <h3 className="mt-3 text-2xl font-bold leading-tight tracking-tight text-black transition duration-300 group-hover/sponsored:text-blue-700 sm:text-3xl lg:text-[34px]">
-                      The Future of AI-Native Companies Is Being Built Today
-                    </h3>
-
-                    <p className="mt-4 max-w-[760px] text-sm leading-6 text-black/65 sm:text-base">
-                      Discover how modern founders are building billion-dollar companies with lean teams, smarter systems, and global ambition.
-                    </p>
-
-                    <span className="mt-6 inline-flex w-fit items-center justify-center bg-black px-5 py-3 text-[11px] font-semibold uppercase tracking-[0.2em] text-white transition duration-300 group-hover/sponsored:bg-blue-700">
-                      Read Special Report -&gt;
-                    </span>
-                  </div>
-                </div>
-              )}
             </article>
 
             <aside className="space-y-6 lg:max-w-[360px]">
