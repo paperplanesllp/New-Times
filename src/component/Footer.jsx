@@ -129,6 +129,13 @@ export default function Footer() {
                 </a>
               ))}
             </div>
+
+            <Link
+              to="/subscribe"
+              className="mt-8 inline-flex min-h-11 items-center justify-center bg-gradient-to-r from-amber-300 via-yellow-500 to-amber-600 px-6 text-sm font-black text-black no-underline transition hover:-translate-y-0.5 hover:shadow-[0_16px_38px_rgba(245,158,11,0.28)]"
+            >
+              Subscribe
+            </Link>
           </div>
 
           <FooterColumn title="Company" items={companyLinks} showPartnerLinks />
