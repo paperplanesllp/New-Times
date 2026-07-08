@@ -69,7 +69,7 @@ export default function About() {
           <span className="text-xs font-bold uppercase tracking-[0.18em] text-red-600">
             About
           </span>
-          <div className="mt-4 inline-grid grid-cols-[auto_auto] items-baseline">
+          <div className="mt-4 grid w-fit grid-cols-[auto_auto] items-baseline">
             <h1 className="contents text-4xl font-bold leading-tight text-slate-950 md:text-5xl">
               <span className="pr-3">About</span>
               <span>New Times</span>
