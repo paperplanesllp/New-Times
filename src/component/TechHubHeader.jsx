@@ -17,7 +17,7 @@ export default function TechHubHeader() {
         <span className="text-zinc-500">India Edition</span>
       </div>
 
-      <div className="mb-8 border-b border-zinc-200 pb-6">
+      <div className="pb-6 mb-8 border-b border-zinc-200">
         <h1 className="mb-3 text-4xl font-semibold leading-tight text-zinc-950 md:text-5xl">
           The India Stack Agenda
         </h1>
@@ -28,7 +28,7 @@ export default function TechHubHeader() {
 
       <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-5">
         {sectorSignals.map((signal, index) => (
-          <article key={signal.metric} className="relative overflow-hidden border border-zinc-200 bg-white p-5">
+          <article key={signal.metric} className="relative p-5 overflow-hidden bg-white border border-zinc-200">
             <div className={`absolute left-0 top-0 h-full w-1 ${index === 0 ? 'bg-zinc-950' : 'bg-transparent'}`} />
             <span className="mb-2 block text-[11px] font-bold uppercase tracking-[0.04em] text-zinc-500">
               {signal.metric}

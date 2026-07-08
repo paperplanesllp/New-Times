@@ -65,7 +65,7 @@ function FooterColumn({ title, children, items, showPartnerLinks = false, showFe
               <span>Partner With Us</span>
               <span className="text-lg leading-none transition group-open:rotate-45">+</span>
             </summary>
-            <div className="mt-4 space-y-3 border-l border-white/25 pl-4">
+            <div className="pl-4 mt-4 space-y-3 border-l border-white/25">
               {partnerLinks.map((item) => (
                 <Link
                   key={item.label}
@@ -84,7 +84,6 @@ function FooterColumn({ title, children, items, showPartnerLinks = false, showFe
             className="group/featured mt-2 inline-flex min-h-12 items-center justify-center border border-white bg-white px-5 text-[12px] font-black uppercase leading-none tracking-[0.18em] text-black no-underline shadow-[0_14px_35px_rgba(255,255,255,0.12)] transition duration-300 hover:-translate-y-0.5 hover:bg-blue-700 hover:text-white hover:shadow-[0_18px_45px_rgba(29,78,216,0.35)]"
           >
             Get Featured
-            <span className="ml-2 transition duration-300 group-hover/featured:translate-x-1">-&gt;</span>
           </Link>
         )}
       </div>
