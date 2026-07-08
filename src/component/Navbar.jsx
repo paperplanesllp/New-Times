@@ -196,7 +196,7 @@ export default function Navbar() {
           </div>
         </div>
 
-        <nav className="flex min-h-[64px] w-full items-center justify-start gap-5 overflow-x-auto bg-black px-4 sm:justify-center sm:px-6 lg:gap-6 lg:overflow-visible">
+        <nav className="relative flex min-h-[64px] w-full items-center justify-start gap-5 overflow-x-auto bg-black px-4 sm:justify-center sm:px-6 lg:gap-6 lg:overflow-visible">
           <Link to="/" className={navLink}>HOME</Link>
           <Link to="/economy" className={navLink}>ECONOMY</Link>
           <div className="relative items-center self-stretch hidden lg:flex group">
@@ -249,7 +249,7 @@ export default function Navbar() {
           <Link to="/creators-economy" className={`${navLink} lg:hidden`}>MORE</Link>
           <Link
             to="/spotlight/business-features/nikhil-kamath-zerodha-journey"
-            className="ml-auto hidden min-h-11 items-center justify-center border border-white/25 bg-white px-7 text-[12px] font-black uppercase tracking-[0.18em] text-black no-underline shadow-[0_14px_40px_rgba(255,255,255,0.08)] transition duration-300 hover:-translate-y-0.5 hover:border-blue-700 hover:bg-blue-700 hover:text-white hover:shadow-[0_18px_45px_rgba(29,78,216,0.32)] lg:inline-flex"
+            className="absolute right-4 top-1/2 hidden min-h-11 -translate-y-1/2 items-center justify-center border border-white/25 bg-white px-5 text-[11px] font-black uppercase tracking-[0.16em] text-black no-underline shadow-[0_14px_40px_rgba(255,255,255,0.08)] transition duration-300 hover:-translate-y-[52%] hover:border-blue-700 hover:bg-blue-700 hover:text-white hover:shadow-[0_18px_45px_rgba(29,78,216,0.32)] xl:inline-flex"
           >
             Read Story
             <span className="ml-2">-&gt;</span>
