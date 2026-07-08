@@ -9,7 +9,6 @@ import MainDashboard from '../component/MainDashboard';
 import BusinessHubGrid from '../component/BusinessHubGrid';
 import FounderSandbox from '../component/FounderSandbox';
 import BillionairesHub from '../component/BillionairesHub';
-import GetReadyCta from '../component/GetReadyCta';
 
 const nikhilKamathImage = '/kammath.jpg';
 
@@ -557,8 +556,6 @@ export default function Home() {
             <BillionairesHub />
           </div>
         </EditorialShell>
-
-        <GetReadyCta />
 
       </div>
     </main>

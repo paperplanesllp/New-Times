@@ -3,15 +3,18 @@ import React from 'react';
 export default function About() {
   return (
     <main className="min-h-[80vh] bg-white px-4 py-12 text-slate-950 sm:px-6 lg:px-8">
-      <section className="mx-auto max-w-5xl">
-        <div className="border-b border-slate-200 pb-8">
+      <section className="max-w-5xl mx-auto">
+        <div className="pb-8 border-b border-slate-200">
           <span className="text-xs font-bold uppercase tracking-[0.18em] text-red-600">
             About
           </span>
           <h1 className="mt-4 text-4xl font-bold leading-tight text-slate-950 md:text-5xl">
             About New Times
           </h1>
-          <p className="mt-5 max-w-4xl text-lg leading-8 text-slate-700">
+          <p className="font-semibold text-slate-950">
+            New Times India — Stories That Shape Business.
+          </p>
+          <p className="max-w-4xl mt-5 text-lg leading-8 text-slate-700">
             New Times India is a digital-first business publication dedicated to documenting the people,
             ideas, and innovations shaping the future of business.
           </p>
@@ -36,13 +39,11 @@ export default function About() {
             At New Times India, we believe every successful venture begins with a story. Our mission is
             to ensure those stories are told with credibility, purpose, and influence.
           </p>
-          <p className="font-semibold text-slate-950">
-            New Times India — Stories That Shape Business.
-          </p>
+          
         </div>
 
-        <div className="mt-12 grid gap-6">
-          <article className="border border-slate-200 bg-white p-6 sm:p-8">
+        <div className="grid gap-6 mt-12">
+          <article className="p-6 bg-white border border-slate-200 sm:p-8">
             <h2 className="text-3xl font-bold text-slate-950">Vision</h2>
             <p className="mt-4 text-base leading-8 text-slate-700">
               To become India's most trusted digital business publication, empowering entrepreneurs,
@@ -55,7 +56,7 @@ export default function About() {
             </p>
           </article>
 
-          <article className="border border-slate-200 bg-white p-6 sm:p-8">
+          <article className="p-6 bg-white border border-slate-200 sm:p-8">
             <h2 className="text-3xl font-bold text-slate-950">Mission</h2>
             <p className="mt-4 text-base leading-8 text-slate-700">
               Our mission is to deliver credible, high-quality business journalism that informs, inspires,
@@ -67,7 +68,7 @@ export default function About() {
             </p>
           </article>
 
-          <article className="border border-slate-200 bg-white p-6 sm:p-8">
+          <article className="p-6 bg-white border border-slate-200 sm:p-8">
             <h2 className="text-3xl font-bold text-slate-950">Who Can Get Featured?</h2>
             <p className="mt-4 text-base leading-8 text-slate-700">
               New Times India features founders, entrepreneurs, startups, business leaders, established
