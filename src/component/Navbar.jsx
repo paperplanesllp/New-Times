@@ -196,18 +196,6 @@ export default function Navbar() {
           </div>
         </div>
 
-        <div className="border-b border-slate-900 bg-black px-4 pb-3 sm:px-6">
-          <div className="mx-auto flex max-w-[1350px] justify-center sm:justify-end">
-            <Link
-              to="/spotlight/business-features/nikhil-kamath-zerodha-journey"
-              className="inline-flex min-h-11 items-center justify-center border border-white/25 bg-white px-6 text-[12px] font-black uppercase tracking-[0.18em] text-black no-underline shadow-[0_14px_40px_rgba(255,255,255,0.08)] transition duration-300 hover:-translate-y-0.5 hover:border-blue-700 hover:bg-blue-700 hover:text-white hover:shadow-[0_18px_45px_rgba(29,78,216,0.32)]"
-            >
-              Read Story
-              <span className="ml-2">-&gt;</span>
-            </Link>
-          </div>
-        </div>
-
         <nav className="flex min-h-[64px] w-full items-center justify-start gap-5 overflow-x-auto bg-black px-4 sm:justify-center sm:px-6 lg:gap-6 lg:overflow-visible">
           <Link to="/" className={navLink}>HOME</Link>
           <Link to="/economy" className={navLink}>ECONOMY</Link>
@@ -259,6 +247,13 @@ export default function Navbar() {
           </div>
 
           <Link to="/creators-economy" className={`${navLink} lg:hidden`}>MORE</Link>
+          <Link
+            to="/spotlight/business-features/nikhil-kamath-zerodha-journey"
+            className="ml-auto hidden min-h-11 items-center justify-center border border-white/25 bg-white px-7 text-[12px] font-black uppercase tracking-[0.18em] text-black no-underline shadow-[0_14px_40px_rgba(255,255,255,0.08)] transition duration-300 hover:-translate-y-0.5 hover:border-blue-700 hover:bg-blue-700 hover:text-white hover:shadow-[0_18px_45px_rgba(29,78,216,0.32)] lg:inline-flex"
+          >
+            Read Story
+            <span className="ml-2">-&gt;</span>
+          </Link>
         </nav>
       </header>
 
