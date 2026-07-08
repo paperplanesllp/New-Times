@@ -8,12 +8,15 @@ export default function About() {
           <span className="text-xs font-bold uppercase tracking-[0.18em] text-red-600">
             About
           </span>
-          <h1 className="mt-4 text-4xl font-bold leading-tight text-slate-950 md:text-5xl">
-            About New Times
-          </h1>
-          <p className="font-semibold text-slate-950 ">
-            New Times India — Stories That Shape Business.
-          </p>
+          <div className="mt-4 inline-grid grid-cols-[auto_auto] items-baseline">
+            <h1 className="contents text-4xl font-bold leading-tight text-slate-950 md:text-5xl">
+              <span className="pr-3">About</span>
+              <span>New Times</span>
+            </h1>
+            <p className="col-start-2 mt-1 font-semibold text-slate-950">
+              New Times India &mdash; Stories That Influence.
+            </p>
+          </div>
           <p className="max-w-4xl mt-5 text-lg leading-8 text-slate-700">
             New Times India is a digital-first business publication dedicated to documenting the people,
             ideas, and innovations shaping the future of business.
@@ -39,7 +42,6 @@ export default function About() {
             At New Times India, we believe every successful venture begins with a story. Our mission is
             to ensure those stories are told with credibility, purpose, and influence.
           </p>
-          
         </div>
 
         <div className="grid gap-6 mt-12">
