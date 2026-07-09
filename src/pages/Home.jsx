@@ -25,8 +25,8 @@ const sideSections = [
     items: [
       {
         label: 'Startup',
-        title: "Kalam Labs Builds India's Near-Space Drone Edge",
-        to: '/spotlight/startup/kalam-labs-near-space-drone-edge',
+        title: 'Emergent Hits $100M ARR With Plain-Language App Building',
+        to: '/spotlight/startup/emergent-100m-arr-plain-language-app-building',
       },
       { title: 'HCLTech Makes Rs 1,427 Crore Bet on AI, Acquires 10.5% Stake in Sarvam AI' },
       { title: 'Pramaana Labs Secures $27 Million Seed Funding in Khosla Ventures-Led Round' },
