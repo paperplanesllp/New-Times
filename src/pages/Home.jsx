@@ -35,11 +35,6 @@ const sideSections = [
       },
       {
         label: 'Startup',
-        title: "The Engineer Who Started at Ten: How Venkatesh Sai Built India's Most Consequential Drone Technology Company",
-        to: '/spotlight/startup/biocompute-bacterial-dna-silicon-valley',
-      },
-      {
-        label: 'Startup',
         title: "From One Outlet to a Global Ambition: How Bad Boy Pizza Is Rewriting the Rules of India's QSR Industry",
         to: '/spotlight/startup/bad-boy-pizza-global-ambition',
       },
