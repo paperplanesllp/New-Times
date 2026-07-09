@@ -1,8 +1,7 @@
 // src/pages/Home.jsx
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import LiveBusinessNewsSection from '../component/LiveBusinessNewsSection';
-import newTimesLogo from '../assets/New Times final-02.png';
+import LiveBusinessNewsSection, { businessTopics, liveBusinessContent } from '../component/LiveBusinessNewsSection';
 
 import Ticker from '../component/Ticker';
 import MainDashboard from '../component/MainDashboard';
@@ -104,42 +103,47 @@ const topStories = [
   {
     id: 1,
     category: 'Business',
-    title: 'The New Business Era',
+    title: liveBusinessContent.business.featured.title,
     description:
-      'How AI, automation, and global connectivity are creating the next generation of market leaders.',
-    image: newTimesLogo,
+      liveBusinessContent.business.featured.description,
+    image: liveBusinessContent.business.featured.image,
+    to: '/business-live/business',
   },
   {
     id: 2,
-    category: 'Startups',
-    title: 'Investors Return to High-Growth Startups',
+    category: 'Finance',
+    title: liveBusinessContent.finance.featured.title,
     description:
-      'Venture capital activity is showing renewed momentum across AI, fintech, and enterprise software.',
-    image: '/T1.jpg',
+      liveBusinessContent.finance.featured.description,
+    image: liveBusinessContent.finance.featured.image,
+    to: '/business-live/finance',
   },
   {
     id: 3,
-    category: 'Leadership',
-    title: "What Today's CEOs Must Get Right",
+    category: 'Marketing',
+    title: liveBusinessContent.marketing.featured.title,
     description:
-      'Leaders are balancing AI adoption, capital discipline, and talent strategy in a faster operating environment.',
-    image: '/T.2.jpg',
+      liveBusinessContent.marketing.featured.description,
+    image: liveBusinessContent.marketing.featured.image,
+    to: '/business-live/marketing',
   },
   {
     id: 4,
-    category: 'Economy',
-    title: 'Emerging Economies Driving Growth',
+    category: 'Technology',
+    title: liveBusinessContent.technology.featured.title,
     description:
-      'New markets across Asia, Africa, and the Middle East are attracting global investment.',
-    image: '/T.3.webp',
+      liveBusinessContent.technology.featured.description,
+    image: liveBusinessContent.technology.featured.image,
+    to: '/business-live/technology',
   },
   {
     id: 5,
-    category: 'Technology',
-    title: 'Technology Is Redefining Efficiency',
+    category: 'AI',
+    title: liveBusinessContent.ai.featured.title,
     description:
-      'Automation and intelligent software are helping businesses achieve more with fewer resources.',
-    image: '/t.4.jpg',
+      liveBusinessContent.ai.featured.description,
+    image: liveBusinessContent.ai.featured.image,
+    to: '/business-live/ai',
   },
   {
     id: 6,
@@ -368,12 +372,12 @@ function CompactTopStories() {
       </div>
 
       <article className="pb-4 border-b border-gray-100 group">
-        <div className="block">
+        <Link to={topStories[0].to} className="block no-underline">
           <div className="overflow-hidden bg-neutral-100 rounded-3xl">
             <img
               src={topStories[0].image}
               alt={topStories[0].title}
-              className="h-28 w-full object-contain p-4 transition duration-500 group-hover:scale-[1.04]"
+              className="h-28 w-full object-cover transition duration-500 group-hover:scale-[1.04]"
             />
           </div>
           <div className="mt-3 text-[10px] font-semibold uppercase tracking-[0.16em] text-slate-500">
@@ -382,13 +386,13 @@ function CompactTopStories() {
           <h4 className="m-0 mt-2 text-[17px] font-bold leading-snug text-slate-950 underline-offset-4 group-hover:underline">
             {topStories[0].title}
           </h4>
-        </div>
+        </Link>
       </article>
 
       <div className="divide-y divide-gray-100">
         {topStories.slice(1, 10).map((story, index) => (
           <article key={story.id} className="py-3 group last:pb-0">
-            <div className="grid grid-cols-[48px_minmax(0,1fr)] gap-3">
+            <Link to={story.to || '/business-live/business'} className="grid grid-cols-[48px_minmax(0,1fr)] gap-3 no-underline">
               <img src={story.image} alt={story.title} className="object-cover w-12 h-12 rounded-2xl" />
               <div>
                 <div className="mb-1 flex items-center gap-2 text-[9px] font-semibold uppercase tracking-[0.14em] text-slate-500">
@@ -399,11 +403,46 @@ function CompactTopStories() {
                   {story.title}
                 </h4>
               </div>
-            </div>
+            </Link>
           </article>
         ))}
       </div>
     </aside>
+  );
+}
+
+function BusinessLiveTopicCards() {
+  return (
+    <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+      {businessTopics.map((topic) => {
+        const content = liveBusinessContent[topic.id];
+
+        return (
+          <Link
+            key={topic.id}
+            to={topic.to}
+            className="group block overflow-hidden border border-black/10 bg-white no-underline shadow-sm transition duration-300 hover:-translate-y-1 hover:border-black hover:shadow-[0_18px_45px_rgba(15,23,42,0.12)]"
+          >
+            <div className="aspect-[4/3] overflow-hidden bg-neutral-100">
+              <img
+                src={content.featured.image}
+                alt={content.featured.title}
+                className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                loading="lazy"
+              />
+            </div>
+            <div className="p-4">
+              <div className="text-[11px] font-semibold uppercase tracking-[0.18em] text-blue-700">
+                {topic.label}
+              </div>
+              <h3 className="mt-2 text-lg font-bold leading-tight text-black underline-offset-4 group-hover:underline">
+                {content.featured.title}
+              </h3>
+            </div>
+          </Link>
+        );
+      })}
+    </div>
   );
 }
 
@@ -472,6 +511,9 @@ export default function Home() {
 
         <EditorialShell>
           <SectionTitle> Business Live</SectionTitle>
+          <div className="mt-8">
+            <BusinessLiveTopicCards />
+          </div>
           <div className="mt-8 lg:mt-7">
             <LiveBusinessNewsSection />
           </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
+import AISummaryBox from "../component/AISummaryBox";
 
 const nikhilKamathImage = '/kammath.jpg';
 
@@ -501,6 +502,8 @@ function SpotlightArticleDetail({ article, nextArticle, page, basePath }) {
 
         <div className="grid min-w-0 gap-10 pt-10 lg:grid-cols-[minmax(0,0.68fr)_minmax(320px,0.32fr)] lg:gap-12">
           <section className="min-w-0">
+            <AISummaryBox article={article} />
+
             <div className="space-y-8 break-words text-[20px] leading-[1.8] text-slate-800 md:text-[23px] lg:text-[25px]">
               {article.body.map((paragraph) => (
                 <p key={paragraph} className="m-0">

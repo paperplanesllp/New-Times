@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
-const businessTopics = [
-  { id: 'business', label: 'Business' },
-  { id: 'finance', label: 'Finance' },
-  { id: 'marketing', label: 'Marketing' },
-  { id: 'technology', label: 'Technology' },
-  { id: 'ai', label: 'AI' },
+export const businessTopics = [
+  { id: 'business', label: 'Business', to: '/business-live/business' },
+  { id: 'finance', label: 'Finance', to: '/business-live/finance' },
+  { id: 'marketing', label: 'Marketing', to: '/business-live/marketing' },
+  { id: 'technology', label: 'Technology', to: '/business-live/technology' },
+  { id: 'ai', label: 'AI', to: '/business-live/ai' },
 ];
 
-const liveBusinessContent = {
+export const liveBusinessContent = {
   // BUSINESS TAB CONTENT - edit only this block for Business.
   business: {
     featured: {
@@ -294,7 +295,7 @@ const liveBusinessContent = {
   },
 };
 
-function BusinessStory({ story, compact = false }) {
+function BusinessStory({ story, compact = false, topicPath }) {
   if (!story) {
     return null;
   }
@@ -303,21 +304,33 @@ function BusinessStory({ story, compact = false }) {
     ? 'news-source-link mt-2 inline-flex text-[10px] font-semibold uppercase tracking-[0.18em] text-slate-950'
     : 'news-source-link mt-3 inline-flex text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-950';
 
+  const media = (
+    <img
+      src={story.image}
+      alt={story.title}
+      onError={(event) => {
+        event.currentTarget.alt = '';
+        event.currentTarget.style.opacity = '0';
+      }}
+      className={compact ? 'object-cover w-20 h-20 rounded-2xl' : 'mb-4 h-[220px] w-full rounded-3xl object-cover'}
+    />
+  );
+
   return (
     <article className={compact ? 'grid grid-cols-[80px_minmax(0,1fr)] gap-4 border-b border-gray-100 pb-5' : 'border-b border-gray-100 pb-7'}>
-      <img
-        src={story.image}
-        alt={story.title}
-        onError={(event) => {
-          event.currentTarget.alt = '';
-          event.currentTarget.style.opacity = '0';
-        }}
-        className={compact ? 'object-cover w-20 h-20 rounded-2xl' : 'mb-4 h-[220px] w-full rounded-3xl object-cover'}
-      />
+      {topicPath ? <Link to={topicPath}>{media}</Link> : media}
       <div>
-        <h3 className={compact ? 'story-headline m-0 text-[15px] font-semibold leading-tight text-slate-950' : 'story-headline m-0 text-xl font-semibold leading-tight text-slate-950'}>
-          {story.title}
-        </h3>
+        {topicPath ? (
+          <Link to={topicPath} className="text-slate-950 no-underline hover:underline underline-offset-4">
+            <h3 className={compact ? 'story-headline m-0 text-[15px] font-semibold leading-tight text-slate-950' : 'story-headline m-0 text-xl font-semibold leading-tight text-slate-950'}>
+              {story.title}
+            </h3>
+          </Link>
+        ) : (
+          <h3 className={compact ? 'story-headline m-0 text-[15px] font-semibold leading-tight text-slate-950' : 'story-headline m-0 text-xl font-semibold leading-tight text-slate-950'}>
+            {story.title}
+          </h3>
+        )}
         {story.description && (
           <p className={compact ? 'mt-2 text-xs leading-5 text-slate-600' : 'mt-3 text-sm leading-6 text-slate-600'}>
             {story.description}
@@ -327,6 +340,10 @@ function BusinessStory({ story, compact = false }) {
           <a className={readStoryClass} href={story.url} target="_blank" rel="noreferrer">
             Read Story
           </a>
+        ) : topicPath ? (
+          <Link className={readStoryClass} to={topicPath}>
+            Read Story
+          </Link>
         ) : (
           <span className={readStoryClass}>Read Story</span>
         )}
@@ -335,10 +352,11 @@ function BusinessStory({ story, compact = false }) {
   );
 }
 
-export default function LiveBusinessNewsSection() {
-  const [activeTopic, setActiveTopic] = useState('business');
+export default function LiveBusinessNewsSection({ initialTopic = 'business', showTopicLinks = false }) {
+  const [activeTopic, setActiveTopic] = useState(liveBusinessContent[initialTopic] ? initialTopic : 'business');
   const activeContent = liveBusinessContent[activeTopic] || liveBusinessContent.business;
   const { featured, sideStories, streamStories } = activeContent;
+  const activeTopicPath = businessTopics.find((topic) => topic.id === activeTopic)?.to;
 
   return (
     <section className="px-4 py-8 bg-white shadow-sm sm:px-6 lg:px-8 text-slate-950">
@@ -352,7 +370,19 @@ export default function LiveBusinessNewsSection() {
         {businessTopics.map((topic) => {
           const isActive = activeTopic === topic.id;
 
-          return (
+          return showTopicLinks ? (
+            <Link
+              key={topic.id}
+              to={topic.to}
+              className={`border px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] no-underline ${
+                isActive ? 'border-black bg-black text-white' : 'border-gray-200 bg-white text-slate-600'
+              }`}
+              role="tab"
+              aria-selected={isActive}
+            >
+              {topic.label}
+            </Link>
+          ) : (
             <button
               key={topic.id}
               type="button"
@@ -372,32 +402,36 @@ export default function LiveBusinessNewsSection() {
       <div className="mb-8 grid gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,2fr)]">
         <div className="space-y-8 border-gray-200 lg:border-r lg:pr-6">
           {sideStories.map((story) => (
-            <BusinessStory key={story.id} story={story} />
+            <BusinessStory key={story.id} story={story} topicPath={activeTopicPath} />
           ))}
         </div>
 
         <article>
-          <img
-            src={featured.image}
-            alt={featured.title}
-            onError={(event) => {
-              event.currentTarget.alt = '';
-              event.currentTarget.style.opacity = '0';
-            }}
-            className="mb-5 h-[360px] w-full rounded-3xl object-cover"
-          />
-          <h2 className="m-0 text-3xl font-semibold leading-tight featured-headline text-slate-950 md:text-4xl">
-            {featured.title}
-          </h2>
+          <Link to={activeTopicPath || '/business-live/business'}>
+            <img
+              src={featured.image}
+              alt={featured.title}
+              onError={(event) => {
+                event.currentTarget.alt = '';
+                event.currentTarget.style.opacity = '0';
+              }}
+              className="mb-5 h-[360px] w-full rounded-3xl object-cover"
+            />
+          </Link>
+          <Link to={activeTopicPath || '/business-live/business'} className="text-slate-950 no-underline hover:underline underline-offset-4">
+            <h2 className="m-0 text-3xl font-semibold leading-tight featured-headline text-slate-950 md:text-4xl">
+              {featured.title}
+            </h2>
+          </Link>
           <p className="mt-4 text-sm leading-7 text-slate-600">{featured.description}</p>
           {featured.url ? (
             <a className="news-source-link mt-4 inline-flex text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-950" href={featured.url} target="_blank" rel="noreferrer">
               Read Story
             </a>
           ) : (
-            <span className="news-source-link mt-4 inline-flex text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-950">
+            <Link to={activeTopicPath || '/business-live/business'} className="news-source-link mt-4 inline-flex text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-950">
               Read Story
-            </span>
+            </Link>
           )}
         </article>
       </div>
@@ -405,7 +439,7 @@ export default function LiveBusinessNewsSection() {
       {streamStories.length > 0 && (
         <div className="grid gap-6 border-t border-gray-200 pt-7 md:grid-cols-2">
           {streamStories.map((story) => (
-            <BusinessStory key={story.id} story={story} compact />
+            <BusinessStory key={story.id} story={story} compact topicPath={activeTopicPath} />
           ))}
         </div>
       )}
