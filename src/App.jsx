@@ -55,6 +55,7 @@ export default function App() {
         <Route path="/spotlight/recognise-series" element={<SpotlightFeaturePage type="recognise-series" />} />
         <Route path="/spotlight/recognise-series/:slug" element={<SpotlightFeaturePage type="recognise-series" />} />
         <Route path="/spotlight/startup" element={<SpotlightFeaturePage type="startup" />} />
+        <Route path="/spotlight/startup/:slug" element={<SpotlightFeaturePage type="startup" />} />
         <Route path="/spotlight/cover-feature" element={<SpotlightFeaturePage type="cover-feature" />} />
         <Route path="/cover-stories" element={<CoverStories />} />
         <Route path="/creators-economy" element={<CreatorsEconomy />} />

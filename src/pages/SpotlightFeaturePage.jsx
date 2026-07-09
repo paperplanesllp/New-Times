@@ -186,11 +186,21 @@ const spotlightPages = {
       'Covering ambitious startups, visionary founders, breakthrough innovations, growth milestones, and the strategies shaping the future of business.',
     badge: 'Startup Watch',
     lead: {
+      slug: 'emergent-100m-arr-plain-language-app-building',
       category: 'AI STARTUP',
       title: 'Emergent Hits $100M ARR With Plain-Language App Building',
       excerpt:
         'Mukund Jha, CEO, and Madhav Jha, CTO, alumni of Columbia Engineering and Penn State, built Emergent, a vibe-coding platform that lets anyone create full-stack apps using plain language with no code required. Launched in 2024, Emergent hit $50M ARR in 7 months and doubled to $100M ARR in just 30 more days. With 5M+ users across 190 countries and 6M+ apps built, the startup raised $100M total, including a $70M Series B led by SoftBank Vision Fund 2 and Khosla Ventures, tripling its valuation to $300M. Nearly 40% of users are small businesses, and 70% have zero prior coding experience.',
-      image: '/sT1.jpg',
+      image: '/starr.webp',
+      body: [
+        'Emergent has become one of the fastest-growing companies in the plain-language software building wave, crossing $100 million in annual recurring revenue after launching in 2024.',
+        'Founded by Mukund Jha, CEO, and Madhav Jha, CTO, the platform lets users describe the apps they want in everyday language and then generates full-stack software without requiring traditional coding skills.',
+        'The company reached $50 million ARR in seven months, then doubled to $100 million ARR in just 30 more days, a growth pace that has made it a standout in the AI application-building market.',
+        'Emergent says more than five million users across 190 countries have already built over six million apps on the platform. The company says nearly 40 per cent of its users are small businesses, while about 70 per cent have no prior coding experience.',
+        'That user mix is central to Emergent\'s pitch: software creation is moving beyond engineering teams and into the hands of founders, operators, creators, and small business owners who need tools quickly but cannot always hire technical teams.',
+        'Investor interest has followed the traction. Emergent has raised $100 million in total funding, including a $70 million Series B led by SoftBank Vision Fund 2 and Khosla Ventures, tripling its valuation to $300 million.',
+        'The milestone reflects a broader shift in startup software, where AI-native tools are turning product creation into a conversation rather than a coding workflow.',
+      ],
     },
     stories: [
       {
