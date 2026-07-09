@@ -1,46 +1,53 @@
-const AI_API_BASE_URL = import.meta.env.VITE_AI_API_BASE_URL || 'http://127.0.0.1:8000';
-
-function normalizeArticleBody(body) {
-  if (Array.isArray(body)) {
-    return body.filter(Boolean).join('\n\n');
+function normalizeArticleText(value) {
+  if (Array.isArray(value)) {
+    return value.filter(Boolean).join('\n\n').trim();
   }
 
-  return body || '';
+  return String(value || '').trim();
 }
 
-function readSummaryFromResponse(data) {
-  if (typeof data === 'string') {
-    return data;
+export async function generateArticleSummary(article = {}) {
+  const baseUrl = import.meta.env.VITE_AI_API_BASE_URL;
+
+  if (!baseUrl) {
+    throw new Error('AI summary API URL is missing.');
   }
 
-  if (Array.isArray(data?.summary)) {
-    return data.summary.join('\n');
+  const text = normalizeArticleText(
+    article.content || article.text || article.description || article.body
+  );
+
+  if (text.length < 100) {
+    throw new Error('Article text must be at least 100 characters.');
   }
 
-  return data?.summary || data?.ai_summary || data?.text || data?.result || '';
-}
+  let response;
 
-export async function fetchAISummary({ title, excerpt, body }) {
-  const response = await fetch(`${AI_API_BASE_URL}/summarize`, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({
-      title,
-      excerpt,
-      content: normalizeArticleBody(body),
-    }),
-  });
+  try {
+    response = await fetch(`${baseUrl.replace(/\/$/, '')}/api/v1/summarize`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        article_id: article.id || article.slug || article.title,
+        title: article.title,
+        text,
+        source_url: article.url || article.source_url || '',
+      }),
+    });
+  } catch {
+    throw new Error('AI summary request failed.');
+  }
 
   if (!response.ok) {
-    throw new Error(`AI summary request failed with status ${response.status}`);
+    throw new Error('AI summary request failed.');
   }
 
   const data = await response.json();
-  const summary = readSummaryFromResponse(data);
+  const summary = data?.summary;
 
-  if (!summary) {
+  if (typeof summary !== 'string' || !summary.trim()) {
     throw new Error('AI summary response did not include a summary.');
   }
 
