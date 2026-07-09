@@ -6,6 +6,7 @@ import Footer from './component/Footer';
 import DailyQuote from './component/DailyQuote';
 import ScrollToTop from './component/ScrollToTop';
 import Home from './pages/Home';
+import BusinessLiveTopic from './pages/BusinessLiveTopic';
 
 import Magazines from './pages/Magazines'; 
 import Billionaires from './pages/Billionaires';
@@ -39,6 +40,8 @@ export default function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/business-live" element={<Navigate to="/business-live/business" replace />} />
+        <Route path="/business-live/:topicId" element={<BusinessLiveTopic />} />
         <Route path="/about" element={<About />} />
     
         <Route path="/magazine" element={<Magazines />} />

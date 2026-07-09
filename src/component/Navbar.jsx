@@ -158,7 +158,7 @@ export default function Navbar() {
           <div className="flex items-center gap-3 sm:gap-5">
             <Link
               to="/spotlight/business-features/nikhil-kamath-zerodha-journey"
-              className="hidden min-h-11 items-center justify-center border border-white/25 bg-white px-5 text-[11px] font-black uppercase tracking-[0.16em] text-black no-underline shadow-[0_14px_40px_rgba(255,255,255,0.08)] transition duration-300 hover:-translate-y-0.5 hover:border-blue-700 hover:bg-blue-700 hover:text-white hover:shadow-[0_18px_45px_rgba(29,78,216,0.32)] sm:inline-flex"
+              className="read-story-font hidden min-h-11 items-center justify-center border border-white/25 bg-white px-5 text-[11px] font-black uppercase tracking-[0.16em] text-black no-underline shadow-[0_14px_40px_rgba(255,255,255,0.08)] transition duration-300 hover:-translate-y-0.5 hover:border-blue-700 hover:bg-blue-700 hover:text-white hover:shadow-[0_18px_45px_rgba(29,78,216,0.32)] sm:inline-flex"
             >
               Read Story
               
