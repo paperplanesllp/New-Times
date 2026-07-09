@@ -30,7 +30,7 @@ const sideSections = [
       },
       {
         label: 'Startup',
-        title: "Kalam Labs Builds India's Near-Space Drone Edge",
+        title: "The Women at the Top: Six Leaders Steering India's Most Powerful Companies",
         to: '/spotlight/startup/kalam-labs-near-space-drone-edge',
       },
       { title: 'HCLTech Makes Rs 1,427 Crore Bet on AI, Acquires 10.5% Stake in Sarvam AI' },
