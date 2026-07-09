@@ -23,26 +23,30 @@ const sideSections = [
   {
     title: 'Highlights',
     items: [
-      "Sarvam AI Secures $234 Million, Achieves Unicorn Status at $1.5 Billion Valuation",
-      'HCLTech Makes Rs 1,427 Crore Bet on AI, Acquires 10.5% Stake in Sarvam AI',
-      'Pramaana Labs Secures $27 Million Seed Funding in Khosla Ventures-Led Round',
+      {
+        label: 'Startup',
+        title: "Kalam Labs Builds India's Near-Space Drone Edge",
+        to: '/spotlight/startup/kalam-labs-near-space-drone-edge',
+      },
+      { title: 'HCLTech Makes Rs 1,427 Crore Bet on AI, Acquires 10.5% Stake in Sarvam AI' },
+      { title: 'Pramaana Labs Secures $27 Million Seed Funding in Khosla Ventures-Led Round' },
     ],
   },
   {
     title: 'Trending Now ',
     items: [
-      'Bengaluru Strengthens Global Startup Status With $153 Billion Ecosystem Value',
-      'India’s Startup IPO Pipeline Gains Momentum With 20+ Companies Preparing to List',
-      'Billion-Dollar Cursor Deal Highlights Growing Influence of Indian AI Talent',
+      { title: 'Bengaluru Strengthens Global Startup Status With $153 Billion Ecosystem Value' },
+      { title: 'India’s Startup IPO Pipeline Gains Momentum With 20+ Companies Preparing to List' },
+      { title: 'Billion-Dollar Cursor Deal Highlights Growing Influence of Indian AI Talent' },
     ],
   },
   {
     title: "Editors' Choice",
     items: [
-      'Why distribution is the new defensibility for software founders',
-      'Inside the boardroom shift from growth stories to margin stories',
-      'The next business icons may be built with smaller teams',
-      'AI Adoption Surges as Indian Businesses Double Down on Automation' ,
+      { title: 'Why distribution is the new defensibility for software founders' },
+      { title: 'Inside the boardroom shift from growth stories to margin stories' },
+      { title: 'The next business icons may be built with smaller teams' },
+      { title: 'AI Adoption Surges as Indian Businesses Double Down on Automation' },
 
     ],
   },
@@ -489,14 +493,35 @@ export default function Home() {
                   </h3>
 
                   <div className="mt-3 divide-y divide-black/15">
-                    {section.items.map((item) => (
-                      <div
-                        key={item}
-                        className="block py-3 text-base font-semibold leading-snug text-black transition underline-offset-4 hover:underline sm:text-lg"
-                      >
-                        {item}
-                      </div>
-                    ))}
+                    {section.items.map((item) => {
+                      const content = (
+                        <>
+                          {item.label && (
+                            <span className="mb-1 block text-[10px] font-bold uppercase tracking-[0.18em] text-blue-700">
+                              {item.label}
+                            </span>
+                          )}
+                          <span>{item.title}</span>
+                        </>
+                      );
+
+                      return item.to ? (
+                        <Link
+                          key={item.title}
+                          to={item.to}
+                          className="block py-3 text-base font-semibold leading-snug text-black no-underline transition underline-offset-4 hover:underline sm:text-lg"
+                        >
+                          {content}
+                        </Link>
+                      ) : (
+                        <div
+                          key={item.title}
+                          className="block py-3 text-base font-semibold leading-snug text-black transition underline-offset-4 hover:underline sm:text-lg"
+                        >
+                          {content}
+                        </div>
+                      );
+                    })}
                   </div>
                 </div>
               ))}

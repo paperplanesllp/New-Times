@@ -204,11 +204,22 @@ const spotlightPages = {
     },
     stories: [
       {
+        slug: 'kalam-labs-near-space-drone-edge',
         category: 'DEEPTECH',
         title: "Kalam Labs Builds India's Near-Space Drone Edge",
         excerpt:
           'Harshit Awasthi, Sashakt Tripathi, and Ahmad Faraaz started Kalam Labs in 2018 as a space edtech platform, then pivoted entirely into stratospheric UAV development, a transition Lightspeed called unexpected and spectacular. Their drones operate at 100,000+ ft, cost 1/10th of competing systems, and are already deployed at Pokhran nuclear test site and the Indo-China Line of Control. After Shark Tank India Season 5, Deepinder Goyal entered talks to invest about $1M as part of a $5-7M funding round. Missions are live with the Indian Army and India Meteorological Department.',
         image: '/start.avif',
+        body: [
+          'Kalam Labs began in 2018 as a space education startup, but its founders Harshit Awasthi, Sashakt Tripathi, and Ahmad Faraaz eventually moved the company into one of India\'s most ambitious deep-tech categories: near-space unmanned aerial vehicles.',
+          'The pivot from edtech to stratospheric drones was not a small product shift. It meant moving from content and learning experiences into hardware, aerospace engineering, field testing, and defence-grade reliability.',
+          'Kalam Labs is building drones designed to operate at altitudes above 100,000 feet, a layer of the atmosphere that sits between conventional aviation and orbital space systems. That edge gives the company a distinct position in surveillance, weather, communications, and strategic monitoring use cases.',
+          'The company says its systems can cost nearly one-tenth of competing platforms, a claim that matters in a market where affordability and local manufacturing can determine whether deep-tech products move from demonstrations to real deployment.',
+          'Its drones are already deployed at Pokhran nuclear test site and along the Indo-China Line of Control, giving the startup operational credibility in some of India\'s most sensitive environments.',
+          'The startup has also drawn public attention after Shark Tank India Season 5, where Deepinder Goyal entered talks to invest about $1 million as part of a larger $5 million to $7 million funding round.',
+          'For India\'s deep-tech ecosystem, Kalam Labs represents a broader pattern: young founders are increasingly moving beyond software into hard engineering categories where the timelines are longer, the risks are higher, and the strategic upside is far larger.',
+          'With missions live with the Indian Army and India Meteorological Department, Kalam Labs is no longer only a startup story. It is part of India\'s growing effort to build indigenous aerospace and defence technology from the ground up.',
+        ],
       },
       {
         category: 'BIOCOMPUTE',
