@@ -202,6 +202,7 @@ const spotlightPages = {
         excerpt:
           "India's business landscape is shifting at a pace that few could have predicted even five years ago. The leaders driving that shift are not all household names, not all backed by generational wealth or elite institutional pedigrees, and not all working from the obvious centres of commercial gravity. What they share is something more fundamental: a clarity of purpose, a willingness to build in the face of uncertainty, and a conviction that the problems worth solving are the ones that change lives at scale. Here are ten of them.",
         image: '/enti.webp',
+        imageFit: 'contain',
         body: [
           { type: 'heading', text: "The Visionaries Building India's Business Future: Ten Leaders Redefining What Entrepreneurship Looks Like in 2025" },
           "India's business landscape is shifting at a pace that few could have predicted even five years ago. The leaders driving that shift are not all household names, not all backed by generational wealth or elite institutional pedigrees, and not all working from the obvious centres of commercial gravity. What they share is something more fundamental: a clarity of purpose, a willingness to build in the face of uncertainty, and a conviction that the problems worth solving are the ones that change lives at scale. Here are ten of them.",
@@ -439,7 +440,7 @@ function getPageArticles(page) {
   return [page.lead, ...(page.stories || [])].filter((article) => article?.slug);
 }
 
-function SpotlightImage({ src, alt, className = '', category }) {
+function SpotlightImage({ src, alt, className = '', category, fit = 'cover' }) {
   if (!src) {
     return (
       <div
@@ -456,7 +457,7 @@ function SpotlightImage({ src, alt, className = '', category }) {
 
   return (
     <img
-      className={`w-full object-cover ${className}`}
+      className={`w-full ${fit === 'contain' ? 'object-contain' : 'object-cover'} ${className}`}
       src={src}
       alt={alt}
     />
@@ -671,6 +672,7 @@ function SpotlightArticleDetail({ article, nextArticle, page, basePath }) {
               src={article.image}
               alt={article.title}
               category={article.category}
+              fit={article.imageFit}
               className={`h-[300px] sm:h-[420px] lg:h-[520px] ${article.slug === 'nikhil-kamath-zerodha-journey' ? 'object-top' : ''}`}
             />
             <div className="mt-5 lg:absolute lg:-bottom-8 lg:right-6 lg:w-[360px]">
@@ -709,7 +711,7 @@ export default function SpotlightFeaturePage({ type }) {
   const basePath = `/spotlight/${type}`;
   const pageArticles = getPageArticles(page);
   const article = pageArticles.find((item) => item.slug === slug);
-  const featuredBelowLeadStory = type === 'business-features' ? page.stories[0] : null;
+  const featuredBelowLeadStory = ['business-features', 'recognise-series'].includes(type) ? page.stories[0] : null;
   const listingStories = featuredBelowLeadStory ? page.stories.slice(1) : page.stories;
 
   if (article) {
@@ -751,7 +753,7 @@ export default function SpotlightFeaturePage({ type }) {
           <div className="space-y-8">
             <article className="group">
               <img
-                className={`mb-5 h-[380px] w-full object-cover ${page.lead.slug === 'nikhil-kamath-zerodha-journey' ? 'object-top' : ''}`}
+                className={`mb-5 h-[380px] w-full ${page.lead.imageFit === 'contain' ? 'object-contain' : 'object-cover'} ${page.lead.slug === 'nikhil-kamath-zerodha-journey' ? 'object-top' : ''}`}
                 src={page.lead.image}
                 alt={page.lead.title}
               />
@@ -787,7 +789,7 @@ export default function SpotlightFeaturePage({ type }) {
               <article className="group border-t border-gray-100 pt-7">
                 <Link to={`${basePath}/${featuredBelowLeadStory.slug}`} className="mb-5 block overflow-hidden bg-slate-100 no-underline">
                   <img
-                    className="h-[280px] w-full object-cover transition duration-500 group-hover:scale-[1.03] sm:h-[340px]"
+                    className={`h-[280px] w-full ${featuredBelowLeadStory.imageFit === 'contain' ? 'object-contain' : 'object-cover'} transition duration-500 group-hover:scale-[1.03] sm:h-[340px]`}
                     src={featuredBelowLeadStory.image}
                     alt={featuredBelowLeadStory.title}
                   />
@@ -817,7 +819,7 @@ export default function SpotlightFeaturePage({ type }) {
                 {story.image && (
                   <Link to={story.slug ? `${basePath}/${story.slug}` : '#'} className="mb-4 block overflow-hidden bg-slate-100 no-underline">
                     <img
-                      className="h-40 w-full object-cover transition duration-500 group-hover:scale-[1.03]"
+                      className={`h-40 w-full ${story.imageFit === 'contain' ? 'object-contain' : 'object-cover'} transition duration-500 group-hover:scale-[1.03]`}
                       src={story.image}
                       alt={story.title}
                     />
