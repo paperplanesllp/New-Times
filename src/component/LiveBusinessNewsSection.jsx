@@ -14,10 +14,27 @@ export const liveBusinessContent = {
   business: {
     featured: {
       id: 'business-featured',
-      title: "India's Digital Payments Ecosystem Hits New High as UPI Transactions Cross Record Volume",
+      slug: 'vande-bharatam-gautam-adani-birthday-conviction-global',
+      title: "Vande Bharatam: The Initiative That Took Gautam Adani's Birthday Conviction Global in Under Two Weeks",
       description:
-        "UPI continues its rapid growth, driving India's digital payments ecosystem to a new peak with record-breaking transaction volumes across the country.",
-      image: '/upi.webp',
+        "Vande Bharatam, the nationwide entrepreneurship and innovation programme Gautam Adani launched on June 24, 2026, is widening the search for India's next generation of founders beyond the country's familiar startup corridors.",
+      image: '/back.webp',
+      body: [
+        "There is a structural problem at the heart of India's startup story that the headline numbers rarely capture. India has over 207,000 DPIIT-recognised startups, 127 unicorns, and some of the most consequential technology and consumer companies of the past two decades. Yet the geography of that achievement remains strikingly concentrated.",
+        "The vast majority of India's celebrated startup founders come from a handful of cities, attended a small number of institutions, and built their companies in ecosystems where access to mentors, investors, co-founders, and early customers was often a function of proximity rather than merit.",
+        "Vande Bharatam is Gautam Adani's attempt to build a wider room for entrepreneurs, innovators, and problem-solvers from every corner of India. The programme is designed to identify, evaluate, nurture, and amplify talent with no geographic, demographic, or sectoral restriction on who can apply.",
+        "Applications are open until July 19, 2026, through vandebharatam.org. The evaluation framework prioritises four dimensions: innovation quality, entrepreneurial potential, scalability, and the social, economic, or environmental impact the idea can create.",
+        "Seventy-five finalists will be brought to Ahmedabad for mentorship sessions, industry interactions, and investor engagement. The Grand Finale is scheduled around India's Independence Day on August 15, 2026, a symbolic date for a programme framed around entrepreneurial independence from geography and access constraints.",
+        "The selected innovators will gain access to ongoing mentorship from practitioners, investor relationships, incubation support, and strategic partnerships that can help move ideas from early promise to market execution.",
+        "The early response has been broad. Applications have come from all 28 states and 8 union territories of India, showing that the demand for this kind of access extends far beyond the traditional startup hubs.",
+        "Applications have also arrived from the United States, the United Kingdom, the UAE, and Canada, reflecting the global reach of the Indian diaspora and the interest among overseas Indians in building for India's innovation economy.",
+        "Technology, AI, and deep tech have emerged as leading application categories, challenging the assumption that advanced technology development is limited to major cities or elite institutions.",
+        "Agri, food and rural economy, health and pharma, and education form another strong cluster, reflecting the sectors where India's most urgent problem-solution opportunities sit.",
+        "Manufacturing and Industry 4.0, retail and consumer commerce, and sustainability round out the major categories, together painting a picture of a national innovation community that is practical, ambitious, and locally grounded.",
+        "Women entrepreneurs, rural changemakers, and sustainability-focused innovators have submitted applications in significant numbers. Their participation points to the programme's potential to surface founders whose strengths come from direct knowledge of problems rather than elite networks.",
+        "Gautam Adani framed Vande Bharatam not as a competition but as a conviction: that the next idea to change India will not necessarily come from where it always has.",
+        "With applications closing on July 19, the most important question Vande Bharatam will answer is not only who wins the finale. It is who gets discovered because of it, and what they go on to build.",
+      ],
     },
     sideStories: [
       {
@@ -300,6 +317,7 @@ function BusinessStory({ story, compact = false, topicPath }) {
     return null;
   }
 
+  const storyPath = story.slug && topicPath ? `${topicPath}/${story.slug}` : topicPath;
   const readStoryClass = compact
     ? 'news-source-link mt-2 inline-flex text-[10px] font-semibold uppercase tracking-[0.18em] text-slate-950'
     : 'news-source-link mt-3 inline-flex text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-950';
@@ -318,10 +336,10 @@ function BusinessStory({ story, compact = false, topicPath }) {
 
   return (
     <article className={compact ? 'grid grid-cols-[80px_minmax(0,1fr)] gap-4 border-b border-gray-100 pb-5' : 'border-b border-gray-100 pb-7'}>
-      {topicPath ? <Link to={topicPath}>{media}</Link> : media}
+      {storyPath ? <Link to={storyPath}>{media}</Link> : media}
       <div>
-        {topicPath ? (
-          <Link to={topicPath} className="text-slate-950 no-underline hover:underline underline-offset-4">
+        {storyPath ? (
+          <Link to={storyPath} className="text-slate-950 no-underline hover:underline underline-offset-4">
             <h3 className={compact ? 'story-headline m-0 text-[15px] font-semibold leading-tight text-slate-950' : 'story-headline m-0 text-xl font-semibold leading-tight text-slate-950'}>
               {story.title}
             </h3>
@@ -340,8 +358,8 @@ function BusinessStory({ story, compact = false, topicPath }) {
           <a className={readStoryClass} href={story.url} target="_blank" rel="noreferrer">
             Read Story
           </a>
-        ) : topicPath ? (
-          <Link className={readStoryClass} to={topicPath}>
+        ) : storyPath ? (
+          <Link className={readStoryClass} to={storyPath}>
             Read Story
           </Link>
         ) : (
@@ -357,6 +375,7 @@ export default function LiveBusinessNewsSection({ initialTopic = 'business', sho
   const activeContent = liveBusinessContent[activeTopic] || liveBusinessContent.business;
   const { featured, sideStories, streamStories } = activeContent;
   const activeTopicPath = businessTopics.find((topic) => topic.id === activeTopic)?.to;
+  const featuredPath = featured.slug && activeTopicPath ? `${activeTopicPath}/${featured.slug}` : activeTopicPath;
 
   return (
     <section className="px-4 py-8 bg-white shadow-sm sm:px-6 lg:px-8 text-slate-950">
@@ -407,7 +426,7 @@ export default function LiveBusinessNewsSection({ initialTopic = 'business', sho
         </div>
 
         <article>
-          <Link to={activeTopicPath || '/business-live/business'}>
+          <Link to={featuredPath || '/business-live/business'}>
             <img
               src={featured.image}
               alt={featured.title}
@@ -418,7 +437,7 @@ export default function LiveBusinessNewsSection({ initialTopic = 'business', sho
               className="mb-5 h-[360px] w-full rounded-3xl object-cover"
             />
           </Link>
-          <Link to={activeTopicPath || '/business-live/business'} className="text-slate-950 no-underline hover:underline underline-offset-4">
+          <Link to={featuredPath || '/business-live/business'} className="text-slate-950 no-underline hover:underline underline-offset-4">
             <h2 className="m-0 text-3xl font-semibold leading-tight featured-headline text-slate-950 md:text-4xl">
               {featured.title}
             </h2>
@@ -429,7 +448,7 @@ export default function LiveBusinessNewsSection({ initialTopic = 'business', sho
               Read Story
             </a>
           ) : (
-            <Link to={activeTopicPath || '/business-live/business'} className="news-source-link mt-4 inline-flex text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-950">
+            <Link to={featuredPath || '/business-live/business'} className="news-source-link mt-4 inline-flex text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-950">
               Read Story
             </Link>
           )}

@@ -41,6 +41,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/business-live" element={<Navigate to="/business-live/business" replace />} />
+        <Route path="/business-live/:topicId/:storySlug" element={<BusinessLiveTopic />} />
         <Route path="/business-live/:topicId" element={<BusinessLiveTopic />} />
         <Route path="/about" element={<About />} />
     

@@ -30,6 +30,11 @@ const sideSections = [
     title: 'Highlights',
     items: [
       {
+        label: 'Business Features',
+        title: "The Engineer Who Started at Ten: How Venkatesh Sai Built India's Most Consequential Drone Technology Company",
+        to: '/spotlight/business-features/venkatesh-sai-drone-technology-company',
+      },
+      {
         label: 'Startup',
         title: "India's Space Unicorn Has Landed: Is Skyroot's Milestone the Coming-of-Age Moment Indian Deep Tech Has Been Waiting For?",
         to: '/spotlight/startup/emergent-100m-arr-plain-language-app-building',
