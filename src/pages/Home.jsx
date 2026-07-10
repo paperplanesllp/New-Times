@@ -38,6 +38,11 @@ const sideSections = [
     title: 'Highlights',
     items: [
       {
+        label: 'Business Live',
+        title: 'The Right CRM for Your Small Business in 2026: A Complete Guide to the 11 Best Options',
+        to: '/business-live/business/best-crm-small-business-2026-guide',
+      },
+      {
         label: 'Business Features',
         title: "The Engineer Who Started at Ten: How Venkatesh Sai Built India's Most Consequential Drone Technology Company from a Childhood Obsession",
         to: '/spotlight/business-features/venkatesh-sai-drone-technology-company',
