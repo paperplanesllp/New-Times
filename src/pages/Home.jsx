@@ -38,6 +38,11 @@ const sideSections = [
     title: 'Highlights',
     items: [
       {
+        label: 'Recognition Series',
+        title: "The Visionaries Building India's Business Future: Ten Leaders Redefining What Entrepreneurship Looks Like in 2025",
+        to: '/spotlight/recognise-series/visionaries-building-indias-business-future-ten-leaders-2025',
+      },
+      {
         label: 'Business Live',
         title: 'The Right CRM for Your Small Business in 2026: A Complete Guide to the 11 Best Options',
         to: '/business-live/business/best-crm-small-business-2026-guide',
