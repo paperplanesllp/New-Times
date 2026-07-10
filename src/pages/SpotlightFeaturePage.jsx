@@ -36,7 +36,7 @@ const businessFeatureArticles = [
     ],
   },
   {
-    slug: 'vahdam-india-global-expansion',
+    slug: 'women-at-the-top-six-leaders-powerful-companies',
     category: 'LEADERSHIP',
     title: "The Women at the Top: Six Leaders Steering India's Most Powerful Companies",
     excerpt:
@@ -619,6 +619,8 @@ export default function SpotlightFeaturePage({ type }) {
   const basePath = `/spotlight/${type}`;
   const pageArticles = getPageArticles(page);
   const article = pageArticles.find((item) => item.slug === slug);
+  const featuredBelowLeadStory = type === 'business-features' ? page.stories[0] : null;
+  const listingStories = featuredBelowLeadStory ? page.stories.slice(1) : page.stories;
 
   if (article) {
     const currentIndex = pageArticles.findIndex((item) => item.slug === article.slug);
@@ -656,42 +658,71 @@ export default function SpotlightFeaturePage({ type }) {
         </div>
 
         <div className="grid gap-8 xl:grid-cols-[minmax(0,1.3fr)_minmax(420px,0.9fr)]">
-          <article className="group">
-            <img
-              className={`mb-5 h-[380px] w-full object-cover ${page.lead.slug === 'nikhil-kamath-zerodha-journey' ? 'object-top' : ''}`}
-              src={page.lead.image}
-              alt={page.lead.title}
-            />
-            <span className="mb-2 block text-[11px] font-extrabold uppercase tracking-[0.14em] text-amber-700">
-              {page.lead.category}
-            </span>
-            {page.lead.slug ? (
-              <>
-                <Link to={`${basePath}/${page.lead.slug}`} className="no-underline">
-                  <h2 className="m-0 text-3xl font-bold leading-tight text-slate-950 underline-offset-4 group-hover:underline">
+          <div className="space-y-8">
+            <article className="group">
+              <img
+                className={`mb-5 h-[380px] w-full object-cover ${page.lead.slug === 'nikhil-kamath-zerodha-journey' ? 'object-top' : ''}`}
+                src={page.lead.image}
+                alt={page.lead.title}
+              />
+              <span className="mb-2 block text-[11px] font-extrabold uppercase tracking-[0.14em] text-amber-700">
+                {page.lead.category}
+              </span>
+              {page.lead.slug ? (
+                <>
+                  <Link to={`${basePath}/${page.lead.slug}`} className="no-underline">
+                    <h2 className="m-0 text-3xl font-bold leading-tight text-slate-950 underline-offset-4 group-hover:underline">
+                      {page.lead.title}
+                    </h2>
+                  </Link>
+                  <p className="mt-4 text-[15px] leading-7 text-slate-600">{page.lead.excerpt}</p>
+                  <Link
+                    to={`${basePath}/${page.lead.slug}`}
+                    className="mt-5 inline-flex bg-slate-950 px-5 py-3 text-[11px] font-bold uppercase tracking-[0.18em] text-white no-underline transition hover:bg-red-700"
+                  >
+                    Read More
+                  </Link>
+                </>
+              ) : (
+                <>
+                  <h2 className="m-0 text-3xl font-bold leading-tight text-slate-950">
                     {page.lead.title}
                   </h2>
+                  <p className="mt-4 text-[15px] leading-7 text-slate-600">{page.lead.excerpt}</p>
+                </>
+              )}
+            </article>
+
+            {featuredBelowLeadStory && (
+              <article className="group border-t border-gray-100 pt-7">
+                <Link to={`${basePath}/${featuredBelowLeadStory.slug}`} className="mb-5 block overflow-hidden bg-slate-100 no-underline">
+                  <img
+                    className="h-[280px] w-full object-cover transition duration-500 group-hover:scale-[1.03] sm:h-[340px]"
+                    src={featuredBelowLeadStory.image}
+                    alt={featuredBelowLeadStory.title}
+                  />
                 </Link>
-                <p className="mt-4 text-[15px] leading-7 text-slate-600">{page.lead.excerpt}</p>
+                <span className="mb-2 block text-[11px] font-extrabold uppercase tracking-[0.14em] text-amber-700">
+                  {featuredBelowLeadStory.category}
+                </span>
+                <Link to={`${basePath}/${featuredBelowLeadStory.slug}`} className="no-underline">
+                  <h2 className="m-0 text-3xl font-bold leading-tight text-slate-950 underline-offset-4 group-hover:underline">
+                    {featuredBelowLeadStory.title}
+                  </h2>
+                </Link>
+                <p className="mt-4 text-[15px] leading-7 text-slate-600">{featuredBelowLeadStory.excerpt}</p>
                 <Link
-                  to={`${basePath}/${page.lead.slug}`}
-                  className="mt-5 inline-flex bg-slate-950 px-5 py-3 text-[11px] font-bold uppercase tracking-[0.18em] text-white no-underline transition hover:bg-red-700"
+                  to={`${basePath}/${featuredBelowLeadStory.slug}`}
+                  className="mt-5 inline-flex border border-slate-950 px-5 py-3 text-[11px] font-bold uppercase tracking-[0.18em] text-slate-950 no-underline transition hover:bg-slate-950 hover:text-white"
                 >
                   Read More
                 </Link>
-              </>
-            ) : (
-              <>
-                <h2 className="m-0 text-3xl font-bold leading-tight text-slate-950">
-                  {page.lead.title}
-                </h2>
-                <p className="mt-4 text-[15px] leading-7 text-slate-600">{page.lead.excerpt}</p>
-              </>
+              </article>
             )}
-          </article>
+          </div>
 
           <div className="space-y-5 border-gray-200 xl:border-l xl:pl-6">
-            {page.stories.map((story) => (
+            {listingStories.map((story) => (
               <article key={story.title} className="group border-b border-gray-100 pb-5 last:border-b-0">
                 {story.image && (
                   <Link to={story.slug ? `${basePath}/${story.slug}` : '#'} className="mb-4 block overflow-hidden bg-slate-100 no-underline">
