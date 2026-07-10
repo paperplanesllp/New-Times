@@ -39,13 +39,39 @@ export const liveBusinessContent = {
     sideStories: [
       {
         id: 'business-side-1',
+        slug: 'bad-boy-pizza-global-ambition-qsr-industry',
+        title: "From One Outlet to a Global Ambition: How Bad Boy Pizza Is Rewriting the Rules of India's QSR Industry",
+        description:
+          "One year after Badshah and Karan Tanna opened a single pizza outlet in Mumbai's Lokhandwala, Bad Boy Pizza is announcing a roadmap to 70 outlets, a $24 million annual revenue target, and expansion into London and New York.",
+        image: '/ar.jpg',
+        body: [
+          "India's quick service restaurant sector is littered with celebrity-backed food ventures that launched with considerable fanfare and quietly receded when the novelty of the famous face wore off and the product could not hold customer attention on its own merits.",
+          "Bad Boy Pizza, the pizza brand co-founded by rapper and music producer Badshah alongside veteran F&B entrepreneur Karan Tanna, was designed from its inception to be a different kind of story. Not a celebrity licensing arrangement. Not a name on a packaging box with someone else's product inside it. A genuinely built restaurant brand, with a culinary identity, an operational philosophy, and unit economics structured to work at scale.",
+          "One year after its first outlet opened, the brand is announcing results that validate that founding ambition. Bad Boy Pizza has revealed an aggressive expansion roadmap: scaling to 70 or more outlets across India by 2028, hitting Rs 200 crore in annual recurring revenue, and making its international debut in London and New York by 2029.",
+          "Five new experiential flagship outlets will open before the end of December 2026, with three locations in Mumbai and one each in Surat and Ahmedabad. Over 180 franchise inquiries have come in from domestic and international markets.",
+          "When Bad Boy Pizza launched its flagship outlet at Lokhandwala, Mumbai in 2025, the conventional wisdom in the QSR industry was clear: any new restaurant brand in India needed to be built around food delivery aggregators and quick commerce from day one. Bad Boy Pizza chose to ignore that conventional wisdom entirely.",
+          "For its first ten months of operation, the brand was dine-in only. No Zomato. No Swiggy. No delivery. The decision was deliberate and contentious. Badshah and Tanna were not trying to build a delivery volume story. They were trying to build a subculture.",
+          "The flagship Lokhandwala outlet achieved operational profitability in its second month of operation. Today, 95 per cent of the brand's revenue comes from dine-in customers. The repeat customer ratio exceeds 60 per cent. The outlet payback period stands at 15 to 18 months, and target store-level EBITDA is 22 to 24 per cent.",
+          "The culinary proposition at the centre of Bad Boy Pizza is built around 48-hour cold-fermented New York-style pizza crusts. The extended cold fermentation process develops gluten structure gradually, produces a more complex flavour profile, and creates the characteristic chew and slight tang of a properly made New York-style crust.",
+          "On top of that foundation, the brand has built a menu that bridges Indian culinary culture and international pizza conventions. Fan favourites include the Pushpa Pizza topped with edible flowers, Butter Chicken Garlic Bread, Kerala Fried Chicken, and a Paan Soft-Serve Sundae.",
+          "The anniversary menu introduces Dabeli Garlic Bread, a Khao Suey Pizza, and a Thai Basil Pizza. The through-line is clear: recognisable enough to be approachable, specific enough to be memorable, and executed at a quality standard above the mass QSR tier.",
+          "The roadmap is structured around a cluster-based approach to scaling. Rather than attempting simultaneous pan-India expansion across every major city, the plan phases geographic entry so supply chain, training, and brand awareness can develop in each market before the next cluster opens.",
+          "The Western India phase runs through December 2027 and targets 30 outlets across Mumbai, Surat, Ahmedabad, and other cities in the region, with an ARR target of Rs 100 crore. From mid-2027 onwards, the brand will enter Delhi NCR, Bengaluru, and Hyderabad through joint ventures and franchise partnerships.",
+          "The international timeline targets London and New York by 2028 to 2029, markets with large Indian diaspora communities and an established appetite for premium fast casual dining.",
+          "Bad Boy Pizza arrives as India's celebrity-backed consumer brand sector is maturing rapidly. The market has become sophisticated enough to distinguish between brands that use celebrity equity as a substitute for product quality and brands that use it as an amplifier of something worth building regardless of who was behind it.",
+          "Bad Boy Pizza's first-year performance places it firmly in the second category. A famous founder can drive a trial. It cannot drive a repeat customer rate above 60 per cent. That comes from the dough, the menu, the service, and the experience of being in the room.",
+          "The first year was proof of concept. The next three are the test of whether Bad Boy Pizza can translate what it built in one Lokhandwala outlet into a brand that scales with the same fidelity to product and experience that made it work in the first place.",
+        ],
+      },
+      {
+        id: 'business-side-2',
         title: 'India Sees Hiring Surge as Global Tech Firms Scale AI and R&D Teams',
         description:
           'Strong demand for AI talent is driving global companies to accelerate hiring and research expansion in India.',
         image: '/surge.webp',
       },
       {
-        id: 'business-side-2',
+        id: 'business-side-3',
         title: 'Private Equity Interest in Indian Consumer Brands Rises on Strong Demand',
         description:
           "Strong domestic demand is driving renewed private equity interest in India's fast-growing consumer brands.",
