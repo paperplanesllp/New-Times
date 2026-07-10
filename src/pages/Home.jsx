@@ -9,7 +9,13 @@ import BusinessHubGrid from '../component/BusinessHubGrid';
 import FounderSandbox from '../component/FounderSandbox';
 import BillionairesHub from '../component/BillionairesHub';
 
-const nikhilKamathImage = '/kammath.jpg';
+const homeBusinessLead = {
+  title: "The Women at the Top: Six Leaders Steering India's Most Powerful Companies",
+  description:
+    "Priya Nair at HUL, Vibha Padalkar at HDFC Life, Vishakha Mulye at Aditya Birla Capital, Prabha Narasimhan at Colgate, Praveena Rai at MCX, and A Manimekhalai at Union Bank are reshaping what leadership looks like at the top of Indian corporate life.",
+  image: '/womens.png',
+  to: '/spotlight/business-features/women-at-the-top-six-leaders-powerful-companies',
+};
 
 const tickerItems = [
   { name: 'NIFTY 50', value: '23,269.40', change: '-0.15', percent: '0.23%' },
@@ -465,26 +471,26 @@ export default function Home() {
         <section>
           <div className="grid gap-7 lg:grid-cols-[minmax(0,1fr)_340px] lg:gap-9 xl:grid-cols-[minmax(0,1fr)_360px]">
             <article className="group lg:border-r lg:border-black/30 lg:pr-9">
-              <Link to="/spotlight/business-features/nikhil-kamath-zerodha-journey" className="block no-underline">
+              <Link to={homeBusinessLead.to} className="block no-underline">
                 <h1 className="mb-5 text-3xl font-bold leading-none tracking-tight text-black sm:text-4xl">
                   Business
                 </h1>
 
                 <div className="overflow-hidden bg-neutral-100 lg:mr-2">
                   <img
-                    src={nikhilKamathImage}
-                    alt="Nikhil Kamath Zerodha business feature"
-                    className="h-[240px] w-full object-contain object-center transition duration-500 group-hover:scale-[1.03] sm:h-[330px] lg:h-[400px]"
+                    src={homeBusinessLead.image}
+                    alt={homeBusinessLead.title}
+                    className="h-[240px] w-full object-cover object-center transition duration-500 group-hover:scale-[1.03] sm:h-[330px] lg:h-[400px]"
                   />
                 </div>
 
                 <h2 className="mx-auto mt-3 max-w-[820px] text-center text-2xl font-bold leading-tight tracking-tight text-black underline-offset-4 group-hover:underline sm:text-3xl lg:text-4xl xl:text-4xl">
-                  From College Dropout to Fintech Pioneer: Nikhil Kamath's Zerodha Journey
+                  {homeBusinessLead.title}
                 </h2>
 
                 <div className="mx-auto mt-5 max-w-[720px] text-center">
                   <p className="text-sm leading-6 text-black/65 sm:text-base">
-                    Bootstrapped without external funding, Zerodha has grown into one of India's largest stockbroking platforms. Nikhil Kamath's journey reflects the power of disciplined execution and long-term thinking.
+                    {homeBusinessLead.description}
                   </p>
                   <p className="mt-3 text-[11px] uppercase tracking-[0.2em] text-black/50">
                     NT Spotlight / Business Features
