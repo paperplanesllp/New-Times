@@ -22,6 +22,26 @@ function SocialActions() {
   );
 }
 
+function getBodyText(item) {
+  return typeof item === 'string' ? item : item?.text;
+}
+
+function ArticleBodyItem({ item }) {
+  const text = getBodyText(item);
+
+  if (!text) return null;
+
+  if (typeof item === 'object' && item.type === 'heading') {
+    return (
+      <h2 className="m-0 pt-3 text-3xl font-extrabold leading-tight text-slate-950 md:text-4xl">
+        {text}
+      </h2>
+    );
+  }
+
+  return <p className="m-0">{text}</p>;
+}
+
 function NextArticleCard({ article, topicId }) {
   if (!article?.slug) return null;
 
@@ -172,7 +192,7 @@ export default function BusinessLiveTopic() {
                 <span className="hidden text-slate-300 sm:inline">/</span>
                 <span>Last updated {publishedDate}</span>
                 <span className="hidden text-slate-300 sm:inline">/</span>
-                <span>{Math.max(4, Math.ceil(body.join(' ').split(' ').length / 220))} min read</span>
+                <span>{Math.max(4, Math.ceil(body.map(getBodyText).join(' ').split(' ').length / 220))} min read</span>
               </div>
 
               <div className="mt-6">
@@ -212,10 +232,8 @@ export default function BusinessLiveTopic() {
               <AISummaryBox article={{ ...story, body }} />
 
               <div className="space-y-8 break-words text-[20px] leading-[1.8] text-slate-800 md:text-[23px] lg:text-[25px]">
-                {body.map((paragraph) => (
-                  <p key={paragraph} className="m-0">
-                    {paragraph}
-                  </p>
+                {body.map((item, index) => (
+                  <ArticleBodyItem key={`${index}-${getBodyText(item)}`} item={item} />
                 ))}
               </div>
 

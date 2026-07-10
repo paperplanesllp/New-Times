@@ -5,7 +5,11 @@ function getArticleText(article = {}) {
   const value = article.content || article.text || article.description || article.body;
 
   if (Array.isArray(value)) {
-    return value.filter(Boolean).join('\n\n').trim();
+    return value
+      .map((item) => (typeof item === 'string' ? item : item?.text))
+      .filter(Boolean)
+      .join('\n\n')
+      .trim();
   }
 
   return String(value || '').trim();
