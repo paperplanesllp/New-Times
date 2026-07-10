@@ -44,7 +44,7 @@ const sideSections = [
       },
       {
         label: 'Startup',
-        title: "India's Space Unicorn Has Landed: Is Skyroot's Milestone the Coming-of-Age Moment Indian Deep Tech Has Been Waiting For?",
+        title: "India's Space Unicorn Has Landed: Is Skyroot's $1.1 Billion Milestone the Coming-of-Age Moment Indian Deep Tech Has Been Waiting For?",
         to: '/spotlight/startup/emergent-100m-arr-plain-language-app-building',
       },
       {
