@@ -25,18 +25,18 @@ const sideSections = [
     items: [
       {
         label: 'Startup',
-        title: "India's Space Unicorn Has Landed: Is Skyroot's $1.1 Billion Milestone the Coming-of-Age Moment Indian Deep Tech Has Been Waiting For?",
+        title: "India's Space Unicorn Has Landed: Is Skyroot's Milestone the Coming-of-Age Moment Indian Deep Tech Has Been Waiting For?",
         to: '/spotlight/startup/emergent-100m-arr-plain-language-app-building',
       },
       {
-        label: 'Startup',
-        title: "The Women at the Top: Six Leaders Steering India's Most Powerful Companies",
-        to: '/spotlight/startup/kalam-labs-near-space-drone-edge',
+        label: 'Green Mobility',
+        title: "Battery Smart's Swap Network Turns EV Charging Into an Urban Infrastructure Play",
+        to: '/spotlight/startup/battery-smart-swap-network-urban-ev-infrastructure',
       },
       {
-        label: 'Startup',
-        title: "From One Outlet to a Global Ambition: How Bad Boy Pizza Is Rewriting the Rules of India's QSR Industry",
-        to: '/spotlight/startup/bad-boy-pizza-global-ambition',
+        label: 'Agritech',
+        title: 'How FarmOS Platforms Are Helping Growers Sell Before the Harvest',
+        to: '/spotlight/startup/farmos-platforms-harvest-linked-commerce',
       },
     ],
   },
