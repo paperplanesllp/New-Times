@@ -371,8 +371,29 @@ const creatorSignals = [
   },
 ];
 
-function renderArticleBody(paragraphs) {
-  return paragraphs.map((text) => {
+function normalizeHeadingText(value = '') {
+  return value.trim().replace(/\s+/g, ' ').toLowerCase();
+}
+
+function getVisibleArticleParagraphs(paragraphs = [], articleTitle = '') {
+  const normalizedTitle = normalizeHeadingText(articleTitle);
+  const seenHeadings = new Set();
+
+  return paragraphs.filter((text) => {
+    const isHeading = text.length < 70 && !text.endsWith('.');
+    const normalizedText = normalizeHeadingText(text);
+
+    if (normalizedText === normalizedTitle) return false;
+    if (!isHeading) return true;
+    if (!normalizedText || seenHeadings.has(normalizedText)) return false;
+
+    seenHeadings.add(normalizedText);
+    return true;
+  });
+}
+
+function renderArticleBody(paragraphs, articleTitle) {
+  return getVisibleArticleParagraphs(paragraphs, articleTitle).map((text) => {
     const isHeading = text.length < 70 && !text.endsWith('.');
 
     if (isHeading) {
@@ -571,7 +592,7 @@ function CreatorsEconomyArticle({ story }) {
 
         <div className="grid gap-10 pt-10 lg:grid-cols-[minmax(0,0.7fr)_minmax(280px,0.3fr)]">
           <section className="space-y-7">
-            {renderArticleBody(story.body)}
+            {renderArticleBody(story.body, story.title)}
             <ArticleAdvertisement />
           </section>
 

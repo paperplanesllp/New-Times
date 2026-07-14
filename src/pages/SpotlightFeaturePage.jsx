@@ -488,12 +488,22 @@ function normalizeHeadingText(value = '') {
   return value.trim().replace(/\s+/g, ' ').toLowerCase();
 }
 
-function isDuplicateTitleHeading(item, articleTitle) {
-  return (
-    typeof item === 'object' &&
-    item?.type === 'heading' &&
-    normalizeHeadingText(item.text) === normalizeHeadingText(articleTitle)
-  );
+function getVisibleArticleBodyItems(body = [], articleTitle = '') {
+  const normalizedTitle = normalizeHeadingText(articleTitle);
+  const seenHeadings = new Set();
+
+  return body.filter((item) => {
+    const isHeading = typeof item === 'object' && item?.type === 'heading';
+    const normalizedText = normalizeHeadingText(getArticleBodyText(item));
+
+    if (!isHeading) return true;
+    if (!normalizedText || normalizedText === normalizedTitle || seenHeadings.has(normalizedText)) {
+      return false;
+    }
+
+    seenHeadings.add(normalizedText);
+    return true;
+  });
 }
 
 function SocialActions({ compact = false }) {
@@ -628,7 +638,7 @@ function SpotlightArticleSidebar() {
 
 function SpotlightArticleDetail({ article, nextArticle, page, basePath }) {
   const publishedDate = 'June 24, 2026';
-  const articleBody = article.body.filter((item) => !isDuplicateTitleHeading(item, article.title));
+  const articleBody = getVisibleArticleBodyItems(article.body, article.title);
 
   return (
     <main className="min-h-[80vh] w-full overflow-x-hidden bg-white px-4 py-6 text-slate-950 sm:px-6 lg:px-8 lg:py-10">

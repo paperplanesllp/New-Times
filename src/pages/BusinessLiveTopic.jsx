@@ -26,6 +26,28 @@ function getBodyText(item) {
   return typeof item === 'string' ? item : item?.text;
 }
 
+function normalizeHeadingText(value = '') {
+  return value.trim().replace(/\s+/g, ' ').toLowerCase();
+}
+
+function getVisibleBodyItems(body = [], articleTitle = '') {
+  const normalizedTitle = normalizeHeadingText(articleTitle);
+  const seenHeadings = new Set();
+
+  return body.filter((item) => {
+    const isHeading = typeof item === 'object' && item?.type === 'heading';
+    const normalizedText = normalizeHeadingText(getBodyText(item));
+
+    if (!isHeading) return true;
+    if (!normalizedText || normalizedText === normalizedTitle || seenHeadings.has(normalizedText)) {
+      return false;
+    }
+
+    seenHeadings.add(normalizedText);
+    return true;
+  });
+}
+
 function ArticleBodyItem({ item }) {
   const text = getBodyText(item);
 
@@ -163,7 +185,7 @@ export default function BusinessLiveTopic() {
     const currentIndex = topicStories.findIndex((item) => item.id === story.id);
     const nextArticle = topicStories[(currentIndex + 1) % topicStories.length];
     const relatedStories = topicStories.filter((item) => item.id !== story.id);
-    const body = (story.body || [story.description]).filter(Boolean);
+    const body = getVisibleBodyItems((story.body || [story.description]).filter(Boolean), story.title);
 
     return (
       <main className="min-h-[80vh] w-full overflow-x-hidden bg-white px-4 py-6 text-slate-950 sm:px-6 lg:px-8 lg:py-10">
