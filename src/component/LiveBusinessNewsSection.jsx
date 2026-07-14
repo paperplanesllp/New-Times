@@ -19,7 +19,6 @@ export const liveBusinessContent = {
       description:
         "Vande Bharatam, the nationwide entrepreneurship and innovation programme Gautam Adani launched on June 24, 2026, is widening the search for India's next generation of founders beyond the country's familiar startup corridors.",
       image: '/back.webp',
-      secondaryImage: '/SSS.webp',
       body: [
         { type: 'heading', text: "Vande Bharatam: The Initiative That Took Gautam Adani's Birthday Conviction Global in Under Two Weeks" },
         "There is a structural problem at the heart of India's startup story that the headline numbers rarely capture. India has over 207,000 DPIIT-recognised startups. It has 127 unicorns. It has produced some of the most consequential technology and consumer companies of the past two decades. And yet, the geography of that achievement is strikingly concentrated. The vast majority of India's celebrated startup founders come from a handful of cities, attended a small number of institutions, and built their companies in ecosystems where access to mentors, investors, co-founders, and early customers was a function of proximity rather than merit. The founder in Lucknow with a solution to a problem that 200 million Indians face, the woman in a small town in Odisha who has developed a method to reduce post-harvest crop losses for farmers in her district, the engineer in a Tier III city who has built a product that could transform rural healthcare delivery, these people exist in their millions across India. They have simply never had a room to walk into.",
