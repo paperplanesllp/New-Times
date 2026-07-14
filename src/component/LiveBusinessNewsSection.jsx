@@ -607,6 +607,7 @@ export default function LiveBusinessNewsSection({ initialTopic = 'business', sho
   const activeTopicPath = businessTopics.find((topic) => topic.id === activeTopic)?.to;
   const featuredPath = featured.slug && activeTopicPath ? `${activeTopicPath}/${featured.slug}` : activeTopicPath;
   const useHomeBusinessLayout = activeTopic === 'business' && !showTopicLinks;
+  const useTopicInlineStream = showTopicLinks && streamStories.length > 0;
   const homeEditorialStories = useHomeBusinessLayout
     ? [
         sideStories.find((story) => story.id === 'business-side-vguard-fy27'),
@@ -711,51 +712,61 @@ export default function LiveBusinessNewsSection({ initialTopic = 'business', sho
             ))}
           </div>
 
-          <article>
-            <Link to={featuredPath || '/business-live/business'}>
-              <img
-                src={featured.image}
-                alt={featured.title}
-                onError={(event) => {
-                  event.currentTarget.alt = '';
-                  event.currentTarget.style.opacity = '0';
-                }}
-                className="mb-5 h-[360px] w-full rounded-3xl object-cover"
-              />
-            </Link>
-            <Link to={featuredPath || '/business-live/business'} className="text-slate-950 no-underline hover:underline underline-offset-4">
-              <h2 className="m-0 text-3xl font-semibold leading-tight featured-headline text-slate-950 md:text-4xl">
-                {featured.title}
-              </h2>
-            </Link>
-            <p className="mt-4 text-sm leading-7 text-slate-600">{featured.description}</p>
-            {featured.url ? (
-              <a className="news-source-link mt-4 inline-flex text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-950" href={featured.url} target="_blank" rel="noreferrer">
-                Read Story
-              </a>
-            ) : (
-              <Link to={featuredPath || '/business-live/business'} className="news-source-link mt-4 inline-flex text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-950">
-                Read Story
-              </Link>
-            )}
-            {featured.secondaryImage && (
-              <Link to={featuredPath || '/business-live/business'} className="mt-8 block overflow-hidden rounded-3xl bg-slate-100">
+          <div className="min-w-0">
+            <article className={useTopicInlineStream ? 'border-b border-gray-100 pb-7' : ''}>
+              <Link to={featuredPath || '/business-live/business'}>
                 <img
-                  src={featured.secondaryImage}
+                  src={featured.image}
                   alt={featured.title}
                   onError={(event) => {
                     event.currentTarget.alt = '';
                     event.currentTarget.style.opacity = '0';
                   }}
-                  className="h-[330px] w-full object-cover transition duration-500 hover:scale-[1.03]"
+                  className="mb-5 h-[360px] w-full rounded-3xl object-cover"
                 />
               </Link>
+              <Link to={featuredPath || '/business-live/business'} className="text-slate-950 no-underline hover:underline underline-offset-4">
+                <h2 className="m-0 text-3xl font-semibold leading-tight featured-headline text-slate-950 md:text-4xl">
+                  {featured.title}
+                </h2>
+              </Link>
+              <p className="mt-4 text-sm leading-7 text-slate-600">{featured.description}</p>
+              {featured.url ? (
+                <a className="news-source-link mt-4 inline-flex text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-950" href={featured.url} target="_blank" rel="noreferrer">
+                  Read Story
+                </a>
+              ) : (
+                <Link to={featuredPath || '/business-live/business'} className="news-source-link mt-4 inline-flex text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-950">
+                  Read Story
+                </Link>
+              )}
+              {featured.secondaryImage && (
+                <Link to={featuredPath || '/business-live/business'} className="mt-8 block overflow-hidden rounded-3xl bg-slate-100">
+                  <img
+                    src={featured.secondaryImage}
+                    alt={featured.title}
+                    onError={(event) => {
+                      event.currentTarget.alt = '';
+                      event.currentTarget.style.opacity = '0';
+                    }}
+                    className="h-[330px] w-full object-cover transition duration-500 hover:scale-[1.03]"
+                  />
+                </Link>
+              )}
+            </article>
+
+            {useTopicInlineStream && (
+              <div className="mt-7 grid gap-6 md:grid-cols-2">
+                {streamStories.map((story) => (
+                  <BusinessStory key={story.id} story={story} compact topicPath={activeTopicPath} />
+                ))}
+              </div>
             )}
-          </article>
+          </div>
         </div>
       )}
 
-      {streamStories.length > 0 && (
+      {!useTopicInlineStream && streamStories.length > 0 && (
         <div className="grid gap-6 border-t border-gray-200 pt-7 md:grid-cols-2">
           {streamStories.map((story) => (
             <BusinessStory key={story.id} story={story} compact topicPath={activeTopicPath} />
