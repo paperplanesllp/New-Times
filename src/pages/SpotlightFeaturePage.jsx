@@ -41,7 +41,7 @@ const businessFeatureArticles = [
     title: "The Women at the Top: Six Leaders Steering India's Most Powerful Companies - and What Their Rise Really Means",
     excerpt:
       "Priya Nair at HUL, Vibha Padalkar at HDFC Life, Vishakha Mulye at Aditya Birla Capital, Prabha Narasimhan at Colgate, Praveena Rai at MCX, and A Manimekhalai at Union Bank are reshaping what leadership looks like at the top of Indian corporate life.",
-    image: '/womens.png',
+    image: '/6WOMEN.png',
     body: [
       { type: 'heading', text: "The Women at the Top: Six Leaders Steering India's Most Powerful Companies - and What Their Rise Really Means" },
       "Priya Nair at HUL. Vibha Padalkar at HDFC Life. Vishakha Mulye at Aditya Birla Capital. Prabha Narasimhan at Colgate. Praveena Rai at MCX. A Manimekhalai at Union Bank. These are not diversity appointments. They are the architects of some of India's most consequential business stories, and together they are reshaping what leadership looks like at the very top of Indian corporate life.",
