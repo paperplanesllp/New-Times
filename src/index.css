@@ -26,6 +26,10 @@
   font-size: clamp(1.125rem, 2vw, 1.75rem);
 }
 
+.editorial-card-headline {
+  font-size: clamp(1.875rem, 3vw, 2.625rem);
+}
+
 .news-source-link {
   text-decoration: none;
 }

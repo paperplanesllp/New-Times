@@ -184,6 +184,36 @@ export const liveBusinessContent = {
         ],
       },
       {
+        id: 'business-side-hcltech-ai-data-centre',
+        slug: 'hcltech-q1-fy27-results-ai-data-centre-bet',
+        title: "Full Stack and Firing: How HCLTech's Q1 FY27 Results and a Rs 3,500 Crore AI Data Centre Bet Signal the Arrival of India's Next Technology Giant",
+        description:
+          "HCL Technologies reported its strongest first quarter performance in several years on July 13, posting a 20 per cent rise in net profit and 14 per cent revenue growth for Q1 FY27. Alongside the financial results, the company announced a board-approved investment of up to Rs 3,500 crore to establish AI data centres in India with the potential to scale to 50 megawatts of capacity.",
+        image: '/HCl.webp',
+        body: [
+          { type: 'heading', text: "Full Stack and Firing: How HCLTech's Q1 FY27 Results and a Rs 3,500 Crore AI Data Centre Bet Signal the Arrival of India's Next Technology Giant" },
+          "There is a particular kind of corporate announcement that deserves to be read as two separate stories at once. The first story is the financial one: the quarterly results, the profit numbers, the revenue trajectory, the earnings per share. The second story is the strategic one: what the company is betting on, why it is betting on it now, and what kind of organisation it is trying to become. HCLTech's Q1 FY27 results, released on July 13, 2026, are exactly that kind of announcement. The financial story is strong and clear. The strategic story is, if anything, more significant, and understanding both together is the only way to appreciate what CEO C Vijaykumar and the HCLTech board have decided about where the company is going.",
+          "The financial numbers first. HCLTech reported a net profit of Rs 4,624 crore for the first quarter of FY27, a 20.3 per cent increase from the Rs 3,843 crore reported in Q1 FY26. Revenue from operations reached Rs 34,579 crore compared to Rs 30,349 crore in the same period of the previous financial year, a year-on-year growth of 14 per cent. These are not just good numbers relative to analyst expectations, though they are that too. They are good numbers in an absolute sense, delivered at a scale that very few Indian IT services companies operate at, and in a quarter that has been challenging for the broader sector. The Iran-US conflict escalation that hit market sentiment on the morning the results were announced, pushing Sensex and Nifty lower on geopolitical concerns, provided an unusual backdrop for what were unambiguously positive corporate earnings. The market's attention was divided between macro anxiety and micro strength, and HCLTech's results represented the latter decisively.",
+          { type: 'heading', text: 'The Booking Number That Tells the Real Story' },
+          "Among all the metrics in HCLTech's Q1 FY27 disclosure, the net-new bookings figure is the one that carries the most forward-looking significance. The company recorded net-new bookings of $2.4 billion in Q1 FY27, which Vijaykumar described as the highest ever for a first quarter in the company's history. That record is important for a reason that goes beyond the number itself. Net-new bookings represent future revenue, the contracts signed in a given period that will convert into recognised revenue over the coming quarters and years. A record Q1 booking figure, delivered in a period when global enterprises have been cautious about large discretionary technology spending, means that HCLTech is winning deals at a rate that will support its revenue growth trajectory well into FY28 and beyond.",
+          "The composition of that booking figure is equally revealing. Vijaykumar specifically called out the performance of what HCLTech calls its Advanced AI business, the segment that encompasses AI strategy consulting, AI implementation, AI-enabled managed services, and the growing range of generative AI and agentic AI solutions the company is delivering to enterprise clients. The Advanced AI business grew 10.6 per cent sequentially quarter on quarter and 62.1 per cent year on year in constant currency terms. A 62 per cent year-on-year growth rate in a business segment is exceptional by any measure, and the fact that it is being delivered at the scale HCLTech operates at, rather than as a small base effect at an early-stage company, makes it more significant still. Enterprises are choosing HCLTech to lead their AI transformation programmes, and the $2.4 billion booking number is the commercial evidence of that choice being made at scale.",
+          { type: 'heading', text: 'The Rs 3,500 Crore Bet: What Full Stack AI Actually Means' },
+          "The investment announcement that accompanied the Q1 results is the strategic story that the financial results set the stage for. HCLTech's board has approved an investment of up to Rs 3,500 crore in AI data centres to be built in India through new subsidiaries established specifically for this purpose. The infrastructure being built will have the potential to scale to 50 megawatts of capacity, a figure that positions these data centres at the serious end of the AI compute infrastructure spectrum. Fifty megawatts of data centre capacity at current GPU power densities represents a significant amount of compute available for AI training and inference workloads.",
+          "The announcement of this investment comes with a specific strategic framing that deserves careful reading. HCLTech describes this as its entry into the full-stack AI market, a term that the company defines as the ability to address the complete spectrum of business opportunities arising from growing demand for AI-led services and solutions. What that means in practice is that HCLTech is building the capability to provide AI services at every layer of the technology stack simultaneously. At the infrastructure layer, it will own and operate the data centres where AI workloads run. At the platform layer, it has existing capabilities across AI data centre design and AI cloud operations. At the software layer, it brings its existing software portfolio covering engineering, analytics, and enterprise applications. And at the services layer, it delivers the consulting, implementation, and managed services that convert AI infrastructure and software into business outcomes for enterprise clients.",
+          "The integrated nature of this proposition is what distinguishes it from what most Indian IT services companies are attempting. The majority of the sector is focused on the services and implementation layer of AI, helping enterprise clients deploy AI tools built by the global hyperscalers and software vendors. HCLTech is making a deliberate investment to own more of the value chain below that services layer, building proprietary infrastructure that gives it both the technical capability and the commercial model to offer something closer to an end-to-end AI solution than any pure services provider can match.",
+          { type: 'heading', text: 'Why India and Why Now' },
+          "The geographic focus of the data centre investment is India, and the timing is not accidental. India's data centre sector is growing at a rate that reflects multiple converging demand drivers. The country's digital economy continues to expand rapidly, driven by the scale and pace of UPI transaction growth, the expansion of e-commerce and digital financial services, and the government's push to digitise public service delivery through platforms that generate and consume data at enormous scale. Data localisation requirements, which mandate that certain categories of sensitive data must be stored and processed within India's borders rather than on overseas servers, are creating structural demand for domestic data centre capacity that cannot be served by foreign cloud infrastructure regardless of price or performance. And the specific requirements of GPU-intensive AI training and inference workloads, which demand power density, cooling infrastructure, and network architecture that not all existing Indian data centres are equipped to provide, create an opportunity for new, purpose-built AI data centre capacity at exactly the moment that enterprise demand for that capacity is accelerating.",
+          "Vijaykumar's articulation of the opportunity reflects all three of these demand drivers. He described the convergence of AI-led demand, supply constraints, and the push for digital sovereignty as creating a compelling opportunity for HCLTech to emerge as a full-stack AI technology solutions provider. The digital sovereignty dimension is particularly significant: Indian enterprises and government agencies that want to keep their AI workloads on Indian infrastructure rather than routing sensitive data through overseas hyperscaler facilities represent a captive demand pool for domestic AI data centre capacity, and HCLTech's investment is sized and positioned to serve that demand.",
+          { type: 'heading', text: 'The Medium-Term Confidence and What It Is Based On' },
+          "Vijaykumar's post-results commentary was notable for its directness about competitive positioning. He expressed confidence that HCLTech would continue to outpace the market over the medium term, a statement that carries more weight when it is accompanied by a record Q1 booking figure and a Rs 3,500 crore infrastructure commitment than it would as a standalone aspiration. The basis for that confidence is visible in the Q1 data: a services business that is growing revenue at 14 per cent annually, an AI segment growing at 62 per cent annually, a booking pipeline at record levels, and now an infrastructure investment that positions the company to capture a share of the AI infrastructure market that services-only competitors cannot access.",
+          "The competitive context in which this confidence is expressed is one where the broader Indian IT sector is navigating meaningful headwinds. Global enterprise technology spending has been restrained by macro uncertainty, the Iran-US conflict has added a geopolitical risk dimension to client decision-making in energy and financial services sectors, and the rapid pace of AI adoption is creating demand volatility as enterprises simultaneously accelerate AI budgets and scrutinise legacy IT maintenance spending. HCLTech's ability to deliver 20 per cent profit growth and record bookings in that environment is the empirical foundation for Vijaykumar's medium-term confidence, and the Rs 3,500 crore data centre investment is the structural bet that the next chapter of that growth will be built on owning more of the AI value chain than any Indian IT services company has owned before.",
+          { type: 'heading', text: 'What This Means for Indian IT and the AI Infrastructure Race' },
+          "HCLTech's full-stack AI announcement positions it in a competitive space that has previously been dominated by global hyperscalers and a small number of specialised data centre operators. AWS, Microsoft Azure, and Google Cloud have built the dominant AI infrastructure globally, and their Indian data centre investments, Amazon's $48 billion commitment announced in June 2026 being the most recent and largest, reflect the scale at which global cloud providers are thinking about India's AI infrastructure opportunity.",
+          "HCLTech entering this space is not a claim to hyperscaler scale or capability. It is a claim to a specific and defensible market position: Indian-owned, Indian-operated AI infrastructure, integrated with Indian enterprise IT expertise, serving Indian enterprises and government agencies that have both the regulatory requirement and the strategic preference to keep their AI operations on domestic soil. The Rs 3,500 crore investment, scaled to 50 megawatts of capacity, is sized for that market rather than for competition with global cloud platforms whose Indian investments are an order of magnitude larger.",
+          "For India's broader technology sector, HCLTech's Q1 FY27 results and the accompanying infrastructure announcement represent something worth tracking carefully. The country's largest IT services companies have historically been world-class at delivering services on top of technology infrastructure built elsewhere. HCLTech is now making a serious investment in owning a piece of the infrastructure itself, in the AI layer where the next decade of enterprise technology value creation will be concentrated. Whether that investment delivers the returns that justify its scale will become clear over the next three to five years. The Q1 FY27 numbers suggest the company that is making the bet has never been in stronger financial condition to absorb the risk and capture the opportunity.",
+        ],
+      },
+      {
         id: 'business-side-3',
         title: 'India Sees Hiring Surge as Global Tech Firms Scale AI and R&D Teams',
         description:
@@ -516,12 +546,76 @@ function BusinessStory({ story, compact = false, topicPath }) {
   );
 }
 
+function EditorialStoryColumn({ story, topicPath, isRight = false }) {
+  if (!story) {
+    return null;
+  }
+
+  const storyPath = story.slug && topicPath ? `${topicPath}/${story.slug}` : topicPath;
+  const media = (
+    <img
+      src={story.image}
+      alt={story.title}
+      onError={(event) => {
+        event.currentTarget.alt = '';
+        event.currentTarget.style.opacity = '0';
+      }}
+      className="h-[260px] w-full rounded-3xl object-cover sm:h-[300px] lg:h-[285px] xl:h-[310px]"
+    />
+  );
+
+  const headline = (
+    <h3 className="editorial-card-headline story-headline m-0 mt-5 font-semibold leading-tight text-slate-950">
+      {story.title}
+    </h3>
+  );
+
+  return (
+    <article className={`min-w-0 ${isRight ? 'lg:pl-8' : 'lg:pr-8'}`}>
+      {storyPath ? <Link to={storyPath}>{media}</Link> : media}
+      {storyPath ? (
+        <Link to={storyPath} className="text-slate-950 no-underline hover:underline underline-offset-4">
+          {headline}
+        </Link>
+      ) : (
+        headline
+      )}
+      {story.description && (
+        <p className="mt-4 line-clamp-4 text-base leading-7 text-slate-700">
+          {story.description}
+        </p>
+      )}
+      {story.url ? (
+        <a className="news-source-link mt-4 inline-flex text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-950" href={story.url} target="_blank" rel="noreferrer">
+          Read Story
+        </a>
+      ) : storyPath ? (
+        <Link className="news-source-link mt-4 inline-flex text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-950" to={storyPath}>
+          Read Story
+        </Link>
+      ) : (
+        <span className="news-source-link mt-4 inline-flex text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-950">Read Story</span>
+      )}
+    </article>
+  );
+}
+
 export default function LiveBusinessNewsSection({ initialTopic = 'business', showTopicLinks = false }) {
   const [activeTopic, setActiveTopic] = useState(liveBusinessContent[initialTopic] ? initialTopic : 'business');
   const activeContent = liveBusinessContent[activeTopic] || liveBusinessContent.business;
   const { featured, sideStories, streamStories } = activeContent;
   const activeTopicPath = businessTopics.find((topic) => topic.id === activeTopic)?.to;
   const featuredPath = featured.slug && activeTopicPath ? `${activeTopicPath}/${featured.slug}` : activeTopicPath;
+  const useHomeBusinessLayout = activeTopic === 'business' && !showTopicLinks;
+  const homeEditorialStories = useHomeBusinessLayout
+    ? [
+        sideStories.find((story) => story.id === 'business-side-vguard-fy27'),
+        sideStories.find((story) => story.id === 'business-side-2'),
+      ].filter(Boolean)
+    : [];
+  const remainingSideStories = useHomeBusinessLayout
+    ? sideStories.filter((story) => !homeEditorialStories.some((editorialStory) => editorialStory.id === story.id))
+    : sideStories;
 
   return (
     <section className="px-4 py-8 bg-white shadow-sm sm:px-6 lg:px-8 text-slate-950">
@@ -564,55 +658,102 @@ export default function LiveBusinessNewsSection({ initialTopic = 'business', sho
         })}
       </div>
 
-      <div className="mb-8 grid gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,2fr)]">
-        <div className="space-y-8 border-gray-200 lg:border-r lg:pr-6">
-          {sideStories.map((story) => (
-            <BusinessStory key={story.id} story={story} topicPath={activeTopicPath} />
-          ))}
-        </div>
-
-        <article>
-          <Link to={featuredPath || '/business-live/business'}>
-            <img
-              src={featured.image}
-              alt={featured.title}
-              onError={(event) => {
-                event.currentTarget.alt = '';
-                event.currentTarget.style.opacity = '0';
-              }}
-              className="mb-5 h-[360px] w-full rounded-3xl object-cover"
-            />
-          </Link>
-          <Link to={featuredPath || '/business-live/business'} className="text-slate-950 no-underline hover:underline underline-offset-4">
-            <h2 className="m-0 text-3xl font-semibold leading-tight featured-headline text-slate-950 md:text-4xl">
-              {featured.title}
-            </h2>
-          </Link>
-          <p className="mt-4 text-sm leading-7 text-slate-600">{featured.description}</p>
-          {featured.url ? (
-            <a className="news-source-link mt-4 inline-flex text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-950" href={featured.url} target="_blank" rel="noreferrer">
-              Read Story
-            </a>
-          ) : (
-            <Link to={featuredPath || '/business-live/business'} className="news-source-link mt-4 inline-flex text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-950">
-              Read Story
-            </Link>
-          )}
-          {featured.secondaryImage && (
-            <Link to={featuredPath || '/business-live/business'} className="mt-8 block overflow-hidden rounded-3xl bg-slate-100">
+      {useHomeBusinessLayout ? (
+        <div className="mb-8">
+          <article className="border-b border-gray-200 pb-8">
+            <Link to={featuredPath || '/business-live/business'}>
               <img
-                src={featured.secondaryImage}
+                src={featured.image}
                 alt={featured.title}
                 onError={(event) => {
                   event.currentTarget.alt = '';
                   event.currentTarget.style.opacity = '0';
                 }}
-                className="h-[330px] w-full object-cover transition duration-500 hover:scale-[1.03]"
+                className="mb-5 h-[320px] w-full rounded-3xl object-cover md:h-[390px]"
               />
             </Link>
+            <Link to={featuredPath || '/business-live/business'} className="text-slate-950 no-underline hover:underline underline-offset-4">
+              <h2 className="m-0 text-3xl font-semibold leading-tight featured-headline text-slate-950 md:text-4xl">
+                {featured.title}
+              </h2>
+            </Link>
+            <p className="mt-4 max-w-4xl text-sm leading-7 text-slate-600">{featured.description}</p>
+            {featured.url ? (
+              <a className="news-source-link mt-4 inline-flex text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-950" href={featured.url} target="_blank" rel="noreferrer">
+                Read Story
+              </a>
+            ) : (
+              <Link to={featuredPath || '/business-live/business'} className="news-source-link mt-4 inline-flex text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-950">
+                Read Story
+              </Link>
+            )}
+          </article>
+
+          <div className="grid gap-8 border-b border-gray-200 py-8 lg:grid-cols-2 lg:divide-x lg:divide-gray-200">
+            {homeEditorialStories.map((story, index) => (
+              <EditorialStoryColumn key={story.id} story={story} topicPath={activeTopicPath} isRight={index === 1} />
+            ))}
+          </div>
+
+          {remainingSideStories.length > 0 && (
+            <div className="grid gap-6 pt-7 md:grid-cols-2">
+              {remainingSideStories.map((story) => (
+                <BusinessStory key={story.id} story={story} compact topicPath={activeTopicPath} />
+              ))}
+            </div>
           )}
-        </article>
-      </div>
+        </div>
+      ) : (
+        <div className="mb-8 grid gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,2fr)]">
+          <div className="space-y-8 border-gray-200 lg:border-r lg:pr-6">
+            {remainingSideStories.map((story) => (
+              <BusinessStory key={story.id} story={story} topicPath={activeTopicPath} />
+            ))}
+          </div>
+
+          <article>
+            <Link to={featuredPath || '/business-live/business'}>
+              <img
+                src={featured.image}
+                alt={featured.title}
+                onError={(event) => {
+                  event.currentTarget.alt = '';
+                  event.currentTarget.style.opacity = '0';
+                }}
+                className="mb-5 h-[360px] w-full rounded-3xl object-cover"
+              />
+            </Link>
+            <Link to={featuredPath || '/business-live/business'} className="text-slate-950 no-underline hover:underline underline-offset-4">
+              <h2 className="m-0 text-3xl font-semibold leading-tight featured-headline text-slate-950 md:text-4xl">
+                {featured.title}
+              </h2>
+            </Link>
+            <p className="mt-4 text-sm leading-7 text-slate-600">{featured.description}</p>
+            {featured.url ? (
+              <a className="news-source-link mt-4 inline-flex text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-950" href={featured.url} target="_blank" rel="noreferrer">
+                Read Story
+              </a>
+            ) : (
+              <Link to={featuredPath || '/business-live/business'} className="news-source-link mt-4 inline-flex text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-950">
+                Read Story
+              </Link>
+            )}
+            {featured.secondaryImage && (
+              <Link to={featuredPath || '/business-live/business'} className="mt-8 block overflow-hidden rounded-3xl bg-slate-100">
+                <img
+                  src={featured.secondaryImage}
+                  alt={featured.title}
+                  onError={(event) => {
+                    event.currentTarget.alt = '';
+                    event.currentTarget.style.opacity = '0';
+                  }}
+                  className="h-[330px] w-full object-cover transition duration-500 hover:scale-[1.03]"
+                />
+              </Link>
+            )}
+          </article>
+        </div>
+      )}
 
       {streamStories.length > 0 && (
         <div className="grid gap-6 border-t border-gray-200 pt-7 md:grid-cols-2">
