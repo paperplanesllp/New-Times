@@ -650,14 +650,14 @@ export default function LiveBusinessNewsSection({ initialTopic = 'business', sho
     : sideStories;
 
   return (
-    <section className="px-4 py-8 bg-white shadow-sm sm:px-6 lg:px-8 text-slate-950">
-      <div className="pb-3 mb-6 border-b border-gray-200">
-        <h2 className="flex items-center gap-2 m-0 text-2xl font-semibold tracking-tight text-slate-950">
+    <section className="border border-gray-100 bg-white px-6 py-9 text-slate-950 shadow-sm sm:px-10 lg:px-10">
+      <div className="mb-7 border-b border-gray-200 pb-5">
+        <h2 className="m-0 text-3xl font-bold leading-tight tracking-tight text-slate-950">
           Business news and Updates
         </h2>
       </div>
 
-      <div className="flex flex-wrap gap-2 pb-3 border-b border-gray-100 mb-7" role="tablist" aria-label="Business news topics">
+      <div className="mb-7 flex flex-wrap gap-2 border-b border-gray-100 pb-4" role="tablist" aria-label="Business news topics">
         {businessTopics.map((topic) => {
           const isActive = activeTopic === topic.id;
 
@@ -665,7 +665,7 @@ export default function LiveBusinessNewsSection({ initialTopic = 'business', sho
             <Link
               key={topic.id}
               to={topic.to}
-              className={`border px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] no-underline ${
+              className={`border px-4 py-2 text-[12px] font-bold uppercase tracking-[0.18em] no-underline ${
                 isActive ? 'border-black bg-black text-white' : 'border-gray-200 bg-white text-slate-600'
               }`}
               role="tab"
@@ -678,7 +678,7 @@ export default function LiveBusinessNewsSection({ initialTopic = 'business', sho
               key={topic.id}
               type="button"
               onClick={() => setActiveTopic(topic.id)}
-              className={`border px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] ${
+              className={`border px-4 py-2 text-[12px] font-bold uppercase tracking-[0.18em] ${
                 isActive ? 'border-black bg-black text-white' : 'border-gray-200 bg-white text-slate-600'
               }`}
               role="tab"
