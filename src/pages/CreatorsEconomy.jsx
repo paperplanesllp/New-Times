@@ -377,7 +377,7 @@ function renderArticleBody(paragraphs) {
 
     if (isHeading) {
       return (
-        <h2 key={text} className="pt-4 text-3xl font-bold leading-tight text-slate-950">
+        <h2 key={text} className="pt-4 text-2xl font-bold leading-tight text-slate-950 md:text-3xl">
           {text}
         </h2>
       );
@@ -540,7 +540,7 @@ function CreatorsEconomyArticle({ story }) {
             <span className="mb-4 block text-[11px] font-extrabold uppercase tracking-[0.22em] text-amber-700">
               {story.category}
             </span>
-            <h1 className="max-w-3xl text-[34px] font-extrabold leading-[1.15] text-black sm:text-[42px] lg:text-[54px]">
+            <h1 className="max-w-3xl text-[30px] font-extrabold leading-[1.15] text-black sm:text-[36px] lg:text-[44px]">
               {story.title}
             </h1>
             <p className="mt-5 max-w-3xl text-[19px] leading-8 text-slate-700 md:text-[22px]">

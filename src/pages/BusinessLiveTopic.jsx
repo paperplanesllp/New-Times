@@ -33,7 +33,7 @@ function ArticleBodyItem({ item }) {
 
   if (typeof item === 'object' && item.type === 'heading') {
     return (
-      <h2 className="m-0 pt-3 text-3xl font-extrabold leading-tight text-slate-950 md:text-4xl">
+      <h2 className="m-0 pt-3 text-2xl font-extrabold leading-tight text-slate-950 md:text-3xl">
         {text}
       </h2>
     );
@@ -180,7 +180,7 @@ export default function BusinessLiveTopic() {
               <span className="mb-4 block text-[11px] font-extrabold uppercase tracking-[0.22em] text-amber-700">
                 {topic.label}
               </span>
-              <h1 className="mx-auto max-w-[700px] break-words text-[34px] font-extrabold leading-[1.15] text-black sm:mx-0 sm:text-[42px] lg:text-[50px] xl:text-[56px]">
+              <h1 className="mx-auto max-w-[700px] break-words text-[30px] font-extrabold leading-[1.15] text-black sm:mx-0 sm:text-[36px] lg:text-[42px] xl:text-[46px]">
                 {story.title}
               </h1>
               <p className="mx-auto mt-5 max-w-[700px] text-[19px] leading-8 text-slate-700 sm:mx-0 md:text-[22px]">

@@ -471,7 +471,7 @@ function ArticleBodyItem({ item }) {
 
   if (typeof item === 'object' && item.type === 'heading') {
     return (
-      <h2 className="m-0 pt-3 text-3xl font-extrabold leading-tight text-slate-950 md:text-4xl">
+      <h2 className="m-0 pt-3 text-2xl font-extrabold leading-tight text-slate-950 md:text-3xl">
         {text}
       </h2>
     );
@@ -482,6 +482,18 @@ function ArticleBodyItem({ item }) {
 
 function getArticleBodyText(item) {
   return typeof item === 'string' ? item : item?.text;
+}
+
+function normalizeHeadingText(value = '') {
+  return value.trim().replace(/\s+/g, ' ').toLowerCase();
+}
+
+function isDuplicateTitleHeading(item, articleTitle) {
+  return (
+    typeof item === 'object' &&
+    item?.type === 'heading' &&
+    normalizeHeadingText(item.text) === normalizeHeadingText(articleTitle)
+  );
 }
 
 function SocialActions({ compact = false }) {
@@ -616,6 +628,7 @@ function SpotlightArticleSidebar() {
 
 function SpotlightArticleDetail({ article, nextArticle, page, basePath }) {
   const publishedDate = 'June 24, 2026';
+  const articleBody = article.body.filter((item) => !isDuplicateTitleHeading(item, article.title));
 
   return (
     <main className="min-h-[80vh] w-full overflow-x-hidden bg-white px-4 py-6 text-slate-950 sm:px-6 lg:px-8 lg:py-10">
@@ -632,7 +645,7 @@ function SpotlightArticleDetail({ article, nextArticle, page, basePath }) {
             <span className="mb-4 block text-[11px] font-extrabold uppercase tracking-[0.22em] text-amber-700">
               {article.category}
             </span>
-            <h1 className="mx-auto max-w-[700px] break-words text-[34px] font-extrabold leading-[1.15] text-black sm:mx-0 sm:text-[42px] lg:text-[50px] xl:text-[56px]">
+            <h1 className="mx-auto max-w-[700px] break-words text-[30px] font-extrabold leading-[1.15] text-black sm:mx-0 sm:text-[36px] lg:text-[42px] xl:text-[46px]">
               {article.title}
             </h1>
             <p className="mx-auto mt-5 max-w-[700px] text-[19px] leading-8 text-slate-700 sm:mx-0 md:text-[22px]">
@@ -644,7 +657,7 @@ function SpotlightArticleDetail({ article, nextArticle, page, basePath }) {
               <span className="hidden text-slate-300 sm:inline">/</span>
               <span>Last updated {publishedDate}</span>
               <span className="hidden text-slate-300 sm:inline">/</span>
-              <span>{Math.max(4, Math.ceil(article.body.map(getArticleBodyText).join(' ').split(' ').length / 220))} min read</span>
+              <span>{Math.max(4, Math.ceil(articleBody.map(getArticleBodyText).join(' ').split(' ').length / 220))} min read</span>
             </div>
 
             <div className="mt-6">
@@ -686,7 +699,7 @@ function SpotlightArticleDetail({ article, nextArticle, page, basePath }) {
             <AISummaryBox article={article} />
 
             <div className="space-y-8 break-words text-[20px] leading-[1.8] text-slate-800 md:text-[23px] lg:text-[25px]">
-              {article.body.map((item, index) => (
+              {articleBody.map((item, index) => (
                 <ArticleBodyItem key={`${index}-${getArticleBodyText(item)}`} item={item} />
               ))}
             </div>
