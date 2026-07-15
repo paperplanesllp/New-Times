@@ -37,7 +37,7 @@ export default function MainDashboard() {
       </div>
 
       <div className="pb-5 border-b border-gray-100 mb-7">
-        <h3 className="max-w-4xl m-0 text-3xl font-semibold leading-tight featured-headline text-slate-950 md:text-4xl">
+        <h3 className="max-w-4xl m-0 text-2xl font-semibold leading-tight featured-headline text-slate-950 md:text-4xl">
           High-impact business intelligence and insights for leaders shaping markets and companies.
         </h3>
       </div>
