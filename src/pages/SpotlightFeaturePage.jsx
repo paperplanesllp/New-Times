@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
-import AISummaryBox from "../component/AISummaryBox";
 
 const nikhilKamathImage = '/kammath.jpg';
 
@@ -412,8 +411,6 @@ const spotlightPages = {
   },
 };
 
-const shareActions = ['f', 'X', 'in', 'wa', 'save'];
-
 const sidebarRadarStories = businessFeatureArticles.slice(1, 4);
 
 const newTimesLists = [
@@ -504,23 +501,6 @@ function getVisibleArticleBodyItems(body = [], articleTitle = '') {
     seenHeadings.add(normalizedText);
     return true;
   });
-}
-
-function SocialActions({ compact = false }) {
-  return (
-    <div className="flex max-w-full flex-wrap items-center justify-center gap-2 sm:justify-start">
-      {shareActions.map((action) => (
-        <button
-          key={action}
-          type="button"
-          aria-label={`Share on ${action}`}
-          className={`${compact ? 'h-9 w-9 text-[10px]' : 'h-10 w-10 text-[11px]'} inline-flex shrink-0 items-center justify-center rounded-full border border-slate-300 bg-white font-bold uppercase text-slate-950 transition hover:border-slate-950 hover:bg-slate-950 hover:text-white`}
-        >
-          {action}
-        </button>
-      ))}
-    </div>
-  );
 }
 
 function NextArticleCard({ article, basePath }) {
@@ -670,10 +650,6 @@ function SpotlightArticleDetail({ article, nextArticle, page, basePath }) {
               <span>{Math.max(4, Math.ceil(articleBody.map(getArticleBodyText).join(' ').split(' ').length / 220))} min read</span>
             </div>
 
-            <div className="mt-6">
-              <SocialActions />
-            </div>
-
             <div className="mt-6 flex max-w-full flex-wrap justify-center gap-3 sm:justify-start">
               <Link
                 to="/partner/get-featured"
@@ -681,12 +657,6 @@ function SpotlightArticleDetail({ article, nextArticle, page, basePath }) {
               >
                 Join Us
               </Link>
-              <button
-                type="button"
-                className="inline-flex min-h-11 items-center justify-center rounded-full bg-slate-950 px-6 text-xs font-bold uppercase tracking-[0.14em] text-white transition hover:bg-red-700"
-              >
-                Prefer us on Google
-              </button>
             </div>
           </div>
 
@@ -706,8 +676,6 @@ function SpotlightArticleDetail({ article, nextArticle, page, basePath }) {
 
         <div className="grid min-w-0 gap-10 pt-10 lg:grid-cols-[minmax(0,0.68fr)_minmax(320px,0.32fr)] lg:gap-12">
           <section className="min-w-0">
-            <AISummaryBox article={article} />
-
             <div className="space-y-8 break-words text-[20px] leading-[1.8] text-slate-800 md:text-[23px] lg:text-[25px]">
               {articleBody.map((item, index) => (
                 <ArticleBodyItem key={`${index}-${getArticleBodyText(item)}`} item={item} />
