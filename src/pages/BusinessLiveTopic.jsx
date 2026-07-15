@@ -71,78 +71,76 @@ function NextArticleCard({ article, topicId }) {
 
 function BusinessLiveSidebar({ stories, topicId }) {
   return (
-    <aside className="min-w-0 border-slate-200 lg:border-l lg:pl-8">
-      <div className="space-y-8">
-        <section>
-          <span className="mb-2 block text-center text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400">
-            Advertisement
+    <aside className="min-w-0 border-slate-200 lg:self-stretch lg:border-l lg:pl-8">
+      <section>
+        <span className="mb-2 block text-center text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400">
+          Advertisement
+        </span>
+        <div className="flex h-64 items-center justify-center bg-slate-100 ring-1 ring-slate-200">
+          <span className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">
+            Ad Space
           </span>
-          <div className="flex h-64 items-center justify-center bg-slate-100 ring-1 ring-slate-200">
-            <span className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">
-              Ad Space
-            </span>
-          </div>
-        </section>
+        </div>
+      </section>
 
-        <section className="border border-slate-200 bg-white p-5 lg:sticky lg:top-8">
-          <h3 className="mb-5 text-[12px] font-extrabold uppercase tracking-[0.18em] text-slate-950">
-            Business Live Radar
-          </h3>
-          <div className="space-y-4">
-            {stories.slice(0, 3).map((item, index) => {
-              const content = (
-                <>
-                  <div className="relative h-24 overflow-hidden bg-slate-100">
-                    <img
-                      src={item.image}
-                      alt={item.title}
-                      className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.04]"
-                    />
-                    <span className="absolute left-2 top-2 bg-slate-950 px-2 py-1 text-[10px] font-bold text-white">
-                      #{index + 1}
-                    </span>
-                  </div>
-                  <div className="min-w-0">
-                    <span className="block text-[10px] font-extrabold uppercase tracking-[0.12em] text-amber-700">
-                      Business Live
-                    </span>
-                    <h4 className="mt-1 line-clamp-3 text-base font-bold leading-tight text-slate-950 group-hover:underline">
-                      {item.title}
-                    </h4>
-                    <p className="mt-2 text-[11px] font-semibold uppercase tracking-[0.08em] text-slate-500">
-                      New Times Desk
-                    </p>
-                  </div>
-                </>
-              );
-
-              return item.slug ? (
-                <Link
-                  key={item.id}
-                  to={`/business-live/${topicId}/${item.slug}`}
-                  className="group grid min-w-0 grid-cols-[84px_minmax(0,1fr)] gap-3 border-b border-slate-100 pb-4 text-slate-950 no-underline last:border-b-0 last:pb-0"
-                >
-                  {content}
-                </Link>
-              ) : (
-                <div
-                  key={item.id}
-                  className="grid min-w-0 grid-cols-[84px_minmax(0,1fr)] gap-3 border-b border-slate-100 pb-4 text-slate-950 last:border-b-0 last:pb-0"
-                >
-                  {content}
+      <section className="mt-8 border border-slate-200 bg-white p-5 lg:sticky lg:top-8">
+        <h3 className="mb-5 text-[12px] font-extrabold uppercase tracking-[0.18em] text-slate-950">
+          Business Live Radar
+        </h3>
+        <div className="space-y-4">
+          {stories.slice(0, 3).map((item, index) => {
+            const content = (
+              <>
+                <div className="relative h-24 overflow-hidden bg-slate-100">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.04]"
+                  />
+                  <span className="absolute left-2 top-2 bg-slate-950 px-2 py-1 text-[10px] font-bold text-white">
+                    #{index + 1}
+                  </span>
                 </div>
-              );
-            })}
-          </div>
-          <div className="mt-5 overflow-hidden bg-slate-100">
-            <img
-              src="/aaro2.jpeg"
-              alt="Business Live feature"
-              className="h-40 w-full object-cover sm:h-44 lg:h-48"
-            />
-          </div>
-        </section>
-      </div>
+                <div className="min-w-0">
+                  <span className="block text-[10px] font-extrabold uppercase tracking-[0.12em] text-amber-700">
+                    Business Live
+                  </span>
+                  <h4 className="mt-1 line-clamp-3 text-base font-bold leading-tight text-slate-950 group-hover:underline">
+                    {item.title}
+                  </h4>
+                  <p className="mt-2 text-[11px] font-semibold uppercase tracking-[0.08em] text-slate-500">
+                    New Times Desk
+                  </p>
+                </div>
+              </>
+            );
+
+            return item.slug ? (
+              <Link
+                key={item.id}
+                to={`/business-live/${topicId}/${item.slug}`}
+                className="group grid min-w-0 grid-cols-[84px_minmax(0,1fr)] gap-3 border-b border-slate-100 pb-4 text-slate-950 no-underline last:border-b-0 last:pb-0"
+              >
+                {content}
+              </Link>
+            ) : (
+              <div
+                key={item.id}
+                className="grid min-w-0 grid-cols-[84px_minmax(0,1fr)] gap-3 border-b border-slate-100 pb-4 text-slate-950 last:border-b-0 last:pb-0"
+              >
+                {content}
+              </div>
+            );
+          })}
+        </div>
+        <div className="mt-5 overflow-hidden bg-slate-100">
+          <img
+            src="/aaro2.jpeg"
+            alt="Business Live feature"
+            className="h-40 w-full object-cover sm:h-44 lg:h-48"
+          />
+        </div>
+      </section>
     </aside>
   );
 }
@@ -218,7 +216,9 @@ export default function BusinessLiveTopic() {
               <img
                 src={story.image}
                 alt={story.title}
-                className="h-[300px] w-full object-cover sm:h-[420px] lg:h-[520px]"
+                className={`h-[300px] w-full object-cover sm:h-[420px] lg:h-[520px] ${
+                  story.slug === 'one-arena-kochi-football-anthem' ? 'object-top' : ''
+                }`}
               />
               <div className="mt-5 lg:absolute lg:-bottom-8 lg:right-6 lg:w-[360px]">
                 <NextArticleCard article={nextArticle} topicId={topicId} />

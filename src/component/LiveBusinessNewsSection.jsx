@@ -761,36 +761,7 @@ export default function LiveBusinessNewsSection({ initialTopic = 'business', sho
 
       {useHomeBusinessLayout ? (
         <div className="mb-7">
-          <article className="border-b border-gray-200 pb-7">
-            <Link to={featuredPath || '/business-live/business'}>
-              <img
-                src={featured.image}
-                alt={featured.title}
-                onError={(event) => {
-                  event.currentTarget.alt = '';
-                  event.currentTarget.style.opacity = '0';
-                }}
-                className="mb-4 h-[220px] w-full rounded-2xl object-cover sm:h-[260px] md:h-[300px]"
-              />
-            </Link>
-            <Link to={featuredPath || '/business-live/business'} className="text-slate-950 no-underline hover:underline underline-offset-4">
-              <h2 className="m-0 text-2xl font-semibold leading-tight text-slate-950 md:text-3xl">
-                {featured.title}
-              </h2>
-            </Link>
-            <p className="mt-4 max-w-4xl text-sm leading-7 text-slate-600">{featured.description}</p>
-            {featured.url ? (
-              <a className="news-source-link mt-4 inline-flex text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-950" href={featured.url} target="_blank" rel="noreferrer">
-                Read Story
-              </a>
-            ) : (
-              <Link to={featuredPath || '/business-live/business'} className="news-source-link mt-4 inline-flex text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-950">
-                Read Story
-              </Link>
-            )}
-          </article>
-
-          <div className="grid gap-8 border-b border-gray-200 py-8 lg:grid-cols-2 lg:divide-x lg:divide-gray-200">
+          <div className="grid gap-8 border-b border-gray-200 pb-8 lg:grid-cols-2 lg:divide-x lg:divide-gray-200">
             {homeEditorialStories.map((story, index) => (
               <EditorialStoryColumn key={story.id} story={story} topicPath={activeTopicPath} isRight={index === 1} />
             ))}

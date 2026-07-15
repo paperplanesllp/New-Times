@@ -504,7 +504,7 @@ export default function Home() {
                     <img
                       src={homeBusinessLead.image}
                       alt={homeBusinessLead.title}
-                      className="h-[260px] w-full object-cover object-center transition duration-500 group-hover:scale-[1.03] sm:h-[330px]"
+                      className="h-[260px] w-full object-cover object-top transition duration-500 group-hover:scale-[1.03] sm:h-[330px]"
                     />
                   </div>
 
