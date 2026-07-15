@@ -181,7 +181,7 @@ export default function BusinessLiveTopic() {
   }
 
   if (story) {
-    const publishedDate = 'June 24, 2026';
+    const publishedDate = story.publishedDate || 'June 24, 2026';
     const currentIndex = topicStories.findIndex((item) => item.id === story.id);
     const nextArticle = topicStories[(currentIndex + 1) % topicStories.length];
     const relatedStories = topicStories.filter((item) => item.id !== story.id);
