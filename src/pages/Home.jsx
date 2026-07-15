@@ -494,29 +494,29 @@ export default function Home() {
         <section>
           <div className="grid gap-7 lg:grid-cols-[minmax(0,1fr)_340px] lg:gap-9 xl:grid-cols-[minmax(0,1fr)_360px]">
             <div className="lg:border-r lg:border-black/30 lg:pr-9">
-              <article className="group">
+              <article className="group mx-auto max-w-[720px]">
                 <Link to={homeBusinessLead.to} className="block no-underline">
                   <h1 className="mb-5 text-3xl font-bold leading-none tracking-tight text-black sm:text-4xl">
                     Business
                   </h1>
 
-                  <div className="overflow-hidden bg-neutral-100 lg:mr-2">
+                  <div className="overflow-hidden rounded-[28px] bg-neutral-100">
                     <img
                       src={homeBusinessLead.image}
                       alt={homeBusinessLead.title}
-                      className="h-[240px] w-full object-cover object-center transition duration-500 group-hover:scale-[1.03] sm:h-[330px] lg:h-[400px]"
+                      className="h-[260px] w-full object-cover object-center transition duration-500 group-hover:scale-[1.03] sm:h-[330px]"
                     />
                   </div>
 
-                  <h2 className="mx-auto mt-3 max-w-[820px] text-center text-2xl font-bold leading-tight tracking-tight text-black underline-offset-4 group-hover:underline sm:text-3xl lg:text-4xl xl:text-4xl">
+                  <h2 className="mt-5 text-3xl font-bold leading-tight tracking-tight text-black underline-offset-4 group-hover:underline sm:text-4xl">
                     {homeBusinessLead.title}
                   </h2>
 
-                  <div className="mx-auto mt-5 max-w-[720px] text-center">
-                    <p className="text-sm leading-6 text-black/65 sm:text-base">
+                  <div className="mt-4">
+                    <p className="text-base leading-7 text-black/65 sm:text-lg">
                       {homeBusinessLead.description}
                     </p>
-                    <p className="mt-3 text-[11px] uppercase tracking-[0.2em] text-black/50">
+                    <p className="mt-4 text-[11px] uppercase tracking-[0.2em] text-black/50">
                       NT Spotlight / Business Features
                     </p>
                   </div>

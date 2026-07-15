@@ -49,7 +49,7 @@ export const liveBusinessContent = {
         title: "One Arena: How an 18-Year-Old Singer from Kochi and a Team of Malayali Musicians Created India's Most Talked-About Football Anthem",
         description:
           "While the FIFA World Cup 2026 played out across stadiums in the United States, Canada, and Mexico, a group of Malayali musicians sitting thousands of miles away in Kochi created something that neither required a ticket nor an invitation to the tournament.",
-        image: '/ar16.jpg',
+        image: '/aaro.PNG',
         publishedDate: 'July 15, 2026',
         body: [
           { type: 'heading', text: "One Arena: How an 18-Year-Old Singer from Kochi and a Team of Malayali Musicians Created India's Most Talked-About Football Anthem" },
@@ -719,14 +719,14 @@ export default function LiveBusinessNewsSection({ initialTopic = 'business', sho
     : sideStories;
 
   return (
-    <section className="border border-gray-100 bg-white px-6 py-9 text-slate-950 shadow-sm sm:px-10 lg:px-10">
-      <div className="mb-7 border-b border-gray-200 pb-5">
-        <h2 className="m-0 text-3xl font-bold leading-tight tracking-tight text-slate-950">
+    <section className="border border-gray-100 bg-white px-5 py-7 text-slate-950 shadow-sm sm:px-8 lg:px-8">
+      <div className="mb-6 border-b border-gray-200 pb-4">
+        <h2 className="m-0 text-2xl font-bold leading-tight tracking-tight text-slate-950 md:text-[28px]">
           Business news and Updates
         </h2>
       </div>
 
-      <div className="mb-7 flex flex-wrap gap-2 border-b border-gray-100 pb-4" role="tablist" aria-label="Business news topics">
+      <div className="mb-6 flex flex-wrap gap-2 border-b border-gray-100 pb-3" role="tablist" aria-label="Business news topics">
         {businessTopics.map((topic) => {
           const isActive = activeTopic === topic.id;
 
@@ -760,8 +760,8 @@ export default function LiveBusinessNewsSection({ initialTopic = 'business', sho
       </div>
 
       {useHomeBusinessLayout ? (
-        <div className="mb-8">
-          <article className="border-b border-gray-200 pb-8">
+        <div className="mb-7">
+          <article className="border-b border-gray-200 pb-7">
             <Link to={featuredPath || '/business-live/business'}>
               <img
                 src={featured.image}
@@ -770,11 +770,11 @@ export default function LiveBusinessNewsSection({ initialTopic = 'business', sho
                   event.currentTarget.alt = '';
                   event.currentTarget.style.opacity = '0';
                 }}
-                className="mb-5 h-[320px] w-full rounded-3xl object-cover md:h-[390px]"
+                className="mb-4 h-[220px] w-full rounded-2xl object-cover sm:h-[260px] md:h-[300px]"
               />
             </Link>
             <Link to={featuredPath || '/business-live/business'} className="text-slate-950 no-underline hover:underline underline-offset-4">
-              <h2 className="m-0 text-3xl font-semibold leading-tight featured-headline text-slate-950 md:text-4xl">
+              <h2 className="m-0 text-2xl font-semibold leading-tight text-slate-950 md:text-3xl">
                 {featured.title}
               </h2>
             </Link>
@@ -822,11 +822,11 @@ export default function LiveBusinessNewsSection({ initialTopic = 'business', sho
                     event.currentTarget.alt = '';
                     event.currentTarget.style.opacity = '0';
                   }}
-                  className="mb-5 h-[360px] w-full rounded-3xl object-cover"
+                  className="mb-4 h-[240px] w-full rounded-2xl object-cover md:h-[300px]"
                 />
               </Link>
               <Link to={featuredPath || '/business-live/business'} className="text-slate-950 no-underline hover:underline underline-offset-4">
-                <h2 className="m-0 text-3xl font-semibold leading-tight featured-headline text-slate-950 md:text-4xl">
+                <h2 className="m-0 text-2xl font-semibold leading-tight text-slate-950 md:text-3xl">
                   {featured.title}
                 </h2>
               </Link>
@@ -849,7 +849,7 @@ export default function LiveBusinessNewsSection({ initialTopic = 'business', sho
                       event.currentTarget.alt = '';
                       event.currentTarget.style.opacity = '0';
                     }}
-                    className="h-[330px] w-full object-cover transition duration-500 hover:scale-[1.03]"
+                    className="h-[240px] w-full object-cover transition duration-500 hover:scale-[1.03] md:h-[280px]"
                   />
                 </Link>
               )}
