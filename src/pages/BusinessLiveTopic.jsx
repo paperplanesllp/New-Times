@@ -72,7 +72,7 @@ function NextArticleCard({ article, topicId }) {
 function BusinessLiveSidebar({ stories, topicId }) {
   return (
     <aside className="min-w-0 border-slate-200 lg:border-l lg:pl-8">
-      <div className="space-y-8 lg:sticky lg:top-8">
+      <div className="space-y-8">
         <section>
           <span className="mb-2 block text-center text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400">
             Advertisement
@@ -84,7 +84,7 @@ function BusinessLiveSidebar({ stories, topicId }) {
           </div>
         </section>
 
-        <section className="border border-slate-200 bg-white p-5">
+        <section className="border border-slate-200 bg-white p-5 lg:sticky lg:top-8">
           <h3 className="mb-5 text-[12px] font-extrabold uppercase tracking-[0.18em] text-slate-950">
             Business Live Radar
           </h3>
@@ -134,14 +134,13 @@ function BusinessLiveSidebar({ stories, topicId }) {
               );
             })}
           </div>
-        </section>
-
-        <section className="overflow-hidden border border-slate-200 bg-slate-100">
-          <img
-            src="/aaro2.jpeg"
-            alt="Business Live feature"
-            className="h-[360px] w-full object-cover lg:h-[460px]"
-          />
+          <div className="mt-5 overflow-hidden bg-slate-100">
+            <img
+              src="/aaro2.jpeg"
+              alt="Business Live feature"
+              className="h-40 w-full object-cover sm:h-44 lg:h-48"
+            />
+          </div>
         </section>
       </div>
     </aside>

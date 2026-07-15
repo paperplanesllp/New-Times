@@ -10,11 +10,11 @@ import FounderSandbox from '../component/FounderSandbox';
 import BillionairesHub from '../component/BillionairesHub';
 
 const homeBusinessLead = {
-  title: "The Women at the Top: Six Leaders Steering India's Most Powerful Companies - and What Their Rise Really Means",
+  title: "One Arena: How an 18-Year-Old Singer from Kochi and a Team of Malayali Musicians Created India's Most Talked-About Football Anthem",
   description:
-    "Priya Nair at HUL, Vibha Padalkar at HDFC Life, Vishakha Mulye at Aditya Birla Capital, Prabha Narasimhan at Colgate, Praveena Rai at MCX, and A Manimekhalai at Union Bank are reshaping what leadership looks like at the top of Indian corporate life.",
-  image: '/6WOMEN.png',
-  to: '/spotlight/business-features/women-at-the-top-six-leaders-powerful-companies',
+    "An 18-year-old singer from Kochi and a collective of Malayali musicians turned India's football longing into a World Cup anthem that travelled far beyond Kerala.",
+  image: '/aaro.PNG',
+  to: '/business-live/business/one-arena-kochi-football-anthem',
 };
 
 const homeBusinessSecondary = {
