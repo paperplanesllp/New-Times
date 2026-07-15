@@ -83,7 +83,7 @@ function BusinessLiveSidebar({ stories, topicId }) {
         </div>
       </section>
 
-      <section className="mt-8 border border-slate-200 bg-white p-5 lg:sticky lg:top-8">
+      <section className="mt-8 border border-slate-200 bg-white p-5">
         <h3 className="mb-5 text-[12px] font-extrabold uppercase tracking-[0.18em] text-slate-950">
           Business Live Radar
         </h3>
@@ -133,13 +133,14 @@ function BusinessLiveSidebar({ stories, topicId }) {
             );
           })}
         </div>
-        <div className="mt-5 overflow-hidden bg-slate-100">
-          <img
-            src="/aaro2.jpeg"
-            alt="Business Live feature"
-            className="h-40 w-full object-cover sm:h-44 lg:h-48"
-          />
-        </div>
+      </section>
+
+      <section className="mt-8 overflow-hidden border border-slate-200 bg-slate-100 lg:sticky lg:top-8">
+        <img
+          src="/aaro2.jpeg"
+          alt="Business Live feature"
+          className="h-[360px] w-full object-cover"
+        />
       </section>
     </aside>
   );
@@ -173,7 +174,7 @@ export default function BusinessLiveTopic() {
     const body = getVisibleBodyItems((story.body || [story.description]).filter(Boolean), story.title);
 
     return (
-      <main className="min-h-[80vh] w-full overflow-x-hidden bg-white px-4 py-6 text-slate-950 sm:px-6 lg:px-8 lg:py-10">
+      <main className="min-h-[80vh] w-full bg-white px-4 py-6 text-slate-950 sm:px-6 lg:px-8 lg:py-10">
         <article className="mx-auto w-full max-w-[1380px] min-w-0">
           <Link
             to={`/business-live/${topicId}`}
