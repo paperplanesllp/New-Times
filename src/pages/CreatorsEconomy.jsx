@@ -689,7 +689,7 @@ export default function CreatorsEconomy() {
 
   const artistStories = creatorStories.filter((story) => story.category === 'ARTIST');
   const economyStories = creatorStories.filter((story) => story.category !== 'ARTIST');
-  const [leadStory, ...sideStories] = economyStories;
+  const [leadStory] = economyStories;
 
   return (
     <main className="mx-auto min-h-[80vh] max-w-7xl bg-white px-4 py-8 sm:px-6 lg:px-8">
@@ -788,28 +788,16 @@ export default function CreatorsEconomy() {
             <HubAdvertisementStack />
           </div>
 
-          <div className="space-y-6 border-gray-200 lg:border-l lg:pl-6">
-            {sideStories.map((story) => (
-              <Link
-                key={story.slug}
-                to={`/creators-economy/${story.slug}`}
-                className="group grid grid-cols-[96px_minmax(0,1fr)] gap-4 border-b border-gray-100 pb-5 text-slate-950 no-underline last:border-b-0"
-              >
-                <div className="overflow-hidden bg-slate-100">
-                  <StoryImage story={story} imageKey="thumbnailImage" className="h-24 w-24" />
-                </div>
-                <article>
-                  <span className="mb-1 block text-[10px] font-extrabold uppercase tracking-[0.12em] text-amber-700">
-                    {story.category}
-                  </span>
-                  <h3 className="m-0 text-lg font-bold leading-tight underline-offset-4 group-hover:underline">
-                    {story.title}
-                  </h3>
-                  <p className="mt-2 text-sm leading-6 text-slate-600">{story.summary}</p>
-                </article>
-              </Link>
-            ))}
-          </div>
+          <aside className="border-gray-200 lg:border-l lg:pl-6">
+            <div className="lg:sticky lg:top-[100px] lg:self-start">
+              <img
+                src="/aaro2.jpeg"
+                alt="Singer performing on stage"
+                className="h-auto w-full object-contain"
+                loading="lazy"
+              />
+            </div>
+          </aside>
         </div>
 
         <section className="mt-12 border-t border-slate-200 pt-8">
