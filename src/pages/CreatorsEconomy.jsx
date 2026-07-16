@@ -678,8 +678,8 @@ export default function CreatorsEconomy() {
   const [leadStory] = economyStories;
 
   return (
-    <main className="mx-auto min-h-[80vh] max-w-7xl bg-white px-4 py-8 sm:px-6 lg:px-8">
-      <section className="border border-gray-200 bg-white p-5 sm:p-8 lg:p-10">
+    <main className="mx-auto min-h-[80vh] max-w-[1540px] bg-white px-3 py-8 sm:px-5 lg:px-6">
+      <section className="border border-gray-200 bg-white p-5 sm:p-7 lg:p-8">
         <div className="mb-6 h-1 w-full bg-slate-950" />
 
         <div className="mb-8 flex flex-col gap-4 border-b border-gray-200 pb-6 lg:flex-row lg:items-end lg:justify-between">
@@ -721,26 +721,28 @@ export default function CreatorsEconomy() {
               </span>
             </div>
 
-            <div className="grid gap-7 md:grid-cols-2 xl:grid-cols-3">
+            <div className="grid gap-7">
               {artistStories.map((story) => (
                 <Link
                   key={story.slug}
                   to={`/creators-economy/${story.slug}`}
                   className="group block text-slate-950 no-underline"
                 >
-                  <article>
-                    <div className="overflow-hidden rounded-[28px] bg-slate-100">
-                      <StoryImage story={story} className="h-[275px] object-top sm:h-[320px]" />
+                  <article className="grid gap-7 lg:grid-cols-[minmax(0,0.92fr)_minmax(0,1fr)] lg:items-center">
+                    <div className="overflow-hidden rounded-2xl bg-slate-100">
+                      <StoryImage story={story} className="h-[300px] object-top sm:h-[390px] lg:h-[430px]" />
                     </div>
-                    <span className="mb-2 mt-5 block text-[11px] font-extrabold uppercase tracking-[0.14em] text-amber-700">
-                      {story.sectionLabel || story.category}
-                    </span>
-                    <h3 className="m-0 max-w-3xl text-3xl font-bold leading-tight text-slate-950 underline decoration-slate-950 decoration-2 underline-offset-4 md:text-4xl">
-                      {story.title}
-                    </h3>
-                    <p className="mt-4 text-[15px] leading-7 text-slate-600">
-                      {story.summary}
-                    </p>
+                    <div className="max-w-3xl">
+                      <span className="mb-3 block text-[11px] font-extrabold uppercase tracking-[0.14em] text-amber-700">
+                        {story.sectionLabel || story.category}
+                      </span>
+                      <h3 className="m-0 text-3xl font-bold leading-tight text-slate-950 underline decoration-slate-950 decoration-2 underline-offset-4 md:text-5xl">
+                        {story.title}
+                      </h3>
+                      <p className="mt-5 text-[16px] leading-7 text-slate-600 md:text-[17px]">
+                        {story.summary}
+                      </p>
+                    </div>
                   </article>
                 </Link>
               ))}
