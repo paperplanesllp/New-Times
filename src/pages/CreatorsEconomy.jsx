@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
+import DailyQuote from '../component/DailyQuote';
 
 const artistFeatureStory = {
   slug: 'one-arena-kochi-football-anthem',
@@ -10,6 +11,7 @@ const artistFeatureStory = {
     "While the FIFA World Cup 2026 played out across stadiums in the United States, Canada, and Mexico, a group of Malayali musicians sitting thousands of miles away in Kochi created something that neither required a ticket nor an invitation to the tournament. One Arena, a football tribute song imagining India's debut on the world's biggest football stage, has crossed half a million views in under a week, travelled to Latin America and Mexico, drawn comparisons to Shakira's iconic World Cup anthems, and introduced an 18-year-old singer named Rosanne Antony to audiences who had never heard her name before. This is the story of how it happened, why it resonated, and what it says about the particular, passionate relationship that Kerala has always had with football.",
   image: '/aaro.PNG',
   thumbnailImage: '/aaro.PNG',
+  sidebarImage: '/aaro2.jpeg',
   summary:
     "Rosanne Antony and a collective of Malayali musicians built One Arena as a football anthem shaped by Kerala's love for the game, global pop ambition, and creator-led cultural reach.",
   body: [
@@ -41,6 +43,45 @@ const artistFeatureStory = {
 
 const creatorStories = [
   artistFeatureStory,
+  {
+    slug: 'pearle-maaney-authenticity-superpower-story',
+    category: 'CREATOR PROFILE',
+    sectionLabel: 'Profile',
+    title: 'The Woman Who Made Authenticity Her Superpower: The Pearle Maaney Story',
+    excerpt:
+      "In a media landscape that rewards polish, performance, and carefully curated perfection, Pearle Maaney built one of Kerala's most devoted audiences by doing almost the exact opposite. She laughed loudly, spoke honestly, showed the messy and beautiful parts of real life, and trusted that her audience would recognise the difference between a persona and a person. They did. And in doing so, she became something that the Malayalam entertainment industry had not quite seen before: a celebrity whose influence grows not despite her realness but entirely because of it.",
+    image: '/Pearly.jpg',
+    thumbnailImage: '/Pearly.jpg',
+    summary:
+      "Pearle Maaney built one of Kerala's most devoted audiences by making authenticity, humour, family, and emotional honesty the centre of her public life.",
+    body: [
+      'The Woman Who Made Authenticity Her Superpower: The Pearle Maaney Story',
+      "There is a version of the celebrity career that follows a well-worn script. You get your break, you protect your image, you say the right things in interviews, you keep the difficult parts of your life out of public view, and you manage the distance between who you actually are and who the audience believes you to be with great care and greater discipline. It is a script that has produced many successful entertainment careers. It is not the script that Pearle Maaney has ever followed, and the evidence suggests she was right to ignore it entirely.",
+      "Pearle Maaney is a Malayalam television anchor, actress, content creator, and cultural personality whose influence on Kerala's media and entertainment landscape has grown steadily and organically over a career that now spans more than a decade. She did not arrive through a single defining moment or a viral breakthrough. She arrived through the accumulation of something more durable: a consistent, warm, and genuinely funny presence that made audiences feel they were spending time with someone they actually knew, rather than watching a performance designed to impress them.",
+      'The Career That Built a Name',
+      "Pearle Maaney's entry into Malayalam television came through anchoring, a role that requires a very specific set of qualities that not every talented person possesses. Anchoring live television, particularly in the entertainment and reality show formats that Malayalam television excels at, demands the ability to hold an audience's attention in real time, to read a room and adjust to it, to be warm and professional simultaneously, and to make the people on screen with you feel comfortable enough to be their best selves. Pearle had all of those qualities, and she had something more: a natural comedic sensibility that could land a joke without trying too hard and recover from an awkward moment without making it worse.",
+      "She became associated with some of the most popular programming on Malayalam television, establishing herself as a host whose presence was itself a draw for audiences rather than simply a functional requirement of the format. In a competitive television environment where viewers have enormous choice and limited patience for presenters who do not hold their attention, the consistency of her appeal across different kinds of programming is a mark of genuine versatility.",
+      "Her work has extended beyond the anchor's chair into acting, with appearances in Malayalam films and web series that have demonstrated a range beyond what television alone would suggest. The transition from television personality to screen actor is one that many presenters attempt and relatively few manage with any real credibility. Pearle has managed it with enough success to suggest that the acting was always there, waiting for the right opportunity to be expressed in a different format.",
+      'Bigg Boss and the Love Story That Kerala Watched',
+      "If there is a single moment that expanded Pearle Maaney's reach beyond the audience that Malayalam television had already given her, it was her participation in Bigg Boss Malayalam Season 1 in 2018. The reality show format, in which a group of public figures live together in a contained environment under continuous camera surveillance, is designed to reveal character under pressure. What it revealed about Pearle Maaney was essentially consistent with everything her television audiences had already seen: she was funny, warm, emotionally intelligent, and completely incapable of being someone she was not, even in a context specifically designed to provoke people into revealing uncomfortable truths about themselves.",
+      "What nobody anticipated was that Bigg Boss Malayalam Season 1 would also produce a love story. Srinish Aravind, a fellow contestant and a prominent television actor, and Pearle developed a connection during their time in the house that the audience watched with the kind of investment that reality television formats dream of generating. The relationship that began under those unusual circumstances translated into something real and lasting after the show ended. The couple married, and their relationship became one of the most publicly celebrated partnerships in Kerala's entertainment world, followed with genuine affection by an audience that felt, not entirely incorrectly, that they had been present at the beginning of it.",
+      'The Social Media Universe She Built',
+      "The digital chapter of Pearle Maaney's career has, in some ways, become the most significant one. With millions of followers across Instagram and YouTube, she has built a social media presence that functions less like a celebrity platform and more like a community, a space where her audience participates rather than simply consuming content directed at them.",
+      "The content she shares does not follow the aesthetic conventions of aspirational lifestyle media, where everything is curated to project success, beauty, and the appearance of a life without complications. Pearle's posts are funny, sometimes chaotic, often self-deprecating, and consistently human in ways that the most carefully managed celebrity accounts rarely manage to be. She shares travel experiences and family moments alongside the kind of ordinary, ridiculous, relatable content that makes people send posts to their friends with the message: this is literally us.",
+      "Motherhood became a significant new dimension of her digital presence after the births of her daughters, Nila and Nitara. The way she has navigated parenting two young children publiclyâ€”with absolute honesty about both the pure joy and the chaotic, exhausting reality of itâ€”has generated an enormous response from a community of parents who recognize their own daily lives in her videos. Rather than trying to present a picture-perfect maternal image, Pearle leans into the beautiful messiness of raising a family. Both Nila and Nitara have quickly become beloved, permanent fixtures in her digital world, celebrated by an audience that treats them almost like extended family.",
+      'What Influence Actually Looks Like When It Is Earned',
+      "The commercial dimension of Pearle Maaney's influence is significant. She is one of the most sought-after brand collaborators in Kerala's influencer ecosystem, with partnerships spanning beauty, lifestyle, food, fashion, and consumer products. The reason her brand partnerships work is the same reason everything else about her public presence works: audiences trust her. And audiences trust her because she has never given them a reason not to.",
+      "The distinction between influence that is rented and influence that is earned is one that brands are increasingly sophisticated about understanding. Rented influence produces reach: the post goes out, the numbers tick up, and the association is made. Earned influence produces something more valuable, which is genuine commercial credibility that comes from an audience that has decided, over years of engagement, that this person's preferences and recommendations are worth paying attention to. Pearle Maaney has earned influence in the fullest sense of the term, and the brand ecosystem around her reflects that.",
+      'The Cultural Dimension: What She Represents for Kerala',
+      "Beyond the career metrics and the follower counts, Pearle Maaney occupies a specific cultural position in contemporary Kerala that is worth examining separately from her professional achievements. She represents a particular kind of modern Malayali woman: educated, professionally ambitious, rooted in Kerala's cultural identity, comfortable with her own personality and sense of humour, and entirely unwilling to diminish any of those qualities to fit into a more conventional template of what a female celebrity is supposed to look like.",
+      "Kerala has a complex and sometimes contradictory relationship with women in public life. The state's high literacy rates and strong record on female education exist alongside social pressures on women to conform to specific expectations about behaviour, appearance, and self-expression. Pearle Maaney navigates that complexity in public with a lightness that belies the difficulty of the navigation. She is not performing defiance. She is simply being herself, which in her case means being funny and loud and warm and opinionated and deeply human, and trusting that her audience will appreciate all of it. They consistently do.",
+      'The Next Chapter',
+      "At a point in her career where most people would be consolidating rather than expanding, Pearle Maaney shows no signs of settling into any single lane. Her television work, her film and digital acting projects, her massive social media community, and her role as a mother of two and public figure are all active and evolving simultaneously. She has built something that is structurally quite difficult to build in any media landscape: an audience that is loyal not to a format or a platform but to her specifically, and that will follow her across whatever new context she enters because the thing they are actually following is not the show or the post but the person behind it.",
+      'That kind of loyalty is not manufactured.',
+      'It is not the product of a strategy or a PR plan or a content calendar, though all of those things play a role in how it is sustained. It is the product of a decade of choosing, again and again, to be genuinely yourself in a public space that rewards performance and punishes vulnerability. Pearle Maaney made that choice early, made it consistently, and built one of Kerala\'s most beloved public presences on the foundation it created.',
+      'She made authenticity her superpower at a time when everyone else was still trying to figure out how to hide who they actually were. And Kerala, in the way that Kerala does when it decides to love someone, has never forgotten it.',
+    ],
+  },
   {
     slug: 'india-creator-economy-1-trillion-consumer-spending-bcg',
     category: 'CREATOR ECONOMY',
@@ -686,6 +727,8 @@ function CreatorsEconomyHub() {
           </aside>
         </section>
 
+        <DailyQuote />
+
         {artistLead && (
           <section className="mt-10 border-t-2 border-slate-950 pt-6">
             <h2 className="mb-5 border-b border-slate-950 pb-2 text-3xl font-black uppercase leading-none tracking-[0.08em]">
@@ -842,8 +885,8 @@ function CreatorsEconomyArticle({ story }) {
 
             <div className="mt-6 lg:sticky lg:top-[150px] lg:self-start">
               <img
-                src="/aaro2.jpeg"
-                alt="One Arena creator portrait"
+                src={story.sidebarImage || story.image}
+                alt={`${story.title} feature`}
                 className="h-[520px] w-full border border-slate-950 object-cover object-top lg:h-[620px]"
               />
             </div>
