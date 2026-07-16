@@ -140,6 +140,66 @@ const creatorStories = [
     ],
   },
   {
+    slug: 'hashir-reels-big-screen-kerala-entertainment-brand',
+    category: 'FILM',
+    sectionLabel: 'Film',
+    title: "From Reels to the Big Screen: How Hashir Turned Everyday Humour Into Kerala's Next Entertainment Brand",
+    excerpt:
+      "There was a time when becoming a film star meant waiting for a director to discover you. The journey usually began with auditions, years of rejection, supporting roles, and the hope that one breakthrough performance would finally change everything. That isn't the only path anymore.",
+    image: '/hash.webp',
+    thumbnailImage: '/hash.webp',
+    sidebarImage: '/ste.jpg',
+    imagePosition: 'center top',
+    sidebarImagePosition: 'center top',
+    summary:
+      "Hashir's rise from relatable reels to Malayalam cinema shows how digital creators are changing stardom, film marketing, and entertainment brands in Kerala.",
+    body: [
+      "From Reels to the Big Screen: How Hashir Turned Everyday Humour Into Kerala's Next Entertainment Brand",
+      "There was a time when becoming a film star meant waiting for a director to discover you. The journey usually began with auditions, years of rejection, supporting roles, and the hope that one breakthrough performance would finally change everything.",
+      "That isn't the only path anymore.",
+      'Today, audiences discover actors long before filmmakers do. They follow them on Instagram, laugh at their YouTube videos, share their reels in WhatsApp groups, and build emotional connections long before the opening credits of a film begin to roll.',
+      'Few creators represent this shift better than Hashir.',
+      "For millions of Malayalis, Hashir was never introduced through cinema. He arrived through a smartphone screen. One funny reel became another. One relatable sketch became an entire library of content that reflected everyday life in Kerala. Without expensive production, celebrity connections, or traditional media exposure, he built one of the state's most loyal digital communities.",
+      'By the time Malayalam cinema came calling, the audience was already waiting.',
+      'The Internet Was His First Stage',
+      "Hashir's rise reflects one of the biggest changes in modern entertainment. Unlike previous generations of actors who relied on television or film to build recognition, his career started entirely online. Through comedy sketches, slice-of-life content, and collaborations with close friends Alan Bin Siraj, Ajin Joy, and Vinayak V, he became part of a new generation of Malayalam creators whose humour felt natural rather than scripted.",
+      'The videos rarely relied on elaborate sets, expensive production, or cinematic visuals.',
+      'Instead, they succeeded because they captured something far more valuable: recognition.',
+      "The situations felt familiar, the characters reflected everyday people, and the friendships on screen appeared genuine rather than performed. Audiences weren't simply watching comedy sketches; they were watching people who reminded them of their own friends, conversations, and shared experiences. That sense of relatability became Hashir's greatest strength and one of the biggest reasons his content resonated so deeply with viewers across Kerala.",
+      "The Creator Economy's Biggest Lesson",
+      'Many people believe that one viral video is enough to create a successful creator. In reality, long-term success is built on consistency. Social media rewards those who continue creating, experimenting, and showing up long after the excitement of a single viral moment has faded.',
+      'Hashir understood this early. Rather than chasing every trending format, he focused on building a recognizable style of content. Recurring characters, familiar friendships, inside jokes, and relatable storytelling became the foundation of his digital identity. Audiences knew what to expect, and that familiarity kept them coming back.',
+      "Over the years, those seemingly small moments added up to something much bigger than views and likes; they built trust. Followers gradually became loyal fans, and those fans evolved into a thriving community across Instagram and YouTube. Today, Hashir stands among Kerala's most-followed digital creators, proving that in the creator economy, consistency often matters far more than virality.",
+      'Friendship Became the Brand',
+      "One of the most interesting aspects of Hashir's success is that it was never presented as an individual journey. His content consistently featured the same close-knit group of friends, Alan, Ajin, and Vinayak, whose chemistry became one of the defining elements of his videos. Rather than competing for attention, they grew together, creating content that felt natural, spontaneous, and authentic.",
+      "Audiences weren't simply following a single creator; they were invested in a group of friends whose camaraderie mirrored their own. This collaborative approach reflects the success of several global creator collectives, where the relationships between members become just as engaging as the content itself. In many ways, their friendship evolved into a brand of its own, proving that genuine connections can be just as valuable as individual personalities in building a loyal digital community.",
+      'When Cinema Started Looking at Creators',
+      'For years, social media creators were often viewed by the film industry as marketing assets rather than serious performers. Their large online followings made them valuable for promoting films, but few were considered for substantial acting roles. That perception, however, has changed dramatically in recent years.',
+      'Malayalam cinema has increasingly recognized that digital creators bring more than just popularity; they bring highly engaged audiences. Their ability to connect with younger viewers, generate organic conversations, and promote projects through their own platforms has made them an attractive proposition for filmmakers.',
+      "Hashir's journey reflects this shift. While his appearance in Vaazha introduced him to mainstream film audiences, it was his performance in Vaazha 2 that established him as one of Malayalam cinema's most promising young talents. The film's success reinforced what producers had been gradually realizing: digital creators no longer need cinema to become famous. Instead, cinema is increasingly looking toward creators who already command loyal audiences and can bridge the gap between online popularity and box office success.",
+      'The Box Office Changed the Conversation',
+      'Vaazha 2 was more than just another successful Malayalam film; it became a strong indicator that digital creators could successfully transition into commercial cinema. Its box office performance challenged long-held assumptions about who could emerge as a leading actor in the industry. The success of Hashir and his fellow creators reflected a broader shift in Malayalam cinema, where digital popularity, relatable storytelling, and an existing fan base could translate into theatrical success.',
+      'For producers, this represented far more than an unconventional casting decision; it became a smart business strategy. Creators arrived with loyal communities, high engagement, and the ability to promote their films directly through their own social media platforms. Instead of relying solely on traditional marketing campaigns after production wrapped, the buzz around a film now began the moment the cast was announced. In many ways, creators had become both the stars and the marketing engines of the projects they were part of, fundamentally changing how films were positioned and promoted.',
+      'Authenticity Over Perfection',
+      'What separates Hashir from many internet personalities is that his content rarely feels manufactured. His humour is conversational, his performances are understated, and even his transition to cinema has retained the same natural charm that first attracted audiences online. Rather than adopting a larger-than-life persona, he has stayed true to the style that made him popular in the first place. That consistency has become one of his greatest strengths.',
+      "In today's creator economy, people are increasingly drawn to personalities who feel accessible rather than aspirational. The polished, carefully curated celebrity image that dominated entertainment for decades is gradually giving way to something more authentic and relatable. Hashir belongs to this new generation of entertainers. His audience doesn't feel like they're watching someone perform a character; they feel like they're watching someone they already know, and that sense of familiarity is what continues to strengthen his connection with viewers.",
+      'The Economics of Attention',
+      "Entertainment today operates very differently from how it did a decade ago. In the digital era, the most valuable currency is no longer screen time; it's attention. Creators who can consistently capture and retain that attention hold a significant advantage, regardless of whether they come from traditional media or digital platforms.",
+      'Hashir built that attention without the backing of a television network, a production studio, or a large advertising budget. Every reel introduced him to new viewers, every collaboration expanded his reach, and every shared video strengthened the community he was building. Long before cinema entered the picture, he had already cultivated a loyal audience that trusted and engaged with his content.',
+      'By the time films became part of his journey, that attention had already evolved into influence. That influence, in turn, opened the door to opportunities in Malayalam cinema. Today, this progression, from building an audience online to creating influence and eventually transitioning into mainstream entertainment, is becoming the defining career path for a new generation of actors and creators.',
+      "Kerala's Digital Generation",
+      "Kerala has quietly emerged as one of India's strongest creator ecosystems, producing a new generation of comedians, travel vloggers, educators, entrepreneurs, and entertainers who have built successful careers entirely through digital platforms. Hashir is one of the clearest examples of this transformation. His journey demonstrates that talent is no longer limited by geography or access to traditional media. A creator from Varkala can now build a loyal audience across India without ever leaving Kerala.",
+      'The internet has fundamentally changed the way regional creators grow. Local humour, everyday stories, and content in regional languages now have the ability to reach audiences far beyond state borders, competing alongside mainstream entertainment on the same platforms. Instead of waiting for opportunities to come from television channels or film studios, creators like Hashir are building their own audiences, creating their own opportunities, and redefining what success in the entertainment industry looks like.',
+      'Beyond the Algorithms',
+      "Algorithms may introduce creators to new audiences, but it is communities that sustain their careers over the long term. That distinction has become increasingly important in today's creator economy. Social media trends change almost every week, platforms continue to evolve, and content formats rise and fall with remarkable speed.",
+      "What remains constant, however, is the relationship between creators and their audiences. People continue to follow those who consistently deliver value, whether through entertainment, storytelling, or authenticity. Hashir's journey suggests that lasting success depends less on chasing viral moments and more on building familiarity and trust. Audiences return because they know what to expect and genuinely connect with the person behind the content. In the long run, that sense of reliability becomes one of the strongest foundations any personal brand can have.",
+      'A New Definition of Stardom',
+      "Hashir's story is ultimately about much more than the success of a single creator. It reflects a fundamental shift in how celebrities are created in the digital age. Previous generations became famous because films made them stars. Today, many creators become stars long before they step onto a film set. They build audiences first, and the industry follows.",
+      'This changing dynamic has redefined the relationship between creators and traditional entertainment. Instead of waiting outside production offices hoping for an opportunity, creators are building communities so large and engaged that opportunities begin finding them. For filmmakers and producers, an established creator now represents not only talent but also an existing audience, making digital influence an important part of the entertainment business.',
+      "Hashir's journey, from creating relatable reels with close friends to starring in one of Malayalam cinema's biggest youth films, is a testament to this transformation. It is not simply a story of social media success, but of how the internet has rewritten the rules of entertainment. For the next generation of creators watching from their phones today, his career offers a glimpse into what the future of Malayalam cinema may look like, one where talent, consistency, and community can open doors that once seemed accessible only through traditional paths.",
+    ],
+  },
+  {
     slug: 'india-creator-economy-1-trillion-consumer-spending-bcg',
     category: 'CREATOR ECONOMY',
     title: "India's Creator Economy Could Influence $1 Trillion in Consumer Spending by 2030: BCG",
@@ -735,6 +795,7 @@ function CreatorStoryCard({ item, compact = false }) {
 
 function CreatorsEconomyHub() {
   const artistStories = creatorStories.filter((story) => story.category === 'ARTIST');
+  const filmStories = creatorStories.filter((story) => story.category === 'FILM');
   const economyStories = creatorStories.filter((story) => story.category !== 'ARTIST');
   const [leadStory, ...restEconomyStories] = economyStories;
   const artistLead = artistStories[0];
@@ -852,10 +913,10 @@ function CreatorsEconomyHub() {
 
         <section className="mt-10 border-t-2 border-slate-950 pt-6">
           <h2 className="mb-5 border-b border-slate-950 pb-2 text-3xl font-black uppercase leading-none tracking-[0.08em]">
-            Market
+            Film
           </h2>
           <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-            {otherNews.slice(0, 3).map((item) => (
+            {filmStories.slice(0, 3).map((item) => (
               <CreatorStoryCard key={item.slug} item={item} />
             ))}
           </div>
