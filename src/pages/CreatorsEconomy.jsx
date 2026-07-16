@@ -1,7 +1,38 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 
+const artistFeatureStory = {
+  slug: 'one-arena-kochi-football-anthem',
+  category: 'ARTIST',
+  sectionLabel: 'Music',
+  title: "One Arena: How an 18-Year-Old Singer from Kochi and a Team of Malayali Musicians Created India's Most Talked-About Football Anthem",
+  excerpt:
+    "An 18-year-old singer from Kochi and a collective of Malayali musicians turned India's football longing into a World Cup anthem that travelled far beyond Kerala.",
+  image: '/aaro.PNG',
+  thumbnailImage: '/aaro.PNG',
+  summary:
+    "Rosanne Antony and a collective of Malayali musicians built One Arena as a football anthem shaped by Kerala's love for the game, global pop ambition, and creator-led cultural reach.",
+  body: [
+    "There is something specific about the way Kerala relates to football that is unlike anything else in India. While the rest of the country has organised its sporting passions almost entirely around cricket, Kerala has maintained a genuine, multigenerational love affair with the beautiful game.",
+    "India, of course, has never qualified for a FIFA World Cup. That absence, felt particularly acutely in a state that cares about football as seriously as Kerala does, is the emotional foundation on which One Arena was built. Not a song about watching from the sidelines. A song about dreaming of the day India steps onto that stage.",
+    "The Song and the People Who Made It",
+    "One Arena was composed by Midhun K M and arranged by Vineeth Esthappan, both part of a wider collective of Malayali musicians and football enthusiasts who came together specifically for the project. The track blends melody, rap, and orchestration in a way that sounds less like a regional tribute and more like something assembled for an international broadcast.",
+    "The voice at the centre of the production is Rosanne Antony, an 18-year-old from Kochi who had been working in commercial recordings before the project found its way to her. When she heard the track for the first time, the decision was immediate.",
+    "What nobody anticipated, including Rosanne herself, was how naturally the song would fit her voice. The qualities that make One Arena distinctive as a production, its movement between vocal registers, lyrical passages, rhythmic spoken word, intimacy, and anthem-scale release, turned out to be qualities she handled naturally.",
+    "A Voice Shaped by Decades of Music",
+    "Rosanne Antony's relationship with music began at the age of six, though she waited until she was thirteen before beginning formal professional training. By the time she was eleven, it was clear that music was not something she did alongside the rest of her life. It was woven through it.",
+    "Kerala's Shakira: The Comparison That Found Her",
+    "When One Arena began circulating on social media, the comparison that appeared most frequently in comments and responses was to Shakira. The energy of One Arena, the quality of Rosanne's performance, and the production's international ambition combined to produce a response that the team had not specifically sought but that arrived regardless.",
+    "The Dream the Song Carries",
+    "One Arena is, at its structural core, a song about longing. The longing of Indian footballers who train for years inside a system that has never put them on the stage they are training for. The longing of fans, particularly in Kerala, who care about the game with a fervour that has no obvious outlet in international competition.",
+    "The production team released One Arena after the FIFA World Cup had already begun, unsure how it would land. What happened next exceeded any reasonable expectation: half a million views in under a week, responses from Latin America and Mexico, and sharing patterns that suggested the song was travelling organically.",
+    "What One Arena Means Beyond the Music",
+    "The story of One Arena is partly a music story and partly a story about Kerala's relationship with football. But it is also a story about what becomes possible when a group of people with craft and passion decide to make something without waiting for institutional permission.",
+  ],
+};
+
 const creatorStories = [
+  artistFeatureStory,
   {
     slug: 'india-creator-economy-1-trillion-consumer-spending-bcg',
     category: 'CREATOR ECONOMY',
@@ -575,7 +606,14 @@ function CreatorsEconomyArticle({ story }) {
           </div>
 
           <div>
-            <StoryImage story={story} className="h-[320px] sm:h-[430px] lg:h-[520px]" />
+            <StoryImage
+              story={story}
+              className={
+                story.category === 'ARTIST'
+                  ? 'max-h-[560px] object-contain'
+                  : 'h-[320px] sm:h-[430px] lg:h-[520px]'
+              }
+            />
           </div>
         </header>
 
@@ -649,7 +687,9 @@ export default function CreatorsEconomy() {
     return <CreatorsEconomyArticle story={activeStory} />;
   }
 
-  const [leadStory, ...sideStories] = creatorStories;
+  const artistStories = creatorStories.filter((story) => story.category === 'ARTIST');
+  const economyStories = creatorStories.filter((story) => story.category !== 'ARTIST');
+  const [leadStory, ...sideStories] = economyStories;
 
   return (
     <main className="mx-auto min-h-[80vh] max-w-7xl bg-white px-4 py-8 sm:px-6 lg:px-8">
@@ -678,6 +718,49 @@ export default function CreatorsEconomy() {
             New Times tracks how creators, platforms, agencies, brands, regulators, and tools are reshaping media, marketing, commerce, and entrepreneurship.
           </p>
         </div>
+
+        {artistStories.length > 0 && (
+          <section className="mb-12 border-t border-slate-200 pt-8">
+            <div className="mb-6 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+              <div>
+                <span className="mb-2 block text-[11px] font-extrabold uppercase tracking-[0.2em] text-slate-500">
+                  Music
+                </span>
+                <h2 className="m-0 text-3xl font-extrabold leading-tight text-slate-950">
+                  Artist
+                </h2>
+              </div>
+              <span className="text-[11px] font-bold uppercase tracking-[0.16em] text-slate-500">
+                New Times Desk
+              </span>
+            </div>
+
+            <div className="grid gap-7 md:grid-cols-2 xl:grid-cols-3">
+              {artistStories.map((story) => (
+                <Link
+                  key={story.slug}
+                  to={`/creators-economy/${story.slug}`}
+                  className="group block text-slate-950 no-underline"
+                >
+                  <article>
+                    <div className="overflow-hidden rounded-[28px] bg-slate-100">
+                      <StoryImage story={story} className="h-[275px] object-top sm:h-[320px]" />
+                    </div>
+                    <span className="mb-2 mt-5 block text-[11px] font-extrabold uppercase tracking-[0.14em] text-amber-700">
+                      {story.sectionLabel || story.category}
+                    </span>
+                    <h3 className="m-0 max-w-3xl text-3xl font-bold leading-tight text-slate-950 underline decoration-slate-950 decoration-2 underline-offset-4 md:text-4xl">
+                      {story.title}
+                    </h3>
+                    <p className="mt-4 text-[15px] leading-7 text-slate-600">
+                      {story.summary}
+                    </p>
+                  </article>
+                </Link>
+              ))}
+            </div>
+          </section>
+        )}
 
         <div className="grid gap-8 lg:grid-cols-[minmax(0,1.45fr)_minmax(300px,1fr)]">
           <div>

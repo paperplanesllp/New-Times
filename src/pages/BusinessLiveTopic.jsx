@@ -167,15 +167,43 @@ export default function BusinessLiveTopic() {
   }
 
   if (story) {
+    const isOneArenaStory = story.slug === 'one-arena-kochi-football-anthem';
     const publishedDate = story.publishedDate || 'June 24, 2026';
     const currentIndex = topicStories.findIndex((item) => item.id === story.id);
     const nextArticle = topicStories[(currentIndex + 1) % topicStories.length];
     const relatedStories = topicStories.filter((item) => item.id !== story.id);
     const body = getVisibleBodyItems((story.body || [story.description]).filter(Boolean), story.title);
+    const articleContent = (
+      <section className="min-w-0">
+        <div
+          className={`space-y-8 break-words text-slate-800 ${
+            isOneArenaStory
+              ? 'text-[18px] leading-[1.8] md:text-[19px] lg:text-[18px] lg:leading-[1.82]'
+              : 'text-[20px] leading-[1.8] md:text-[23px] lg:text-[25px]'
+          }`}
+        >
+          {body.map((item, index) => (
+            <ArticleBodyItem key={`${index}-${getBodyText(item)}`} item={item} />
+          ))}
+        </div>
+
+        <section className="mt-12 border-t border-slate-200 pt-7">
+          <p className="text-xs font-bold uppercase tracking-[0.16em] text-slate-500">
+            First Published: {publishedDate}
+          </p>
+        </section>
+
+        {isOneArenaStory && (
+          <div className="mt-8">
+            <NextArticleCard article={nextArticle} topicId={topicId} />
+          </div>
+        )}
+      </section>
+    );
 
     return (
       <main className="min-h-[80vh] w-full bg-white px-4 py-6 text-slate-950 sm:px-6 lg:px-8 lg:py-10">
-        <article className="mx-auto w-full max-w-[1380px] min-w-0">
+        <article className={`mx-auto w-full min-w-0 ${isOneArenaStory ? 'max-w-[1280px]' : 'max-w-[1380px]'}`}>
           <Link
             to={`/business-live/${topicId}`}
             className="mb-6 inline-flex text-[12px] font-bold uppercase tracking-[0.16em] text-slate-600 no-underline hover:text-red-700"
@@ -183,19 +211,19 @@ export default function BusinessLiveTopic() {
             &larr; {topic.label}
           </Link>
 
-          <header className="grid min-w-0 gap-8 border-b border-slate-200 pb-10 lg:grid-cols-[minmax(0,0.95fr)_minmax(420px,0.85fr)] lg:items-center xl:gap-12">
-            <div className="min-w-0 text-center sm:text-left">
+          <header className={`${isOneArenaStory ? 'mx-auto max-w-4xl text-center' : 'grid min-w-0 gap-8 lg:grid-cols-[minmax(0,0.95fr)_minmax(420px,0.85fr)] lg:items-center xl:gap-12'} border-b border-slate-200 pb-10`}>
+            <div className={`min-w-0 ${isOneArenaStory ? '' : 'text-center sm:text-left'}`}>
               <span className="mb-4 block text-[11px] font-extrabold uppercase tracking-[0.22em] text-amber-700">
                 {topic.label}
               </span>
-              <h1 className="mx-auto max-w-[700px] break-words text-[30px] font-extrabold leading-[1.15] text-black sm:mx-0 sm:text-[36px] lg:text-[42px] xl:text-[46px]">
+              <h1 className={`mx-auto break-words text-[30px] font-extrabold leading-[1.15] text-black sm:text-[36px] lg:text-[42px] xl:text-[46px] ${isOneArenaStory ? 'max-w-[820px]' : 'max-w-[700px] sm:mx-0'}`}>
                 {story.title}
               </h1>
-              <p className="mx-auto mt-5 max-w-[700px] text-[19px] leading-8 text-slate-700 sm:mx-0 md:text-[22px]">
+              <p className={`mx-auto mt-5 text-[19px] leading-8 text-slate-700 md:text-[22px] ${isOneArenaStory ? 'max-w-[760px]' : 'max-w-[700px] sm:mx-0'}`}>
                 {story.description}
               </p>
 
-              <div className="mt-6 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-xs font-semibold uppercase tracking-[0.12em] text-slate-500 sm:justify-start">
+              <div className={`mt-6 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-xs font-semibold uppercase tracking-[0.12em] text-slate-500 ${isOneArenaStory ? '' : 'sm:justify-start'}`}>
                 <span>By New Times Desk</span>
                 <span className="hidden text-slate-300 sm:inline">/</span>
                 <span>Last updated {publishedDate}</span>
@@ -203,7 +231,7 @@ export default function BusinessLiveTopic() {
                 <span>{Math.max(4, Math.ceil(body.map(getBodyText).join(' ').split(' ').length / 220))} min read</span>
               </div>
 
-              <div className="mt-6 flex max-w-full flex-wrap justify-center gap-3 sm:justify-start">
+              <div className={`mt-6 flex max-w-full flex-wrap justify-center gap-3 ${isOneArenaStory ? '' : 'sm:justify-start'}`}>
                 <Link
                   to="/partner/get-featured"
                   className="inline-flex min-h-11 items-center justify-center rounded-full bg-slate-950 px-6 text-xs font-bold uppercase tracking-[0.14em] text-white no-underline transition hover:bg-red-700"
@@ -213,41 +241,48 @@ export default function BusinessLiveTopic() {
               </div>
             </div>
 
-            <div className="relative min-w-0">
-              <div className="overflow-hidden bg-slate-100">
-                <img
-                  src={story.image}
-                  alt={story.title}
-                  className={`w-full ${
-                    story.slug === 'one-arena-kochi-football-anthem'
-                      ? 'max-h-[560px] object-contain'
-                      : 'h-[300px] object-cover sm:h-[420px] lg:h-[520px]'
-                  }`}
-                />
+            {!isOneArenaStory && (
+              <div className="relative min-w-0">
+                <div className="overflow-hidden bg-slate-100">
+                  <img
+                    src={story.image}
+                    alt={story.title}
+                    className="h-[300px] w-full object-cover sm:h-[420px] lg:h-[520px]"
+                  />
+                </div>
+                <div className="mt-5 lg:ml-auto lg:w-[360px]">
+                  <NextArticleCard article={nextArticle} topicId={topicId} />
+                </div>
               </div>
-              <div className="mt-5 lg:ml-auto lg:w-[360px]">
-                <NextArticleCard article={nextArticle} topicId={topicId} />
-              </div>
-            </div>
+            )}
           </header>
 
-          <div className="grid min-w-0 gap-10 pt-10 lg:grid-cols-[minmax(0,0.68fr)_minmax(320px,0.32fr)] lg:gap-12">
-            <section className="min-w-0">
-              <div className="space-y-8 break-words text-[20px] leading-[1.8] text-slate-800 md:text-[23px] lg:text-[25px]">
-                {body.map((item, index) => (
-                  <ArticleBodyItem key={`${index}-${getBodyText(item)}`} item={item} />
-                ))}
+          {isOneArenaStory ? (
+            <section className="grid min-w-0 gap-8 pt-10 lg:grid-cols-[minmax(0,0.42fr)_minmax(0,0.58fr)] lg:gap-16 xl:gap-[72px]">
+              <aside className="min-w-0 lg:self-start lg:sticky lg:top-[100px]" aria-label="Article feature image">
+                <figure className="m-0">
+                  <div className="flex aspect-[4/5] w-full items-center justify-center rounded-[14px] border border-slate-200 bg-slate-50 p-3 shadow-[0_18px_50px_rgba(15,23,42,0.08)] sm:rounded-[18px] sm:p-4 lg:max-h-[calc(100vh-130px)]">
+                    <img
+                      src="/aaro2.jpeg"
+                      alt={story.title}
+                      loading="lazy"
+                      className="h-full w-full rounded-[10px] object-contain sm:rounded-[14px]"
+                    />
+                  </div>
+                </figure>
+              </aside>
+
+              <div className="min-w-0 max-w-[720px]">
+                {articleContent}
               </div>
-
-              <section className="mt-12 border-t border-slate-200 pt-7">
-                <p className="text-xs font-bold uppercase tracking-[0.16em] text-slate-500">
-                  First Published: {publishedDate}
-                </p>
-              </section>
             </section>
+          ) : (
+            <div className="grid min-w-0 gap-10 pt-10 lg:grid-cols-[minmax(0,0.68fr)_minmax(320px,0.32fr)] lg:gap-12">
+              {articleContent}
 
-            <BusinessLiveSidebar stories={relatedStories} topicId={topicId} />
-          </div>
+              <BusinessLiveSidebar stories={relatedStories} topicId={topicId} />
+            </div>
+          )}
         </article>
       </main>
     );
