@@ -602,10 +602,9 @@ export default function Home() {
         </section>
 
         <EditorialShell className="mt-9">
-          <SectionTitle>Creators</SectionTitle>
           <Link
             to={homeCreatorsStory.to}
-            className="group mt-7 grid gap-6 text-black no-underline md:grid-cols-[minmax(0,0.95fr)_minmax(280px,0.65fr)] md:items-center"
+            className="group grid gap-6 text-black no-underline md:grid-cols-[minmax(0,0.95fr)_minmax(280px,0.65fr)] md:items-start"
           >
             <div className="overflow-hidden rounded-[28px] bg-neutral-100">
               <img
@@ -617,7 +616,8 @@ export default function Home() {
             </div>
 
             <div className="border-y border-black/15 py-5">
-              <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-blue-700">
+              <SectionTitle>Creators</SectionTitle>
+              <span className="mt-7 block text-[11px] font-semibold uppercase tracking-[0.2em] text-blue-700">
                 Creators Economy
               </span>
               <h2 className="mt-3 text-3xl font-bold leading-tight tracking-tight text-black underline-offset-4 group-hover:underline sm:text-4xl">
