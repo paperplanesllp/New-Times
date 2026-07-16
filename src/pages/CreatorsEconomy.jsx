@@ -763,7 +763,7 @@ function CreatorHubAd() {
   );
 }
 
-function CreatorStoryCard({ item, compact = false }) {
+function CreatorStoryCard({ item, compact = false, large = false }) {
   return (
     <Link
       to={`/creators-economy/${item.slug}`}
@@ -773,7 +773,7 @@ function CreatorStoryCard({ item, compact = false }) {
         <img
           src={item.thumbnailImage || item.image}
           alt={item.title}
-          className={`${compact ? 'h-28' : 'h-40'} w-full object-cover transition duration-500 group-hover:scale-[1.04]`}
+          className={`${compact ? 'h-28' : large ? 'h-56 sm:h-64' : 'h-40'} w-full object-cover transition duration-500 group-hover:scale-[1.04]`}
           style={
             item.thumbnailImagePosition || item.imagePosition
               ? { objectPosition: item.thumbnailImagePosition || item.imagePosition }
@@ -781,11 +781,11 @@ function CreatorStoryCard({ item, compact = false }) {
           }
         />
       </div>
-      <div className={compact ? 'p-3' : 'p-4'}>
+      <div className={compact ? 'p-3' : large ? 'p-5' : 'p-4'}>
         <span className="mb-2 block text-[10px] font-black uppercase tracking-[0.16em] text-amber-700">
           {item.category}
         </span>
-        <h3 className={`${compact ? 'text-base' : 'text-lg'} m-0 font-bold leading-tight underline-offset-4 group-hover:underline`}>
+        <h3 className={`${compact ? 'text-base' : large ? 'text-xl sm:text-2xl' : 'text-lg'} m-0 font-bold leading-tight underline-offset-4 group-hover:underline`}>
           {item.title}
         </h3>
       </div>
@@ -915,9 +915,9 @@ function CreatorsEconomyHub() {
           <h2 className="mb-5 border-b border-slate-950 pb-2 text-3xl font-black uppercase leading-none tracking-[0.08em]">
             Film
           </h2>
-          <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+          <div className="grid gap-5 md:grid-cols-2">
             {filmStories.slice(0, 3).map((item) => (
-              <CreatorStoryCard key={item.slug} item={item} />
+              <CreatorStoryCard key={item.slug} item={item} large />
             ))}
           </div>
         </section>
