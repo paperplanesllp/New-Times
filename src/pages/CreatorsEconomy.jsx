@@ -842,11 +842,13 @@ function CreatorsEconomyArticle({ story }) {
                 </div>
               </section>
 
-              <img
-                src="/aaro2.jpeg"
-                alt="One Arena creator portrait"
-                className="h-[520px] w-full border border-slate-950 object-cover object-top lg:h-[620px]"
-              />
+              <div className="lg:sticky lg:top-6">
+                <img
+                  src="/aaro2.jpeg"
+                  alt="One Arena creator portrait"
+                  className="h-[520px] w-full border border-slate-950 object-cover object-top lg:h-[620px]"
+                />
+              </div>
             </div>
           </aside>
         </div>
