@@ -903,9 +903,11 @@ function CreatorStoryCard({ item, compact = false, large = false }) {
         />
       </div>
       <div className={compact ? 'p-3' : large ? 'p-5' : 'p-4'}>
-        <span className="mb-2 block text-[10px] font-black uppercase tracking-[0.16em] text-amber-700">
-          {item.category}
-        </span>
+        {!large && (
+          <span className="mb-2 block text-[10px] font-black uppercase tracking-[0.16em] text-amber-700">
+            {item.category}
+          </span>
+        )}
         <h3 className={`${compact ? 'text-base' : large ? 'text-xl sm:text-2xl' : 'text-lg'} m-0 font-bold leading-tight underline-offset-4 group-hover:underline`}>
           {item.title}
         </h3>
