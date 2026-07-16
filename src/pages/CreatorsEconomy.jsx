@@ -52,6 +52,8 @@ const creatorStories = [
     image: '/Pearly.jpg',
     thumbnailImage: '/Pearly.jpg',
     sidebarImage: '/pearly 2.jpg',
+    imagePosition: 'center top',
+    sidebarImagePosition: 'center top',
     summary:
       "Pearle Maaney built one of Kerala's most devoted audiences by making authenticity, humour, family, and emotional honesty the centre of her public life.",
     body: [
@@ -493,11 +495,14 @@ function renderArticleBody(paragraphs, articleTitle) {
 }
 
 function StoryImage({ story, className = '', imageKey = 'image' }) {
+  const imagePosition = story[`${imageKey}Position`] || story.imagePosition;
+
   return (
     <img
       src={story[imageKey] || story.image}
       alt={story.title}
       className={`w-full object-cover transition duration-500 group-hover:scale-[1.03] ${className}`}
+      style={imagePosition ? { objectPosition: imagePosition } : undefined}
     />
   );
 }
@@ -654,6 +659,11 @@ function CreatorStoryCard({ item, compact = false }) {
           src={item.thumbnailImage || item.image}
           alt={item.title}
           className={`${compact ? 'h-28' : 'h-40'} w-full object-cover transition duration-500 group-hover:scale-[1.04]`}
+          style={
+            item.thumbnailImagePosition || item.imagePosition
+              ? { objectPosition: item.thumbnailImagePosition || item.imagePosition }
+              : undefined
+          }
         />
       </div>
       <div className={compact ? 'p-3' : 'p-4'}>
@@ -895,6 +905,7 @@ function CreatorsEconomyArticle({ story }) {
                 src={story.sidebarImage || story.image}
                 alt={`${story.title} feature`}
                 className="h-[520px] w-full border border-slate-950 object-cover object-top lg:h-[620px]"
+                style={story.sidebarImagePosition ? { objectPosition: story.sidebarImagePosition } : undefined}
               />
             </div>
           </aside>

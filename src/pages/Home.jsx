@@ -25,6 +25,15 @@ const homeBusinessSecondary = {
   to: '/business-live/business/vande-bharatam-gautam-adani-birthday-conviction-global',
 };
 
+const homeCreatorsStory = {
+  title: 'The Woman Who Made Authenticity Her Superpower: The Pearle Maaney Story',
+  description:
+    "Pearle Maaney built one of Kerala's most devoted audiences by making authenticity, humour, family, and emotional honesty the centre of her public life.",
+  image: '/Pearly.jpg',
+  imagePosition: 'center top',
+  to: '/creators-economy/pearle-maaney-authenticity-superpower-story',
+};
+
 const tickerItems = [
   { name: 'NIFTY 50', value: '23,269.40', change: '-0.15', percent: '0.23%' },
   { name: 'SENSEX', value: '76,693.36', change: '+0.12', percent: '0.16%' },
@@ -591,6 +600,35 @@ export default function Home() {
             </aside>
           </div>
         </section>
+
+        <EditorialShell className="mt-9">
+          <SectionTitle>Creators</SectionTitle>
+          <Link
+            to={homeCreatorsStory.to}
+            className="group mt-7 grid gap-6 text-black no-underline md:grid-cols-[minmax(0,0.95fr)_minmax(280px,0.65fr)] md:items-center"
+          >
+            <div className="overflow-hidden rounded-[28px] bg-neutral-100">
+              <img
+                src={homeCreatorsStory.image}
+                alt={homeCreatorsStory.title}
+                className="h-[280px] w-full object-cover transition duration-500 group-hover:scale-[1.03] sm:h-[360px] lg:h-[430px]"
+                style={{ objectPosition: homeCreatorsStory.imagePosition }}
+              />
+            </div>
+
+            <div className="border-y border-black/15 py-5">
+              <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-blue-700">
+                Creators Economy
+              </span>
+              <h2 className="mt-3 text-3xl font-bold leading-tight tracking-tight text-black underline-offset-4 group-hover:underline sm:text-4xl">
+                {homeCreatorsStory.title}
+              </h2>
+              <p className="mt-4 text-base leading-7 text-black/65 sm:text-lg">
+                {homeCreatorsStory.description}
+              </p>
+            </div>
+          </Link>
+        </EditorialShell>
 
         <EditorialShell className="mt-9">
           <SectionTitle>Featured</SectionTitle>

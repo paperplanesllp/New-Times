@@ -134,14 +134,6 @@ function BusinessLiveSidebar({ stories, topicId }) {
           })}
         </div>
       </section>
-
-      <section className="mt-8 overflow-hidden border border-slate-200 bg-slate-100">
-        <img
-          src="/aaro2.jpeg"
-          alt="Business Live feature"
-          className="h-auto w-full object-contain"
-        />
-      </section>
     </aside>
   );
 }
