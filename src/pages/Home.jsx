@@ -10,19 +10,19 @@ import FounderSandbox from '../component/FounderSandbox';
 import BillionairesHub from '../component/BillionairesHub';
 
 const homeBusinessLead = {
-  title: "One Arena: How an 18-Year-Old Singer from Kochi and a Team of Malayali Musicians Created India's Most Talked-About Football Anthem",
-  description:
-    "An 18-year-old singer from Kochi and a collective of Malayali musicians turned India's football longing into a World Cup anthem that travelled far beyond Kerala.",
-  image: '/aaro.PNG',
-  to: '/business-live/business/one-arena-kochi-football-anthem',
-};
-
-const homeBusinessSecondary = {
   title: "From One Outlet to a Global Ambition: How Bad Boy Pizza Is Rewriting the Rules of India's QSR Industry on Its First Birthday",
   description:
     "One year ago, Indian music artist Badshah and F&B entrepreneur Karan Tanna opened a single pizza outlet in Mumbai's Lokhandwala. Today, Bad Boy Pizza is announcing a roadmap to 70 outlets, a $24 million annual revenue target, and international expansion into London and New York.",
   image: '/ar.jpg',
   to: '/business-live/business/bad-boy-pizza-global-ambition-qsr-industry',
+};
+
+const homeBusinessSecondary = {
+  title: "Vande Bharatam: The Initiative That Took Gautam Adani's Birthday Conviction Global in Under Two Weeks",
+  description:
+    "Vande Bharatam is widening the search for India's next generation of founders beyond the country's familiar startup corridors.",
+  image: '/back.webp',
+  to: '/business-live/business/vande-bharatam-gautam-adani-birthday-conviction-global',
 };
 
 const tickerItems = [

@@ -135,11 +135,11 @@ function BusinessLiveSidebar({ stories, topicId }) {
         </div>
       </section>
 
-      <section className="mt-8 overflow-hidden border border-slate-200 bg-slate-100 lg:sticky lg:top-8">
+      <section className="mt-8 overflow-hidden border border-slate-200 bg-slate-100">
         <img
           src="/aaro2.jpeg"
           alt="Business Live feature"
-          className="h-[360px] w-full object-cover"
+          className="h-auto w-full object-contain"
         />
       </section>
     </aside>
@@ -214,14 +214,18 @@ export default function BusinessLiveTopic() {
             </div>
 
             <div className="relative min-w-0">
-              <img
-                src={story.image}
-                alt={story.title}
-                className={`h-[300px] w-full object-cover sm:h-[420px] lg:h-[520px] ${
-                  story.slug === 'one-arena-kochi-football-anthem' ? 'object-top' : ''
-                }`}
-              />
-              <div className="mt-5 lg:absolute lg:-bottom-8 lg:right-6 lg:w-[360px]">
+              <div className="overflow-hidden bg-slate-100">
+                <img
+                  src={story.image}
+                  alt={story.title}
+                  className={`w-full ${
+                    story.slug === 'one-arena-kochi-football-anthem'
+                      ? 'max-h-[560px] object-contain'
+                      : 'h-[300px] object-cover sm:h-[420px] lg:h-[520px]'
+                  }`}
+                />
+              </div>
+              <div className="mt-5 lg:ml-auto lg:w-[360px]">
                 <NextArticleCard article={nextArticle} topicId={topicId} />
               </div>
             </div>
