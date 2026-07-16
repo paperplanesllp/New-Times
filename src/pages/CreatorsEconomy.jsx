@@ -582,6 +582,180 @@ function HubAdvertisementStack() {
   );
 }
 
+function CreatorHubAd() {
+  return (
+    <Link
+      to="/partner/ad-options"
+      aria-label="Advertisement"
+      className="group block border-2 border-slate-950 bg-white px-5 py-8 text-center text-slate-950 no-underline transition hover:bg-slate-950 hover:text-white sm:px-8"
+    >
+      <span className="block text-[10px] font-black uppercase tracking-[0.22em] text-slate-500 group-hover:text-slate-300">
+        Advertisement Space
+      </span>
+      <span className="mt-3 block text-3xl font-black uppercase leading-none tracking-[0.08em] sm:text-5xl">
+        Advertisement Space
+      </span>
+      <span className="mt-4 block text-[11px] font-bold uppercase tracking-[0.18em] text-red-700 group-hover:text-red-300">
+        New Times Brand Studio
+      </span>
+    </Link>
+  );
+}
+
+function CreatorStoryCard({ item, compact = false }) {
+  return (
+    <Link
+      to={`/creators-economy/${item.slug}`}
+      className="group block border border-slate-300 bg-white text-slate-950 no-underline transition hover:border-slate-950"
+    >
+      <div className="overflow-hidden bg-slate-100">
+        <img
+          src={item.thumbnailImage || item.image}
+          alt={item.title}
+          className={`${compact ? 'h-28' : 'h-40'} w-full object-cover transition duration-500 group-hover:scale-[1.04]`}
+        />
+      </div>
+      <div className={compact ? 'p-3' : 'p-4'}>
+        <span className="mb-2 block text-[10px] font-black uppercase tracking-[0.16em] text-amber-700">
+          {item.category}
+        </span>
+        <h3 className={`${compact ? 'text-base' : 'text-lg'} m-0 font-bold leading-tight underline-offset-4 group-hover:underline`}>
+          {item.title}
+        </h3>
+      </div>
+    </Link>
+  );
+}
+
+function CreatorsEconomyHub() {
+  const artistStories = creatorStories.filter((story) => story.category === 'ARTIST');
+  const economyStories = creatorStories.filter((story) => story.category !== 'ARTIST');
+  const [leadStory, ...restEconomyStories] = economyStories;
+  const artistLead = artistStories[0];
+  const highlightStories = restEconomyStories.slice(0, 4);
+  const otherNews = creatorSignals.slice(0, 5);
+
+  return (
+    <main className="bg-white px-3 py-8 text-slate-950 sm:px-5 lg:px-8">
+      <section className="mx-auto max-w-[1180px] border border-slate-300 bg-white px-4 py-5 sm:px-6 lg:px-8">
+        <header className="mb-6 border-b-2 border-slate-950 pb-4">
+          <p className="mb-2 text-[11px] font-black uppercase tracking-[0.22em] text-slate-500">
+            Creator Business
+          </p>
+          <h1 className="m-0 text-4xl font-black leading-none text-slate-950 sm:text-5xl">
+            Creators Economy
+          </h1>
+        </header>
+
+        <section className="grid gap-7 lg:grid-cols-[minmax(0,1fr)_300px]">
+          <div className="min-w-0">
+            <Link
+              to={`/creators-economy/${leadStory.slug}`}
+              className="group block text-slate-950 no-underline"
+            >
+              <div className="overflow-hidden border border-slate-950 bg-slate-100">
+                <StoryImage story={leadStory} className="h-[260px] sm:h-[360px] lg:h-[430px]" />
+              </div>
+              <div className="mt-5 border-y border-slate-300 py-4">
+                <span className="mb-2 block text-[11px] font-black uppercase tracking-[0.18em] text-amber-700">
+                  {leadStory.category}
+                </span>
+                <h2 className="m-0 text-3xl font-black leading-tight text-slate-950 underline-offset-4 group-hover:underline sm:text-5xl">
+                  {leadStory.title}
+                </h2>
+                <p className="mt-4 max-w-4xl text-base leading-7 text-slate-700 sm:text-lg">
+                  {leadStory.summary}
+                </p>
+              </div>
+            </Link>
+
+            <div className="mt-6">
+              <CreatorHubAd />
+            </div>
+          </div>
+
+          <aside className="border-slate-950 lg:border-l lg:pl-6">
+            <h2 className="border-y-2 border-slate-950 py-3 text-2xl font-black leading-none text-slate-950">
+              Highlights
+            </h2>
+            <div className="mt-5 grid gap-5">
+              {highlightStories.map((story) => (
+                <CreatorStoryCard key={story.slug} item={story} compact />
+              ))}
+            </div>
+          </aside>
+        </section>
+
+        {artistLead && (
+          <section className="mt-10 border-t-2 border-slate-950 pt-6">
+            <h2 className="mb-5 border-b border-slate-950 pb-2 text-3xl font-black uppercase leading-none tracking-[0.08em]">
+              Artist
+            </h2>
+            <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_280px_260px]">
+              <Link
+                to={`/creators-economy/${artistLead.slug}`}
+                className="group block text-slate-950 no-underline"
+              >
+                <div className="overflow-hidden border border-slate-950 bg-slate-100">
+                  <StoryImage story={artistLead} className="h-[300px] object-top sm:h-[390px]" />
+                </div>
+              </Link>
+
+              <Link
+                to={`/creators-economy/${artistLead.slug}`}
+                className="group flex min-h-[300px] flex-col justify-center border border-slate-950 bg-white p-5 text-slate-950 no-underline sm:min-h-[390px]"
+              >
+                <span className="mb-5 block border-b border-slate-300 pb-3 text-[11px] font-black uppercase tracking-[0.18em] text-amber-700">
+                  {artistLead.sectionLabel || artistLead.category}
+                </span>
+                <h3 className="m-0 text-2xl font-black leading-tight underline-offset-4 group-hover:underline sm:text-3xl">
+                  {artistLead.title}
+                </h3>
+                <p className="mt-5 text-sm leading-6 text-slate-700">
+                  {artistLead.summary}
+                </p>
+              </Link>
+
+              <aside className="border-slate-950 lg:border-l lg:pl-6">
+                <h3 className="border-b-2 border-slate-950 pb-3 text-2xl font-black leading-none">
+                  Other News
+                </h3>
+                <div className="mt-4 divide-y divide-slate-300">
+                  {otherNews.map((item) => (
+                    <Link
+                      key={item.slug}
+                      to={`/creators-economy/${item.slug}`}
+                      className="block py-4 text-slate-950 no-underline hover:underline hover:underline-offset-4"
+                    >
+                      <span className="mb-1 block text-[10px] font-black uppercase tracking-[0.14em] text-amber-700">
+                        {item.category}
+                      </span>
+                      <span className="block text-base font-bold leading-snug">
+                        {item.title}
+                      </span>
+                    </Link>
+                  ))}
+                </div>
+              </aside>
+            </div>
+          </section>
+        )}
+
+        <section className="mt-10 border-t-2 border-slate-950 pt-6">
+          <h2 className="mb-5 border-b border-slate-950 pb-2 text-3xl font-black uppercase leading-none tracking-[0.08em]">
+            Market
+          </h2>
+          <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+            {otherNews.slice(0, 3).map((item) => (
+              <CreatorStoryCard key={item.slug} item={item} />
+            ))}
+          </div>
+        </section>
+      </section>
+    </main>
+  );
+}
+
 function CreatorsEconomyArticle({ story }) {
   const nextStory = creatorStories[(creatorStories.findIndex((item) => item.slug === story.slug) + 1) % creatorStories.length];
 
@@ -662,155 +836,5 @@ export default function CreatorsEconomy() {
     return <CreatorsEconomyArticle story={activeStory} />;
   }
 
-  const artistStories = creatorStories.filter((story) => story.category === 'ARTIST');
-  const economyStories = creatorStories.filter((story) => story.category !== 'ARTIST');
-  const [leadStory] = economyStories;
-
-  return (
-    <main className="mx-auto min-h-[80vh] max-w-[1540px] bg-white px-3 py-8 sm:px-5 lg:px-6">
-      <section className="border border-gray-200 bg-white p-5 sm:p-7 lg:p-8">
-        <div className="mb-6 h-1 w-full bg-slate-950" />
-
-        <div className="mb-8 flex flex-col gap-4 border-b border-gray-200 pb-6 lg:flex-row lg:items-end lg:justify-between">
-          <div>
-            <span className="mb-2 block text-[11px] font-extrabold uppercase tracking-[0.2em] text-slate-500">
-              More
-            </span>
-            <h1 className="m-0 text-4xl font-extrabold leading-tight text-slate-950 md:text-5xl">
-              Creators Economy
-            </h1>
-          </div>
-          <span className="text-[12px] font-bold uppercase tracking-[0.14em] text-green-600">
-            Creator Business
-          </span>
-        </div>
-
-        <div className="mb-10 bg-slate-50 p-7 ring-1 ring-gray-200">
-          <h2 className="m-0 max-w-4xl text-3xl font-extrabold leading-tight text-slate-950">
-            India's Creator Economy Moves From Influence to Business Infrastructure
-          </h2>
-          <p className="mt-4 max-w-4xl text-base leading-7 text-slate-600">
-            New Times tracks how creators, platforms, agencies, brands, regulators, and tools are reshaping media, marketing, commerce, and entrepreneurship.
-          </p>
-        </div>
-
-        {artistStories.length > 0 && (
-          <section className="mb-12 border-t border-slate-200 pt-8">
-            <div className="mb-6 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
-              <div>
-                <span className="mb-2 block text-[11px] font-extrabold uppercase tracking-[0.2em] text-slate-500">
-                  Music
-                </span>
-                <h2 className="m-0 text-3xl font-extrabold leading-tight text-slate-950">
-                  Artist
-                </h2>
-              </div>
-              <span className="text-[11px] font-bold uppercase tracking-[0.16em] text-slate-500">
-                New Times Desk
-              </span>
-            </div>
-
-            <div className="grid gap-7">
-              {artistStories.map((story) => (
-                <Link
-                  key={story.slug}
-                  to={`/creators-economy/${story.slug}`}
-                  className="group block text-slate-950 no-underline"
-                >
-                  <article className="grid gap-7 lg:grid-cols-[minmax(0,0.92fr)_minmax(0,1fr)] lg:items-center">
-                    <div className="overflow-hidden rounded-2xl bg-slate-100">
-                      <StoryImage story={story} className="h-[300px] object-top sm:h-[390px] lg:h-[430px]" />
-                    </div>
-                    <div className="max-w-3xl">
-                      <span className="mb-3 block text-[11px] font-extrabold uppercase tracking-[0.14em] text-amber-700">
-                        {story.sectionLabel || story.category}
-                      </span>
-                      <h3 className="m-0 text-3xl font-bold leading-tight text-slate-950 underline decoration-slate-950 decoration-2 underline-offset-4 md:text-5xl">
-                        {story.title}
-                      </h3>
-                      <p className="mt-5 text-[16px] leading-7 text-slate-600 md:text-[17px]">
-                        {story.summary}
-                      </p>
-                    </div>
-                  </article>
-                </Link>
-              ))}
-            </div>
-          </section>
-        )}
-
-        <div>
-          <div>
-            <Link
-              to={`/creators-economy/${leadStory.slug}`}
-              className="group block text-slate-950 no-underline"
-            >
-              <article>
-                <div className="overflow-hidden bg-slate-100">
-                  <StoryImage story={leadStory} className="h-[380px]" />
-                </div>
-                <span className="mb-2 mt-5 block text-[11px] font-extrabold uppercase tracking-[0.14em] text-amber-700">
-                  {leadStory.category}
-                </span>
-                <h2 className="m-0 text-3xl font-bold leading-tight text-slate-950 underline-offset-4 group-hover:underline">
-                  {leadStory.title}
-                </h2>
-                <p className="mt-4 text-[15px] leading-7 text-slate-600">{leadStory.summary}</p>
-                <span className="mt-5 inline-flex bg-slate-950 px-5 py-3 text-[11px] font-bold uppercase tracking-[0.18em] text-white transition group-hover:bg-red-700">
-                  Read More
-                </span>
-              </article>
-            </Link>
-
-            <HubAdvertisementStack />
-          </div>
-        </div>
-
-        <section className="mt-12 border-t border-slate-200 pt-8">
-          <div className="mb-6 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
-            <div>
-              <span className="mb-2 block text-[11px] font-extrabold uppercase tracking-[0.2em] text-slate-500">
-                Internal Pages
-              </span>
-              <h2 className="m-0 text-3xl font-extrabold leading-tight text-slate-950">
-                Creator Economy Power Stories
-              </h2>
-            </div>
-            <span className="text-[11px] font-bold uppercase tracking-[0.16em] text-slate-500">
-              New Times Desk
-            </span>
-          </div>
-
-          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-            {creatorSignals.map((signal) => (
-              <Link
-                key={signal.title}
-                to={`/creators-economy/${signal.slug}`}
-                className="group block border border-slate-200 bg-white text-slate-950 no-underline transition hover:-translate-y-1 hover:border-slate-950 hover:shadow-[0_18px_40px_rgba(15,23,42,0.08)]"
-              >
-                <div className="overflow-hidden bg-slate-100">
-                  <img
-                    src={signal.image}
-                    alt={signal.title}
-                    className="h-48 w-full object-cover transition duration-500 group-hover:scale-[1.04]"
-                  />
-                </div>
-                <div className="p-5">
-                  <span className="mb-2 block text-[10px] font-extrabold uppercase tracking-[0.14em] text-amber-700">
-                    {signal.category}
-                  </span>
-                  <h3 className="m-0 text-xl font-bold leading-tight underline-offset-4 group-hover:underline">
-                    {signal.title}
-                  </h3>
-                  <p className="mt-3 text-sm leading-6 text-slate-600">
-                    {signal.excerpt}
-                  </p>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </section>
-      </section>
-    </main>
-  );
+  return <CreatorsEconomyHub />;
 }
