@@ -793,7 +793,7 @@ function CreatorsEconomyArticle({ story }) {
           </div>
         </header>
 
-        <div className="grid gap-10 pt-10 lg:grid-cols-[minmax(0,0.68fr)_minmax(300px,0.32fr)]">
+        <div className="grid gap-10 pt-10 lg:grid-cols-[minmax(0,0.62fr)_minmax(380px,0.38fr)] xl:grid-cols-[minmax(0,0.6fr)_minmax(420px,0.4fr)]">
           <section className="space-y-7">
             {renderArticleBody(story.body, story.title)}
           </section>
@@ -845,7 +845,7 @@ function CreatorsEconomyArticle({ story }) {
               <img
                 src="/aaro2.jpeg"
                 alt="One Arena creator portrait"
-                className="h-[360px] w-full border border-slate-950 object-cover object-top"
+                className="h-[520px] w-full border border-slate-950 object-cover object-top lg:h-[620px]"
               />
             </div>
           </aside>
