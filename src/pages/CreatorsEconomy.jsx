@@ -642,33 +642,13 @@ function CreatorsEconomyArticle({ story }) {
           </section>
 
           <aside className="border-slate-200 lg:border-l lg:pl-8">
-            <div className="sticky top-[100px] space-y-6">
-              <section className="border border-slate-200 bg-slate-50 p-5">
-                <h2 className="mb-4 text-[12px] font-extrabold uppercase tracking-[0.18em] text-slate-950">
-                  More Creator Stories
-                </h2>
-                <div className="space-y-4">
-                  {creatorStories
-                    .filter((item) => item.slug !== story.slug)
-                    .map((item) => (
-                      <Link
-                        key={item.slug}
-                        to={`/creators-economy/${item.slug}`}
-                        className="group grid grid-cols-[76px_minmax(0,1fr)] gap-3 border-b border-slate-200 pb-4 text-slate-950 no-underline last:border-b-0 last:pb-0"
-                      >
-                        <StoryImage story={item} imageKey="thumbnailImage" className="h-20" />
-                        <div>
-                          <span className="block text-[10px] font-extrabold uppercase tracking-[0.12em] text-amber-700">
-                            {item.category}
-                          </span>
-                          <h3 className="mt-1 text-base font-bold leading-tight group-hover:underline">
-                            {item.title}
-                          </h3>
-                        </div>
-                      </Link>
-                    ))}
-                </div>
-              </section>
+            <div className="sticky top-[100px]">
+              <img
+                src="/aaro2.jpeg"
+                alt="Singer performing on stage"
+                className="h-auto w-full object-contain"
+                loading="lazy"
+              />
             </div>
           </aside>
         </div>
