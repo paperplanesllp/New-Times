@@ -644,21 +644,10 @@ function CreatorsEconomyArticle({ story }) {
           </Link>
         </div>
 
-        <div className="grid gap-10 pt-10 lg:grid-cols-[minmax(0,0.7fr)_minmax(280px,0.3fr)]">
-          <section className="space-y-7">
+        <div className="pt-10">
+          <section className="max-w-4xl space-y-7">
             {renderArticleBody(story.body, story.title)}
           </section>
-
-          <aside className="border-slate-200 lg:border-l lg:pl-8">
-            <div className="sticky top-[100px]">
-              <img
-                src="/aaro2.jpeg"
-                alt="Singer performing on stage"
-                className="h-auto w-full object-contain"
-                loading="lazy"
-              />
-            </div>
-          </aside>
         </div>
       </article>
     </main>
@@ -750,7 +739,7 @@ export default function CreatorsEconomy() {
           </section>
         )}
 
-        <div className="grid gap-8 lg:grid-cols-[minmax(0,1.45fr)_minmax(300px,1fr)]">
+        <div>
           <div>
             <Link
               to={`/creators-economy/${leadStory.slug}`}
@@ -775,17 +764,6 @@ export default function CreatorsEconomy() {
 
             <HubAdvertisementStack />
           </div>
-
-          <aside className="border-gray-200 lg:border-l lg:pl-6">
-            <div className="lg:sticky lg:top-[100px] lg:self-start">
-              <img
-                src="/aaro2.jpeg"
-                alt="Singer performing on stage"
-                className="h-auto w-full object-contain"
-                loading="lazy"
-              />
-            </div>
-          </aside>
         </div>
 
         <section className="mt-12 border-t border-slate-200 pt-8">
