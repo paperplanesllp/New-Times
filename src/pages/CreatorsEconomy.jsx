@@ -691,7 +691,7 @@ function CreatorsEconomyHub() {
             <h2 className="mb-5 border-b border-slate-950 pb-2 text-3xl font-black uppercase leading-none tracking-[0.08em]">
               Artist
             </h2>
-            <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_280px_260px]">
+            <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_300px]">
               <Link
                 to={`/creators-economy/${artistLead.slug}`}
                 className="group block text-slate-950 no-underline"
@@ -699,19 +699,13 @@ function CreatorsEconomyHub() {
                 <div className="overflow-hidden border border-slate-950 bg-slate-100">
                   <StoryImage story={artistLead} className="h-[300px] object-top sm:h-[390px]" />
                 </div>
-              </Link>
-
-              <Link
-                to={`/creators-economy/${artistLead.slug}`}
-                className="group flex min-h-[300px] flex-col justify-center border border-slate-950 bg-white p-5 text-slate-950 no-underline sm:min-h-[390px]"
-              >
-                <span className="mb-5 block border-b border-slate-300 pb-3 text-[11px] font-black uppercase tracking-[0.18em] text-amber-700">
+                <span className="mt-5 block text-[11px] font-black uppercase tracking-[0.18em] text-amber-700">
                   {artistLead.sectionLabel || artistLead.category}
                 </span>
-                <h3 className="m-0 text-2xl font-black leading-tight underline-offset-4 group-hover:underline sm:text-3xl">
+                <h3 className="mt-2 max-w-3xl text-2xl font-black leading-tight underline-offset-4 group-hover:underline sm:text-3xl lg:text-[34px]">
                   {artistLead.title}
                 </h3>
-                <p className="mt-5 text-sm leading-6 text-slate-700">
+                <p className="mt-3 max-w-3xl text-sm leading-6 text-slate-700 sm:text-[15px]">
                   {artistLead.summary}
                 </p>
               </Link>
