@@ -781,15 +781,31 @@ function CreatorsEconomyArticle({ story }) {
             </div>
           </div>
 
-          <div>
-            <StoryImage
-              story={story}
-              className={
-                story.category === 'ARTIST'
-                  ? 'max-h-[560px] object-contain'
-                  : 'h-[320px] sm:h-[430px] lg:h-[520px]'
-              }
-            />
+          <div className="min-w-0">
+            <div className="w-fit max-w-full overflow-hidden bg-slate-100">
+              <img
+                src={story.image}
+                alt={story.title}
+                className="h-auto max-h-[min(58vh,520px)] w-auto max-w-full object-contain transition duration-500"
+              />
+            </div>
+
+            <Link
+              to={`/creators-economy/${nextStory.slug}`}
+              className="group mt-3 flex w-full max-w-[320px] items-center gap-2 border border-slate-950 bg-white px-3 py-2.5 text-left text-slate-950 no-underline transition hover:bg-slate-950 hover:text-white"
+            >
+              <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-current text-base leading-none">
+                &rarr;
+              </span>
+              <span className="min-w-0">
+                <span className="block text-[9px] font-black uppercase tracking-[0.18em] text-red-700 group-hover:text-red-200">
+                  Next Article
+                </span>
+                <span className="mt-1 line-clamp-2 block text-sm font-bold leading-snug">
+                  {nextStory.title}
+                </span>
+              </span>
+            </Link>
           </div>
         </header>
 
@@ -798,57 +814,38 @@ function CreatorsEconomyArticle({ story }) {
             {renderArticleBody(story.body, story.title)}
           </section>
 
-          <aside className="border-slate-200 lg:border-l lg:pl-8">
-            <div className="space-y-6">
-              <Link
-                to={`/creators-economy/${nextStory.slug}`}
-                className="group flex items-center gap-3 border border-slate-950 bg-white px-3 py-3 text-left text-slate-950 no-underline transition hover:bg-slate-950 hover:text-white"
-              >
-                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-current text-base leading-none">
-                  &rarr;
-                </span>
-                <span className="min-w-0">
-                  <span className="block text-[9px] font-black uppercase tracking-[0.18em] text-red-700 group-hover:text-red-200">
-                    Next Article
-                  </span>
-                  <span className="mt-1 line-clamp-2 block text-sm font-bold leading-snug">
-                    {nextStory.title}
-                  </span>
-                </span>
-              </Link>
-
-              <section className="border border-slate-950 bg-white">
-                <h2 className="border-b border-slate-950 px-4 py-3 text-center text-xl font-black uppercase tracking-[0.12em] text-slate-950">
-                  Other News
-                </h2>
-                <div className="divide-y divide-slate-300">
-                  {creatorStories
-                    .filter((item) => item.slug !== story.slug)
-                    .slice(0, 3)
-                    .map((item) => (
-                      <Link
-                        key={item.slug}
-                        to={`/creators-economy/${item.slug}`}
-                        className="block px-4 py-4 text-slate-950 no-underline hover:underline hover:underline-offset-4"
-                      >
-                        <span className="mb-1 block text-[10px] font-black uppercase tracking-[0.14em] text-amber-700">
-                          {item.category}
-                        </span>
-                        <span className="block text-base font-bold leading-snug">
-                          {item.title}
-                        </span>
-                      </Link>
-                    ))}
-                </div>
-              </section>
-
-              <div className="lg:sticky lg:top-6">
-                <img
-                  src="/aaro2.jpeg"
-                  alt="One Arena creator portrait"
-                  className="h-[520px] w-full border border-slate-950 object-cover object-top lg:h-[620px]"
-                />
+          <aside className="min-w-0 border-slate-200 lg:self-stretch lg:border-l lg:pl-8">
+            <section className="border border-slate-950 bg-white">
+              <h2 className="border-b border-slate-950 px-4 py-3 text-center text-xl font-black uppercase tracking-[0.12em] text-slate-950">
+                Other News
+              </h2>
+              <div className="divide-y divide-slate-300">
+                {creatorStories
+                  .filter((item) => item.slug !== story.slug)
+                  .slice(0, 3)
+                  .map((item) => (
+                    <Link
+                      key={item.slug}
+                      to={`/creators-economy/${item.slug}`}
+                      className="block px-4 py-4 text-slate-950 no-underline hover:underline hover:underline-offset-4"
+                    >
+                      <span className="mb-1 block text-[10px] font-black uppercase tracking-[0.14em] text-amber-700">
+                        {item.category}
+                      </span>
+                      <span className="block text-base font-bold leading-snug">
+                        {item.title}
+                      </span>
+                    </Link>
+                  ))}
               </div>
+            </section>
+
+            <div className="mt-6 lg:sticky lg:top-[150px] lg:self-start">
+              <img
+                src="/aaro2.jpeg"
+                alt="One Arena creator portrait"
+                className="h-[520px] w-full border border-slate-950 object-cover object-top lg:h-[620px]"
+              />
             </div>
           </aside>
         </div>
