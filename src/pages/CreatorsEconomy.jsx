@@ -790,27 +790,24 @@ function CreatorsEconomyArticle({ story }) {
                   : 'h-[320px] sm:h-[430px] lg:h-[520px]'
               }
             />
+            <Link
+              to={`/creators-economy/${nextStory.slug}`}
+              className="group mt-4 inline-flex w-full items-center gap-3 border border-slate-200 bg-white px-3 py-3 text-left no-underline transition hover:border-slate-950 sm:max-w-md"
+            >
+              <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-slate-950 text-base leading-none text-slate-950">
+                &rarr;
+              </span>
+              <span className="min-w-0">
+                <span className="block text-[9px] font-extrabold uppercase tracking-[0.18em] text-red-700">
+                  Next Article
+                </span>
+                <span className="mt-1 line-clamp-2 block text-sm font-bold leading-snug text-slate-950 group-hover:underline">
+                  {nextStory.title}
+                </span>
+              </span>
+            </Link>
           </div>
         </header>
-
-        <div className="flex justify-end border-b border-slate-200 py-6">
-          <Link
-            to={`/creators-economy/${nextStory.slug}`}
-            className="group inline-flex w-full max-w-md items-center gap-4 border border-slate-200 bg-white p-4 text-left no-underline shadow-[0_14px_35px_rgba(15,23,42,0.08)] transition hover:-translate-y-0.5 hover:border-slate-950 sm:w-auto"
-          >
-            <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-slate-950 text-xl leading-none text-slate-950">
-              &rarr;
-            </span>
-            <span>
-              <span className="block text-[10px] font-extrabold uppercase tracking-[0.18em] text-red-700">
-                Next Article
-              </span>
-              <span className="mt-2 line-clamp-2 block text-lg font-bold leading-snug text-slate-950 group-hover:underline">
-                {nextStory.title}
-              </span>
-            </span>
-          </Link>
-        </div>
 
         <div className="pt-10">
           <section className="max-w-4xl space-y-7">
