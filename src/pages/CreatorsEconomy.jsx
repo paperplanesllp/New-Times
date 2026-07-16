@@ -639,11 +639,10 @@ function CreatorsEconomyArticle({ story }) {
         <div className="grid gap-10 pt-10 lg:grid-cols-[minmax(0,0.7fr)_minmax(280px,0.3fr)]">
           <section className="space-y-7">
             {renderArticleBody(story.body, story.title)}
-            <ArticleAdvertisement />
           </section>
 
           <aside className="border-slate-200 lg:border-l lg:pl-8">
-            <div className="sticky top-8 space-y-6">
+            <div className="sticky top-[100px] space-y-6">
               <section className="border border-slate-200 bg-slate-50 p-5">
                 <h2 className="mb-4 text-[12px] font-extrabold uppercase tracking-[0.18em] text-slate-950">
                   More Creator Stories
@@ -651,7 +650,6 @@ function CreatorsEconomyArticle({ story }) {
                 <div className="space-y-4">
                   {creatorStories
                     .filter((item) => item.slug !== story.slug)
-                    .slice(0, 4)
                     .map((item) => (
                       <Link
                         key={item.slug}
