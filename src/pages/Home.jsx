@@ -34,6 +34,25 @@ const homeCreatorsStory = {
   to: '/creators-economy/pearle-maaney-authenticity-superpower-story',
 };
 
+const homeCreatorStories = [
+  {
+    title: "The Business of Being Diya Krishna: How a Lifestyle Creator Turned Everyday Life Into One of Kerala's Most Powerful Personal Brands",
+    to: '/creators-economy/diya-krishna-lifestyle-creator-personal-brand',
+  },
+  {
+    title: "From Reels to the Big Screen: How Hashir Turned Everyday Humour Into Kerala's Next Entertainment Brand",
+    to: '/creators-economy/hashir-reels-big-screen-kerala-entertainment-brand',
+  },
+  {
+    title: 'Beyond Stardom: How Anu K Aniyan Built a Career Through Authenticity Rather Than Celebrity',
+    to: '/creators-economy/anu-k-aniyan-authenticity-rather-than-celebrity',
+  },
+  {
+    title: 'Beyond Viral: How Jisma Vimal Built a Storytelling Brand That Outgrew the Algorithm',
+    to: '/creators-economy/jisma-vimal-storytelling-brand-outgrew-algorithm',
+  },
+];
+
 const tickerItems = [
   { name: 'NIFTY 50', value: '23,269.40', change: '-0.15', percent: '0.23%' },
   { name: 'SENSEX', value: '76,693.36', change: '+0.12', percent: '0.16%' },
@@ -602,32 +621,47 @@ export default function Home() {
         </section>
 
         <EditorialShell className="mt-9">
-          <Link
-            to={homeCreatorsStory.to}
-            className="group grid gap-6 text-black no-underline md:grid-cols-[minmax(0,0.95fr)_minmax(280px,0.65fr)] md:items-start"
-          >
-            <div className="overflow-hidden rounded-[28px] bg-neutral-100">
-              <img
-                src={homeCreatorsStory.image}
-                alt={homeCreatorsStory.title}
-                className="h-[280px] w-full object-cover transition duration-500 group-hover:scale-[1.03] sm:h-[360px] lg:h-[430px]"
-                style={{ objectPosition: homeCreatorsStory.imagePosition }}
-              />
-            </div>
+          <div className="grid gap-7 lg:grid-cols-[minmax(0,1fr)_340px] lg:gap-9 xl:grid-cols-[minmax(0,1fr)_360px]">
+            <article className="group mx-auto max-w-[720px] lg:border-r lg:border-black/30 lg:pr-9">
+              <Link to={homeCreatorsStory.to} className="block text-black no-underline">
+                <div className="overflow-hidden rounded-[28px] bg-neutral-100">
+                  <img
+                    src={homeCreatorsStory.image}
+                    alt={homeCreatorsStory.title}
+                    className="h-[280px] w-full object-cover transition duration-500 group-hover:scale-[1.03] sm:h-[360px] lg:h-[430px]"
+                    style={{ objectPosition: homeCreatorsStory.imagePosition }}
+                  />
+                </div>
 
-            <div className="border-y border-black/15 py-5">
+                <h2 className="mt-5 text-3xl font-bold leading-tight tracking-tight text-black underline-offset-4 group-hover:underline sm:text-4xl">
+                  {homeCreatorsStory.title}
+                </h2>
+                <p className="mt-4 text-base leading-7 text-black/65 sm:text-lg">
+                  {homeCreatorsStory.description}
+                </p>
+                <p className="mt-4 text-[11px] uppercase tracking-[0.2em] text-black/50">
+                  Creators Economy
+                </p>
+              </Link>
+            </article>
+
+            <aside className="lg:max-w-[360px]">
+              <div className="border-t border-black pt-4">
               <SectionTitle>Creators</SectionTitle>
-              <span className="mt-7 block text-[11px] font-semibold uppercase tracking-[0.2em] text-blue-700">
-                Creators Economy
-              </span>
-              <h2 className="mt-3 text-3xl font-bold leading-tight tracking-tight text-black underline-offset-4 group-hover:underline sm:text-4xl">
-                {homeCreatorsStory.title}
-              </h2>
-              <p className="mt-4 text-base leading-7 text-black/65 sm:text-lg">
-                {homeCreatorsStory.description}
-              </p>
-            </div>
-          </Link>
+                <div className="mt-5 divide-y divide-black/15 border-t border-black/15">
+                  {homeCreatorStories.map((item) => (
+                    <Link
+                      key={item.title}
+                      to={item.to}
+                      className="block py-4 text-lg font-semibold leading-snug text-black no-underline underline-offset-4 hover:underline"
+                    >
+                      {item.title}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </aside>
+          </div>
         </EditorialShell>
 
         <EditorialShell className="mt-9">
