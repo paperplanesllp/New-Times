@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
-import DailyQuote from '../component/DailyQuote';
 
 const artistFeatureStory = {
   slug: 'one-arena-kochi-football-anthem',
@@ -52,6 +51,7 @@ const creatorStories = [
       "In a media landscape that rewards polish, performance, and carefully curated perfection, Pearle Maaney built one of Kerala's most devoted audiences by doing almost the exact opposite. She laughed loudly, spoke honestly, showed the messy and beautiful parts of real life, and trusted that her audience would recognise the difference between a persona and a person. They did. And in doing so, she became something that the Malayalam entertainment industry had not quite seen before: a celebrity whose influence grows not despite her realness but entirely because of it.",
     image: '/Pearly.jpg',
     thumbnailImage: '/Pearly.jpg',
+    sidebarImage: '/pearly 2.jpg',
     summary:
       "Pearle Maaney built one of Kerala's most devoted audiences by making authenticity, humour, family, and emotional honesty the centre of her public life.",
     body: [
@@ -688,6 +688,15 @@ function CreatorsEconomyHub() {
           </h1>
         </header>
 
+        <div className="mb-10 bg-slate-50 p-7 ring-1 ring-gray-200">
+          <h2 className="m-0 max-w-4xl text-3xl font-extrabold leading-tight text-slate-950">
+            India's Creator Economy Moves From Influence to Business Infrastructure
+          </h2>
+          <p className="mt-4 max-w-4xl text-base leading-7 text-slate-600">
+            New Times tracks how creators, platforms, agencies, brands, regulators, and tools are reshaping media, marketing, commerce, and entrepreneurship.
+          </p>
+        </div>
+
         <section className="grid gap-7 lg:grid-cols-[minmax(0,1fr)_300px]">
           <div className="min-w-0">
             <Link
@@ -726,8 +735,6 @@ function CreatorsEconomyHub() {
             </div>
           </aside>
         </section>
-
-        <DailyQuote />
 
         {artistLead && (
           <section className="mt-10 border-t-2 border-slate-950 pt-6">
