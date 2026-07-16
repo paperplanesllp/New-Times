@@ -799,7 +799,7 @@ function CreatorsEconomyArticle({ story }) {
           </section>
 
           <aside className="border-slate-200 lg:border-l lg:pl-8">
-            <div className="space-y-6 lg:sticky lg:top-6">
+            <div className="space-y-6">
               <Link
                 to={`/creators-economy/${nextStory.slug}`}
                 className="group flex items-center gap-3 border border-slate-950 bg-white px-3 py-3 text-left text-slate-950 no-underline transition hover:bg-slate-950 hover:text-white"
