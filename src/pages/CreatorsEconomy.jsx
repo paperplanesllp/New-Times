@@ -49,9 +49,9 @@ const creatorStories = [
     title: 'The Woman Who Made Authenticity Her Superpower: The Pearle Maaney Story',
     excerpt:
       "In a media landscape that rewards polish, performance, and carefully curated perfection, Pearle Maaney built one of Kerala's most devoted audiences by doing almost the exact opposite. She laughed loudly, spoke honestly, showed the messy and beautiful parts of real life, and trusted that her audience would recognise the difference between a persona and a person. They did. And in doing so, she became something that the Malayalam entertainment industry had not quite seen before: a celebrity whose influence grows not despite her realness but entirely because of it.",
-    image: '/Pearly.jpg',
-    thumbnailImage: '/Pearly.jpg',
-    sidebarImage: '/pearly 2.jpg',
+    image: '/per.jpg',
+    thumbnailImage: '/per.jpg',
+    sidebarImage: '/per.jpg',
     imagePosition: 'center top',
     sidebarImagePosition: 'center top',
     summary:
@@ -270,9 +270,9 @@ const creatorStories = [
     title: 'Beyond Viral: How Jisma Vimal Built a Storytelling Brand That Outgrew the Algorithm',
     excerpt:
       'There was a time when success on YouTube was measured by a singular, volatile metric: virality. Creators chased short-term trends, engineered high-energy challenges, and raced to capitalize on whatever the algorithm favored in any given week.',
-    image: '/jis.webp',
-    thumbnailImage: '/jis.webp',
-    sidebarImage: '/scr.jpg',
+    image: '/jism.jpg',
+    thumbnailImage: '/jism.jpg',
+    sidebarImage: '/jism.jpg',
     imagePosition: 'center top',
     sidebarImagePosition: 'center top',
     summary:
@@ -446,8 +446,8 @@ const creatorStories = [
     title: "SEBI and ASCI Tighten the Rules for Finfluencers: A New Era of Accountability in India's Digital Finance Ecosystem",
     excerpt:
       "India's financial influencers are entering a stricter regulatory environment as SEBI and ASCI introduce stronger compliance standards aimed at protecting investors and improving transparency in digital content.",
-    image: '/ss.avif',
-    thumbnailImage: '/ss.avif',
+    image: '/diy.jpg',
+    thumbnailImage: '/diy.jpg',
     summary:
       'SEBI draws a clear line between education and advice, while ASCI hardens disclosure requirements across finance, health, beauty, and beyond.',
     body: [
