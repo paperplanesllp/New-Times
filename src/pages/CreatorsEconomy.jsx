@@ -98,10 +98,11 @@ const creatorStories = [
       'There was a time when celebrity meant distance. The audience knew the actor from the screen, the television anchor from the stage, and perhaps a carefully managed interview in a magazine. Everything else remained private. Fame depended on mystery. The creator economy rewrote those rules.',
     image: '/main.jpg',
     thumbnailImage: '/main.jpg',
-    sidebarImage: '/st.jpg',
+    sidebarImage: '/diy.jpg',
     imagePosition: 'center 18%',
     thumbnailImagePosition: 'center 18%',
     sidebarImagePosition: 'center top',
+    stickySidebarImage: false,
     summary:
       "Diya Krishna's creator journey shows how everyday life, family visibility, entrepreneurship, and audience trust can become the foundation of a powerful personal brand.",
     body: [
@@ -154,10 +155,11 @@ const creatorStories = [
       "There was a time when becoming a film star meant waiting for a director to discover you. The journey usually began with auditions, years of rejection, supporting roles, and the hope that one breakthrough performance would finally change everything. That isn't the only path anymore.",
     image: '/hash.webp',
     thumbnailImage: '/hash.webp',
-    sidebarImage: '/ste.jpg',
+    sidebarImage: '/has.jpg',
     imagePosition: 'center 18%',
     thumbnailImagePosition: 'center 18%',
     sidebarImagePosition: 'center top',
+    stickySidebarImage: false,
     summary:
       "Hashir's rise from relatable reels to Malayalam cinema shows how digital creators are changing stardom, film marketing, and entertainment brands in Kerala.",
     body: [
@@ -1155,7 +1157,7 @@ function CreatorsEconomyArticle({ story }) {
               </div>
             </section>
 
-            <div className="mt-6 lg:sticky lg:top-[150px] lg:self-start">
+            <div className={story.stickySidebarImage === false ? 'mt-6' : 'mt-6 lg:sticky lg:top-[150px] lg:self-start'}>
               <img
                 src={story.sidebarImage || story.image}
                 alt={`${story.title} feature`}
