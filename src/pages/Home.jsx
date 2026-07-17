@@ -29,7 +29,7 @@ const homeCreatorsStory = {
   title: 'The Woman Who Made Authenticity Her Superpower: The Pearle Maaney Story',
   description:
     "Pearle Maaney built one of Kerala's most devoted audiences by making authenticity, humour, family, and emotional honesty the centre of her public life.",
-  image: '/per.jpg',
+  image: '/Pearly.jpg',
   imagePosition: 'center top',
   to: '/creators-economy/pearle-maaney-authenticity-superpower-story',
 };
