@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 
+const DEFAULT_CARD_IMAGE_POSITION = 'center 20%';
+
 const artistFeatureStory = {
   slug: 'one-arena-kochi-football-anthem',
   category: 'ARTIST',
@@ -11,6 +13,8 @@ const artistFeatureStory = {
   image: '/aaro.PNG',
   thumbnailImage: '/aaro.PNG',
   sidebarImage: '/aaro2.jpeg',
+  imagePosition: 'center 18%',
+  thumbnailImagePosition: 'center 18%',
   summary:
     "Rosanne Antony and a collective of Malayali musicians built One Arena as a football anthem shaped by Kerala's love for the game, global pop ambition, and creator-led cultural reach.",
   body: [
@@ -52,7 +56,8 @@ const creatorStories = [
     image: '/Pearly.jpg',
     thumbnailImage: '/Pearly.jpg',
     sidebarImage: '/pearly 2.jpg',
-    imagePosition: 'center top',
+    imagePosition: 'center 20%',
+    thumbnailImagePosition: 'center 20%',
     sidebarImagePosition: 'center top',
     summary:
       "Pearle Maaney built one of Kerala's most devoted audiences by making authenticity, humour, family, and emotional honesty the centre of her public life.",
@@ -94,7 +99,8 @@ const creatorStories = [
     image: '/main.jpg',
     thumbnailImage: '/main.jpg',
     sidebarImage: '/st.jpg',
-    imagePosition: 'center top',
+    imagePosition: 'center 18%',
+    thumbnailImagePosition: 'center 18%',
     sidebarImagePosition: 'center top',
     summary:
       "Diya Krishna's creator journey shows how everyday life, family visibility, entrepreneurship, and audience trust can become the foundation of a powerful personal brand.",
@@ -149,7 +155,8 @@ const creatorStories = [
     image: '/hash.webp',
     thumbnailImage: '/hash.webp',
     sidebarImage: '/ste.jpg',
-    imagePosition: 'center top',
+    imagePosition: 'center 18%',
+    thumbnailImagePosition: 'center 18%',
     sidebarImagePosition: 'center top',
     summary:
       "Hashir's rise from relatable reels to Malayalam cinema shows how digital creators are changing stardom, film marketing, and entertainment brands in Kerala.",
@@ -209,7 +216,8 @@ const creatorStories = [
     image: '/anu.jpg',
     thumbnailImage: '/anu.jpg',
     sidebarImage: '/anu2.jpg',
-    imagePosition: 'center top',
+    imagePosition: 'center 20%',
+    thumbnailImagePosition: 'center 20%',
     sidebarImagePosition: 'center top',
     summary:
       'Anu K Aniyan built trust through grounded performances, Karikku-era relatability, and an understated authenticity that moved naturally from digital screens to Malayalam cinema.',
@@ -273,7 +281,8 @@ const creatorStories = [
     image: '/jis.webp',
     thumbnailImage: '/jis.webp',
     sidebarImage: '/scr.jpg',
-    imagePosition: 'center top',
+    imagePosition: 'center 24%',
+    thumbnailImagePosition: 'center 24%',
     sidebarImagePosition: 'center top',
     summary:
       'Jisma Vimal turned digital storytelling into studio infrastructure, building original Malayalam IP, deep audience loyalty, and a production brand beyond algorithmic virality.',
@@ -731,14 +740,16 @@ function renderArticleBody(paragraphs, articleTitle) {
 }
 
 function StoryImage({ story, className = '', imageKey = 'image' }) {
-  const imagePosition = story[`${imageKey}Position`] || story.imagePosition;
+  const imagePosition = story[`${imageKey}Position`] || story.imagePosition || DEFAULT_CARD_IMAGE_POSITION;
 
   return (
     <img
       src={story[imageKey] || story.image}
       alt={story.title}
       className={`w-full object-cover transition duration-500 group-hover:scale-[1.03] ${className}`}
-      style={imagePosition ? { objectPosition: imagePosition } : undefined}
+      loading="eager"
+      decoding="async"
+      style={{ objectPosition: imagePosition }}
     />
   );
 }
@@ -885,21 +896,26 @@ function CreatorHubAd() {
 }
 
 function CreatorStoryCard({ item, compact = false, large = false }) {
+  const imagePosition = item.thumbnailImagePosition || item.imagePosition || DEFAULT_CARD_IMAGE_POSITION;
+
   return (
     <Link
       to={`/creators-economy/${item.slug}`}
       className="group block border border-slate-300 bg-white text-slate-950 no-underline transition hover:border-slate-950"
     >
-      <div className="overflow-hidden bg-slate-100">
+      <div className="aspect-[16/9] w-full overflow-hidden bg-slate-100">
         <img
           src={item.thumbnailImage || item.image}
           alt={item.title}
-          className={`${compact ? 'h-28' : large ? 'h-56 sm:h-64' : 'h-40'} w-full object-cover transition duration-500 group-hover:scale-[1.04]`}
-          style={
-            item.thumbnailImagePosition || item.imagePosition
-              ? { objectPosition: item.thumbnailImagePosition || item.imagePosition }
-              : undefined
-          }
+          className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.04]"
+          loading="lazy"
+          decoding="async"
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            objectPosition: imagePosition,
+          }}
         />
       </div>
       <div className={compact ? 'p-3' : large ? 'p-5' : 'p-4'}>
@@ -952,8 +968,8 @@ function CreatorsEconomyHub() {
               to={`/creators-economy/${leadStory.slug}`}
               className="group block text-slate-950 no-underline"
             >
-              <div className="overflow-hidden border border-slate-950 bg-slate-100">
-                <StoryImage story={leadStory} className="h-[260px] sm:h-[360px] lg:h-[430px]" />
+              <div className="aspect-[16/9] w-full overflow-hidden border border-slate-950 bg-slate-100">
+                <StoryImage story={leadStory} className="h-full" />
               </div>
               <div className="mt-5 border-y border-slate-300 py-4">
                 <span className="mb-2 block text-[11px] font-black uppercase tracking-[0.18em] text-amber-700">
@@ -995,8 +1011,8 @@ function CreatorsEconomyHub() {
                 to={`/creators-economy/${artistLead.slug}`}
                 className="group block text-slate-950 no-underline"
               >
-                <div className="overflow-hidden border border-slate-950 bg-slate-100">
-                  <StoryImage story={artistLead} className="h-[300px] object-top sm:h-[390px]" />
+                <div className="aspect-[16/9] w-full overflow-hidden border border-slate-950 bg-slate-100">
+                  <StoryImage story={artistLead} className="h-full" />
                 </div>
                 <span className="mt-5 block text-[11px] font-black uppercase tracking-[0.18em] text-amber-700">
                   {artistLead.sectionLabel || artistLead.category}
