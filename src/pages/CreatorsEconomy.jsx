@@ -102,7 +102,6 @@ const creatorStories = [
     imagePosition: 'center 18%',
     thumbnailImagePosition: 'center 18%',
     sidebarImagePosition: 'center top',
-    stickySidebarImage: false,
     summary:
       "Diya Krishna's creator journey shows how everyday life, family visibility, entrepreneurship, and audience trust can become the foundation of a powerful personal brand.",
     body: [
@@ -159,7 +158,6 @@ const creatorStories = [
     imagePosition: 'center 18%',
     thumbnailImagePosition: 'center 18%',
     sidebarImagePosition: 'center top',
-    stickySidebarImage: false,
     summary:
       "Hashir's rise from relatable reels to Malayalam cinema shows how digital creators are changing stardom, film marketing, and entertainment brands in Kerala.",
     body: [
@@ -1157,7 +1155,7 @@ function CreatorsEconomyArticle({ story }) {
               </div>
             </section>
 
-            <div className={story.stickySidebarImage === false ? 'mt-6' : 'mt-6 lg:sticky lg:top-[150px] lg:self-start'}>
+            <div className="mt-6 lg:sticky lg:top-[150px] lg:self-start">
               <img
                 src={story.sidebarImage || story.image}
                 alt={`${story.title} feature`}
