@@ -863,7 +863,7 @@ export default function SpotlightFeaturePage({ type }) {
   const basePath = `/spotlight/${type}`;
   const pageArticles = getPageArticles(page);
   const article = pageArticles.find((item) => item.slug === slug);
-  const featuredBelowLeadStory = type === 'recognise-series' ? page.stories[0] : null;
+  const featuredBelowLeadStory = ['business-features', 'recognise-series'].includes(type) ? page.stories[0] : null;
   const listingStories = featuredBelowLeadStory ? page.stories.slice(1) : page.stories;
 
   if (article) {
