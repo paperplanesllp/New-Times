@@ -44,6 +44,29 @@ export const liveBusinessContent = {
     },
     sideStories: [
       {
+        id: 'business-side-ipo-gold-rush',
+        slug: 'ipo-gold-rush-2026-dalal-street-startups',
+        title: 'The IPO Gold Rush: How 50-Plus Indian Startups Are Racing to Dalal Street in 2026\'s Most Consequential Public Markets Year',
+        description:
+          'After a record 2025, 2026 is shaping up as the biggest startup public markets year in India as more than 50 companies prepare for IPOs and investors demand proof of profitability.',
+        image: '/ipoo.jpg',
+        publishedDate: 'July 27, 2026',
+        body: [
+          { type: 'heading', text: 'The IPO Gold Rush: How 50-Plus Indian Startups Are Racing to Dalal Street in 2026\'s Most Consequential Public Markets Year' },
+          'After a record-breaking 2025 in which 18 Indian startups collectively raised Rs 41,248 crore from public markets, the pipeline heading into 2026 is larger, more ambitious, and more structurally significant than anything the Indian startup ecosystem has attempted before.',
+          'Twenty-four companies have already filed draft red herring prospectuses with SEBI, more than 26 are in active preparation, and unicorns such as Zepto, OYO, InMobi, and Zetwerk could raise upward of Rs 47,000 crore between them. But the year is also being defined by a more demanding market that is increasingly asking whether the business actually works rather than merely whether the growth story sounds exciting.',
+          { type: 'heading', text: 'The Market Is Becoming More Selective' },
+          'The first wave of 2026 listings has made the shift clear. Kissht and SEDEMAC delivered strong debuts, backed by real profitability and credible unit economics. Amagi and Fractal, despite strong subscription interest, showed how quickly investors can turn cautious when growth stories are priced too aggressively.',
+          'The broader lesson is simple: founders who have spent the past few years building disciplined business models are finding receptive public markets. Companies that still depend on the promise of future margin improvement are being asked to wait for stronger evidence.',
+          { type: 'heading', text: 'The Marquee Names in the Pipeline' },
+          "PhonePe, Zepto, OYO, Infra.Market, and OfBusiness are all central to the 2026 narrative because they represent the extremes of the current market debate. PhonePe's listing is being watched for how investors value payments leadership without turning a blind eye to losses. Zepto's IPO will test whether quick commerce can attract public-market capital on a credible path to profitability.",
+          "OYO's third attempt at a public listing has become a referendum on whether the market is willing to look past a turbulent history and underwrite the current business fundamentals. Infra.Market and OfBusiness, meanwhile, are being watched for how large B2B companies are valued in a market that now rewards proof over promise.",
+          { type: 'heading', text: 'What 2026 Is Really Telling Investors' },
+          'The 2026 IPO cycle is not a single wave but a bifurcation. On one side are companies that have used the post-2021 funding years to improve margins, reduce burn, and demonstrate operating discipline. On the other are startups whose growth remains impressive but whose bottom line still needs to catch up. The early listings suggest the public markets are now rewarding the first group far more generously than the second.',
+          'That is why 2026 may go down as more than a year of listings. It may become the year when Indian startup public markets moved from hype-driven valuation to evidence-driven discipline.',
+        ],
+      },
+      {
         id: 'business-side-one-arena-football-anthem',
         slug: 'one-arena-kochi-football-anthem',
         title: "One Arena: How an 18-Year-Old Singer from Kochi and a Team of Malayali Musicians Created India's Most Talked-About Football Anthem",
