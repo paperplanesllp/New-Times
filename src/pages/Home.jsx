@@ -136,11 +136,11 @@ const articleCards = [
   },
   {
     id: 3,
-    category: 'Startups',
-    title: ' The Future of Startups: 2026 Edition',
+    category: 'Business Features',
+    title: 'Two Resignation Emails That Built a Unicorn: The Story Behind Licious at 11',
     description:
-      'Today’s founders are redefining growth through rapid product innovation, disciplined capital management, and deep customer trust.',
-    image: '/start.avif',
+      "Licious began with two friends, two resignation emails, and a stubborn belief that India's meat industry needed an end-to-end quality transformation rather than another asset-light marketplace.",
+    image: '/licious.webp',
   },
   {
     id: 4,
