@@ -864,7 +864,12 @@ export default function SpotlightFeaturePage({ type }) {
   const pageArticles = getPageArticles(page);
   const article = pageArticles.find((item) => item.slug === slug);
   const featuredBelowLeadStory = ['business-features', 'recognise-series'].includes(type) ? page.stories[0] : null;
-  const listingStories = featuredBelowLeadStory ? page.stories.slice(1) : page.stories;
+  const leftColumnExtraSlugs = type === 'business-features'
+    ? ['habilelabs-10-years-global-technology-services', 'vahdam-india-global-expansion']
+    : [];
+  const leftColumnExtraStories = page.stories.filter((story) => leftColumnExtraSlugs.includes(story.slug));
+  const listingStories = (featuredBelowLeadStory ? page.stories.slice(1) : page.stories)
+    .filter((story) => !leftColumnExtraSlugs.includes(story.slug));
 
   if (article) {
     const currentIndex = pageArticles.findIndex((item) => item.slug === article.slug);
@@ -963,6 +968,33 @@ export default function SpotlightFeaturePage({ type }) {
                 </Link>
               </article>
             )}
+
+            {leftColumnExtraStories.map((story) => (
+              <article key={story.slug} className="border-t border-gray-100 group pt-7">
+                <Link to={`${basePath}/${story.slug}`} className="block mb-5 overflow-hidden no-underline bg-slate-100">
+                  <img
+                    className={`h-[280px] w-full ${story.imageFit === 'contain' ? 'object-contain' : 'object-cover'} transition duration-500 group-hover:scale-[1.03] sm:h-[340px]`}
+                    src={story.image}
+                    alt={story.title}
+                  />
+                </Link>
+                <span className="mb-2 block text-[11px] font-extrabold uppercase tracking-[0.14em] text-amber-700">
+                  {story.category}
+                </span>
+                <Link to={`${basePath}/${story.slug}`} className="no-underline">
+                  <h2 className="m-0 text-3xl font-bold leading-tight text-slate-950 underline-offset-4 group-hover:underline">
+                    {story.title}
+                  </h2>
+                </Link>
+                <p className="mt-4 text-[15px] leading-7 text-slate-600">{story.excerpt}</p>
+                <Link
+                  to={`${basePath}/${story.slug}`}
+                  className="mt-5 inline-flex border border-slate-950 px-5 py-3 text-[11px] font-bold uppercase tracking-[0.18em] text-slate-950 no-underline transition hover:bg-slate-950 hover:text-white"
+                >
+                  Read More
+                </Link>
+              </article>
+            ))}
           </div>
 
           <div className="space-y-5 border-gray-200 xl:border-l xl:pl-6">
