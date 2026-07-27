@@ -284,7 +284,7 @@ const spotlightPages = {
     title: 'Business Stories Shaping Modern India',
     intro:
       'Founder journeys, global expansion, technology services, and leadership transitions define this edition of New Times Business Features.',
-    badge: 'Feature Desk',
+    
     lead: businessFeatureArticles[0],
     stories: [
       businessFeatureArticles[1],
@@ -629,7 +629,7 @@ function ArticleBodyItem({ item }) {
 
   if (typeof item === 'object' && item.type === 'heading') {
     return (
-      <h2 className="m-0 pt-3 text-2xl font-extrabold leading-tight text-slate-950 md:text-3xl">
+      <h2 className="pt-3 m-0 text-2xl font-extrabold leading-tight text-slate-950 md:text-3xl">
         {text}
       </h2>
     );
@@ -672,8 +672,8 @@ function NextArticleCard({ article, basePath }) {
       to={`${basePath}/${article.slug}`}
       className="block w-full max-w-full border border-slate-200 bg-white p-4 text-left no-underline shadow-[0_18px_45px_rgba(15,23,42,0.12)] transition hover:-translate-y-0.5 hover:border-slate-950"
     >
-      <div className="flex min-w-0 items-start gap-3">
-        <span className="mt-1 inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-slate-950 text-sm font-bold text-slate-950">
+      <div className="flex items-start min-w-0 gap-3">
+        <span className="inline-flex items-center justify-center mt-1 text-sm font-bold border rounded-full h-9 w-9 shrink-0 border-slate-950 text-slate-950">
           &rarr;
         </span>
         <div className="min-w-0">
@@ -710,7 +710,7 @@ function SidebarStoryCard({ story, rank }) {
         <span className="block text-[10px] font-extrabold uppercase tracking-[0.12em] text-amber-700">
           {story.category}
         </span>
-        <h4 className="mt-1 line-clamp-3 text-base font-bold leading-tight text-slate-950 group-hover:underline">
+        <h4 className="mt-1 text-base font-bold leading-tight line-clamp-3 text-slate-950 group-hover:underline">
           {story.title}
         </h4>
         <p className="mt-2 text-[11px] font-semibold uppercase tracking-[0.08em] text-slate-500">
@@ -729,14 +729,14 @@ function SpotlightArticleSidebar() {
           <span className="mb-2 block text-center text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400">
             Advertisement
           </span>
-          <div className="flex h-64 items-center justify-center bg-slate-100 ring-1 ring-slate-200">
+          <div className="flex items-center justify-center h-64 bg-slate-100 ring-1 ring-slate-200">
             <span className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">
               Ad Space
             </span>
           </div>
         </section>
 
-        <section className="border border-slate-200 bg-white p-5">
+        <section className="p-5 bg-white border border-slate-200">
           <h3 className="mb-5 text-[12px] font-extrabold uppercase tracking-[0.18em] text-slate-950">
             On Everyone's Radar
           </h3>
@@ -747,7 +747,7 @@ function SpotlightArticleSidebar() {
           </div>
         </section>
 
-        <section className="border border-slate-200 bg-slate-50 p-5">
+        <section className="p-5 border border-slate-200 bg-slate-50">
           <h3 className="mb-5 text-[12px] font-extrabold uppercase tracking-[0.18em] text-slate-950">
             New Times Lists
           </h3>
@@ -811,7 +811,7 @@ function SpotlightArticleDetail({ article, nextArticle, page, basePath }) {
               <span>{Math.max(4, Math.ceil(articleBody.map(getArticleBodyText).join(' ').split(' ').length / 220))} min read</span>
             </div>
 
-            <div className="mt-6 flex max-w-full flex-wrap justify-center gap-3 sm:justify-start">
+            <div className="flex flex-wrap justify-center max-w-full gap-3 mt-6 sm:justify-start">
               <Link
                 to="/partner/get-featured"
                 className="inline-flex min-h-11 items-center justify-center rounded-full bg-slate-950 px-6 text-xs font-bold uppercase tracking-[0.14em] text-white no-underline transition hover:bg-red-700"
@@ -863,7 +863,7 @@ export default function SpotlightFeaturePage({ type }) {
   const basePath = `/spotlight/${type}`;
   const pageArticles = getPageArticles(page);
   const article = pageArticles.find((item) => item.slug === slug);
-  const featuredBelowLeadStory = ['business-features', 'recognise-series'].includes(type) ? page.stories[0] : null;
+  const featuredBelowLeadStory = type === 'recognise-series' ? page.stories[0] : null;
   const listingStories = featuredBelowLeadStory ? page.stories.slice(1) : page.stories;
 
   if (article) {
@@ -875,10 +875,10 @@ export default function SpotlightFeaturePage({ type }) {
 
   return (
     <main className="mx-auto min-h-[80vh] max-w-7xl bg-white px-4 py-8 sm:px-6 lg:px-8">
-      <section className="border border-gray-200 bg-white p-5 sm:p-8 lg:p-10">
-        <div className="mb-6 h-1 w-full bg-slate-950" />
+      <section className="p-5 bg-white border border-gray-200 sm:p-8 lg:p-10">
+        <div className="w-full h-1 mb-6 bg-slate-950" />
 
-        <div className="mb-8 flex flex-col gap-4 border-b border-gray-200 pb-6 lg:flex-row lg:items-end lg:justify-between">
+        <div className="flex flex-col gap-4 pb-6 mb-8 border-b border-gray-200 lg:flex-row lg:items-end lg:justify-between">
           <div>
             <span className="mb-2 block text-[11px] font-extrabold uppercase tracking-[0.2em] text-slate-500">
               NT Spotlight
@@ -893,10 +893,10 @@ export default function SpotlightFeaturePage({ type }) {
         </div>
 
         <div className="mb-10 bg-slate-50 p-7 ring-1 ring-gray-200">
-          <h2 className="m-0 max-w-4xl text-3xl font-extrabold leading-tight text-slate-950">
+          <h2 className="max-w-4xl m-0 text-3xl font-extrabold leading-tight text-slate-950">
             {page.title}
           </h2>
-          <p className="mt-4 max-w-4xl text-base leading-7 text-slate-600">
+          <p className="max-w-4xl mt-4 text-base leading-7 text-slate-600">
             {page.intro}
           </p>
         </div>
@@ -938,8 +938,8 @@ export default function SpotlightFeaturePage({ type }) {
             </article>
 
             {featuredBelowLeadStory && (
-              <article className="group border-t border-gray-100 pt-7">
-                <Link to={`${basePath}/${featuredBelowLeadStory.slug}`} className="mb-5 block overflow-hidden bg-slate-100 no-underline">
+              <article className="border-t border-gray-100 group pt-7">
+                <Link to={`${basePath}/${featuredBelowLeadStory.slug}`} className="block mb-5 overflow-hidden no-underline bg-slate-100">
                   <img
                     className={`h-[280px] w-full ${featuredBelowLeadStory.imageFit === 'contain' ? 'object-contain' : 'object-cover'} transition duration-500 group-hover:scale-[1.03] sm:h-[340px]`}
                     src={featuredBelowLeadStory.image}
@@ -967,9 +967,9 @@ export default function SpotlightFeaturePage({ type }) {
 
           <div className="space-y-5 border-gray-200 xl:border-l xl:pl-6">
             {listingStories.map((story) => (
-              <article key={story.title} className="group border-b border-gray-100 pb-5 last:border-b-0">
+              <article key={story.title} className="pb-5 border-b border-gray-100 group last:border-b-0">
                 {story.image && (
-                  <Link to={story.slug ? `${basePath}/${story.slug}` : '#'} className="mb-4 block overflow-hidden bg-slate-100 no-underline">
+                  <Link to={story.slug ? `${basePath}/${story.slug}` : '#'} className="block mb-4 overflow-hidden no-underline bg-slate-100">
                     <img
                       className={`h-40 w-full ${story.imageFit === 'contain' ? 'object-contain' : 'object-cover'} transition duration-500 group-hover:scale-[1.03]`}
                       src={story.image}
