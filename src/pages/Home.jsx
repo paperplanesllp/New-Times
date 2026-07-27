@@ -10,11 +10,11 @@ import FounderSandbox from '../component/FounderSandbox';
 import BillionairesHub from '../component/BillionairesHub';
 
 const homeBusinessLead = {
-  title: "From One Outlet to a Global Ambition: How Bad Boy Pizza Is Rewriting the Rules of India's QSR Industry on Its First Birthday",
+  title: "The Scooter That Thinks: How E3 Electric.Ai's Rs 100 Crore Series A and the Imminent Launch of E3 TRION Signal India's Electric Mobility is Entering Its Intelligence Era",
   description:
-    "One year ago, Indian music artist Badshah and F&B entrepreneur Karan Tanna opened a single pizza outlet in Mumbai's Lokhandwala. Today, Bad Boy Pizza is announcing a roadmap to 70 outlets, a $24 million annual revenue target, and international expansion into London and New York.",
-  image: '/ar.jpg',
-  to: '/business-live/business/bad-boy-pizza-global-ambition-qsr-industry',
+    "E3 Electric.Ai has raised Rs 100 crore in a Series A round led by BluVenture Holdings and is weeks away from unveiling E3 TRION, which it describes as India's first intelligent electric scooter.",
+  image: '/electra.avif',
+  to: '/spotlight/business-features/e3-electric-ai-trion-intelligent-electric-scooter',
 };
 
 const homeBusinessSecondary = {
