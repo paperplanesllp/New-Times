@@ -286,7 +286,11 @@ const spotlightPages = {
       'Founder journeys, global expansion, technology services, and leadership transitions define this edition of New Times Business Features.',
     badge: 'Feature Desk',
     lead: businessFeatureArticles[0],
-    stories: businessFeatureArticles.slice(1),
+    stories: [
+      businessFeatureArticles[1],
+      businessFeatureArticles[businessFeatureArticles.length - 1],
+      ...businessFeatureArticles.slice(2, -1),
+    ],
   },
   'recognise-series': {
     kicker: 'Recognition Series',
