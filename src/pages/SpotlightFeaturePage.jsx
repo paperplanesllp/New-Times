@@ -440,7 +440,7 @@ const spotlightPages = {
     title: "Spotlighting Tomorrow's Industry Leaders",
     intro:
       'Covering ambitious startups, visionary founders, breakthrough innovations, growth milestones, and the strategies shaping the future of business.',
-    badge: 'Startup Watch',
+  
     lead: {
       slug: 'emergent-100m-arr-plain-language-app-building',
       category: 'SPACETECH',
