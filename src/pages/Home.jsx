@@ -18,11 +18,11 @@ const homeBusinessLead = {
 };
 
 const homeBusinessSecondary = {
-  title: "Vande Bharatam: The Initiative That Took Gautam Adani's Birthday Conviction Global in Under Two Weeks",
+  title: 'Swiggy Instamart Appoints Former Myntra CEO Nandita Sinha as Chief, Signals New Phase of Quick-Commerce Growth',
   description:
-    "Vande Bharatam is widening the search for India's next generation of founders beyond the country's familiar startup corridors.",
-  image: '/back.webp',
-  to: '/business-live/business/vande-bharatam-gautam-adani-birthday-conviction-global',
+    "Former Myntra CEO Nandita Sinha takes charge of Swiggy Instamart as the quick-commerce platform sharpens its focus on differentiated assortment, customer loyalty and sustainable growth.",
+  image: '/nant.avif',
+  to: '/spotlight/business-features/swiggy-instamart-appoints-nandita-sinha-chief',
 };
 
 const homeCreatorsStory = {
