@@ -283,6 +283,7 @@ const businessFeatureArticles = [
     excerpt:
       "Bira 91 is entering a new chapter as Anicut Capital takes control of founder Ankur Jain's stake, with lenders gaining greater influence as the beer brand seeks fresh capital and an operational reset.",
     image: '/anicu.avif',
+    publishedDate: 'August 3, 2026',
     body: [
       "Bira 91, once seen as one of India's most promising homegrown craft beer brands, is entering a new chapter as Anicut Capital takes control of founder Ankur Jain's stake in the company. The development marks a significant shift in ownership and leadership at B9 Beverages, the parent company of Bira 91, as the financially stressed beer maker prepares for a restructuring aimed at reviving its operations.",
       "The move comes days after Jain stepped down from the company's board and relinquished the promoter family's 17.8% stake as part of a settlement with institutional investors and lenders. Under the arrangement, Jain is also expected to be released from personal liabilities, including guarantees provided against corporate loans, while pending legal disputes between the parties are set to be withdrawn.",
@@ -335,6 +336,7 @@ const businessFeatureArticles = [
     excerpt:
       "Former Myntra CEO Nandita Sinha takes charge of Swiggy Instamart as the quick-commerce platform sharpens its focus on differentiated assortment, customer loyalty and sustainable growth.",
     image: '/nant.avif',
+    publishedDate: 'August 3, 2026',
     body: [
       "Swiggy Instamart is set to enter a new phase of growth under the leadership of Nandita Sinha, the former chief executive officer of Myntra. The quick-commerce platform has appointed Sinha as its new chief, placing an experienced consumer internet leader at the helm of one of India's fastest-growing and most competitive digital commerce businesses.",
       "Sinha will succeed Amitesh Jha, who joined Instamart in 2024 and has now announced his decision to step down from the CEO role. The leadership transition comes at a critical time for the quick-commerce industry, with platforms competing aggressively to expand their customer base, strengthen their product assortment and build sustainable growth models.",
@@ -434,6 +436,7 @@ const spotlightPages = {
         excerpt:
           "Five of India's best-known first-generation internet founders are building again, converging on AI, deeptech, brain health and ecommerce infrastructure as the intelligence layer becomes technology's next frontier.",
         image: '/intelli.png',
+        publishedDate: 'August 3, 2026',
         body: [
           "India's first internet generation built their fortunes on a specific and powerful insight: distribution was the game. If you could move food faster than the competition, deliver fashion more reliably, get packages to doorsteps quicker, or connect gig workers to hyperlocal demand more efficiently, you could build something worth billions. The companies that emerged from this era—Zomato, Flipkart, Dunzo, Myntra and boAt—were fundamentally distribution businesses enabled by technology. They changed how a billion people ate, shopped, listened to music and received things at home.",
           "The second chapter being written in 2026 is about something fundamentally different. Distribution, at scale, is increasingly a solved problem in Indian tech. What is not yet solved, what is in fact barely begun, is the intelligence layer that sits on top of it. How do enterprises automate complex workflows without armies of manual operators? How do consumers interact with technology through natural language rather than menus and clicks? How does preventive healthcare leverage neuroscience and wearable sensors to catch problems before they become crises? How does a business in Tier II India sell its products to a customer in Germany without building its own cross-border commerce infrastructure?",
@@ -471,6 +474,7 @@ const spotlightPages = {
         excerpt:
           "Experienced founders behind Zomato, Myntra, boAt, Dunzo and Flipkart are returning with ambitious ventures spanning AI, deeptech, brain health, enterprise automation and ecommerce infrastructure.",
         image: '/up.jpg',
+        publishedDate: 'August 3, 2026',
         body: [
           "India's startup ecosystem is entering a new phase. The first generation of Indian technology founders built companies that changed everyday life. They transformed how millions of Indians ordered food, shopped online, discovered fashion, received deliveries and consumed consumer electronics. Companies such as Zomato, Myntra, boAt, Dunzo and Flipkart became household names while their founders became some of the most recognisable faces in India's entrepreneurial landscape.",
           "But in 2026, a new chapter is taking shape. Some of these founders are returning to the startup world with ventures that look very different from the businesses they built the first time around. Their new companies are exploring artificial intelligence, deeptech, brain health, enterprise automation, ecommerce infrastructure and AI-first consumer technology.",
@@ -685,6 +689,7 @@ const spotlightPages = {
         excerpt:
           'Emergent has reached a $1.5 billion valuation, $120 million in annualised revenue and more than 200,000 paying customers after making software creation accessible through plain-language AI agents.',
         image: '/Mukunda.avif',
+        publishedDate: 'August 3, 2026',
         body: [
           "Artificial intelligence startup Emergent has become India's latest unicorn after receiving $130 million in a Series C funding round, which values the software creation platform at $1.5 billion, a fivefold jump in value from just four months ago. The round was led by Creaegis, with Claypond Capital and Sentinel Global joining as co-lead investors, and existing backers Khosla Ventures, SoftBank Vision Fund 2, Lightspeed and Y Combinator also participating. The latest investment takes Emergent's total capital raised to $230 million across three funding rounds since its launch in June 2025.",
           "The numbers are extraordinary by any measure. But the story behind them is more interesting than the numbers themselves, because it begins not with investor enthusiasm but with investor rejection, and not with a polished founding vision but with a pivot, a pandemic of scepticism and two brothers who refused to interpret the word no as a final answer.",
@@ -1019,7 +1024,7 @@ function SpotlightArticleSidebar() {
 }
 
 function SpotlightArticleDetail({ article, nextArticle, page, basePath }) {
-  const publishedDate = 'June 24, 2026';
+  const publishedDate = article.publishedDate || 'June 24, 2026';
   const articleBody = getVisibleArticleBodyItems(article.body, article.title);
 
   return (

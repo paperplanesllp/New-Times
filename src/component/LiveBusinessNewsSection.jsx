@@ -90,7 +90,7 @@ export const liveBusinessContent = {
         description:
           "India's next fintech IPO cohort is meeting a market where profitability, revenue quality and financial discipline matter more than growth narratives, while Zepto confronts a dramatic valuation reset.",
         image: '/Fintech-IPO-ftr.jpg',
-        publishedDate: 'July 30, 2026',
+        publishedDate: 'August 3, 2026',
         body: [
           "The Indian fintech sector's relationship with public markets has always been more complicated than the headline numbers suggested. When Paytm listed in November 2021 at a valuation of Rs 1.34 lakh crore and then spent the next eighteen months losing more than 70 per cent of that value, it did not just damage Paytm's investors. It reshaped how every institutional buyer of Indian technology IPOs subsequently thought about loss-making fintech companies seeking premium public market valuations. That recalibration has been working through the ecosystem ever since. The second fintech IPO wave arriving in the second half of 2026 is the first wave to emerge from the other side of it, and the companies it brings to market look and behave differently from their predecessors in ways that matter enormously for how they will be received.",
           { type: 'heading', text: 'The Five Fintech Companies at the Starting Line' },
