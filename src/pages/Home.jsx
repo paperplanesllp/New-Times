@@ -26,12 +26,12 @@ const homeBusinessSecondary = {
 };
 
 const homeCreatorsStory = {
-  title: 'The Woman Who Made Authenticity Her Superpower: The Pearle Maaney Story',
+  title: "From Reels to the Big Screen: How Hashir Turned Everyday Humour Into Kerala's Next Entertainment Brand",
   description:
-    "Pearle Maaney built one of Kerala's most devoted audiences by making authenticity, humour, family, and emotional honesty the centre of her public life.",
-  image: '/Pearly.jpg',
-  imagePosition: 'center top',
-  to: '/creators-economy/pearle-maaney-authenticity-superpower-story',
+    "There was a time when becoming a film star meant waiting for a director to discover you. The journey usually began with auditions, years of rejection, supporting roles, and the hope that one breakthrough performance would finally change everything. That isn't the only path anymore.",
+  image: '/hash.webp',
+  imagePosition: 'center 18%',
+  to: '/creators-economy/hashir-reels-big-screen-kerala-entertainment-brand',
 };
 
 const homeCreatorStories = [
@@ -40,8 +40,8 @@ const homeCreatorStories = [
     to: '/creators-economy/diya-krishna-lifestyle-creator-personal-brand',
   },
   {
-    title: "From Reels to the Big Screen: How Hashir Turned Everyday Humour Into Kerala's Next Entertainment Brand",
-    to: '/creators-economy/hashir-reels-big-screen-kerala-entertainment-brand',
+    title: 'The Woman Who Made Authenticity Her Superpower: The Pearle Maaney Story',
+    to: '/creators-economy/pearle-maaney-authenticity-superpower-story',
   },
   {
     title: 'Beyond Stardom: How Anu K Aniyan Built a Career Through Authenticity Rather Than Celebrity',
@@ -67,8 +67,8 @@ const sideSections = [
     items: [
       {
         label: 'Recognition Series',
-        title: "The Visionaries Building India's Business Future: Ten Leaders Redefining What Entrepreneurship Looks Like in 2025",
-        to: '/spotlight/recognise-series/visionaries-building-indias-business-future-ten-leaders-2025',
+        title: "India's Startup Founders Are Building Again: The Second Act of Indian Entrepreneurship",
+        to: '/spotlight/recognise-series/indias-startup-founders-building-again-second-act',
       },
       {
         label: 'Business Live',
