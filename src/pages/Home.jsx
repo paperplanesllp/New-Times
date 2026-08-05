@@ -10,11 +10,12 @@ import FounderSandbox from '../component/FounderSandbox';
 import BillionairesHub from '../component/BillionairesHub';
 
 const homeBusinessLead = {
-  title: "The Scooter That Thinks: How E3 Electric.Ai's Rs 100 Crore Series A and the Imminent Launch of E3 TRION Signal India's Electric Mobility is Entering Its Intelligence Era",
+  title: "The Voice Behind Lilly Kutty: How Mariya Johny Became Kerala's Most Unexpected Multi-Hyphenate Talent",
   description:
-    "E3 Electric.Ai has raised Rs 100 crore in a Series A round led by BluVenture Holdings and is weeks away from unveiling E3 TRION, which it describes as India's first intelligent electric scooter.",
-  image: '/electra.avif',
-  to: '/spotlight/business-features/e3-electric-ai-trion-intelligent-electric-scooter',
+    "Between a Kochi recording booth and the open highway, Mariya Johny has built a career that won't sit still in one lane. She's the voice behind Lilly Kutty, the sheep character who became an unlikely viral sensation after the Malayalam dub of The Sheep Detectives landed on Amazon Prime Video.",
+  image: '/sheep.avif',
+  imagePosition: 'center center',
+  to: '/creators-economy/mariya-johny-lilly-kutty-multi-hyphenate-talent',
 };
 
 const homeBusinessSecondary = {
@@ -525,7 +526,7 @@ export default function Home() {
               <article className="group mx-auto max-w-[720px]">
                 <Link to={homeBusinessLead.to} className="block no-underline">
                   <h1 className="mb-5 text-3xl font-bold leading-none tracking-tight text-black sm:text-4xl">
-                    Business
+                    Creators Economy
                   </h1>
 
                   <div className="overflow-hidden rounded-[28px] bg-neutral-100">
@@ -533,7 +534,7 @@ export default function Home() {
                       src={homeBusinessLead.image}
                       alt={homeBusinessLead.title}
                       className="h-[260px] w-full object-cover transition duration-500 group-hover:scale-[1.03] sm:h-[330px]"
-                      style={{ objectPosition: 'center 26%' }}
+                      style={{ objectPosition: homeBusinessLead.imagePosition || 'center 26%' }}
                     />
                   </div>
 
@@ -546,7 +547,7 @@ export default function Home() {
                       {homeBusinessLead.description}
                     </p>
                     <p className="mt-4 text-[11px] uppercase tracking-[0.2em] text-black/50">
-                      NT Spotlight / Business Features
+                      Creators Economy / Creator Profile
                     </p>
                   </div>
                 </Link>
