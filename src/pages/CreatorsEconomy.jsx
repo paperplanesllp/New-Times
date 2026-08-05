@@ -1109,7 +1109,7 @@ function CreatorsEconomyArticle({ story }) {
           &larr; Creators Economy
         </Link>
 
-        <header className="grid gap-8 border-b border-slate-200 pb-10 lg:grid-cols-[minmax(0,0.9fr)_minmax(420px,0.8fr)] lg:items-center">
+        <header className="grid gap-8 border-b border-slate-200 pb-10 lg:grid-cols-[minmax(0,0.8fr)_minmax(520px,1fr)] lg:items-center">
           <div>
             <span className="mb-4 block text-[11px] font-extrabold uppercase tracking-[0.22em] text-amber-700">
               {story.category}
@@ -1127,18 +1127,18 @@ function CreatorsEconomyArticle({ story }) {
             </div>
           </div>
 
-          <div className="w-full max-w-[420px] min-w-0 lg:self-start lg:justify-self-start">
+          <div className="w-full max-w-[620px] min-w-0 lg:self-start lg:justify-self-start">
             <div className="w-full overflow-hidden bg-slate-100">
               <img
                 src={story.image}
                 alt={story.title}
-                className="h-auto w-full max-w-[420px] object-contain transition duration-500"
+                className="h-auto w-full object-contain transition duration-500"
               />
             </div>
 
             <Link
               to={`/creators-economy/${nextStory.slug}`}
-              className="group mt-3 flex w-full max-w-[420px] items-center gap-2 border border-slate-950 bg-white px-3 py-2.5 text-left text-slate-950 no-underline transition hover:bg-slate-950 hover:text-white"
+              className="group mt-3 flex w-full items-center gap-3 border border-slate-950 bg-white px-4 py-3 text-left text-slate-950 no-underline transition hover:bg-slate-950 hover:text-white"
             >
               <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-current text-base leading-none">
                 &rarr;
