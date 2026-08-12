@@ -13,7 +13,7 @@ const homeBusinessLead = {
   title: "The Voice Behind Lilly Kutty: How Mariya Johny Became Kerala's Most Unexpected Multi-Hyphenate Talent",
   description:
     "Between a Kochi recording booth and the open highway, Mariya Johny has built a career that won't sit still in one lane. She's the voice behind Lilly Kutty, the sheep character who became an unlikely viral sensation after the Malayalam dub of The Sheep Detectives landed on Amazon Prime Video.",
-  image: '/sheep.avif',
+  image: '/goat.avif',
   imagePosition: 'center center',
   to: '/creators-economy/mariya-johny-lilly-kutty-multi-hyphenate-talent',
 };
