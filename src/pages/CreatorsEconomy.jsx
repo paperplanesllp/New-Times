@@ -55,7 +55,7 @@ const creatorStories = [
       "Between a Kochi recording booth and the open highway, Mariya Johny has built a career that won't sit still in one lane. She's the voice behind Lilly Kutty, the sheep character who became an unlikely viral sensation after the Malayalam dub of The Sheep Detectives landed on Amazon Prime Video. She's also a self-produced singer-songwriter, a long-distance adventure motorcyclist, and, in whatever hours remain, a student working toward chartered accountancy. It's an unusual mix to hold at once — and exactly what makes her story worth telling.",
     image: '/goat.avif',
     thumbnailImage: '/goat.avif',
-    sidebarImage: '/goat.avif',
+    sidebarImage: '/sheep.avif',
     imagePosition: 'center center',
     thumbnailImagePosition: 'center center',
     summary:
